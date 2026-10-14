@@ -1,0 +1,259 @@
+{
+  "records": 145,
+  "records_public": 126,
+  "status_counts": {
+    "complete": 144,
+    "live": 1
+  },
+  "kind_counts": {
+    "private_contest": 19,
+    "public_contest": 126
+  },
+  "ended_public_with_counts": 125,
+  "findings_total_public": 58193,
+  "first_start": "2023-11-13",
+  "last_start": "2026-05-29",
+  "per_day_by_year": {
+    "2023": {
+      "n": 4,
+      "median": 25.57
+    },
+    "2024": {
+      "n": 43,
+      "median": 17.04
+    },
+    "2025": {
+      "n": 72,
+      "median": 20.68
+    },
+    "2026": {
+      "n": 6,
+      "median": 158.21
+    }
+  },
+  "per_day_by_year_small_pots": {
+    "2024": {
+      "n": 12,
+      "median": 21.37
+    },
+    "2025": {
+      "n": 35,
+      "median": 30.81
+    },
+    "2026": {
+      "n": 4,
+      "median": 158.21
+    }
+  },
+  "findings_by_year": {
+    "2023": {
+      "n": 4,
+      "median": 537.0
+    },
+    "2024": {
+      "n": 43,
+      "median": 315
+    },
+    "2025": {
+      "n": 72,
+      "median": 308.5
+    },
+    "2026": {
+      "n": 6,
+      "median": 1343.0
+    }
+  },
+  "per_1k_usd_by_year": {
+    "2023": {
+      "n": 4,
+      "median": 4.72
+    },
+    "2024": {
+      "n": 41,
+      "median": 2.47
+    },
+    "2025": {
+      "n": 57,
+      "median": 8.74
+    },
+    "2026": {
+      "n": 5,
+      "median": 24.96
+    }
+  },
+  "pot_usd_by_year": {
+    "2023": {
+      "n": 4,
+      "median": 100000.0
+    },
+    "2024": {
+      "n": 41,
+      "median": 100000.0
+    },
+    "2025": {
+      "n": 57,
+      "median": 60000.0
+    },
+    "2026": {
+      "n": 5,
+      "median": 50000.0
+    }
+  },
+  "days_by_year": {
+    "2023": {
+      "n": 4,
+      "median": 21.0
+    },
+    "2024": {
+      "n": 43,
+      "median": 20.71
+    },
+    "2025": {
+      "n": 72,
+      "median": 21.0
+    },
+    "2026": {
+      "n": 6,
+      "median": 8.86
+    }
+  },
+  "kyc_within_year": {
+    "2023": {
+      "kyc": {
+        "n": 0,
+        "median": null
+      },
+      "no_kyc": {
+        "n": 4,
+        "median": 25.57
+      }
+    },
+    "2024": {
+      "kyc": {
+        "n": 0,
+        "median": null
+      },
+      "no_kyc": {
+        "n": 43,
+        "median": 17.04
+      }
+    },
+    "2025": {
+      "kyc": {
+        "n": 10,
+        "median": 31.36
+      },
+      "no_kyc": {
+        "n": 62,
+        "median": 19.57
+      }
+    },
+    "2026": {
+      "kyc": {
+        "n": 3,
+        "median": 91.0
+      },
+      "no_kyc": {
+        "n": 3,
+        "median": 174.65
+      }
+    }
+  },
+  "per_day_by_kind_incl_private": {
+    "private_contest": {
+      "n": 16,
+      "median": 8.9,
+      "findings": 2569
+    },
+    "public_contest": {
+      "n": 125,
+      "median": 20.43,
+      "findings": 58193
+    }
+  },
+  "shared_pot_rows": 12,
+  "quarterly": [
+    {
+      "quarter": "2023Q4",
+      "contests": 4,
+      "findings": 1841,
+      "median_per_day": 25.57
+    },
+    {
+      "quarter": "2024Q1",
+      "contests": 9,
+      "findings": 4073,
+      "median_per_day": 16.35
+    },
+    {
+      "quarter": "2024Q2",
+      "contests": 8,
+      "findings": 1946,
+      "median_per_day": 16.8
+    },
+    {
+      "quarter": "2024Q3",
+      "contests": 8,
+      "findings": 3916,
+      "median_per_day": 21.9
+    },
+    {
+      "quarter": "2024Q4",
+      "contests": 18,
+      "findings": 7067,
+      "median_per_day": 15.13
+    },
+    {
+      "quarter": "2025Q1",
+      "contests": 38,
+      "findings": 9116,
+      "median_per_day": 9.13
+    },
+    {
+      "quarter": "2025Q2",
+      "contests": 21,
+      "findings": 13095,
+      "median_per_day": 30.81
+    },
+    {
+      "quarter": "2025Q3",
+      "contests": 12,
+      "findings": 6862,
+      "median_per_day": 31.25
+    },
+    {
+      "quarter": "2025Q4",
+      "contests": 1,
+      "findings": 726,
+      "median_per_day": 33.64
+    },
+    {
+      "quarter": "2026Q1",
+      "contests": 3,
+      "findings": 2784,
+      "median_per_day": 91.0
+    },
+    {
+      "quarter": "2026Q2",
+      "contests": 3,
+      "findings": 6767,
+      "median_per_day": 191.46
+    }
+  ],
+  "sample_check_v030": {
+    "rows": 21,
+    "found_in_api": 21,
+    "ended_rows": 20,
+    "ended_exact_matches": 20,
+    "mismatches": [
+      {
+        "id": "e275368c-547d-4d91-a418-053ad31082a8",
+        "name": "Revert v4lend",
+        "status": "live",
+        "hand": 1282,
+        "api": 1369,
+        "match": false
+      }
+    ]
+  }
+}

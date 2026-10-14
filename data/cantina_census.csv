@@ -1,0 +1,126 @@
+id,name,company,kind,start,end,days,pot,currency,pot_usd,shared_pot,kyc_required,total_findings,per_day,per_1k_usd
+d86b7f95-e574-4092-8ea2-78dcac2f54f1,morpho-blue,Morpho,public_contest,2023-11-13,2023-12-04,21.0,100000.0,USDC,100000.0,False,False,766,36.476,7.66
+8409a0ce-6c21-4cc9-8ef2-bd77ce7425af,metamorpho-and-periphery,Morpho,public_contest,2023-11-16,2023-12-07,21.0,100000.0,USDC,100000.0,False,False,622,29.619,6.22
+2cd0b038-3e32-4db6-b488-0f85b6f0e49f,core-and-erc1155a,Superform,public_contest,2023-11-27,2023-12-18,21.0,140000.0,USDC,140000.0,False,False,452,21.524,3.229
+f0cfe0e9-290b-4967-94ac-504375329127,ctf,Superform,public_contest,2023-12-28,2024-01-14,17.0,100000.0,USDC,100000.0,False,False,1,0.059,0.01
+a83eaf73-9cbc-495f-8607-e55d4fdaf407,incentive-contracts,ZeroLend,public_contest,2024-01-08,2024-01-25,17.0,80000.0,USDC,80000.0,False,False,609,35.824,7.612
+829164bf-7fba-4b84-a6b8-76652205bd97,lockbox-solana,Olas,public_contest,2024-01-15,2024-01-29,14.0,50000.0,USDC,50000.0,False,False,77,5.5,1.54
+c90131b4-5c7c-4ebc-a1f3-8002d219bfe0,Blast,Blast,public_contest,2024-01-30,2024-02-20,20.99,1200000.0,USDC,1200000.0,False,False,1127,53.693,0.939
+28425672-ce54-4c66-b188-c4d5650d6790,opal-contracts,OpalProtocol,public_contest,2024-02-12,2024-02-20,7.9,40000.0,USDC,40000.0,False,False,425,53.826,10.625
+c2e31b04-fbb2-4355-80ef-141d58b6e0cc,arcadexyz/arcade-protocol,Arcade.xyz,public_contest,2024-02-22,2024-03-07,13.9,60000.0,USDC,60000.0,False,False,92,6.621,1.533
+4b6f08a7-e830-4499-9977-08e2c3b32068,eigenlayer-contracts,Eigenlayer,public_contest,2024-02-27,2024-03-18,20.71,100000.0,USDC,100000.0,False,False,128,6.181,1.28
+ac757733-81a4-43c7-8f49-17c5b135cdff,curvance,Curvance,public_contest,2024-02-27,2024-04-15,48.76,375000.0,USDC,375000.0,False,False,797,16.345,2.125
+f214cf86-cc80-40c0-a70b-e9bb25d7ac80,Smart-contracts,Goat Tech,public_contest,2024-03-19,2024-04-08,20.0,80000.0,USDC,80000.0,False,False,609,30.45,7.612
+ddf86a5c-6f63-430f-aadc-d8742b4b1bcf,VenusProtocol/governance-contracts,Venus Protocol,public_contest,2024-03-22,2024-04-05,13.99,58000.0,USDC,58000.0,False,False,209,14.936,3.603
+d47f8096-8858-437d-a9f5-2fe85ac9b95e,safe-extensions,OP Labs,public_contest,2024-05-06,2024-05-10,4.25,75000.0,USDC,75000.0,False,False,373,87.765,4.973
+5ffcedec-7e2e-4717-a3e4-e9041ca541c2,Aave v3.1 Competition,AAVE,public_contest,2024-05-10,2024-05-20,10.0,150000.0,GHO,150000.0,False,False,131,13.1,0.873
+41306bb9-2bb8-4da6-95c3-66b85e11639f,Euler-v2,Euler,public_contest,2024-05-20,2024-06-17,28.0,1250000.0,USDC,1250000.0,False,False,572,20.429,0.458
+a2c3cc6a-e384-495f-9751-5d7e657bc219,YOLO Games,YOLO Games,public_contest,2024-05-27,2024-06-08,11.68,27500.0,USDC,27500.0,False,False,199,17.037,7.236
+b7c7def5-1033-4a4c-809d-08e507fb3583,Bitcoin Staking Scripts,Babylonchain - archive,public_contest,2024-05-28,2024-06-24,27.0,150000.0,USDC,150000.0,False,False,144,5.333,0.96
+b92d2750-d5a3-4c53-9bca-2e70d5dfe0ac,SP1,Succinct,public_contest,2024-06-03,2024-06-23,20.0,110000.0,USDC,110000.0,False,False,65,3.25,0.591
+31a752e3-8ece-49b3-a9ee-d7294c659340,Pegasus,Usual,public_contest,2024-06-18,2024-06-28,10.21,80000.0,USDC,80000.0,False,False,346,33.894,4.325
+3211ee0d-133f-43a0-837e-8dc1ecfaa424,grass,Grass,public_contest,2024-06-24,2024-07-01,7.0,15000.0,USDC,15000.0,False,False,116,16.571,7.733
+80a33cf0-ad69-4163-a269-d27756aacb5e,zetachain-protocol,ZetaChain,public_contest,2024-08-19,2024-09-04,16.0,120000.0,USDC,120000.0,False,False,1058,66.125,8.817
+a0a58a8b-247e-4203-b3cb-476ded9d5515,Centrifuge,Centrifuge,public_contest,2024-08-19,2024-09-16,28.0,125000.0,USDC,125000.0,False,False,315,11.25,2.52
+e2cf6906-ec8b-4c78-a585-74ac90615659,uniswap-v4,Uniswap Labs,public_contest,2024-09-06,2024-10-01,24.92,2350000.0,USDC,2350000.0,False,False,451,18.1,0.192
+3a42798b-b1aa-4b10-b5e4-a8bbc22a70bc,instadapp-fluid,Instadapp,public_contest,2024-09-11,2024-10-02,21.08,250000.0,USDC,250000.0,False,False,209,9.913,0.836
+8bab566e-a6d4-4c1b-9f28-71a94bfd1da2,symbioticfi-core,Symbiotic,public_contest,2024-09-11,2024-10-02,21.25,50000.0,USDC,50000.0,False,False,619,29.129,12.38
+fadb5a8f-e39c-4a6b-89f6-a03858bb8602,Royco Protocol,Royco,public_contest,2024-09-13,2024-09-24,11.17,30000.0,USDC,30000.0,False,False,706,63.224,23.533
+8337db39-e04e-470d-8090-0cfb9a7ec2dd,redstone-oracle,RedStone,public_contest,2024-09-24,2024-10-04,10.31,40000.0,USDC,40000.0,False,False,265,25.697,6.625
+5617fffa-4b67-42a7-a9f5-dad93627faa3,infinitypools,InfinityPools,public_contest,2024-09-30,2024-10-28,28.0,150000.0,USDC,150000.0,False,False,293,10.464,1.953
+4ee8716d-3e0e-4f59-b90d-aa56bf3b484c,mev-commit,Primev,public_contest,2024-10-01,2024-10-22,21.19,65000.0,USDC,65000.0,False,False,796,37.569,12.246
+61087007-c7e9-4c4e-9d90-4e118933fecf,stakeup-bloomv2,StakeUp,public_contest,2024-10-07,2024-10-21,14.0,60000.0,USDC,60000.0,False,False,899,64.214,14.983
+cb538ed2-6770-4646-a32b-610b62d9a34c,optimism-java,optimism-java,public_contest,2024-10-07,2024-10-28,21.0,117362.0,OP,,False,False,363,17.286,
+8773f033-afa5-4e7b-b0e8-8f989062ae8a,panoptic-core,Panoptic,public_contest,2024-10-11,2024-10-25,14.25,80000.0,USDC,80000.0,False,False,55,3.86,0.688
+d139882b-2d3a-49ac-9849-9dccef584090,Omni Network,Omni Network,public_contest,2024-10-14,2024-11-04,21.0,1000000.0,USDC,1000000.0,False,False,780,37.143,0.78
+949ad7c5-ea14-427d-b10a-54e33cef921b,balancer-v3,Balancer,public_contest,2024-10-15,2024-11-05,21.21,500000.0,USDC,500000.0,False,False,275,12.967,0.55
+21787352-de2c-4a77-af09-cc0a250d1f04,tensor-monorepo,Tensor,public_contest,2024-10-16,2024-11-27,42.0,150000.0,USDC,150000.0,False,False,234,5.571,1.56
+6837e02a-0a87-4577-a047-4e1ea71cff01,spend-permissions,Coinbase,public_contest,2024-10-30,2024-11-06,7.0,75000.0,USDC,75000.0,False,False,395,56.429,5.267
+84df57a3-0526-49b8-a7c5-334888f43940,sorella-angstrom,Sorella Labs,public_contest,2024-11-11,2024-11-25,14.0,150000.0,USDC,150000.0,False,False,181,12.929,1.207
+cd180bb3-5d7d-46ed-8b99-d905e54a9d0b,hyperlend,HyperLabs Inc,public_contest,2024-11-13,2024-12-04,21.0,100000.0,USDC,100000.0,False,False,399,19.0,3.99
+050711ca-a6d1-4fdd-9f94-3816233c1bd5,collar-core,Votre,public_contest,2024-11-25,2024-12-16,21.0,100000.0,USDC,100000.0,False,False,578,27.524,5.78
+205f8ca3-27fc-4da2-a2e6-0d43e1c60a41,TermMax,TermMax,public_contest,2024-11-28,2024-12-12,14.0,30000.0,USDC,30000.0,False,False,74,5.286,2.467
+44d68da7-3cf4-4cec-a3f8-f0917062dac6,bima-money,Bima,public_contest,2024-12-02,2025-01-01,30.83,200000.0,USDC,200000.0,False,False,334,10.832,1.67
+55023131-27df-44e4-af46-bec298d0fa8e,InterPol,0xhoneyjar,public_contest,2024-12-04,2024-12-07,3.0,25000.0,USDC,25000.0,False,False,280,93.333,11.2
+8d7bdfb9-cf19-4294-95d0-763af5d425b4,juicebox-monorepo,Juicebox,public_contest,2024-12-05,2025-01-02,28.0,36796.0,OP,,False,False,161,5.75,
+0561defa-eeb2-4a74-8884-5d7a873afa58,story-protocol,Story,public_contest,2024-12-14,2025-01-17,34.5,1000000.0,USDC,1000000.0,False,False,977,28.319,0.977
+781d30df-39a9-47e6-b290-e388c79e04ea,aligned-layer,Aligned,public_contest,2024-12-17,2025-01-07,21.52,100000.0,USDC,100000.0,False,False,99,4.6,0.99
+08c2b0b4-8449-4136-82a2-7074ccdfffac,Soon ,Soon Labs,public_contest,2024-12-23,2025-01-20,28.0,74000.0,USDC,74000.0,False,False,187,6.679,2.527
+68d65682-ed04-48aa-969d-09a335de3748,desk-orderbook,DESK,public_contest,2025-01-06,2025-01-20,14.0,30000.0,USDC,30000.0,False,False,527,37.643,17.567
+18f1e37b-9ac2-4ba9-b32e-50344500c1a7,silo-contracts-v2,Silo Finance,public_contest,2025-01-13,2025-02-10,28.0,250000.0,USDC,250000.0,False,False,247,8.821,0.988
+1ea959a6-7b85-4cda-98ed-32c88be2f3ff,lifi-contracts,LI.FI,public_contest,2025-01-13,2025-02-24,42.0,450000.0,USDC,450000.0,False,False,364,8.667,0.809
+9dfca0bc-a7bf-482e-a3df-4eb861f55c4f,reserve-index-dtf,Reserve Protocol,public_contest,2025-01-13,2025-01-20,7.19,60000.0,USDC,60000.0,False,False,229,31.861,3.817
+e9e9b3e0-f213-45e4-8d05-d72bf0c8787a,ton-pool-contracts,Chorus One,public_contest,2025-01-13,2025-01-27,14.0,25000.0,USDC,25000.0,False,False,158,11.286,6.32
+f9326d2b-bb99-45a9-88c5-94c54aa1823a,farcasterattestation-monorepo,FarcasterAttestation,public_contest,2025-01-13,2025-02-23,41.58,60378.0,OP,,False,False,392,9.427,
+3eff5a8f-b73a-4cfe-8c54-546b475548f0,inclusive-monorepo,Inclusive Finance,public_contest,2025-01-15,2025-01-29,14.0,25000.0,USDC,25000.0,False,False,214,15.286,8.56
+57b00aab-8f8b-4d62-9378-41b6460ce6aa,doppler-contracts,Whetstone,public_contest,2025-01-15,2025-01-22,6.92,65000.0,USDC,65000.0,False,False,101,14.602,1.554
+ac5f64e6-3bf2-4269-bbb0-4bcd70425a1d,infrared-contracts,Infrared Finance,public_contest,2025-01-15,2025-01-28,13.33,250000.0,USDC,250000.0,False,False,680,51.0,2.72
+58cd719b-9004-4eca-a113-41d1691c0711,napier-v2,Napier Finance,public_contest,2025-01-20,2025-02-10,21.0,72000.0,USDC,72000.0,False,False,151,7.19,2.097
+691ce303-f137-437a-bf34-aef87dfe983b,dahlia-protocol,Dahlia,public_contest,2025-01-20,2025-02-03,14.0,60000.0,USDC,60000.0,False,False,303,21.643,5.05
+bd43bdd1-bc7f-473b-96c0-d35d37f3db33,daao-contracts,Daao ,public_contest,2025-01-27,2025-01-31,4.0,12000.0,USDC,12000.0,False,False,924,231.0,77.0
+c486d600-bed0-4fc6-aed1-de759fd29fa2,openvm,OpenVM,public_contest,2025-01-27,2025-03-08,40.0,100000.0,USDC,100000.0,False,False,210,5.25,2.1
+5c4a63a2-e744-43bd-b38b-d0063c117765,TermMax,TermMax,public_contest,2025-02-06,2025-02-23,17.0,23000.0,USDC,23000.0,False,False,150,8.824,6.522
+d4835c42-fc76-4fea-8e2c-70449237fc0e,beraborrow-blockend,Beraborrow,public_contest,2025-02-08,2025-03-07,27.6,52500.0,USDC,52500.0,False,False,103,3.731,1.962
+1b64737c-1373-4ecf-a179-4cd0d7b0b232,defi-app-contracts,DefiApp,public_contest,2025-02-10,2025-02-24,14.0,25000.0,USDC,25000.0,False,False,276,19.714,11.04
+8cf9c7a0-a7a6-446a-8577-1e2c254eb5a8,velvet-v4,Velvet Capital,public_contest,2025-02-19,2025-04-09,49.0,60000.0,USDC,60000.0,False,False,634,12.939,10.567
+1845d0b1-1d2b-42be-b347-a866d6549fca,lighthouse,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,33,0.979,
+38271533-dde5-4b48-95d5-58116fe8c62c,besu,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,25,0.742,
+52f3f9d9-7929-4bde-8d3a-2b5fc0863f35,teku,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,9,0.267,
+619e22ff-d9c9-47ab-be0b-b932a7df036e,grandine,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,20,0.593,
+642d8a2b-6a3b-4c54-9ff0-9b1fa3f3fbc7,reth,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,37,1.098,
+9ab19e33-b73c-4384-83a8-b905f508ce5e,Ethereum-Protocol,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,25,0.742,
+a294d1aa-2c08-409e-b73a-51cdc76b1757,nimbus-eth2,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,2,0.059,
+abdbb5f0-d157-4db4-ada6-59fe837f4583,prysm,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,20,0.593,
+acc729ac-07d4-4806-89be-4e6715b752c6,nethermind,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,26,0.771,
+b568afa3-63e8-447e-9d9f-9318943fbbf7,lodestar,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,5,0.148,
+f5182971-2ac4-42dc-89f1-d65d0d2425b8,erigon,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,23,0.682,
+f7255cf4-8c1a-4082-b262-3c0e21af8dae,go-ethereum,Ethereum Foundation,public_contest,2025-02-21,2025-03-27,33.71,2000000.0,USDC,,True,False,45,1.335,
+d88cb915-64c9-4488-8062-dd16ede7a4a0,size-solidity,Rheo,public_contest,2025-02-26,2025-03-12,14.0,15000.0,USDC,15000.0,False,False,113,8.071,7.533
+7db75599-9dad-40aa-9fc7-e879803eea2b,colorpool-chromia,ThreeS,public_contest,2025-03-03,2025-03-17,14.0,25000.0,USDC,25000.0,False,False,330,23.571,13.2
+8b94becd-54e7-41cd-88e6-caae7becc76a,reserve-index-dtfs-solana,Reserve Protocol,public_contest,2025-03-03,2025-03-10,7.0,60000.0,USDC,60000.0,False,False,179,25.571,2.983
+f57ffb47-0ded-4f04-bcec-ecd7d47fad58,badger-ebtc-bsm,BadgerDAO,public_contest,2025-03-05,2025-03-12,7.0,20000.0,USDC,20000.0,False,False,613,87.571,30.65
+e7af4986-183d-4764-8bd2-1d6b47f87d99,eigenlayer-contracts,Eigenlayer,public_contest,2025-03-07,2025-03-28,21.08,2500000.0,USDC,2500000.0,False,False,790,37.47,0.316
+8cb347d2-53b5-4fd0-bbbd-3f67537f2bb0,tally-stGOV,Tally,public_contest,2025-03-10,2025-03-17,7.0,15000.0,USDC,15000.0,False,False,136,19.429,9.067
+b0a948cd-c861-4807-b36e-d680d82598bf,EIP7702Proxy,Coinbase,public_contest,2025-03-20,2025-03-25,5.0,20000.0,USDC,20000.0,False,False,120,24.0,6.0
+d86632df-ab33-4448-8198-64955eae6712,liquity-bold,Liquity,public_contest,2025-03-21,2025-04-27,37.83,350000.0,USDC,350000.0,False,False,700,18.502,2.0
+44b385bf-e51a-4e6c-b3a8-adbbe24d16e1,interop-portal,OP Labs,public_contest,2025-03-24,2025-04-07,14.0,225000.0,USDC,225000.0,False,False,202,14.429,0.898
+076935b1-2706-48c6-bf0a-b3656aa24194,liquidity-book-vaults,Metropolis,public_contest,2025-04-02,2025-04-20,18.0,25000.0,USDC,25000.0,False,False,732,40.667,29.28
+2ac7f906-1661-47eb-bfd6-519f5db0d36b,infinifi-protocol,infiniFi,public_contest,2025-04-07,2025-04-28,21.0,35000.0,USDC,35000.0,False,False,592,28.19,16.914
+e757364c-1f68-4ec5-94f6-c6b3c2e80c6d,mezo-monorepo,Mezo,public_contest,2025-04-10,2025-05-01,21.0,50000.0,USDC,50000.0,False,False,647,30.81,12.94
+616d8bb4-16ce-4ca9-9ce9-5b99d6e146ef,mighty-contracts,Mighty Finance,public_contest,2025-04-15,2025-05-06,21.12,25000.0,USDC,25000.0,False,False,1344,63.621,53.76
+aaf79192-6ea7-4b1e-aed7-3d23212dd0f1,gamma-univ4-limit-orders,Gamma Strategies,public_contest,2025-04-28,2025-05-05,7.0,20000.0,OP,,False,False,136,19.429,
+e68909e6-3491-4a94-a707-ecf0c89cf72a,alchemix-v3,Alchemix,public_contest,2025-05-01,2025-05-15,14.25,50000.0,USDC,50000.0,False,False,1562,109.614,31.24
+3cc30b66-1cba-4044-968f-a0817cd7bf83,SXT,Space and Time,public_contest,2025-05-02,2025-05-22,20.17,100000.0,USDC,100000.0,False,False,524,25.983,5.24
+ae21d78b-f752-4a9e-aad9-9d89f2b4b8b5,hackathon-contracts,Summit Hackathon,public_contest,2025-05-06,2025-05-08,2.46,,USDC,,False,False,4,1.628,
+990ce947-05da-443e-b397-be38a65f0bff,Aquarius,Aqua Network,public_contest,2025-05-07,2025-06-18,42.27,110000.0,USDC,110000.0,False,False,696,16.465,6.327
+c160af78-28f8-47f7-9926-889b3864c6d8,mystic-monorepo,Mystic Finance,public_contest,2025-05-13,2025-05-18,5.83,13000.0,USDC,13000.0,False,False,754,129.257,58.0
+7d650b99-8a40-49d1-9b65-2b060accfbb7,circuit-puzzles,CircuitDAO,public_contest,2025-05-19,2025-06-16,28.19,100000.0,USDC,100000.0,False,False,774,27.459,7.74
+ad445d42-9d39-4bcf-becb-0c6c8689b767,aave-aptos,AAVE,public_contest,2025-05-19,2025-06-09,21.29,150000.0,GHO,150000.0,False,False,412,19.35,2.747
+ba62fa4e-f933-4eec-b9ac-868325f4a694,superform-core,Superform,public_contest,2025-05-19,2025-06-02,14.12,50000.0,USDC,50000.0,False,False,610,43.186,12.2
+7a40c849-0b35-4128-b084-d9a83fd533ea,jigsaw-contracts,Jigsaw Finance,public_contest,2025-05-21,2025-06-19,29.12,60000.0,USDC,60000.0,False,False,1642,56.378,27.367
+e1c0be8d-0c3d-485a-a446-a582beb120b1,stability-contracts,Stability DAO,public_contest,2025-05-23,2025-05-29,6.12,16000.0,USDC,16000.0,False,False,253,41.306,15.812
+e92be0b9-b4f2-4bf2-9544-ae285fcfc02d,primev-validator-registry,Primev,public_contest,2025-05-28,2025-06-03,5.81,12000.0,USDC,12000.0,False,False,233,40.086,19.417
+a188a03f-4631-4b58-82ce-a5818a6df332,eulerswap-ctf,Euler,public_contest,2025-06-03,2025-06-10,7.17,500000.0,USDC,500000.0,False,True,3,0.419,0.006
+50d38b86-80a0-49af-9df8-70d7d601b7d7,solaxy,Nitro Labs,public_contest,2025-06-11,2025-06-30,19.02,25000.0,USDC,25000.0,False,False,443,23.29,17.72
+26d5255b-6f68-46cf-be55-81dd565d9d16,telcoin-network,Telcoin Association,public_contest,2025-06-17,2025-07-15,28.25,110000.0,USDC,110000.0,False,True,1313,46.478,11.936
+ffe90f03-ffd0-449b-a15f-6e7702323d16,aera-v3,Gauntlet,public_contest,2025-06-18,2025-06-25,7.04,15000.0,USDC,15000.0,False,False,397,56.379,26.467
+ae57d1ed-c242-4eac-932a-ef596c9bcc67,aave-aptos-ctf,AAVE,public_contest,2025-06-27,2025-08-08,42.29,100000.0,USDC,100000.0,False,True,24,0.567,0.24
+12acc80c-4e4c-4081-a0a3-faa92150651a,genius-contracts,Genius Foundation,public_contest,2025-07-02,2025-07-23,21.0,25000.0,USDC,25000.0,False,True,390,18.571,15.6
+bd882748-077e-4e55-853f-f8df70109dbb,succinct-network,Succinct,public_contest,2025-07-08,2025-07-15,7.0,30000.0,USDC,30000.0,False,True,461,65.857,15.367
+02c29467-cb27-4beb-b2ef-500ad95e1a51,ammalgam-contracts,Ammalgam,public_contest,2025-07-09,2025-07-29,20.08,60000.0,USDC,60000.0,False,False,476,23.701,7.933
+3765f098-ef5c-47be-beb9-3f4ce9dcb407,USDaf-v2,Asymmetry,public_contest,2025-07-11,2025-07-21,10.0,70000.0,USDC,70000.0,False,False,314,31.4,4.486
+a0806644-7d91-457a-a08d-aee2db73f352,pike-tapio-monrepo,Pike Finance,public_contest,2025-07-14,2025-08-04,21.12,35000.0,USDC,35000.0,False,False,573,27.124,16.371
+523e1540-f8c3-45ae-9c5d-b6d35d3a326c,morpho-vaults-v2,Morpho,public_contest,2025-07-15,2025-07-25,10.23,200000.0,USDC,200000.0,False,False,866,84.66,4.33
+49b9e08d-4f8f-4103-b6e5-f5f43cf9faa1,Citrea,Citrea,public_contest,2025-07-18,2025-08-15,28.0,80000.0,USDC,80000.0,False,True,871,31.107,10.887
+ce181972-2b40-4047-8ee9-89ec43527686,Clementine,Citrea,public_contest,2025-08-11,2025-09-08,28.08,80000.0,USDC,80000.0,False,False,699,24.89,8.738
+cdce21ba-b787-4df4-9c56-b31d085388e7,kuru-contracts,Kuru Labs,public_contest,2025-08-18,2025-09-01,14.12,100000.0,USDC,100000.0,False,True,1147,81.204,11.47
+917d796b-48d0-41d0-bb40-be137b7d3db5,octant-v2-core,Octant,public_contest,2025-09-08,2025-09-29,21.0,60000.0,USDC,60000.0,False,True,664,31.619,11.067
+217af22c-957e-4c13-bc2a-1d5255e72309,mev-commit,Primev,public_contest,2025-09-15,2025-09-21,6.0,12000.0,USDC,12000.0,False,False,240,40.0,20.0
+2adf7150-27ba-4cba-86a2-bd8ea175e7da,makina-contracts,Makina Foundation,public_contest,2025-09-18,2025-10-15,27.08,100000.0,USDC,100000.0,False,True,161,5.945,1.61
+fe8e03b1-f8db-4698-8a21-44b3a862e434,Mento-V3,Mento Labs,public_contest,2025-11-26,2025-12-17,21.58,60000.0,USDC,60000.0,False,True,726,33.637,12.1
+eb93d215-e328-4d19-99ab-6c510acbb5aa,VII-Finance-Contracts,VII Finance,public_contest,2026-01-12,2026-01-26,14.0,69500.0,OP,,False,True,1274,91.0,
+9c6e38e2-535e-47b2-83ef-29df91fbb774,Royco Dawn,Royco,public_contest,2026-01-20,2026-01-27,7.0,50000.0,USDC,50000.0,False,True,262,37.429,5.24
+efb6f308-f13b-4110-aff8-0d67181608dd,Revert Finance,Revert Finance,public_contest,2026-03-18,2026-03-25,7.15,50000.0,USDC,50000.0,False,False,1248,174.647,24.96
+980a5976-9a7d-4014-b2e1-c248b4c6fa44,Reserve Governor,Reserve Protocol,public_contest,2026-04-30,2026-05-10,10.33,30000.0,USDC,30000.0,False,False,1465,141.774,48.833
+e55ee7b9-6c99-42f8-8338-39f3dd134ef3,Revert Finance - StableSwap Hooks,Revert Finance,public_contest,2026-04-30,2026-05-07,7.38,50000.0,USDC,50000.0,False,False,1412,191.458,28.24
+4679e0fa-85f7-4ea5-8827-ee6c70bdee6b,Morpho Midnight,Morpho,public_contest,2026-05-29,2026-06-12,14.33,400000.0,USDC,400000.0,False,True,3890,271.395,9.725
