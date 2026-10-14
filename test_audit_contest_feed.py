@@ -1,4 +1,5 @@
 """Offline tests for audit_contest_feed. No network is used."""
+import datetime as dt
 import json
 
 import audit_contest_feed as f
@@ -12,6 +13,15 @@ def test_snapshot_rows_are_well_formed():
         assert row["ai_findings"] in {
             "welcome", "if_validated", "allowed", "prohibited", "unknown",
         }
+
+
+def test_snapshot_dates_parse_and_order():
+    for row in f.SNAPSHOT:
+        starts, ends = row.get("starts"), row.get("ends")
+        if starts and ends:
+            assert dt.date.fromisoformat(starts) <= dt.date.fromisoformat(ends), row["name"]
+        if row["status"] == "live":
+            assert ends, f"live row without an end date: {row['name']}"
 
 
 def test_normalize_sherlock_empty():
@@ -64,6 +74,22 @@ def test_build_feed_merges_live_rows():
     feed = f.build_feed(include_live=True, fetch=fake)
     assert len(feed) == len(f.SNAPSHOT) + 1
     assert feed[-1]["name"] == "Live"
+    assert feed[-1]["days_left"] is None
+
+
+def test_build_feed_does_not_mutate_snapshot():
+    f.build_feed(include_live=False, today=dt.date(2026, 10, 14))
+    assert all("days_left" not in row for row in f.SNAPSHOT)
+
+
+def test_days_left():
+    today = dt.date(2026, 10, 14)
+    assert f.days_left({"ends": "2026-10-16"}, today) == 2
+    assert f.days_left({"ends": "2026-11-03T12:00:00Z"}, today) == 20
+    assert f.days_left({"ends": "2026-10-01"}, today) == -13
+    assert f.days_left({"ends": None}, today) is None
+    assert f.days_left({}, today) is None
+    assert f.days_left({"ends": "soon"}, today) is None
 
 
 def test_filter_no_fee_and_ai_ok():
@@ -76,6 +102,23 @@ def test_filter_no_fee_and_ai_ok():
     assert len(f.filter_feed(feed, ai_ok=True)) == 2
     kept = f.filter_feed(feed, no_fee=True, ai_ok=True)
     assert [r["platform"] for r in kept] == ["C"]
+
+
+def test_filter_ends_within():
+    feed = [
+        {"platform": "Soon", "days_left": 2},
+        {"platform": "Later", "days_left": 20},
+        {"platform": "Over", "days_left": -3},
+        {"platform": "Open", "days_left": None},
+    ]
+    assert [r["platform"] for r in f.filter_feed(feed, ends_within=7)] == ["Soon"]
+    assert [r["platform"] for r in f.filter_feed(feed, ends_within=30)] == ["Soon", "Later"]
+
+
+def test_ends_within_on_snapshot():
+    feed = f.build_feed(include_live=False, today=dt.date(2026, 10, 14))
+    soon = f.filter_feed(feed, ends_within=3)
+    assert [r["name"] for r in soon] == ["EverValue SCA DualDefense Audit"]
 
 
 def test_immunefi_marked_prohibited():

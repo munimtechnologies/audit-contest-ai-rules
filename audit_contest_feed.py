@@ -5,8 +5,8 @@ Combines two sources:
   * a live call to Sherlock's public classic-contest API
     (https://mainnet-contest.sherlock.xyz/contests?status=RUNNING), and
   * a hand-kept, dated snapshot of the other platforms (Cantina, HackenProof,
-    Immunefi, CodeHawks, Sherlock Audit Engine) whose live listings are behind
-    JavaScript or logins and have no open JSON API.
+    Immunefi, CodeHawks, Certora, Sherlock Audit Engine) whose live listings are
+    behind JavaScript or logins and have no open JSON API.
 
 No third-party dependencies; Python 3.8+. The network call is isolated in one
 function and injectable, so the tests run fully offline.
@@ -16,11 +16,12 @@ Made with AI agents working for MV2 of Munim, Inc.
 from __future__ import annotations
 
 import argparse
+import datetime as _dt
 import json
 import urllib.request
 from typing import Callable, Dict, List, Optional
 
-SNAPSHOT_DATE = "2026-10-13"
+SNAPSHOT_DATE = "2026-10-14"
 SHERLOCK_API = "https://mainnet-contest.sherlock.xyz/contests?status=RUNNING"
 
 # Dated snapshot of platforms without an open live API. Keep in sync with README.
@@ -32,6 +33,7 @@ SNAPSHOT: List[Dict] = [
         "name": "Engagements (invite-based)",
         "status": "invite_only",
         "prize_usd": None,
+        "starts": None,
         "ends": None,
         "url": "https://audit-engine.sherlock.xyz/",
         "ai_findings": "welcome",
@@ -44,6 +46,7 @@ SNAPSHOT: List[Dict] = [
         "name": "Revert v4lend",
         "status": "live",
         "prize_usd": 50000,
+        "starts": "2026-10-06",
         "ends": "2026-11-03",
         "url": "https://cantina.xyz/competitions",
         "ai_findings": "if_validated",
@@ -56,6 +59,7 @@ SNAPSHOT: List[Dict] = [
         "name": "EverValue SCA DualDefense Audit",
         "status": "live",
         "prize_usd": 2500,
+        "starts": "2026-10-02",
         "ends": "2026-10-16",
         "url": "https://hackenproof.com/audit-programs",
         "ai_findings": "unknown",
@@ -68,6 +72,7 @@ SNAPSHOT: List[Dict] = [
         "name": "Digital Oro International SCA DualDefense Audit",
         "status": "live",
         "prize_usd": 3000,
+        "starts": "2026-10-05",
         "ends": "2026-10-26",
         "url": "https://hackenproof.com/audit-programs",
         "ai_findings": "unknown",
@@ -80,6 +85,7 @@ SNAPSHOT: List[Dict] = [
         "name": "DreamX Marketplace & DEX SCA DualDefense Audit",
         "status": "live",
         "prize_usd": 2500,
+        "starts": "2026-10-12",
         "ends": "2026-10-26",
         "url": "https://hackenproof.com/audit-programs",
         "ai_findings": "unknown",
@@ -92,6 +98,7 @@ SNAPSHOT: List[Dict] = [
         "name": "Audit competitions",
         "status": "none_live",
         "prize_usd": None,
+        "starts": None,
         "ends": None,
         "url": "https://immunefi.com/audit-competition/",
         "ai_findings": "prohibited",
@@ -104,11 +111,25 @@ SNAPSHOT: List[Dict] = [
         "name": "Competitions",
         "status": "none_live",
         "prize_usd": None,
+        "starts": None,
         "ends": None,
         "url": "https://codehawks.cyfrin.io/",
         "ai_findings": "unknown",
         "kyc": "per contest",
         "payout": "USDC on ZKsync",
+        "fee": False,
+    },
+    {
+        "platform": "Certora",
+        "name": "Formal verification contests",
+        "status": "none_live",
+        "prize_usd": None,
+        "starts": None,
+        "ends": None,
+        "url": "https://www.certora.com/contests",
+        "ai_findings": "unknown",
+        "kyc": "per hosting platform",
+        "payout": "per hosting platform",
         "fee": False,
     },
 ]
@@ -141,6 +162,7 @@ def normalize_sherlock(payload: Dict) -> List[Dict]:
                 "name": name,
                 "status": "live",
                 "prize_usd": prize_usd,
+                "starts": item.get("starts_at") or item.get("startDate") or item.get("starts"),
                 "ends": item.get("ends_at") or item.get("endDate") or item.get("ends"),
                 "url": f"https://audits.sherlock.xyz/contests/{slug}" if slug else "https://audits.sherlock.xyz/contests",
                 "ai_findings": "unknown",
@@ -163,11 +185,31 @@ def fetch_sherlock(opener: Callable[[str], str] = _default_opener) -> List[Dict]
     return normalize_sherlock(payload)
 
 
+def days_left(record: Dict, today: _dt.date) -> Optional[int]:
+    """Whole days from today until the record's end date, or None if unknown.
+
+    Accepts "YYYY-MM-DD" or an ISO timestamp; anything unparseable gives None.
+    """
+    ends = record.get("ends")
+    if not ends:
+        return None
+    try:
+        end_date = _dt.date.fromisoformat(str(ends)[:10])
+    except ValueError:
+        return None
+    return (end_date - today).days
+
+
 def build_feed(
     include_live: bool = True,
     fetch: Callable[..., List[Dict]] = fetch_sherlock,
+    today: Optional[_dt.date] = None,
 ) -> List[Dict]:
-    """Return the merged feed: dated snapshot plus (optionally) live Sherlock rows."""
+    """Return the merged feed: dated snapshot plus (optionally) live Sherlock rows.
+
+    Each record gets a "days_left" field computed against today (UTC by default).
+    """
+    today = today or _dt.datetime.now(_dt.timezone.utc).date()
     feed: List[Dict] = []
     for row in SNAPSHOT:
         record = dict(row)
@@ -175,16 +217,33 @@ def build_feed(
         feed.append(record)
     if include_live:
         feed.extend(fetch())
+    for record in feed:
+        record["days_left"] = days_left(record, today)
     return feed
 
 
-def filter_feed(feed: List[Dict], no_fee: bool = False, ai_ok: bool = False) -> List[Dict]:
-    """Optionally drop fee-gated platforms and ones hostile to AI-made findings."""
+def filter_feed(
+    feed: List[Dict],
+    no_fee: bool = False,
+    ai_ok: bool = False,
+    ends_within: Optional[int] = None,
+) -> List[Dict]:
+    """Optionally drop fee-gated platforms, ones hostile to AI-made findings,
+    and (with ends_within) anything not ending in the next N days.
+
+    ends_within keeps only records with a known end date 0..N days away, so
+    finished contests and open-ended listings are dropped.
+    """
     result = feed
     if no_fee:
         result = [r for r in result if not r.get("fee")]
     if ai_ok:
         result = [r for r in result if r.get("ai_findings") != "prohibited"]
+    if ends_within is not None:
+        result = [
+            r for r in result
+            if r.get("days_left") is not None and 0 <= r["days_left"] <= ends_within
+        ]
     return result
 
 
@@ -193,10 +252,12 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--offline", action="store_true", help="snapshot only, no network call")
     parser.add_argument("--no-fee", action="store_true", help="drop platforms that require a fee to enter")
     parser.add_argument("--ai-ok", action="store_true", help="drop platforms that prohibit AI-made findings")
+    parser.add_argument("--ends-within", type=int, metavar="DAYS",
+                        help="keep only contests ending within DAYS days")
     args = parser.parse_args(argv)
 
     feed = build_feed(include_live=not args.offline)
-    feed = filter_feed(feed, no_fee=args.no_fee, ai_ok=args.ai_ok)
+    feed = filter_feed(feed, no_fee=args.no_fee, ai_ok=args.ai_ok, ends_within=args.ends_within)
     print(json.dumps(feed, indent=2))
     return 0
 
