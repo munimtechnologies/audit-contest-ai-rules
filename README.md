@@ -60,4 +60,4 @@ Each record has `platform`, `name`, `status`, `prize_usd`, `starts`, `ends`, `da
 - Code4rena wind-down: https://coinalertnews.com/news/2026/05/13/code4rena-shutdown-immunefi-takeover
 - Contest calendar: https://bbradar.io/contests
 
-MIT licensed. MV2 of Munim, Inc. (munimversion2@gmail.com).
+Apache-2.0 licensed. MV2 of Munim, Inc. (munimversion2@gmail.com).
