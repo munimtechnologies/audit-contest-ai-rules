@@ -1,0 +1,22 @@
+name,sponsor,url,start,end,prize_amount,prize_currency,pot_note,findings_submitted,status,checked_on
+uniswap-v4,Uniswap Labs,https://cantina.xyz/competitions/e2cf6906-ec8b-4c78-a585-74ac90615659,2024-09-06,2024-10-01,2350000,USD,,451,completed,2026-10-14
+Centrifuge,Centrifuge,https://cantina.xyz/competitions/a0a58a8b-247e-4203-b3cb-476ded9d5515,2024-08-19,2024-09-16,125000,USD,,315,completed,2026-10-14
+Omni Network,Omni Network,https://cantina.xyz/competitions/d139882b-2d3a-49ac-9849-9dccef584090,2024-10-14,2024-11-04,1000000,USD,,780,completed,2026-10-14
+story-protocol,Story,https://cantina.xyz/competitions/0561defa-eeb2-4a74-8884-5d7a873afa58,2024-12-14,2025-01-17,1000000,USD,,977,completed,2026-10-14
+daao-contracts,Daao,https://cantina.xyz/competitions/bd43bdd1-bc7f-473b-96c0-d35d37f3db33,2025-01-27,2025-01-31,12000,USD,,924,completed,2026-10-14
+size-solidity,Rheo,https://cantina.xyz/competitions/d88cb915-64c9-4488-8062-dd16ede7a4a0,2025-02-26,2025-03-12,15000,USD,,113,completed,2026-10-14
+reserve-index-dtfs-solana,Reserve Protocol,https://cantina.xyz/competitions/8b94becd-54e7-41cd-88e6-caae7becc76a,2025-03-03,2025-03-10,60000,USD,,179,completed,2026-10-14
+badger-ebtc-bsm,BadgerDAO,https://cantina.xyz/competitions/f57ffb47-0ded-4f04-bcec-ecd7d47fad58,2025-03-05,2025-03-12,20000,USD,,613,completed,2026-10-14
+eigenlayer-contracts,Eigenlayer,https://cantina.xyz/competitions/e7af4986-183d-4764-8bd2-1d6b47f87d99,2025-03-07,2025-03-28,2500000,USD,,790,completed,2026-10-14
+gamma-univ4-limit-orders,Gamma Strategies,https://cantina.xyz/competitions/aaf79192-6ea7-4b1e-aed7-3d23212dd0f1,2025-04-28,2025-05-05,20000,OP,,136,completed,2026-10-14
+stability-contracts,Stability DAO,https://cantina.xyz/competitions/e1c0be8d-0c3d-485a-a446-a582beb120b1,2025-05-23,2025-05-29,16000,USD,,253,completed,2026-10-14
+telcoin-network,Telcoin Association,https://cantina.xyz/competitions/26d5255b-6f68-46cf-be55-81dd565d9d16,2025-06-17,2025-07-15,110000,USD,,1313,completed,2026-10-14
+Avon-Contracts,Avon,https://cantina.xyz/competitions/708eecf5-a6a0-46c1-a949-277f7408decc,2025-10-06,2025-10-27,36000,USD,full pot only with a valid High; $10000 if Medium is the top severity,664,completed,2026-10-14
+VII-Finance-Contracts,VII Finance,https://cantina.xyz/competitions/eb93d215-e328-4d19-99ab-6c510acbb5aa,2026-01-12,2026-01-26,69500,OP,,1274,completed,2026-10-14
+Royco Dawn,Royco,https://cantina.xyz/competitions/9c6e38e2-535e-47b2-83ef-29df91fbb774,2026-01-20,2026-01-27,50000,USD,High findings only; KYC required,262,completed,2026-10-14
+Revert Finance,Revert Finance,https://cantina.xyz/competitions/efb6f308-f13b-4110-aff8-0d67181608dd,2026-03-18,2026-03-25,50000,USD,,1248,completed,2026-10-14
+Reserve Governor,Reserve Protocol,https://cantina.xyz/competitions/980a5976-9a7d-4014-b2e1-c248b4c6fa44,2026-04-30,2026-05-10,30000,USD,full pot only with a valid High; $10000 if Medium is the top severity,1465,completed,2026-10-14
+Revert Finance - StableSwap Hooks,Revert Finance,https://cantina.xyz/competitions/e55ee7b9-6c99-42f8-8338-39f3dd134ef3,2026-04-30,2026-05-07,50000,USD,,1412,completed,2026-10-14
+Morpho Midnight,Morpho,https://cantina.xyz/competitions/4679e0fa-85f7-4ea5-8827-ee6c70bdee6b,2026-05-29,2026-06-12,400000,USD,full pot only with a valid High; $150000 if Medium is the top severity,3890,completed,2026-10-14
+Royco Day,Royco,https://cantina.xyz/competitions/c3bbae37-a6f4-45b0-acd9-92dbe01301ce,2026-08-10,2026-08-19,30000,USD,full pot only with a valid High; $7500 if Medium is the top severity; KYC required,146,completed,2026-10-14
+Revert v4lend,Revert Finance,https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8,2026-10-06,2026-11-03,50000,USD,High and Medium only; count is a running total,1282,live,2026-10-14

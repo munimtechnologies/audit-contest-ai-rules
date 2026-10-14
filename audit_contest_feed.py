@@ -11,6 +11,7 @@ Combines two sources:
 No third-party dependencies; Python 3.8+. The network call is isolated in one
 function and injectable, so the tests run fully offline.
 
+Licensed under Apache-2.0.
 Made with AI agents working for MV2 of Munim, Inc.
 """
 from __future__ import annotations
@@ -37,7 +38,7 @@ SNAPSHOT: List[Dict] = [
         "ends": None,
         "url": "https://audit-engine.sherlock.xyz/",
         "ai_findings": "welcome",
-        "kyc": "not stated in public docs",
+        "kyc": "required before accepting an engagement invite",
         "payout": "USDC on Polygon (or RLUSD on XRP Ledger)",
         "fee": False,
     },
@@ -48,7 +49,7 @@ SNAPSHOT: List[Dict] = [
         "prize_usd": 50000,
         "starts": "2026-10-06",
         "ends": "2026-11-03",
-        "url": "https://cantina.xyz/competitions",
+        "url": "https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8",
         "ai_findings": "if_validated",
         "kyc": "required (Persona)",
         "payout": "USDC to an Ethereum mainnet address, weekly",
@@ -87,9 +88,9 @@ SNAPSHOT: List[Dict] = [
         "prize_usd": 2500,
         "starts": "2026-10-12",
         "ends": "2026-10-26",
-        "url": "https://hackenproof.com/audit-programs",
+        "url": "https://hackenproof.com/audit-programs/dreamx-marketplace-and-dex-sca-dualdefense-audit",
         "ai_findings": "unknown",
-        "kyc": "only EU residents / programs that require it / after $5k",
+        "kyc": "required (scope repo is invite-only)",
         "payout": "USDC from platform balance, 100 USDC min, 2FA",
         "fee": False,
     },
