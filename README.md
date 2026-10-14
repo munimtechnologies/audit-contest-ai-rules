@@ -1,21 +1,52 @@
 # Audit contest platforms: AI rules, KYC, payouts and crowding (checked 2026-10-14)
 
-A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, two small tools, and a hand-collected dataset on how crowded Cantina competitions have become. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
+A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and two datasets on how crowded audit contests have become: a census of every public Sherlock contest and a hand-collected sample of Cantina competitions. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
 
 ## Summary
 
 | Platform | Live on 2026-10-14 | AI-made findings | KYC | Payout |
 |---|---|---|---|---|
 | Sherlock Audit Engine | Engagements are invite-based (handpicked); apply when applications open. Not a public listing. On 14 Oct the dashboard showed "No audits are taking applications." | **Explicitly welcome**: "AI auditors" are a participant type next to human researchers | Required before accepting an engagement invite, plus a DocuSign NDA per engagement | USDC on Polygon (or RLUSD on XRP Ledger); needs at least 2 valid findings and a 20% valid ratio |
-| Sherlock contests (classic) | 0 active (API `status=RUNNING` returns `"total":0`) | No specific rule found | Varies | USDC |
-| Cantina | 1 competition: Revert v4lend, $50k USDC, 6 Oct to 3 Nov (1,282 findings submitted by 14 Oct); plus ongoing bounties | Allowed if validated: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Required (Persona) | USDC to an Ethereum mainnet address, paid weekly |
+| Sherlock contests (classic) | 0 active (API `status=RUNNING` returns `"total":0`). The last public contest in the API started on 20 Jul 2026 | No specific rule found | Required in 8 of the 9 contests that started in 2026 | USDC |
+| Cantina | 1 competition: Revert v4lend, $50k USDC, 6 Oct to 3 Nov (1,360 findings submitted by 14 Oct ~19:15 UTC); plus ongoing bounties | Allowed if validated: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Required (Persona) | USDC to an Ethereum mainnet address, paid weekly |
 | HackenProof | 3 DualDefense audits ($2.5k–$3k, Criticals only): EverValue (2–16 Oct), Digital Oro (5–26 Oct), DreamX (12–26 Oct; its scope repo is invite-only and needs KYC to request access) | No rule found in the docs or Code of Conduct | Only for EU tax residents, programs that require it, or after $5k in total earnings | USDC from your platform balance, 100 USDC minimum, 2FA required |
 | Immunefi | 0 audit competitions or boosts live (ENS ended 8 Oct) | **Prohibited**: its terms ban "submitting AI-generated/automated scanner bug reports" | Per program | Per program |
 | CodeHawks (Cyfrin) | Nothing live. BattleChain Confidence Pools (9–16 Jul 2026) was its first audit in over a year | No rule found | Per contest ("KYC Rewards" tag) | USDC on ZKsync |
 | Certora (formal verification) | Nothing live. All 15 listed contests have ended (pools $18k–$125.5k, "$800k+" paid in total); recent ones ran with Cantina | No rule found | Per hosting platform | Per hosting platform |
 | Code4rena | Winding down since 13 May 2026; Immunefi took over its clients | n/a | n/a | n/a |
 
-## How crowded are Cantina competitions? (new in v0.3.0)
+## Every Sherlock contest, 2022 to 2026 (new in v0.4.0)
+
+Sherlock's public contest API (`mainnet-contest.sherlock.xyz/contests`, the JSON its own site reads) carries, for every contest, `num_competition_issues`: the number of issues submitted, valid or not. We downloaded all 301 public records on 2026-10-14 with `fetch_sherlock.py` (read-only GETs, one at a time, paused) and kept contest-level facts only: dates, pot, token, code size, the KYC flag and the issue count. No researcher or judge names. `data/sherlock_contests.jsonl` has every record; `data/sherlock_contests.csv` has one row per finished contest with a count (259 contests, 86,058 issues in total, starting 2022-08-29 to 2026-07-20; the other 42 records are finished contests whose count is 0 or missing). `sherlock_crowding.py` computes everything below, `data/sherlock_summary.json` is its output, and `test_sherlock_crowding.py` tests it offline.
+
+| Started in | Contests | Median issues per contest day | Median issues per $1k of pot (stablecoin pots) | Median issues per 1,000 nSLOC | Issues submitted that year (all contests) |
+|---|---|---|---|---|---|
+| 2022 | 26 | 18.5 | 3.70 | (no nSLOC published) | 3,540 |
+| 2023 | 75 | 22.4 | 4.50 | 115 (60 contests) | 17,545 |
+| 2024 | 102 | 25.6 | 4.49 (99) | 135 | 23,229 |
+| 2025 | 47 | 55.3 | 10.75 (45) | 355 (46) | 27,174 |
+| 2026 | 9 | 142.0 | 23.24 | 632 (8) | 14,570 (Jan–Jul) |
+
+- **Per contest, submissions rose about 5.5× from 2024 to 2026** (25.6 → 142 a day; 4.5 → 23.2 per $1k of pot). It is not because contests got shorter or cheaper: the median contest ran 6 days in 2024 and 10 in 2026, and the median pot rose from $30k to $60k. This matches the Cantina sample below almost exactly (23 → 38 → 147 a day for 2024 → 2025 → 2026).
+- **But most of the per-contest rise comes from fewer contests, not more submissions.** Sherlock ran 102 public contests that started in 2024, 47 in 2025 and 9 in 2026 (35 in the first quarter of 2024, 2 in the third quarter of 2026), while the total submitted across all of them stayed at roughly 4,500–7,000 a quarter (one 10,636 peak in 2025 Q3). In 2024 Q1, 35 contests drew 5,315 issues; in 2026 Q2, 3 contests drew 5,504. The same flow of submissions now lands on a handful of contests. What these numbers can't show is whether each submitter now sends more findings (for example with AI tools), or whether more people are submitting. Public counts can't separate the two.
+- **KYC vs no KYC, same year:** in 2025, contests with KYC had a lower median (34.0 a day, n=20) than those without (69.3, n=27). This gap comes from the type of contest, not from KYC. Many 2025 KYC contests were long "Best Efforts" or bug-bounty-style events. Among ordinary "Public" contests that started in 2025, KYC contests had a median of 124.2 a day (n=9) and non-KYC contests 102.0 (n=17), so we found no sign that KYC reduces crowding. (Computed by hand from `data/sherlock_contests.csv`: filter `type_label == "Public"` and a 2025 `start`.) By 2026, 8 of 9 contests required KYC, so that year allows no comparison.
+- **By Sherlock's own type label** (all years): "Public" 28.2 a day (n=198), "Public Best Efforts" 21.6 (n=50), "Public Bug Bounty" 40.2 (n=11). The bug-bounty-style events are long, large-pot attackathons (XRP Ledger, Aave V4, Fusaka, Fluid DEX v2) and all date from 2025–2026, so their higher median mostly reflects the year.
+- **Quarterly series:** `python sherlock_crowding.py --in data/sherlock_contests.jsonl` prints contests, issues and median issues per day for each quarter (it is also in `data/sherlock_summary.json`).
+
+**Limits.** Counts include invalid, duplicate and spam submissions. Sherlock doesn't publish valid counts in the same field, so this measures crowding, not quality. Private contests and Sherlock Audit Engine engagements aren't in the public API, so "fewer contests" means fewer *public* contests: some work may have moved to private formats this data can't see. The type labels mix classic contests with bug-bounty-style events. Older contests report nSLOC as 0 with an empty scope, and those rows are left out of the per-kSLOC figures. Pots in non-stablecoin tokens (two OP pots in 2025) are left out of the per-dollar figures. Pots are Sherlock's headline `rewards` totals, which include judging and lead-auditor pay; some pay in full only if a High is found. Contest length matters, because long contests show lower per-day rates. 2026 has only 9 contests, so its medians are rough. The KYC split by type above was computed by hand, not by the script.
+
+Spot checks against the live API on 2026-10-14: contest 36 (Cooler, Jan 2023) 342 issues; contest 225 (PoolTogether: The Prize Layer for DeFi, May 2024) 163 issues; contest 1279 (Metric, Jul 2026) 3,307 issues. All three matched the dataset, as did their dates and pots.
+
+Reproduce:
+
+```
+python fetch_sherlock.py --out data/sherlock_contests.jsonl     # ~360 polite GETs, a few minutes
+python sherlock_crowding.py --in data/sherlock_contests.jsonl --out-dir out
+```
+
+A full census of every Cantina competition (from Cantina's public competition list, which also carries a findings count) is planned for the next release.
+
+## How crowded are Cantina competitions? (v0.3.0 sample)
 
 Each Cantina competition page shows a running "Findings submitted" count. We could not find this collected anywhere, so `data/cantina_competitions.csv` records it for 21 competitions (Aug 2024 to the live Revert v4lend), each read off its public page on 14 Oct 2026, together with the dates and the headline prize. `crowding.py` computes the rates below, and `test_crowding.py` pins every number quoted here.
 
@@ -26,7 +57,7 @@ Each Cantina competition page shows a running "Findings submitted" count. We cou
 | 2026 | 7 | 146.5 | 146.5 (5 contests) |
 
 - **Submissions per day roughly quadrupled from 2025 to 2026**, and the jump holds among the small pots too. Three $30k–$50k contests in 2026 drew 1,248–1,465 findings in 7–10 days. The live Revert v4lend contest was running at 160 a day after 8 days.
-- **The two 2026 exceptions are the two Royco contests** (37 and 16 per day). Both required KYC to join; Dawn paid for Highs only, and Day's pot was $7.5k unless a High was found. That is a hint, not a result: two contests are too few to separate the causes, and v4lend also requires KYC yet runs at 160 a day.
+- **The two 2026 exceptions are the two Royco contests** (37 and 16 per day). Both required KYC to join. Dawn paid for Highs only, and Day's pot was $7.5k unless a High was found. That's a hint, not a result: two contests are too few to separate the causes, and v4lend also requires KYC yet runs at 160 a day. The Sherlock census above found no KYC effect among comparable contests.
 - **Payouts are concentrated.** In Revert Finance's March 2026 competition (1,248 findings), 59 researchers were paid. The 8 with a rarely duplicated Medium took 82.7% of the $50k, about $5,100–$5,300 each. The 46 whose single Medium was widely duplicated got $154 each. In Revert's StableSwap Hooks competition (1,412 findings), the top 10 of 138 paid researchers took 76.1%. `data/revert_payout_tiers.csv` has the tiers, without researcher names.
 - **What this means in practice:** in a 2026 Cantina contest, almost all of the money goes to findings few others submitted. A widely found bug pays close to nothing, however valid it is.
 
@@ -55,17 +86,20 @@ python audit_contest_feed.py --ends-within 7    # only contests ending in the ne
 
 Each record has `platform`, `name`, `status`, `prize_usd`, `starts`, `ends`, `days_left`, `url`, `ai_findings`, `kyc`, `payout`, `source`. `days_left` is computed against today's UTC date (`null` when there is no end date). The snapshot rows are dated and marked `"source": "snapshot:2026-10-14"`; the Sherlock classic rows come live from the API and are marked `"source": "sherlock-api"`.
 
-## Tool: `crowding.py`
+## Tools: `crowding.py`, `sherlock_crowding.py`, `fetch_sherlock.py`
 
 ```
-python crowding.py           # JSON summary: medians by year, the live contest, payout concentration
-python crowding.py --table   # one line per contest: findings, days, per day, per $1k
+python crowding.py           # Cantina sample: medians by year, the live contest, payout concentration
+python crowding.py --table   # one line per Cantina contest: findings, days, per day, per $1k
+python fetch_sherlock.py --out data/sherlock_contests.jsonl            # refresh the Sherlock census
+python sherlock_crowding.py --in data/sherlock_contests.jsonl          # Sherlock census summary (JSON)
 ```
 
 Run all tests with `python -m pytest` (no network needed).
 
 ## Sources
 
+- Sherlock contest API (census source): https://mainnet-contest.sherlock.xyz/contests and https://mainnet-contest.sherlock.xyz/contests/<id>
 - Cantina competitions: https://cantina.xyz/competitions (each row of `data/cantina_competitions.csv` links its own page)
 - Revert Finance leaderboards: https://cantina.xyz/competitions/efb6f308-f13b-4110-aff8-0d67181608dd/leaderboard and https://cantina.xyz/competitions/e55ee7b9-6c99-42f8-8338-39f3dd134ef3/leaderboard
 - Cantina severity and AI rule: https://docs.cantina.security/standards/severity/competition

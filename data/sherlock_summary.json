@@ -1,0 +1,305 @@
+{
+  "records": 301,
+  "finished_with_counts": 259,
+  "issues_total": 86058,
+  "first_start": "2022-08-29",
+  "last_start": "2026-07-20",
+  "per_day_by_year": {
+    "2022": {
+      "n": 26,
+      "median": 18.5
+    },
+    "2023": {
+      "n": 75,
+      "median": 22.43
+    },
+    "2024": {
+      "n": 102,
+      "median": 25.59
+    },
+    "2025": {
+      "n": 47,
+      "median": 55.33
+    },
+    "2026": {
+      "n": 9,
+      "median": 142.0
+    }
+  },
+  "issues_by_year": {
+    "2022": {
+      "n": 26,
+      "median": 133.5
+    },
+    "2023": {
+      "n": 75,
+      "median": 189
+    },
+    "2024": {
+      "n": 102,
+      "median": 163.5
+    },
+    "2025": {
+      "n": 47,
+      "median": 572
+    },
+    "2026": {
+      "n": 9,
+      "median": 1220
+    }
+  },
+  "per_1k_usd_by_year": {
+    "2022": {
+      "n": 26,
+      "median": 3.7
+    },
+    "2023": {
+      "n": 75,
+      "median": 4.5
+    },
+    "2024": {
+      "n": 99,
+      "median": 4.49
+    },
+    "2025": {
+      "n": 45,
+      "median": 10.75
+    },
+    "2026": {
+      "n": 9,
+      "median": 23.24
+    }
+  },
+  "per_ksloc_by_year": {
+    "2023": {
+      "n": 60,
+      "median": 114.94
+    },
+    "2024": {
+      "n": 102,
+      "median": 135.41
+    },
+    "2025": {
+      "n": 46,
+      "median": 355.47
+    },
+    "2026": {
+      "n": 8,
+      "median": 632.23
+    }
+  },
+  "pot_usd_by_year": {
+    "2022": {
+      "n": 26,
+      "median": 35000.0
+    },
+    "2023": {
+      "n": 75,
+      "median": 36400.0
+    },
+    "2024": {
+      "n": 99,
+      "median": 30000.0
+    },
+    "2025": {
+      "n": 45,
+      "median": 50000.0
+    },
+    "2026": {
+      "n": 9,
+      "median": 60000.0
+    }
+  },
+  "days_by_year": {
+    "2022": {
+      "n": 26,
+      "median": 7.0
+    },
+    "2023": {
+      "n": 75,
+      "median": 7.0
+    },
+    "2024": {
+      "n": 102,
+      "median": 6.0
+    },
+    "2025": {
+      "n": 47,
+      "median": 8.0
+    },
+    "2026": {
+      "n": 9,
+      "median": 10.0
+    }
+  },
+  "kyc_within_year": {
+    "2022": {
+      "kyc": {
+        "n": 0,
+        "median": null
+      },
+      "no_kyc": {
+        "n": 26,
+        "median": 18.5
+      }
+    },
+    "2023": {
+      "kyc": {
+        "n": 0,
+        "median": null
+      },
+      "no_kyc": {
+        "n": 75,
+        "median": 22.43
+      }
+    },
+    "2024": {
+      "kyc": {
+        "n": 1,
+        "median": 11.26
+      },
+      "no_kyc": {
+        "n": 101,
+        "median": 26.8
+      }
+    },
+    "2025": {
+      "kyc": {
+        "n": 20,
+        "median": 33.98
+      },
+      "no_kyc": {
+        "n": 27,
+        "median": 69.33
+      }
+    },
+    "2026": {
+      "kyc": {
+        "n": 8,
+        "median": 149.74
+      },
+      "no_kyc": {
+        "n": 1,
+        "median": 133.33
+      }
+    }
+  },
+  "per_day_by_type": {
+    "Public": {
+      "n": 198,
+      "median": 28.15
+    },
+    "Public Best Efforts": {
+      "n": 50,
+      "median": 21.58
+    },
+    "Public Bug Bounty": {
+      "n": 11,
+      "median": 40.17
+    }
+  },
+  "quarterly": [
+    {
+      "quarter": "2022Q3",
+      "contests": 5,
+      "issues": 811,
+      "median_per_day": 10.93
+    },
+    {
+      "quarter": "2022Q4",
+      "contests": 21,
+      "issues": 2729,
+      "median_per_day": 18.8
+    },
+    {
+      "quarter": "2023Q1",
+      "contests": 28,
+      "issues": 5888,
+      "median_per_day": 22.86
+    },
+    {
+      "quarter": "2023Q2",
+      "contests": 21,
+      "issues": 6235,
+      "median_per_day": 29.6
+    },
+    {
+      "quarter": "2023Q3",
+      "contests": 14,
+      "issues": 3593,
+      "median_per_day": 21.74
+    },
+    {
+      "quarter": "2023Q4",
+      "contests": 12,
+      "issues": 1829,
+      "median_per_day": 16.54
+    },
+    {
+      "quarter": "2024Q1",
+      "contests": 35,
+      "issues": 5315,
+      "median_per_day": 24.38
+    },
+    {
+      "quarter": "2024Q2",
+      "contests": 24,
+      "issues": 4453,
+      "median_per_day": 17.45
+    },
+    {
+      "quarter": "2024Q3",
+      "contests": 20,
+      "issues": 6380,
+      "median_per_day": 28.07
+    },
+    {
+      "quarter": "2024Q4",
+      "contests": 23,
+      "issues": 7081,
+      "median_per_day": 37.6
+    },
+    {
+      "quarter": "2025Q1",
+      "contests": 12,
+      "issues": 5428,
+      "median_per_day": 46.5
+    },
+    {
+      "quarter": "2025Q2",
+      "contests": 11,
+      "issues": 5437,
+      "median_per_day": 55.33
+    },
+    {
+      "quarter": "2025Q3",
+      "contests": 17,
+      "issues": 10636,
+      "median_per_day": 50.75
+    },
+    {
+      "quarter": "2025Q4",
+      "contests": 7,
+      "issues": 5673,
+      "median_per_day": 124.2
+    },
+    {
+      "quarter": "2026Q1",
+      "contests": 4,
+      "issues": 4559,
+      "median_per_day": 114.75
+    },
+    {
+      "quarter": "2026Q2",
+      "contests": 3,
+      "issues": 5504,
+      "median_per_day": 226.56
+    },
+    {
+      "quarter": "2026Q3",
+      "contests": 2,
+      "issues": 4507,
+      "median_per_day": 145.4
+    }
+  ]
+}
