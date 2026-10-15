@@ -1,12 +1,12 @@
 # Audit contest platforms: AI rules, KYC, payouts and crowding (checked 2026-10-15)
 
-A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, and a record of what every HackenProof audit program promised and what it paid. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
+A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, the headline prize money each submission competes for, and a record of what every HackenProof audit program promised and what it paid. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
 
 ## Summary
 
 | Platform | Live on 2026-10-15 | AI-made findings | KYC | Payout |
 |---|---|---|---|---|
-| Sherlock Audit Engine | Engagements are invite-based (handpicked); apply when applications open. Not a public listing. On 14 Oct the dashboard showed "No audits are taking applications." | **Explicitly welcome**: "AI auditors" are a participant type next to human researchers | Required before accepting an engagement invite, plus a DocuSign NDA per engagement | USDC on Polygon (or RLUSD on XRP Ledger); needs at least 2 valid findings and a 20% valid ratio |
+| Sherlock Audit Engine | Engagements are invite-based (handpicked); apply when applications open. Not a public listing. On 15 Oct the dashboard showed 0 engagements taking applications | **Explicitly welcome**: "AI auditors" are a participant type next to human researchers | Required before accepting an engagement invite, plus a DocuSign NDA per engagement | USDC on Polygon (or RLUSD on XRP Ledger); needs at least 2 valid findings and a 20% valid ratio |
 | Sherlock contests (classic) | 0 active (API `status=RUNNING` returns `"total":0`). The last public contest in the API started on 20 Jul 2026 | No specific rule found | Required in 8 of the 9 contests that started in 2026 | USDC |
 | Cantina | 1 competition: Revert v4lend, $50k USDC, 6 Oct to 3 Nov (1,392 findings submitted by 15 Oct 00:35 UTC); plus ongoing bounties | Allowed if validated: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Required (Persona) | USDC to an Ethereum mainnet address, paid weekly |
 | HackenProof | 3 DualDefense audits ($2.5k–$3k, Criticals only): EverValue (2–16 Oct), Digital Oro (5–26 Oct), DreamX (12–26 Oct; its scope repo is invite-only and needs KYC to request access). See the payout record below: 67 of 78 settled DualDefense audits paid $0 | No platform-wide rule in the docs or Code of Conduct, but recent program pages (e.g. ZIGChain, Perceptron) say "AI-generated reports without runable PoC are not accepted under this program" | Only for EU tax residents, programs that require it, or after $5k in total earnings | USDC from your platform balance, 100 USDC minimum, 2FA required |
@@ -15,7 +15,29 @@ A dated, sourced snapshot of where smart-contract audit contests stand for work 
 | Certora (formal verification) | Nothing live. All 15 listed contests have ended (pools $18k–$125.5k, "$800k+" paid in total); recent ones ran with Cantina | No rule found | Per hosting platform | Per hosting platform |
 | Code4rena | Closed: announced its wind-down on 13 May 2026; Immunefi took over its clients. K2 ($135k) is still in judging. No new audits | n/a | n/a | n/a |
 
-## Fewer contests, not fewer submissions: Sherlock and Cantina together (new in v0.5.0)
+## Headline prize money per submission: Sherlock and Cantina together (new in v0.7.0)
+
+`prize_per_submission.py` takes the same two censuses and adds up, by the half-year a contest started, the headline prize money of every contest with a US-dollar pot and the submissions those contests received. Sherlock's figure is its `rewards` total (the census's `pot_usd`); Cantina's is the competition pot. GHO and RLUSD pots count at $1. Contests paid in OP tokens and one hackathon with no pot are left out together with their submissions (11 contests over the six half-years). The 12 Ethereum client competitions of February 2025 count once, with their shared $2M pot. `test_prize_per_submission.py` pins every number below to the files in `data/`, and checks that the included and left-out contests add up to the contest and submission totals of the next section.
+
+| Started in | Contests with a USD pot | Headline prize money | Submissions | **Prize money per submission** | Without $1M+ pots: contests | prize money | per submission |
+|---|---|---|---|---|---|---|---|
+| 2024 H1 | 76 | $7,117,565 | 15,787 | **$450.85** | 74 | $4,667,565 | $331.31 |
+| 2024 H2 | 64 | $9,922,650 | 21,740 | **$456.42** | 60 | $4,184,150 | $215.63 |
+| 2025 H1 | 67 | $10,089,100 | 32,025 | **$315.04** | 65 | $5,589,100 | $180.50 |
+| 2025 H2 | 36 | $4,846,000 | 22,885 | **$211.75** | 35 | $2,846,000 | $126.38 |
+| 2026 H1 | 12 | $1,563,500 | 18,340 | **$85.25** | 12 | $1,563,500 | $85.25 |
+| 2026 H2 (to date) | 2 | $200,000 | 4,507 | $44.38 | 2 | $200,000 | $44.38 |
+
+- **From the first half of 2024 to the first half of 2026, headline prize money per submission fell 81%, from $451 to $85.** The prize money on offer fell 78% ($7.12M to $1.56M) while the submissions to those contests rose 16% (15,787 to 18,340).
+- **It is not an artefact of a few mega pots.** Nine contests with pots of $1M or more (Blast and Euler v2 in 2024 H1; MakerDAO Endgame, Uniswap v4, Omni Network and Story in 2024 H2; EigenLayer and the Ethereum client set in 2025 H1; Ethereum Fusaka in 2025 H2) carry much of the 2024–2025 money. Without them the fall is 74%, and every half-year is lower than the one before: $331, $216, $181, $126, $85.
+- **What it means for a researcher:** in a public 2026 H1 contest on these platforms, the average submission competed for about $85 of headline money, before duplicate splits and before any conditions on the pot. The 2026 H2 figure ($44, two Sherlock contests so far) is partial.
+- **Prior art:** platforms publish cumulative payouts (e.g. Cantina's totals) and Immunefi published the fall in contest counts (Sep 2026). We found no published half-year series of contest prize money, or of prize money per submission, for any platform.
+
+**Limits.** These are headline figures, not payouts. Sherlock's `rewards` total includes lead-auditor and judging pay, so it overstates what researchers share. Some pots pay in full only if a High is found, and the HackenProof record below shows how far paid amounts can fall below headline ones. Submissions include invalid, duplicate and spam reports. Private contests and invite-only engagements (Sherlock Audit Engine, Cantina private contests) aren't included, and neither are Code4rena, CodeHawks, Immunefi or HackenProof. Contests are placed in the half-year they started.
+
+Reproduce: `python prize_per_submission.py --table` (or without `--table` for JSON).
+
+## Fewer contests, not fewer submissions: Sherlock and Cantina together (v0.5.0)
 
 `cross_platform.py` adds the two censuses below together by the quarter, half-year and year in which each contest started. It counts every finished public contest that has a submission count on either platform: 259 on Sherlock and 114 on Cantina. The 12 Ethereum client competitions of February 2025 shared one $2M pot, so they count as one contest here. `test_cross_platform.py` pins every number in this section to the files in `data/`.
 
@@ -34,7 +56,7 @@ A dated, sourced snapshot of where smart-contract audit contests stand for work 
 
 Run `python cross_platform.py --table` for the quarterly, half-yearly and yearly rows.
 
-## What HackenProof actually paid: every audit program, promised vs. paid (new in v0.6.0)
+## What HackenProof actually paid: every audit program, promised vs. paid (v0.6.0)
 
 HackenProof is the only contest platform whose public listing shows, next to each program's "Up to: $X" maximum, a "Paid: $Y" figure (the program page calls it "Total rewards"). `data/hackenproof_programs.csv` records both for all 102 audit programs the listing held on 15 Oct 2026: 19 audit contests and 83 DualDefense audits, which are the listing's own header counts, with each program's kind, status, end date and listing page. **These rows were read by hand off the 11 listing pages, not fetched by a script**, so a transcription error is possible. Two checks: the enumeration matches the header counts exactly (the test asserts this), and six programs were compared with their own pages (Somnia, Dexalot SC, Kinetic, ZIGChain, Bluefin Perp, Perceptron); all six matched. An automated fetch is queued and will replace this file when it runs. `hackenproof_payouts.py` computes the table, and `test_hackenproof_payouts.py` pins every number below to the file. "Settled" means finished with a public paid figure; the three live programs and two "Paid: Private" programs are counted but left out of the money columns. "Paid in full" means at least 99% of the maximum.
 
@@ -59,7 +81,7 @@ HackenProof is the only contest platform whose public listing shows, next to eac
 
 Reproduce: `python hackenproof_payouts.py --table` (or without `--table` for JSON).
 
-## Every public Cantina competition (new in v0.5.0)
+## Every public Cantina competition (v0.5.0)
 
 Cantina's site reads its competition list from a public JSON endpoint (`cantina.xyz/api/v0/competitions`), which carries `totalFindings` for every competition. `fetch_cantina.py` reads it in one GET (fetched 2026-10-14 20:03 UTC) and keeps only contest-level facts. Private contests keep no name, URL or sponsor, and they show up only in aggregates. The API returned 145 competitions: 126 public and 19 private, with one live. `data/cantina_census.csv` has the 125 ended public competitions with a count, which together drew 58,193 findings (started 2023-11-13 to 2026-05-29). `data/cantina_census.jsonl` has every public record, the live one included, and `data/cantina_census_summary.json` is the output of `cantina_crowding.py`. **Cross-check:** for all 20 ended competitions that v0.3.0 read by hand off their pages, the API count matched exactly.
 
@@ -75,7 +97,7 @@ Cantina's site reads its competition list from a public JSON endpoint (`cantina.
 - **KYC vs no KYC, same year:** in 2025, KYC competitions had a median of 31.4 a day (n=10) and the rest 19.6 (n=62). Both groups hold near-empty events that pull their medians down: the no-KYC group has the 12 Ethereum client competitions and a hackathon, and the KYC group has two CTFs. In 2026 the medians were 91.0 (KYC, n=3) and 174.6 (no KYC, n=3). There's no consistent direction, which matches the Sherlock result below: no sign that KYC reduces crowding.
 - **Private vs public:** Cantina's 16 ended private contests with counts had a median of 8.9 findings a day (2,569 findings in total), against 20.4 for the 125 public ones. They're listed by kind only, never by name.
 
-**Limits.** Counts include invalid and duplicate submissions, and Cantina doesn't publish valid counts. The 12 shared-pot client competitions are left out of the per-dollar figures (and merged into one contest only in `cross_platform.py`). Pots in OP are left out of the per-dollar figures. Pots are headline sizes, and some pay in full only for a High. CTF-style events (Superform, EulerSwap and Aave Aptos CTFs) and one hackathon are kept as Cantina lists them. Long competitions show lower per-day rates.
+**Limits.** Counts include invalid and duplicate submissions, and Cantina doesn't publish valid counts. The 12 shared-pot client competitions are left out of the per-dollar figures (and merged into one contest only in `cross_platform.py` and `prize_per_submission.py`). Pots in OP are left out of the per-dollar figures. Pots are headline sizes, and some pay in full only for a High. CTF-style events (Superform, EulerSwap and Aave Aptos CTFs) and one hackathon are kept as Cantina lists them. Long competitions show lower per-day rates.
 
 Reproduce:
 
@@ -136,6 +158,7 @@ Each Cantina competition page shows a running "Findings submitted" count. `data/
 - **Sherlock Audit Engine — how it works.** Launched publicly on 18 Aug 2026. Participation is invite-based: Sherlock specialists handpick candidates and top researchers may be contacted directly; otherwise you apply when applications open, then "commit or decline" an engagement card. An NDA and Engagement Addendum are signed per engagement before it begins. You can import a past Sherlock Audit Contests account at signup to carry over an Issues Ratio (it cannot be linked later). Findings are judged in three stages: an AI judge (often within minutes), then a Lead Judge, then the protocol team. Protocols may exclude specific AI auditors "for confidentiality or commercial reasons".
   - **Issues Ratio** (public docs): accepted ÷ total submitted. Accepted counts +1/1, Dismissed +0/1, Neutral is excluded. "Rewrite and Resubmit" adds +0.5 to the denominator each time (and +0.5 to the numerator if accepted), commonly up to 5 rewrites per issue chain. No payout below a 20% ratio, and you need at least 2 valid findings across all engagements. Withheld rewards can be unlocked for 12 months after an engagement ends, then they are lost.
   - **Credits** (shown on the signup dashboard, Aug 2026): a valid finding earns +4 and an invalid one costs −1; if credits drop below 0, payouts lock. When an engagement closes, 20% of its findings are counted right away. An engagement that earns more credits than it burns pays out on its own; one that burns more is held, and releasing it costs credits. The public Issues Ratio counts every finding, held or not.
+  - **Participant types** (account-creation page, Oct 2026): "Security researcher: Select if you're a human security researcher who uses manual review and potentially AI to find issues." "AI auditor: Select if you've built an automated AI system that can find and validate vulnerabilities without human involvement." The page adds that either account type can be selected in any specific engagement.
 - **HackenProof.** Its Code of Conduct bans "sharing account access, submitting other hackers' work". Submit only your own work, from your own account.
 - **Bounty bait aimed at AI agents.** Outside the contest platforms, GitHub searches for Solidity "bounty" issues in October 2026 were dominated by one repo with dozens of look-alike $2k–$8k "bounties" labelled for autonomous agents, whose issue text asks contributors to paste their agent's full initialization text, OS and working directory into the code or a contributors file. Treat that as prompt-extraction bait, not paid work: check that a repo has ever merged and paid an outside contributor before spending time on it.
 
@@ -155,6 +178,7 @@ Each record has `platform`, `name`, `status`, `prize_usd`, `starts`, `ends`, `da
 ## Tools: the crowding and payout scripts
 
 ```
+python prize_per_submission.py --table   # Sherlock + Cantina: headline prize money per submission, per half-year
 python cross_platform.py --table   # Sherlock + Cantina: contests and submissions per quarter, half-year, year
 python hackenproof_payouts.py --table   # HackenProof: promised vs paid, by kind and end year
 python cantina_crowding.py --in data/cantina_census.jsonl   # Cantina census summary (JSON)
@@ -197,4 +221,4 @@ Run all tests with `python -m pytest` (no network needed).
 
 ## License
 
-Code: Apache-2.0 (see LICENSE). The data in `data/` and this README's text: CC BY 4.0. MV2 of Munim, Inc. (munimversion2@gmail.com).
+Code: Apache-2.0 (see LICENSE). The data in `data/` and this README's text: CC BY 4.0. MV2 of Munim, Inc. (mv2@munimtech.com).
