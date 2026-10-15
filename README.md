@@ -1,19 +1,19 @@
-# Audit contest platforms: AI rules, KYC, payouts and crowding (checked 2026-10-14)
+# Audit contest platforms: AI rules, KYC, payouts and crowding (checked 2026-10-15)
 
-A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, and a combined series built from the two. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
+A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, and a record of what every HackenProof audit program promised and what it paid. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
 
 ## Summary
 
-| Platform | Live on 2026-10-14 | AI-made findings | KYC | Payout |
+| Platform | Live on 2026-10-15 | AI-made findings | KYC | Payout |
 |---|---|---|---|---|
 | Sherlock Audit Engine | Engagements are invite-based (handpicked); apply when applications open. Not a public listing. On 14 Oct the dashboard showed "No audits are taking applications." | **Explicitly welcome**: "AI auditors" are a participant type next to human researchers | Required before accepting an engagement invite, plus a DocuSign NDA per engagement | USDC on Polygon (or RLUSD on XRP Ledger); needs at least 2 valid findings and a 20% valid ratio |
 | Sherlock contests (classic) | 0 active (API `status=RUNNING` returns `"total":0`). The last public contest in the API started on 20 Jul 2026 | No specific rule found | Required in 8 of the 9 contests that started in 2026 | USDC |
-| Cantina | 1 competition: Revert v4lend, $50k USDC, 6 Oct to 3 Nov (1,369 findings submitted by 14 Oct 20:03 UTC); plus ongoing bounties | Allowed if validated: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Required (Persona) | USDC to an Ethereum mainnet address, paid weekly |
-| HackenProof | 3 DualDefense audits ($2.5k–$3k, Criticals only): EverValue (2–16 Oct), Digital Oro (5–26 Oct), DreamX (12–26 Oct; its scope repo is invite-only and needs KYC to request access) | No rule found in the docs or Code of Conduct | Only for EU tax residents, programs that require it, or after $5k in total earnings | USDC from your platform balance, 100 USDC minimum, 2FA required |
-| Immunefi | 0 audit competitions or boosts live (ENS ended 8 Oct) | **Prohibited**: its terms ban "submitting AI-generated/automated scanner bug reports" | Per program | Per program |
+| Cantina | 1 competition: Revert v4lend, $50k USDC, 6 Oct to 3 Nov (1,392 findings submitted by 15 Oct 00:35 UTC); plus ongoing bounties | Allowed if validated: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Required (Persona) | USDC to an Ethereum mainnet address, paid weekly |
+| HackenProof | 3 DualDefense audits ($2.5k–$3k, Criticals only): EverValue (2–16 Oct), Digital Oro (5–26 Oct), DreamX (12–26 Oct; its scope repo is invite-only and needs KYC to request access). See the payout record below: 67 of 78 settled DualDefense audits paid $0 | No platform-wide rule in the docs or Code of Conduct, but recent program pages (e.g. ZIGChain, Perceptron) say "AI-generated reports without runable PoC are not accepted under this program" | Only for EU tax residents, programs that require it, or after $5k in total earnings | USDC from your platform balance, 100 USDC minimum, 2FA required |
+| Immunefi | 0 audit competitions or boosts live (ENS ended 8 Oct; all 62 listed competitions are finished) | **Prohibited**: its terms ban "submitting AI-generated/automated scanner bug reports" | Per program | Per program |
 | CodeHawks (Cyfrin) | Nothing live. BattleChain Confidence Pools (9–16 Jul 2026) was its first audit in over a year | No rule found | Per contest ("KYC Rewards" tag) | USDC on ZKsync |
 | Certora (formal verification) | Nothing live. All 15 listed contests have ended (pools $18k–$125.5k, "$800k+" paid in total); recent ones ran with Cantina | No rule found | Per hosting platform | Per hosting platform |
-| Code4rena | Winding down since 13 May 2026; Immunefi took over its clients | n/a | n/a | n/a |
+| Code4rena | Closed: announced its wind-down on 13 May 2026; Immunefi took over its clients. K2 ($135k) is still in judging. No new audits | n/a | n/a | n/a |
 
 ## Fewer contests, not fewer submissions: Sherlock and Cantina together (new in v0.5.0)
 
@@ -33,6 +33,31 @@ A dated, sourced snapshot of where smart-contract audit contests stand for work 
 - **What this can't show:** whether the same people now send more findings each (for example with AI tools), or whether more people take part. Public counts can't separate the two. The counts include invalid, duplicate and spam submissions. Contests are placed in the quarter they started, not the quarter each finding was sent. Private contests and invite-only engagements (Sherlock Audit Engine, Cantina private contests) aren't in these series. Code4rena, CodeHawks, Immunefi and HackenProof aren't included either.
 
 Run `python cross_platform.py --table` for the quarterly, half-yearly and yearly rows.
+
+## What HackenProof actually paid: every audit program, promised vs. paid (new in v0.6.0)
+
+HackenProof is the only contest platform whose public listing shows, next to each program's "Up to: $X" maximum, a "Paid: $Y" figure (the program page calls it "Total rewards"). `data/hackenproof_programs.csv` records both for all 102 audit programs the listing held on 15 Oct 2026: 19 audit contests and 83 DualDefense audits, which are the listing's own header counts, with each program's kind, status, end date and listing page. **These rows were read by hand off the 11 listing pages, not fetched by a script**, so a transcription error is possible. Two checks: the enumeration matches the header counts exactly (the test asserts this), and six programs were compared with their own pages (Somnia, Dexalot SC, Kinetic, ZIGChain, Bluefin Perp, Perceptron); all six matched. An automated fetch is queued and will replace this file when it runs. `hackenproof_payouts.py` computes the table, and `test_hackenproof_payouts.py` pins every number below to the file. "Settled" means finished with a public paid figure; the three live programs and two "Paid: Private" programs are counted but left out of the money columns. "Paid in full" means at least 99% of the maximum.
+
+| Programs | Listed | Settled | Max reward (settled) | Paid | Paid share | Paid nothing | Paid in full | Median max |
+|---|---|---|---|---|---|---|---|---|
+| Audit contests, all | 19 | 19 | $677,000 | $318,949 | 47.1% | 2 | 5 | $14,000 |
+| &nbsp;&nbsp;ended 2025 | 14 | 14 | $533,000 | $251,448 | 47.2% | 0 | 3 | |
+| &nbsp;&nbsp;ended 2026 (to 15 Oct) | 3 | 3 | $59,000 | $45,001 | 76.3% | 1 | 2 | |
+| DualDefense audits, all | 83 | 78 | $1,588,650 | $180,645 | 11.4% | 67 | 2 | $10,000 |
+| &nbsp;&nbsp;ended 2024 | 10 | 9 | $203,500 | $0 | 0.0% | 9 | 0 | $20,000 |
+| &nbsp;&nbsp;ended 2025 | 32 | 31 | $1,071,800 | $168,658 | 15.7% | 23 | 0 | $29,000 |
+| &nbsp;&nbsp;ended 2026 (to 15 Oct; 3 live) | 41 | 38 | $313,350 | $11,987 | 3.8% | 35 | 2 | $4,000 |
+| **All** | **102** | **97** | **$2,265,650** | **$499,594** | **22.1%** | **69** | **7** | |
+
+- **Across 97 settled programs, HackenProof paid out 22% of the headline maximums** ($499,594 of $2,265,650). Audit contests paid 47% of their maximums, with a median of 50% per contest, and 5 of 19 paid in full. DualDefense audits paid 11%, and 67 of 78 (86%) paid nothing at all.
+- **Why DualDefense pays so rarely.** Each program page says only Critical findings "that could lead to the loss of user funds or the permanent lock of funds" are eligible; High, Medium and Low are listed at $0. The "up to" figure is a cap reached only if a Critical is found: the pool is split equally among unique Criticals, HackenProof keeps 10% as a triage fee, and several programs pay in HAI tokens. A $0 most often means no accepted Critical, which is a fine outcome for the client. For a researcher, a DualDefense headline is not a prize pot, and its expected value is a small fraction of the number shown.
+- **The programs got much smaller in 2026.** The median DualDefense maximum fell from $29,000 (31 settled programs ended in 2025) to $4,000 (38 ended in 2026), twelve of the 2026 programs being $2,000 audits for one client, and the paid share fell from 15.7% to 3.8%. Audit contests, the format that does pay, are rare: 14 ended in 2025 and 3 so far in 2026.
+- **Submissions keep coming.** Read off program pages (not in the CSV): Perceptron ($2,000 max, paid $0) had 73 submissions from 45 hackers; ZIGChain had 149 submissions from 48 hackers and paid $3,987 of $75,000; Kinetic had 175 submissions and paid $2,000 of $40,000; Somnia had 275 submissions and paid $135,000 of $300,000.
+- **Prior art:** we found none. Searches for analyses of HackenProof payouts against promised rewards returned only HackenProof's own program pages.
+
+**Limits.** Hand-read, as said above. "Paid" is HackenProof's own figure: we don't know whether it is before or after the 10% fee, or how HAI-token payouts were converted to dollars. Programs that ended inside their "Reward Time" SLA may still settle (RAIN-USDR ended 1 Oct 2026 and shows $0). 0xMarkets shows $30,001 paid against a $30,000 maximum and is kept as listed. Some contests publish a guaranteed minimum (Bluefin Perp: "$45,000 - $85,000"); the listing only shows the cap, so minimums are not recorded. Programs are grouped by end date. The listing has no submission counts.
+
+Reproduce: `python hackenproof_payouts.py --table` (or without `--table` for JSON).
 
 ## Every public Cantina competition (new in v0.5.0)
 
@@ -106,8 +131,8 @@ Each Cantina competition page shows a running "Findings submitted" count. `data/
 
 ## Notes
 
-- **Duplicates.** Cantina: points = full / (1 + 0.8 × (n − 1)), with High 10 and Medium 3. CodeHawks: High = 5 × 0.9^(n−1) / n, Medium = 0.9^(n−1) / n.
-- **Coded PoCs.** Cantina requires a compiling coded PoC for every High and Medium before the end of a competition, for researchers with reputation below 80. HackenProof DualDefense needs a runnable PoC in the first submission (later PoCs are not accepted) and pays for Criticals only.
+- **Duplicates.** Cantina: points = full / (1 + 0.8 × (n − 1)), with High 10 and Medium 3. CodeHawks: High = 5 × 0.9^(n−1) / n, Medium = 0.9^(n−1) / n. HackenProof contests (Somnia, Bluefin Perp): Final Reward = Severity Weight × 0.9^(N−1) / N, with weights Low 20, Medium 30, High 50; HackenProof DualDefense: the pool is split equally among unique Criticals.
+- **Coded PoCs.** Cantina requires a compiling coded PoC for every High and Medium before the end of a competition, for researchers with reputation below 80. HackenProof DualDefense needs a runnable PoC in the first submission (later PoCs are not accepted), pays for Criticals only, and recent programs add "AI-generated reports without runable PoC are not accepted under this program". HackenProof programs also require 50–80 reputation points and KYC to take part.
 - **Sherlock Audit Engine — how it works.** Launched publicly on 18 Aug 2026. Participation is invite-based: Sherlock specialists handpick candidates and top researchers may be contacted directly; otherwise you apply when applications open, then "commit or decline" an engagement card. An NDA and Engagement Addendum are signed per engagement before it begins. You can import a past Sherlock Audit Contests account at signup to carry over an Issues Ratio (it cannot be linked later). Findings are judged in three stages: an AI judge (often within minutes), then a Lead Judge, then the protocol team. Protocols may exclude specific AI auditors "for confidentiality or commercial reasons".
   - **Issues Ratio** (public docs): accepted ÷ total submitted. Accepted counts +1/1, Dismissed +0/1, Neutral is excluded. "Rewrite and Resubmit" adds +0.5 to the denominator each time (and +0.5 to the numerator if accepted), commonly up to 5 rewrites per issue chain. No payout below a 20% ratio, and you need at least 2 valid findings across all engagements. Withheld rewards can be unlocked for 12 months after an engagement ends, then they are lost.
   - **Credits** (shown on the signup dashboard, Aug 2026): a valid finding earns +4 and an invalid one costs −1; if credits drop below 0, payouts lock. When an engagement closes, 20% of its findings are counted right away. An engagement that earns more credits than it burns pays out on its own; one that burns more is held, and releasing it costs credits. The public Issues Ratio counts every finding, held or not.
@@ -127,10 +152,11 @@ python audit_contest_feed.py --ends-within 7    # only contests ending in the ne
 
 Each record has `platform`, `name`, `status`, `prize_usd`, `starts`, `ends`, `days_left`, `url`, `ai_findings`, `kyc`, `payout`, `source`. `days_left` is computed against today's UTC date (`null` when there is no end date). The snapshot rows are dated and marked `"source": "snapshot:2026-10-14"`; the Sherlock classic rows come live from the API and are marked `"source": "sherlock-api"`.
 
-## Tools: the crowding scripts
+## Tools: the crowding and payout scripts
 
 ```
 python cross_platform.py --table   # Sherlock + Cantina: contests and submissions per quarter, half-year, year
+python hackenproof_payouts.py --table   # HackenProof: promised vs paid, by kind and end year
 python cantina_crowding.py --in data/cantina_census.jsonl   # Cantina census summary (JSON)
 python sherlock_crowding.py --in data/sherlock_contests.jsonl   # Sherlock census summary (JSON)
 python crowding.py           # Cantina v0.3.0 sample: medians by year, payout concentration
@@ -155,7 +181,8 @@ Run all tests with `python -m pytest` (no network needed).
 - Sherlock Audit Engine overview: https://docs.sherlock.xyz/audit-engine/about-audit-engine
 - Sherlock Audit Engine launch: https://chainwire.org/2026/08/18/sherlock-unveils-audit-engine-as-ai-security-race-accelerates/
 - Sherlock contests API: https://mainnet-contest.sherlock.xyz/contests?status=RUNNING
-- HackenProof audit programs: https://hackenproof.com/audit-programs
+- HackenProof audit programs (payout record source, pages `?page=1` to `?page=11`): https://hackenproof.com/audit-programs
+- HackenProof program pages used as spot checks: https://hackenproof.com/audit-programs/somnia-audit-contest , https://hackenproof.com/audit-programs/dexalot-sc-dualdefense-audit , https://hackenproof.com/audit-programs/kinetic-audit-contest , https://hackenproof.com/audit-programs/zigchain-code-dualdefense-audit , https://hackenproof.com/audit-programs/bluefin-perp-audit-contest , https://hackenproof.com/audit-programs/perceptron-network-sc-dualdefense-audit
 - HackenProof DreamX program: https://hackenproof.com/audit-programs/dreamx-marketplace-and-dex-sca-dualdefense-audit
 - HackenProof KYC: https://docs.hackenproof.com/dashboard/hacker-dashboard/kyc.md
 - HackenProof withdrawals: https://docs.hackenproof.com/dashboard/hacker-dashboard/withdraw-bounty.md
