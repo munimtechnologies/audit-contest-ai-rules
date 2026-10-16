@@ -1,6 +1,6 @@
 # Audit contest platforms: AI rules, KYC, payouts and crowding (checked 2026-10-15)
 
-A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, the headline prize money each submission competes for, a record of what every HackenProof audit program promised and what it paid, when HackenProof's programs began to carry rules on AI-generated reports, and a census of every CodeHawks audit and First Flight. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
+A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, the headline prize money each submission competes for, a record of what every HackenProof audit program promised and what it paid, when HackenProof's programs began to carry rules on AI-generated reports, a census of every CodeHawks audit and First Flight, and a dated comparison of six platforms' rules on AI-made findings. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
 
 ## Summary
 
@@ -13,7 +13,7 @@ A dated, sourced snapshot of where smart-contract audit contests stand for work 
 | Immunefi | 0 audit competitions or boosts live (ENS ended 8 Oct; all 62 listed competitions are finished) | **Prohibited**: its terms ban "submitting AI-generated/automated scanner bug reports" | Per program | Per program |
 | CodeHawks (Cyfrin) | Nothing live. BattleChain Confidence Pools (9–16 Jul 2026) was its first audit in 15 months (see the census below) | **Penalised**: "Participants suspected of relying excessively on AI for their submissions risk disqualification." In its public docs repo since 14 Sep 2023 | Per contest ("KYC Rewards" tag) | USDC on ZKsync |
 | Certora (formal verification) | Nothing live. All 15 listed contests have ended (pools $18k–$125.5k, "$800k+" paid in total); recent ones ran with Cantina | No rule found | Per hosting platform | Per hosting platform |
-| Code4rena | Closed: announced its wind-down on 13 May 2026; Immunefi took over its clients. K2 ($135k) is still in judging. No new audits | n/a | n/a | n/a |
+| Code4rena | Closed: announced its wind-down on 13 May 2026; Immunefi took over its clients. K2 ($135k) is still in judging. No new audits | Discouraged ("strongly discouraged"); Bot Races paid automated tools 10% of each pool from Apr 2023 to about early 2024; from Sep 2025 every finding of Zellic's AI auditor V12 was a known issue (see the AI-rules section) | n/a | n/a |
 
 ## Headline prize money per submission: Sherlock and Cantina together (new in v0.7.0)
 
@@ -166,6 +166,29 @@ First Flights ran about every two weeks through 2025 (24 that year). Four follow
 
 Reproduce: `python codehawks_series.py --table` (or without `--table` for JSON).
 
+## AI rules, coded on a published rubric and dated (new in v0.8.1)
+
+`data/platform_ai_rules.csv` (CC BY 4.0) has one row per platform document that states a rule on AI-made findings: 11 rows from 6 platforms. Each row has the document's URL, the clause quoted word for word, a stance, the earliest date we could verify for the wording, where that date comes from, and the day the clause was read. The stances use the categories of Stingrai's census of AI-report policies (28 Jul 2026, CC BY 4.0), which covered 53 general disclosure programs and no audit platform: prohibited, conditional (on disclosure or a human in the loop), discouraged, or silent. Three rows fit none of its categories and are coded on their own terms.
+
+| Platform | Stance (Stingrai's rubric) | Earliest date we can verify |
+|---|---|---|
+| Immunefi | Conditional on its Rules page ("...that lack the required information"); its researcher terms ban "AI-generated/automated scanner bug reports" with no condition | Ban announced Dec 2022 (15 people banned by 11 Jan 2023); current wording undated |
+| Code4rena | Discouraged ("strongly discouraged"; automated-tool findings carry "a higher burden of proof") | Current wording undated |
+| Code4rena (Bot Races) | Historical: C4 "initially made the decision to ban all submissions appearing to have been written by AI", then dropped the ban and gave 10% of each pool to Bot Races, a first-hour track for automated tools whose winning report set the known issues | 4 Apr 2023 (C4's post; first race 12 Apr 2023). Paused by about Q2 2024, per one bot operator's portfolio |
+| Code4rena (V12) | Not an intake rule: C4 ran Zellic's AI auditor V12 on all competition code, and "V12 findings will be judged as known issues", so they and their duplicates earned nothing | 25 Sep 2025 (Zellic's announcement). No C4 audit started between then and 6 Oct 2025; the first two that did (6 and 7 Oct) carry the rule |
+| CodeHawks | Discouraged ("suspected of relying excessively on AI ... risk disqualification") | 14 Sep 2023 (the git commit that added the page to Cyfrin's public docs repo) |
+| Cantina | Conditional, human in the loop (unvalidated AI findings "can lead to disqualifications or worse, a permanent ban") | Undated |
+| HackenProof | Conditional, human in the loop, per program (PoC or human validation required) | Contests from 16 Jul 2025 (OpenEden), DualDefense audits from 14 Aug 2025 (Coindepo); 61 of the 62 programs since 14 Aug 2025 |
+| Sherlock | Contests: silent. Audit Engine: admits "AI auditors" as participants | Both pages undated |
+
+- **The audit platforms disagree far more than general bug-bounty programs do.** Stingrai coded all four general platforms it covered as conditional, and none of its 53 programs prohibits AI-written reports. The six audit platforms' current rules run from a ban with no condition (Immunefi's terms) through penalties with no stated path to acceptance (CodeHawks, Code4rena) to admitting AI auditors as participants (Sherlock's Audit Engine).
+- **Sherlock is not the first to admit automated participants.** Code4rena ran Bot Races from April 2023 to about early 2024, a separate paid track for automated tools. It wrote that it had first banned AI-written submissions "like other peers in the open audit space" and dropped the ban.
+- **Most of the rules are older than the 2025-2026 contest collapse.** Immunefi's, Code4rena's and CodeHawks' rules trace to 2022-2023. Two dated changes fall inside the collapse: HackenProof's per-program rules (from July 2025, see its section above) and Code4rena's V12 rule (from late September 2025). So the rules can't be read as one response to the collapse.
+- **Code4rena's V12 rule reverses Bot Races.** The other platforms regulate what researchers may submit. In 2023 the winning bot's report set the known issues and its crew was paid from the pool. From September 2025 Code4rena's owner (Zellic, which bought it in August 2024) ran its own AI auditor on each contest and published the results in the contest repo, so whatever an AI tool finds cheaply drops out of the prize pool and nobody in the contest is paid for it. It applied from the first contest that started after the announcement (Hybra Finance, 6 Oct 2025). The two contests we read that were already running on 25 Sep 2025 (Monad and Succinct, neither of them Solidity code) have no V12 section. Cantina did the same per contest with a non-AI tool's report (Lightchaser) on two 2025 pages we read.
+- **Prior art:** Stingrai's census is the rubric's source and covers no audit platform. We found no dated, rubric-coded comparison of AI rules across audit-contest platforms.
+
+**Limits.** One coder. Only platform-wide rule text is coded, except HackenProof, whose rules live on program pages. Immunefi's stance depends on which of its two documents counts as the intake policy, and Code4rena's main rule is borderline, so the CSV gives both readings. Dates come from posts, a git commit and program start dates. They show when wording was published, not when it was enforced, and an earlier date may exist. The Bot Races post is quoted as a web search engine indexed it, because medium.com refused our fetcher. When Bot Races ended comes from one participant's note, not from Code4rena. The V12 date is the announcement's: Zellic's own newsletter gives 25 Sep 2025, while a repost of the blog post is dated 24 Sep. Code4rena announced its wind-down on 13 May 2026, so its rules describe a platform that no longer runs contests. Every clause was read on 15-16 Oct 2026, and rules change, so check each URL before relying on it.
+
 ## Every public Cantina competition (v0.5.0)
 
 Cantina's site reads its competition list from a public JSON endpoint (`cantina.xyz/api/v0/competitions`), which carries `totalFindings` for every competition. `fetch_cantina.py` reads it in one GET (fetched 2026-10-14 20:03 UTC) and keeps only contest-level facts. Private contests keep no name, URL or sponsor, and they show up only in aggregates. The API returned 145 competitions: 126 public and 19 private, with one live. `data/cantina_census.csv` has the 125 ended public competitions with a count, which together drew 58,193 findings (started 2023-11-13 to 2026-05-29). `data/cantina_census.jsonl` has every public record, the live one included, and `data/cantina_census_summary.json` is the output of `cantina_crowding.py`. **Cross-check:** for all 20 ended competitions that v0.3.0 read by hand off their pages, the API count matched exactly.
@@ -309,6 +332,10 @@ Run all tests with `python -m pytest` (no network needed).
 - Certora contests: https://www.certora.com/contests
 - Code4rena wind-down: https://coinalertnews.com/news/2026/05/13/code4rena-shutdown-immunefi-takeover
 - Contest calendar: https://bbradar.io/contests
+- AI-rule table: `data/platform_ai_rules.csv` (each row links its document); rubric from Stingrai's census (listed above)
+- Code4rena Bot Races: "New to Code4rena: Bot Races", 4 Apr 2023, https://medium.com/code4rena/new-to-code4rena-bot-races-91b8f4ca0b18 (text as indexed by a web search engine; medium.com returned 403); pause: https://github.com/ChaseTheLight01/portfolio ("Bot Races have been paused by Code4rena at this point", 2024 Q2 section)
+- Code4rena V12 rule: https://docs.code4rena.com/competitions/submission-guidelines (section "V12 findings considered known issues"); Zellic, "Introducing V12" (announced 25 Sep 2025 per https://newsletter.zellic.io/p/zellic-security-roundup-october-25 ; repost: https://securityboulevard.com/2025/09/introducing-v12/ ); audit dates: https://code4rena.com/audits ; first contest repos with the rule: https://github.com/code-423n4/2025-10-hybra-finance , https://github.com/code-423n4/2025-10-sequence
+- Zellic's acquisition of Code4rena (22 Aug 2024): https://www.theblock.co/post/312583/zellic-code4rena
 
 ## License
 
