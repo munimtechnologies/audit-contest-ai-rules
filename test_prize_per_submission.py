@@ -61,6 +61,30 @@ class UnitTest(unittest.TestCase):
         capped = s["pots_under_1m"][0]
         self.assertEqual((capped["contests"], capped["usd"], capped["submissions"]), (1, 40000, 100))
         self.assertEqual(capped["per_submission"], 400.0)
+        # per contest: 2025H1 ratios 400, 40000, 3333.33 -> median 3333.33; 2025H2 one contest at 200
+        c1, c2 = s["per_contest"]
+        self.assertEqual((c1["period"], c1["contests"], c1["under"]), ("2025H1", 3, 0))
+        self.assertAlmostEqual(c1["median_per_submission"], 3333.33, places=2)
+        self.assertEqual((c2["period"], c2["contests"], c2["median_per_submission"], c2["under"]),
+                         ("2025H2", 1, 200.0, 0))
+
+    def test_per_contest_median_and_under(self):
+        day = dt.date
+        rows = [
+            {"start": day(2023, 1, 1), "usd": 1.0, "submissions": 1},         # before SINCE
+            {"start": day(2025, 1, 1), "usd": 1000.0, "submissions": 10},     # 100: not under
+            {"start": day(2025, 2, 1), "usd": 1000.0, "submissions": 20},     # 50: under
+            {"start": day(2025, 3, 1), "usd": None, "submissions": 5},        # no USD pot
+            {"start": day(2025, 4, 1), "usd": 3000000.0, "submissions": 10},  # mega pot barely moves a median
+            {"start": day(2025, 8, 1), "usd": 900.0, "submissions": 10},      # 90: under
+            {"start": day(2025, 9, 1), "usd": 2000.0, "submissions": 10},     # 200
+        ]
+        h1, h2 = pps.per_contest(rows)
+        self.assertEqual((h1["period"], h1["contests"], h1["median_per_submission"], h1["under"]),
+                         ("2025H1", 3, 100.0, 1))
+        self.assertEqual(h1["under_share"], 0.333)
+        self.assertEqual((h2["period"], h2["contests"], h2["median_per_submission"], h2["under"]),
+                         ("2025H2", 2, 145.0, 1))
 
 
 class DataTest(unittest.TestCase):
@@ -98,6 +122,25 @@ class DataTest(unittest.TestCase):
             "2026H1": (12, 1563500, 18340, 85.25),
             "2026H2": (2, 200000, 4507, 44.38),
         })
+
+    def test_per_contest(self):
+        # (contests, median dollars per submission, contests under $100 per submission)
+        expected = {
+            "2024H1": (76, 260.25, 14),
+            "2024H2": (64, 209.17, 16),
+            "2025H1": (67, 129.20, 31),
+            "2025H2": (36, 92.41, 20),
+            "2026H1": (12, 41.54, 8),
+            "2026H2": (2, 43.51, 2),
+        }
+        self.assertEqual([c["period"] for c in self.s["per_contest"]], list(expected))
+        totals = {c["period"]: c["contests"] for c in self.s["all_usd_pots"]}
+        for cell in self.s["per_contest"]:
+            period = cell["period"]
+            contests, median, under = expected[period]
+            self.assertEqual((cell["contests"], cell["under"]), (contests, under), period)
+            self.assertEqual(cell["contests"], totals[period], period)
+            self.assertAlmostEqual(cell["median_per_submission"], median, places=2, msg=period)
 
     def test_left_out_matches_cross_platform_counts(self):
         # USD-pot contests + left-out contests = the contest and submission totals in cross_platform.py.

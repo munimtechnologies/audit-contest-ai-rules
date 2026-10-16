@@ -11,7 +11,9 @@ half-year a contest started:
     the census's pot_usd; Cantina's pot);
   * the submissions they received (every submission, valid or not), and headline
     dollars per submission;
-  * the same without mega pots of $1M or more, which dominate the totals.
+  * the same without mega pots of $1M or more, which dominate the totals;
+  * per contest (v0.7.1): the median of each contest's own prize money per
+    submission, and how many contests offered under $100 per submission.
 
 Cantina's 12 Ethereum client competitions of Feb 2025 shared one $2M USDC pot.
 They count as one contest, with the pot counted once and their findings summed.
@@ -28,6 +30,7 @@ import csv
 import datetime as _dt
 import json
 import os
+import statistics
 from typing import Dict, List, Optional
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -35,6 +38,7 @@ SHERLOCK_CSV = os.path.join(HERE, "data", "sherlock_contests.csv")
 CANTINA_CSV = os.path.join(HERE, "data", "cantina_census.csv")
 STABLE = {"USDC", "USDT", "DAI", "GHO", "RLUSD"}
 MEGA = 1_000_000
+UNDER = 100  # per-contest dollars per submission counted as "under"
 SINCE = "2024H1"  # first half-year both censuses cover in full
 
 
@@ -108,12 +112,31 @@ def table(rows: List[Dict], since: str = SINCE, cap: Optional[float] = None) -> 
     return result
 
 
+def per_contest(rows: List[Dict], since: str = SINCE, under: float = UNDER) -> List[Dict]:
+    """Per half-year: median of each USD-pot contest's own dollars per submission, and how many are under `under`."""
+    ratios: Dict[str, List[float]] = {}
+    for row in rows:
+        key = half(row["start"])
+        if key < since or row["usd"] is None or not row["submissions"]:
+            continue
+        ratios.setdefault(key, []).append(row["usd"] / row["submissions"])
+    result = []
+    for key in sorted(ratios):
+        values = ratios[key]
+        below = sum(1 for value in values if value < under)
+        result.append({"period": key, "contests": len(values),
+                       "median_per_submission": round(statistics.median(values), 2),
+                       "under": below, "under_share": round(below / len(values), 3)})
+    return result
+
+
 def summary(sherlock_path: str = SHERLOCK_CSV, cantina_path: str = CANTINA_CSV) -> Dict:
     rows = load_sherlock(sherlock_path) + load_cantina(cantina_path)
     return {
         "since": SINCE,
         "all_usd_pots": table(rows),
         "pots_under_1m": table(rows, cap=MEGA),
+        "per_contest": per_contest(rows),
     }
 
 
@@ -131,6 +154,11 @@ def main(argv: Optional[List[str]] = None) -> int:
             for cell in result[name]:
                 print(f"{cell['period']:8} {cell['contests']:>9} {cell['usd']:>12,} {cell['submissions']:>12,} "
                       f"{cell['per_submission'] or 0:>15,.2f}")
+        print("per_contest")
+        print(f"{'period':8} {'contests':>9} {'median USD/submission':>22} {'under $' + str(UNDER):>11}")
+        for cell in result["per_contest"]:
+            print(f"{cell['period']:8} {cell['contests']:>9} {cell['median_per_submission']:>22,.2f} "
+                  f"{cell['under']:>5} ({cell['under_share']:.0%})")
     else:
         print(json.dumps(result, indent=2))
     return 0

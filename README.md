@@ -37,6 +37,26 @@ A dated, sourced snapshot of where smart-contract audit contests stand for work 
 
 Reproduce: `python prize_per_submission.py --table` (or without `--table` for JSON).
 
+### Per contest: the typical contest, not the pooled total (new in v0.7.1)
+
+The pooled figures above weight each contest by its submissions, so a few large pots can carry them. `per_contest()` in the same script works out each contest's own prize money per submission (its pot divided by its submissions) and reports, per half-year, the median contest and how many contests offered less than $100 per submission. It uses the same contests as the table above (same pots, same left-outs, the Ethereum client set counted once), and `test_prize_per_submission.py` pins every number here and checks that the contest counts match.
+
+| Started in | Contests with a USD pot | **Median contest: prize money per submission** | Contests under $100 per submission |
+|---|---|---|---|
+| 2024 H1 | 76 | **$260.25** | 14 (18%) |
+| 2024 H2 | 64 | **$209.17** | 16 (25%) |
+| 2025 H1 | 67 | **$129.20** | 31 (46%) |
+| 2025 H2 | 36 | **$92.41** | 20 (56%) |
+| 2026 H1 | 12 | **$41.54** | 8 (67%) |
+| 2026 H2 (to date) | 2 | $43.51 | 2 (both) |
+
+- **The typical contest fell further than the pooled total: the median went from $260 to $42 per submission (−84%) between the first halves of 2024 and 2026**, against −81% for the pooled figure. Every half-year to 2026 H1 is lower than the one before.
+- **Under $100 per submission went from the exception to the rule:** 18% of contests in 2024 H1, 67% in 2026 H1. In 2026 H1 only four contests offered more than $100 per submission, all large or unusual pots: XRP Ledger ($550k, about $203), Royco Dawn ($50k, about $191, Highs only), Fluid DEX v2 ($200k, about $166) and Morpho Midnight ($400k, about $103).
+- **The median is a check on the pooled result, and it agrees.** It ignores how large any single pot is, so the fall cannot come from mega pots leaving the market.
+- **Prior art:** as above, we found no published per-contest series of prize money per submission.
+
+**Limits.** All of the limits above apply. A median over 12 contests (2026 H1) is rough, and over 2 (2026 H2) it means little. The median contest is a contest, not a researcher: it says nothing about how the money in a contest is split.
+
 ## Fewer contests, not fewer submissions: Sherlock and Cantina together (v0.5.0)
 
 `cross_platform.py` adds the two censuses below together by the quarter, half-year and year in which each contest started. It counts every finished public contest that has a submission count on either platform: 259 on Sherlock and 114 on Cantina. The 12 Ethereum client competitions of February 2025 shared one $2M pot, so they count as one contest here. `test_cross_platform.py` pins every number in this section to the files in `data/`.
@@ -178,7 +198,7 @@ Each record has `platform`, `name`, `status`, `prize_usd`, `starts`, `ends`, `da
 ## Tools: the crowding and payout scripts
 
 ```
-python prize_per_submission.py --table   # Sherlock + Cantina: headline prize money per submission, per half-year
+python prize_per_submission.py --table   # Sherlock + Cantina: prize money per submission per half-year, pooled and per-contest median
 python cross_platform.py --table   # Sherlock + Cantina: contests and submissions per quarter, half-year, year
 python hackenproof_payouts.py --table   # HackenProof: promised vs paid, by kind and end year
 python cantina_crowding.py --in data/cantina_census.jsonl   # Cantina census summary (JSON)
