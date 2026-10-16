@@ -1,0 +1,344 @@
+{
+  "records": 376,
+  "errors": 4,
+  "rows": 372,
+  "kinds": {
+    "audit": 347,
+    "mitigation": 25
+  },
+  "undated": 9,
+  "date_sources": {
+    "readme": 328,
+    "report": 35
+  },
+  "with_pot": 191,
+  "full_era_audits": 306,
+  "full_era_first_start": "2021-04-02",
+  "full_era_last_start": "2024-11-04",
+  "full_era_submissions": 92830,
+  "by_year": {
+    "2021": {
+      "audits": 60,
+      "submissions": 8334,
+      "hm_subs": 2260,
+      "high_subs": 1064,
+      "medium_subs": 1196,
+      "median_submissions": 119.0,
+      "median_hm_subs": 28.5,
+      "median_hm_per_day": 7.0,
+      "median_hm_per_1k_usd": null,
+      "median_signal_rate": 0.344,
+      "signal_n": 59,
+      "pooled_signal_rate": 0.341,
+      "median_submitters": 14.0,
+      "median_days": 6.0,
+      "median_pot_usd": null
+    },
+    "2022": {
+      "audits": 121,
+      "submissions": 34115,
+      "hm_subs": 18378,
+      "high_subs": 5980,
+      "medium_subs": 12398,
+      "median_submissions": 243,
+      "median_hm_subs": 118,
+      "median_hm_per_day": 25.5,
+      "median_hm_per_1k_usd": 3.124,
+      "median_signal_rate": 0.105,
+      "signal_n": 116,
+      "pooled_signal_rate": 0.0926,
+      "median_submitters": 78,
+      "median_days": 5,
+      "median_pot_usd": 42500.0
+    },
+    "2023": {
+      "audits": 85,
+      "submissions": 37187,
+      "hm_subs": 26782,
+      "high_subs": 9073,
+      "medium_subs": 17709,
+      "median_submissions": 386,
+      "median_hm_subs": 282,
+      "median_hm_per_day": 31.5,
+      "median_hm_per_1k_usd": 3.743,
+      "median_signal_rate": 0.033,
+      "signal_n": 80,
+      "pooled_signal_rate": 0.0435,
+      "median_submitters": 136,
+      "median_days": 7,
+      "median_pot_usd": 60500.0
+    },
+    "2024": {
+      "audits": 40,
+      "submissions": 13194,
+      "hm_subs": 11039,
+      "high_subs": 4081,
+      "medium_subs": 6958,
+      "median_submissions": 193.0,
+      "median_hm_subs": 149.5,
+      "median_hm_per_day": 7.595,
+      "median_hm_per_1k_usd": 1.62,
+      "median_signal_rate": 0.073,
+      "signal_n": 37,
+      "pooled_signal_rate": 0.0527,
+      "median_submitters": 52.5,
+      "median_days": 7.5,
+      "median_pot_usd": 36500.0
+    }
+  },
+  "by_half": {
+    "2021H1": {
+      "audits": 14,
+      "submissions": 1573,
+      "hm_subs": 510,
+      "high_subs": 241,
+      "medium_subs": 269,
+      "median_submissions": 100.5,
+      "median_hm_subs": 29.0,
+      "median_hm_per_day": 4.671,
+      "median_hm_per_1k_usd": null,
+      "median_signal_rate": 0.412,
+      "signal_n": 13,
+      "pooled_signal_rate": 0.3842,
+      "median_submitters": 11.5,
+      "median_days": 7.0,
+      "median_pot_usd": null
+    },
+    "2021H2": {
+      "audits": 46,
+      "submissions": 6761,
+      "hm_subs": 1750,
+      "high_subs": 823,
+      "medium_subs": 927,
+      "median_submissions": 122.0,
+      "median_hm_subs": 28.0,
+      "median_hm_per_day": 7.5,
+      "median_hm_per_1k_usd": null,
+      "median_signal_rate": 0.324,
+      "signal_n": 46,
+      "pooled_signal_rate": 0.3286,
+      "median_submitters": 15.5,
+      "median_days": 6.0,
+      "median_pot_usd": null
+    },
+    "2022H1": {
+      "audits": 70,
+      "submissions": 13842,
+      "hm_subs": 6821,
+      "high_subs": 2431,
+      "medium_subs": 4390,
+      "median_submissions": 184.0,
+      "median_hm_subs": 77.0,
+      "median_hm_per_day": 16.732,
+      "median_hm_per_1k_usd": 1.511,
+      "median_signal_rate": 0.16,
+      "signal_n": 65,
+      "pooled_signal_rate": 0.1425,
+      "median_submitters": 46.0,
+      "median_days": 5.5,
+      "median_pot_usd": 210500.0
+    },
+    "2022H2": {
+      "audits": 51,
+      "submissions": 20273,
+      "hm_subs": 11557,
+      "high_subs": 3549,
+      "medium_subs": 8008,
+      "median_submissions": 361,
+      "median_hm_subs": 189,
+      "median_hm_per_day": 37.429,
+      "median_hm_per_1k_usd": 3.302,
+      "median_signal_rate": 0.063,
+      "signal_n": 51,
+      "pooled_signal_rate": 0.0639,
+      "median_submitters": 134,
+      "median_days": 5,
+      "median_pot_usd": 39500.0
+    },
+    "2023H1": {
+      "audits": 44,
+      "submissions": 17587,
+      "hm_subs": 12142,
+      "high_subs": 4169,
+      "medium_subs": 7973,
+      "median_submissions": 300.0,
+      "median_hm_subs": 173.0,
+      "median_hm_per_day": 23.083,
+      "median_hm_per_1k_usd": 2.643,
+      "median_signal_rate": 0.044,
+      "signal_n": 42,
+      "pooled_signal_rate": 0.0544,
+      "median_submitters": 118.5,
+      "median_days": 7.0,
+      "median_pot_usd": 60500.0
+    },
+    "2023H2": {
+      "audits": 41,
+      "submissions": 19600,
+      "hm_subs": 14640,
+      "high_subs": 4904,
+      "medium_subs": 9736,
+      "median_submissions": 475,
+      "median_hm_subs": 356,
+      "median_hm_per_day": 46.4,
+      "median_hm_per_1k_usd": 4.973,
+      "median_signal_rate": 0.03,
+      "signal_n": 38,
+      "pooled_signal_rate": 0.034,
+      "median_submitters": 142,
+      "median_days": 7,
+      "median_pot_usd": 52500.0
+    },
+    "2024H1": {
+      "audits": 33,
+      "submissions": 13018,
+      "hm_subs": 10885,
+      "high_subs": 4019,
+      "medium_subs": 6866,
+      "median_submissions": 259,
+      "median_hm_subs": 207,
+      "median_hm_per_day": 11.895,
+      "median_hm_per_1k_usd": 2.338,
+      "median_signal_rate": 0.068,
+      "signal_n": 32,
+      "pooled_signal_rate": 0.0477,
+      "median_submitters": 88,
+      "median_days": 10,
+      "median_pot_usd": 43350.0
+    },
+    "2024H2": {
+      "audits": 7,
+      "submissions": 176,
+      "hm_subs": 154,
+      "high_subs": 62,
+      "medium_subs": 92,
+      "median_submissions": 16,
+      "median_hm_subs": 14,
+      "median_hm_per_day": 2.25,
+      "median_hm_per_1k_usd": 0.984,
+      "median_signal_rate": 0.412,
+      "signal_n": 5,
+      "pooled_signal_rate": 0.4082,
+      "median_submitters": 4,
+      "median_days": 7,
+      "median_pot_usd": 20000.0
+    }
+  },
+  "by_quarter": {
+    "2021Q2": {
+      "audits": 14,
+      "submissions": 1573,
+      "hm_subs": 510,
+      "median_hm_per_day": 4.671
+    },
+    "2021Q3": {
+      "audits": 15,
+      "submissions": 1784,
+      "hm_subs": 497,
+      "median_hm_per_day": 4.667
+    },
+    "2021Q4": {
+      "audits": 31,
+      "submissions": 4977,
+      "hm_subs": 1253,
+      "median_hm_per_day": 9.0
+    },
+    "2022Q1": {
+      "audits": 35,
+      "submissions": 5824,
+      "hm_subs": 2359,
+      "median_hm_per_day": 10.75
+    },
+    "2022Q2": {
+      "audits": 35,
+      "submissions": 8018,
+      "hm_subs": 4462,
+      "median_hm_per_day": 22.286
+    },
+    "2022Q3": {
+      "audits": 23,
+      "submissions": 9210,
+      "hm_subs": 4967,
+      "median_hm_per_day": 37.2
+    },
+    "2022Q4": {
+      "audits": 28,
+      "submissions": 11063,
+      "hm_subs": 6590,
+      "median_hm_per_day": 37.614
+    },
+    "2023Q1": {
+      "audits": 22,
+      "submissions": 8765,
+      "hm_subs": 5572,
+      "median_hm_per_day": 28.781
+    },
+    "2023Q2": {
+      "audits": 22,
+      "submissions": 8822,
+      "hm_subs": 6570,
+      "median_hm_per_day": 21.861
+    },
+    "2023Q3": {
+      "audits": 21,
+      "submissions": 8623,
+      "hm_subs": 6271,
+      "median_hm_per_day": 41.222
+    },
+    "2023Q4": {
+      "audits": 20,
+      "submissions": 10977,
+      "hm_subs": 8369,
+      "median_hm_per_day": 46.914
+    },
+    "2024Q1": {
+      "audits": 26,
+      "submissions": 9281,
+      "hm_subs": 7542,
+      "median_hm_per_day": 12.59
+    },
+    "2024Q2": {
+      "audits": 7,
+      "submissions": 3737,
+      "hm_subs": 3343,
+      "median_hm_per_day": 9.5
+    },
+    "2024Q3": {
+      "audits": 5,
+      "submissions": 115,
+      "hm_subs": 101,
+      "median_hm_per_day": 2.25
+    },
+    "2024Q4": {
+      "audits": 2,
+      "submissions": 61,
+      "hm_subs": 53,
+      "median_hm_per_day": 3.786
+    }
+  },
+  "validated_era": {
+    "audits": 31,
+    "first_start": "2024-04-30",
+    "last_start": "2024-11-11",
+    "promoted_records": 7037,
+    "est_total_submissions": 12564,
+    "median_est_total": 288,
+    "median_promoted_share": 0.476
+  },
+  "check_2023": {
+    "ours": {
+      "audits": 85,
+      "submissions": 37187,
+      "high_subs_as_labelled": 9073,
+      "medium_subs_as_labelled": 17709
+    },
+    "code4rena_published": {
+      "audits": 114,
+      "submissions": 31512,
+      "assessed_high": 3005,
+      "assessed_medium": 4003
+    },
+    "submissions_ratio": 1.1801,
+    "note": "C4's High/Medium figures are judged severities; ours are the labels as submitted."
+  }
+}

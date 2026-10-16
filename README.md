@@ -1,6 +1,6 @@
 # Audit contest platforms: AI rules, KYC, payouts and crowding (checked 2026-10-15)
 
-A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, the headline prize money each submission competes for, a record of what every HackenProof audit program promised and what it paid, when HackenProof's programs began to carry rules on AI-generated reports, a census of every CodeHawks audit and First Flight, and a dated comparison of six platforms' rules on AI-made findings. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
+A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, the headline prize money each submission competes for, a record of what every HackenProof audit program promised and what it paid, when HackenProof's programs began to carry rules on AI-generated reports, a census of every CodeHawks audit and First Flight, a census of every public Code4rena findings repository (2021-2024), a census of every Immunefi audit competition, and a dated comparison of six platforms' rules on AI-made findings. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
 
 ## Summary
 
@@ -10,7 +10,7 @@ A dated, sourced snapshot of where smart-contract audit contests stand for work 
 | Sherlock contests (classic) | 0 active (API `status=RUNNING` returns `"total":0`). The last public contest in the API started on 20 Jul 2026 | No specific rule found | Required in 8 of the 9 contests that started in 2026 | USDC |
 | Cantina | 1 competition: Revert v4lend, $50k USDC, 6 Oct to 3 Nov (1,392 findings submitted by 15 Oct 00:35 UTC); plus ongoing bounties | Allowed if validated: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Required (Persona) | USDC to an Ethereum mainnet address, paid weekly |
 | HackenProof | 3 DualDefense audits ($2.5k–$3k, Criticals only): EverValue (2–16 Oct), Digital Oro (5–26 Oct), DreamX (12–26 Oct; its scope repo is invite-only and needs KYC to request access). See the payout record below: 67 of 78 settled DualDefense audits paid $0 | No platform-wide rule in the docs or Code of Conduct, but 62 of its 102 audit-program pages carry one, including every program that started in 2026 (43 of 43): "AI-generated reports without runable PoC are not accepted under this program" (DualDefense) or "Automated submissions or AI-generated reports must include human validation" (contests). See below | Only for EU tax residents, programs that require it, or after $5k in total earnings | USDC from your platform balance, 100 USDC minimum, 2FA required |
-| Immunefi | 0 audit competitions or boosts live (ENS ended 8 Oct; all 62 listed competitions are finished) | **Prohibited**: its terms ban "submitting AI-generated/automated scanner bug reports" | Per program | Per program |
+| Immunefi | 0 audit competitions or boosts live (all 62 listed competitions are finished; the last, ENS, ran 18 Aug to 14 Sep 2026). See the census below | **Prohibited**: its terms ban "submitting AI-generated/automated scanner bug reports" | Per program | Per program |
 | CodeHawks (Cyfrin) | Nothing live. BattleChain Confidence Pools (9–16 Jul 2026) was its first audit in 15 months (see the census below) | **Penalised**: "Participants suspected of relying excessively on AI for their submissions risk disqualification." In its public docs repo since 14 Sep 2023 | Per contest ("KYC Rewards" tag) | USDC on ZKsync |
 | Certora (formal verification) | Nothing live. All 15 listed contests have ended (pools $18k–$125.5k, "$800k+" paid in total); recent ones ran with Cantina | No rule found | Per hosting platform | Per hosting platform |
 | Code4rena | Closed: announced its wind-down on 13 May 2026; Immunefi took over its clients. K2 ($135k) is still in judging. No new audits | Discouraged ("strongly discouraged"); Bot Races paid automated tools 10% of each pool from Apr 2023 to about early 2024; from Sep 2025 every finding of Zellic's AI auditor V12 was a known issue (see the AI-rules section) | n/a | n/a |
@@ -166,6 +166,58 @@ First Flights ran about every two weeks through 2025 (24 that year). Four follow
 
 Reproduce: `python codehawks_series.py --table` (or without `--table` for JSON).
 
+## Code4rena, 2021 to 2024: every public findings repository (new in v0.9.0)
+
+Code4rena published a `<audit>-findings` repository on GitHub (organization code-423n4) for most of its audits. Its `data/` folder holds one small JSON record per submission, with the risk label the submitter chose, and its `report.md` is the published report, which states how many unique High and Medium findings the judges accepted. `fetch_c4.py` listed all 376 public findings repositories on 16 Oct 2026 and read 372 of them (blob-less shallow clones, only the JSON records and the report). Four timed out and are missing from the file: Tapioca, Dopex and NextGen (2023) and AI Arena (2024). `c4_crowding.py` wrote `data/c4_contests.csv` (CC BY 4.0, one row per repository) and `data/c4_summary.json`. Only counts are kept: no handles, titles or finding text. `c4_series.py` groups the audits by the half-year they started; the 25 mitigation reviews and 9 undated rows are left out. `test_c4_series.py` pins every number below to the file.
+
+| Started in | Audits | of which "validated" era | Submissions (all types) | High + Medium submissions | Median H+M per audit | Median distinct submitters | **Signal rate, median audit** | Signal rate, pooled |
+|---|---|---|---|---|---|---|---|---|
+| 2021 H1 | 14 | 0 | 1,573 | 510 | 29 | 11.5 | **41.2%** | 38.42% |
+| 2021 H2 | 46 | 0 | 6,761 | 1,750 | 28 | 15.5 | **32.4%** | 32.86% |
+| 2022 H1 | 70 | 0 | 13,842 | 6,821 | 77 | 46 | **16.0%** | 14.25% |
+| 2022 H2 | 51 | 0 | 20,273 | 11,557 | 189 | 134 | **6.3%** | 6.39% |
+| 2023 H1 | 44 | 0 | 17,587 | 12,142 | 173 | 118.5 | **4.4%** | 5.44% |
+| 2023 H2 | 41 | 0 | 19,600 | 14,640 | 356 | 142 | **3.0%** | 3.40% |
+| 2024 H1 | 45 | 12 | 13,018* | 10,885* | 207* | 88* | 6.8%* | 4.77%* |
+| 2024 H2 | 26 | 19 | 176* | 154* | 14* | 4* | 41.2%* | 40.82%* |
+
+\* Full-era audits only: 33 in 2024 H1, and in 2024 H2 seven small invitational audits. Signal rate = the report's unique High + Medium findings / High + Medium submissions, for audits whose report gives both counts (13 to 65 audits per half-year; 5 in 2024 H2).
+
+- **Code4rena got crowded in 2022 and 2023, before the 2025–2026 jump on Sherlock and Cantina.** The median audit drew 29 High/Medium submissions in 2021 H1 and 356 in 2023 H2 (12 times as many), from 11.5 distinct submitters to 142. Over the same two and a half years, the share of High/Medium submissions that ended up as a distinct valid finding fell from 38% to 3.4% (pooled). In the median 2023 H2 audit, about 1 in 33 High/Medium submissions was a unique valid High or Medium; the rest were duplicates, downgrades or invalid.
+- **The biggest step was 2022 H1 to 2022 H2:** median submitters 46 to 134, median High/Medium submissions 77 to 189, pooled signal rate 14.3% to 6.4%. Audits per half-year peaked at 70 (2022 H1) and then held at 41–46 to 2024 H1.
+- **A break in April 2024 that anyone counting from these repositories has to handle.** From Renzo (30 Apr 2024), most audits' submissions went first to a separate validation repository, and the public findings repository holds only the ones promoted from it. Each promoted record keeps its original issue number, so the highest one estimates how many were sent. For the 31 such audits (to Nibiru, 11 Nov 2024), the findings repositories hold 7,037 records against about 12,564 submissions by that estimate. Counting their records as submissions would understate those audits by about 44%, so the series leaves their submissions out and counts the audits only.
+- **The public record stops in December 2024.** No findings repository for a later audit is public (the last listed, Unruggable, starting 6 Dec 2024, has no records). Code4rena kept running audits until its wind-down in May 2026, so this census cannot show its 2025–2026 contest numbers, and the 26 audits of 2024 H2 are the public ones, not necessarily all.
+- **Cross-checks.** cmichel's "Code4rena – First 1M$ stats" (early 2022) put the average at about 10 wardens per contest at the start and about 25 by the end of 2021. Our median distinct submitters, 11.5 (2021 H1) and 15.5 (2021 H2), are the same size. Code4rena's own review of 2023 reports 114 projects and 31,512 bug submissions (3,005 assessed High, 4,003 Medium). We count 85 audits that started in 2023, plus mitigation reviews and the three repositories we could not read, with 37,187 submissions of all types, 26,782 of them labelled High or Medium. Code4rena's figure lies between our two totals. We could not read its post (medium.com refused our fetcher), so we don't know exactly what it counts.
+- **Prior art:** cmichel's post (wardens per contest to early 2022) and the archived `0237h/code4rena-scraper`, which turns reports into per-submission CSVs. We found no published series of submissions, submitters or signal rate across 2021–2024, and no description of the April 2024 break.
+
+**Limits.** Risk labels are as submitted, not as judged; judges also upgrade and downgrade, and QA reports can be promoted to Medium, so the signal rate is approximate. Submissions of all types count each QA, gas and analysis report once. "Distinct submitters" counts handles in the records, so a team counts once and bot-race entries count too. Undated rows (9) and the four repositories that timed out are missing. The 2024 figures after April are not comparable with earlier ones (see above).
+
+Reproduce: `python c4_series.py --table` (or without `--table` for JSON). Refresh the census with `python fetch_c4.py --out facts.jsonl --workers 6`, then `python c4_crowding.py --in facts.jsonl --out-dir out`.
+
+## Immunefi audit competitions, 2023 to 2026 (new in v0.9.0)
+
+`data/immunefi_contests.csv` (CC BY 4.0) has one row for each of the 62 competition pages that Immunefi's /audit-competition/ listing linked on 15 Oct 2026, all finished. `fetch_immunefi.py` read each page's information and results tabs: start and end dates, the pool the page states and its token, lines of code, assets in scope, whether a PoC is required, and the number of entries on the results leaderboard. No handles or earnings are kept. The listing's own date is not the start date (ENS is listed 8 Oct 2026 and ran 18 Aug to 14 Sep), so every row is dated from its information page. `immunefi_series.py` groups the competitions by start half-year, and `test_immunefi_series.py` pins every number below to the file.
+
+| Started in | Competitions | Audit-type | Pools stated (USD) | Audit-type pools | Median audit-type pool | Leaderboards read | Median leaderboard entries |
+|---|---|---|---|---|---|---|---|
+| 2023 H2 | 1 | 1 | $50,000 | $50,000 | $50,000 | 1 | 35 |
+| 2024 H1 | 8 | 7 | $1,609,000 | $609,000 | $87,500 | 6 | 17.5 |
+| 2024 H2 | 22 | 20 | $4,650,000 | $2,900,000 | $72,500 | 18 | 7.5 |
+| 2025 H1 | 13 | 11 | $1,331,000 | $681,000 | $30,000 | 8 | 9.5 |
+| 2025 H2 | 12 | 7 | $830,000 | $270,000 | $30,000 | 6 | 50.5 |
+| 2026 H1 | 3 | 3 | $1,275,000 | $1,275,000 | $250,000 | 3 | 95 |
+| 2026 H2 (to 15 Oct) | 3 | 3 | $110,000 | $110,000 | $20,000 | 3 | 133 |
+
+Audit-type = Audit Competitions and Boosts, IOPs and Mitigation Audits (52). The other 10 are 8 Attackathons and 2 Bug Bounty Competitions. The leaderboard columns cover audit-type competitions only.
+
+- **Audit-type competitions fell 85%, from 20 started in 2024 H2 to 3 in 2026 H1**, with 3 more by mid-October 2026. That is the same size as the Sherlock + Cantina fall above (−83%, 2024 H1 to 2026 H1) and matches Immunefi's own article (89 competitions across public platforms in Q4 2024, 11 in Q2 2026). 2026 H1's $1.275M is mostly one competition (Firedancer V1, $1M); the other two had $275,000 between them.
+- **Leaderboards got much longer, but the series is not like-for-like.** The median audit-type leaderboard had 7.5 entries in 2024 H2 and 95 in 2026 H1. Until mid-2025 the results page lists only whitehats with earnings: all 8 rows on Acre (Aug 2024) and all 72 on Yeet (Mar 2025) show an amount. The layout used from July 2025 (`rank_method` "hash"; the last old-style page is from 18 Sep 2025) also lists entries with $0 earnings: 31 of the 183 ranked entries on Alchemix V3 (Oct 2025). The longest 2024 leaderboard had 58 paid entries (Alchemix, Apr 2024). Every 2026 leaderboard is at least that long, but they use the new layout. So more people are probably being listed per competition, but this table can't say how many more of them were paid.
+- **Prior art:** Immunefi's 23 Sep 2026 article counts competitions across platforms. We found no census of Immunefi's own competition pages dated from their information tabs.
+
+**Limits.** Pools are the amounts the pages state, in several tokens (USDC, USDT, DAI, JTO, ETH, STX, RLUSD), never converted. Three pages have no pool we could read (Hinkal IOP and the two Lido Bug Bounty Competitions). Nine leaderboards could not be read. Leaderboards include entries paid only for "Insights". The census covers only competitions the listing links; private competitions and Immunefi's bug bounties are not included. Half-years with three competitions mean little.
+
+Reproduce: `python immunefi_series.py --table` (or without `--table` for JSON). `fetch_immunefi.py --data-dir <dir> --out-dir <dir>` refreshes the census (one page at a time, paused) and `--parse-only` re-reads saved pages offline.
+
 ## AI rules, coded on a published rubric and dated (new in v0.8.1)
 
 `data/platform_ai_rules.csv` (CC BY 4.0) has one row per platform document that states a rule on AI-made findings: 11 rows from 6 platforms. Each row has the document's URL, the clause quoted word for word, a stance, the earliest date we could verify for the wording, where that date comes from, and the day the clause was read. The stances use the categories of Stingrai's census of AI-report policies (28 Jul 2026, CC BY 4.0), which covered 53 general disclosure programs and no audit platform: prohibited, conditional (on disclosure or a human in the loop), discouraged, or silent. Three rows fit none of its categories and are coded on their own terms.
@@ -291,6 +343,8 @@ python cross_platform.py --table   # Sherlock + Cantina: contests and submission
 python hackenproof_payouts.py --table   # HackenProof: promised vs paid, by kind and end year
 python hackenproof_trends.py --table   # HackenProof: AI-report rules, submissions and paid per submission, by start half-year
 python codehawks_series.py --table   # CodeHawks: audits and First Flights by start half-year, practice copies left out
+python c4_series.py --table   # Code4rena: audits, submissions, submitters and signal rate by start half-year, 2021-2024
+python immunefi_series.py --table   # Immunefi: competitions, pools and leaderboard sizes by start half-year
 python cantina_crowding.py --in data/cantina_census.jsonl   # Cantina census summary (JSON)
 python sherlock_crowding.py --in data/sherlock_contests.jsonl   # Sherlock census summary (JSON)
 python crowding.py           # Cantina v0.3.0 sample: medians by year, payout concentration
@@ -324,11 +378,14 @@ Run all tests with `python -m pytest` (no network needed).
 - HackenProof withdrawals: https://docs.hackenproof.com/dashboard/hacker-dashboard/withdraw-bounty.md
 - HackenProof DualDefense rules: https://docs.hackenproof.com/dualdefense-audit/general-guidelines.md
 - HackenProof Code of Conduct: https://docs.hackenproof.com/welcome/code-of-conduct.md
-- Immunefi audit competitions: https://immunefi.com/audit-competition/
+- Immunefi audit competitions (census source): https://immunefi.com/audit-competition/ and each competition's `information/` and results pages, e.g. https://immunefi.com/audit-competition/audit-comp-yeet/ , https://immunefi.com/audit-competition/boost-acre/ , https://immunefi.com/audit-competition/alchemix-v3-audit-competition/ (leaderboard layouts checked 16 Oct 2026)
 - Immunefi rules: https://immunefi.com/rules/
 - CodeHawks census sources: https://codehawks.cyfrin.io/contests (45 audits) and https://codehawks.cyfrin.io/first-flights (#1 to #59), both checked 16 Oct 2026, plus each contest's page
 - CodeHawks AI rule: https://github.com/Cyfrin/codehawks-docs/blob/main/judging/disqualification-criteria.md (added in commit 9fc66d1, 14 Sep 2023)
 - CodeHawks payouts: https://docs.codehawks.com/judging/payouts-and-rewards
+- Code4rena findings repositories (census source): https://github.com/orgs/code-423n4/repositories?q=findings , e.g. https://github.com/code-423n4/2024-04-renzo-findings (first validated-era audit)
+- Code4rena's 2023 figures: "Welcome to 2024 at Code4rena", https://medium.com/code4rena/welcome-to-2024-at-code4rena-f0929a6ae3a8 (as indexed by a web search engine; medium.com returned 403)
+- Prior art on Code4rena participation: cmichel, "Code4rena - First 1M$ stats", https://cmichel.io/code4rena-first-1m-stats/ ; https://github.com/0237h/code4rena-scraper
 - Certora contests: https://www.certora.com/contests
 - Code4rena wind-down: https://coinalertnews.com/news/2026/05/13/code4rena-shutdown-immunefi-takeover
 - Contest calendar: https://bbradar.io/contests

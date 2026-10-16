@@ -1,0 +1,373 @@
+repo,slug,contest,title,sponsor,kind,era,start,end,days,pot_usd,nsloc,submissions,high_subs,medium_subs,hm_subs,qa_subs,gas_subs,analysis_subs,other_subs,max_issue_id,max_original_issue_id,est_total_submissions,submitters,wardens_in_report,unique_high,unique_medium,signal_rate,hm_per_day,hm_per_1k_usd
+2021-04-basedloans-findings,2021-04-basedloans,7,Based Loans,Based Loans,audit,full,2021-04-02,2021-04-07,5,,,43,2,2,4,37,2,0,0,43,,43,6,6,2,1,0.75,0.8,
+2021-04-marginswap-findings,2021-04-marginswap,3,Marginswap,Marginswap,audit,full,2021-04-02,2021-04-07,5,,,69,14,12,26,42,0,0,1,71,,69,6,5,12,12,0.9231,5.2,
+2021-04-maple-findings,2021-04-maple,4,Maple Finance,Maple Finance,audit,full,2021-04-08,2021-04-21,13,,,116,8,21,29,87,0,0,0,117,,116,12,11,0,3,0.1034,2.2308,
+2021-04-vader-findings,2021-04-vader,5,Vader Protocol,Vader Protocol,audit,full,2021-04-21,2021-04-28,7,,,320,86,42,128,67,125,0,0,320,,320,13,10,24,16,0.3125,18.2857,
+2021-04-meebits-findings,2021-04-meebits,6,Larva Labs Meebits,LarvaLabs Meebits,audit,full,2021-04-29,2021-05-01,2,,,85,21,13,34,37,14,0,0,85,,85,12,9,6,3,0.2647,17.0,
+2021-05-nftx-findings,2021-05-nftx,8,NFTX,NFTX,audit,full,2021-05-05,2021-05-11,6,,,123,24,20,44,54,25,0,0,123,,123,14,11,4,10,0.3182,7.3333,
+2021-05-visorfinance-findings,2021-05-visorfinance,10,Visor Finance,Visor,audit,full,2021-05-12,2021-05-19,7,,,80,16,13,29,36,15,0,0,80,,80,11,12,4,3,0.2414,4.1429,
+2021-05-88mph-findings,2021-05-88mph,9,88mph,88mph,audit,full,2021-05-13,2021-05-19,6,,,23,1,4,5,13,5,0,0,23,,23,9,5,,2,,0.8333,
+2021-05-fairside-findings,2021-05-fairside,11,FairSide,FairSide,audit,full,2021-05-20,2021-05-26,6,,,78,19,18,37,34,7,0,0,78,,78,8,8,8,12,0.5405,6.1667,
+2021-05-yield-findings,2021-05-yield,12,Yield,Yield,audit,full,2021-05-26,2021-06-02,7,,,70,9,13,22,44,4,0,0,71,,70,9,7,3,9,0.5455,3.1429,
+2021-06-realitycards-findings,2021-06-realitycards,13,Reality Cards,Reality Cards,audit,full,2021-06-09,2021-06-16,7,,,172,7,44,51,109,12,0,0,172,,172,13,12,4,17,0.4118,7.2857,
+2021-06-pooltogether-findings,2021-06-pooltogether,14,PoolTogether,PoolTogether,audit,full,2021-06-16,2021-06-23,7,,,123,12,15,27,49,47,0,0,123,,123,12,12,5,7,0.4444,3.8571,
+2021-06-tracer-findings,2021-06-tracer,16,Tracer,Tracer,audit,full,2021-06-23,2021-06-30,7,,,145,11,35,46,86,13,0,0,145,,145,12,12,6,13,0.413,6.5714,
+2021-06-gro-findings,2021-06-gro,17,Gro Protocol,Gro Protocol,audit,full,2021-06-30,2021-07-07,7,,,126,11,17,28,68,30,0,0,126,,126,8,7,4,6,0.3571,4.0,
+2021-07-connext-findings,2021-07-connext-findings,19,Connext,Connext,audit,full,2021-07-08,2021-07-11,3,,,77,17,8,25,28,24,0,0,77,,77,11,9,5,2,0.28,8.3333,
+2021-07-wildcredit-findings,2021-07-wildcredit,18,Wild Credit,Wild Credit,audit,full,2021-07-08,2021-07-14,6,,,122,7,21,28,73,21,0,0,143,,122,15,12,3,4,0.25,4.6667,
+2021-08-yield-findings,2021-08-yield,25,Yield micro contest #1,Yield,audit,full,2021-08-11,2021-08-14,3,,,65,6,8,14,32,19,0,0,65,,65,8,8,5,4,0.6429,4.6667,
+2021-08-realitycards-findings,2021-08-realitycards,26,Reality Cards (round 2),Reality Cards,audit,full,2021-08-18,2021-08-25,7,,,74,3,7,10,51,13,0,0,74,,74,12,11,2,3,0.5,1.4286,
+2021-08-gravitybridge-findings,2021-08-gravitybridge,27,Gravity Bridge,Althea Gravity Bridge,audit,full,2021-08-26,2021-09-08,13,,,64,8,15,23,30,11,0,0,64,,64,13,14,4,4,0.3478,1.7692,
+2021-08-notional-findings,2021-08-notional,23,Notional,Notional,audit,full,2021-08-26,2021-09-08,13,,,98,23,22,45,42,11,0,0,98,,98,11,11,10,7,0.3778,3.4615,
+2021-09-bvecvx-findings,2021-09-bvecvx,31,bveCVX by BadgerDAO contest,BadgerDAO,audit,full,2021-09-02,2021-09-08,6,,,61,7,7,14,29,18,0,0,61,,61,8,7,1,2,0.2143,2.3333,
+2021-09-sushimiso-findings,2021-09-sushimiso,28,Sushi Miso contest,Sushi,audit,full,2021-09-09,2021-09-15,6,,,151,10,19,29,83,39,0,0,151,,151,11,11,3,1,0.1379,4.8333,
+2021-09-yaxis-findings,2021-09-yaxis,30,yAxis contest,yAxis,audit,full,2021-09-09,2021-09-15,6,,,164,26,26,52,68,44,0,0,164,,164,13,13,10,15,0.4808,8.6667,
+2021-09-defiprotocol-findings,2021-09-defiprotocol,36,Kuiper contest,Kuiper,audit,full,2021-09-16,2021-09-22,6,,,276,26,53,79,111,86,0,0,277,,276,30,30,3,23,0.3291,13.1667,
+2021-09-sushitrident-findings,2021-09-sushitrident,29,Sushi Trident contest phase 1,Sushi,audit,full,2021-09-16,2021-09-29,13,,,199,27,32,59,99,41,0,0,201,,199,17,18,16,10,0.4407,4.5385,
+2021-09-wildcredit-findings,2021-09-wildcredit,32,Wild Credit contest,Wild Credit,audit,full,2021-09-23,2021-09-29,6,,,114,11,6,17,65,32,0,0,120,,114,15,15,2,3,0.2941,2.8333,
+2021-09-sushitrident-2-findings,2021-09-sushitrident-2,35,Sushi Trident contest phase 2,Sushi,audit,full,2021-09-30,2021-10-06,6,,,94,33,12,45,41,8,0,0,94,,94,7,8,17,7,0.5333,7.5,
+2021-09-swivel-findings,2021-09-swivel,39,Swivel contest,Swivel,audit,full,2021-09-30,2021-10-06,6,,,161,24,23,47,74,40,0,0,162,,161,15,15,4,5,0.1915,7.8333,
+2021-10-pooltogether-findings,2021-10-pooltogether,34,PoolTogether v4 contest,PoolTogether,audit,full,2021-09-30,2021-10-06,6,,,64,4,6,10,22,32,0,0,64,,64,9,9,2,2,0.4,1.6667,
+2021-10-tracer-findings,2021-10-tracer,40,Tracer contest,Tracer,audit,full,2021-10-07,2021-10-13,6,,,40,3,5,8,15,17,0,0,42,,40,6,6,0,3,0.375,1.3333,
+2021-10-defiprotocol-findings,2021-10-defiprotocol,41,Kuiper contest,Kuiper,audit,full,2021-10-08,2021-10-10,2,,,90,4,10,14,30,46,0,0,91,,90,9,9,1,8,0.6429,7.0,
+2021-10-tempus-findings,2021-10-tempus,37,Tempus Finance contest,Tempus Finance,audit,full,2021-10-14,2021-10-20,6,,,46,1,7,8,16,22,0,0,49,,46,14,14,1,2,0.375,1.3333,
+2021-10-union-findings,2021-10-union,45,Union Finance contest,Union Finance,audit,full,2021-10-14,2021-10-20,6,,,110,11,14,25,28,57,0,0,110,,110,13,14,2,11,0.52,4.1667,
+2021-10-ambire-findings,2021-10-ambire,38,Ambire Contest,Ambire,audit,full,2021-10-15,2021-10-18,3,,,67,9,6,15,21,31,0,0,67,,67,10,11,4,0,0.2667,5.0,
+2021-10-covalent-findings,2021-10-covalent,43,Covalent contest,Covalent,audit,full,2021-10-19,2021-10-21,2,,,89,5,9,14,38,37,0,0,90,,89,15,14,2,3,0.3571,7.0,
+2021-10-tally-findings,2021-10-tally,44,Tally contest,Tally,audit,full,2021-10-20,2021-10-22,2,,,81,6,8,14,28,39,0,0,81,,81,15,15,2,3,0.3571,7.0,
+2021-10-mochi-findings,2021-10-mochi,42,Mochi contest,Mochi,audit,full,2021-10-21,2021-10-27,6,,,171,27,37,64,45,62,0,0,171,,171,16,16,13,15,0.4375,10.6667,
+2021-10-badgerdao-findings,2021-10-badgerdao,47,BadgerDAO ibBTC Wrapper contest,BadgerDAO,audit,full,2021-10-28,2021-10-30,2,,,94,11,11,22,46,26,0,0,94,,94,20,20,4,4,0.3636,11.0,
+2021-10-slingshot-findings,2021-10-slingshot,48,Slingshot Finance contest,Slingshot Finance,audit,full,2021-10-30,2021-11-01,2,,,102,8,7,15,50,37,0,0,102,,102,18,18,0,2,0.1333,7.5,
+2021-11-bootfinance-findings,2021-11-bootfinance,51,Boot Finance contest,Boot Finance,audit,full,2021-11-04,2021-11-10,6,,,307,22,31,53,99,155,0,0,307,,307,28,28,9,12,0.3962,8.8333,
+2021-11-fairside-findings,2021-11-fairside,50,FairSide contest,FairSide,audit,full,2021-11-09,2021-11-11,2,,,109,16,12,28,34,47,0,0,109,,109,18,18,4,2,0.2143,14.0,
+2021-11-vader-findings,2021-11-vader,52,Vader Protocol contest,Vader Protocol,audit,full,2021-11-09,2021-11-15,6,,,270,60,43,103,89,78,0,0,270,,270,29,29,34,23,0.5534,17.1667,
+2021-11-nested-findings,2021-11-nested,53,Nested Finance contest,Nested Finance,audit,full,2021-11-11,2021-11-17,6,,,233,9,25,34,98,101,0,0,233,,233,29,29,1,8,0.2647,5.6667,
+2021-11-badgerzaps-findings,2021-11-badgerzaps,57,BadgerDAO Zaps contest,BadgerDAO,audit,full,2021-11-14,2021-11-16,2,,,79,6,17,23,28,28,0,0,79,,79,13,14,1,6,0.3043,11.5,
+2021-11-overlay-findings,2021-11-overlay,49,Overlay Protocol contest,Overlay Protocol,audit,full,2021-11-16,2021-11-22,6,,,142,19,18,37,39,66,0,0,142,,142,18,18,2,9,0.2973,6.1667,
+2021-11-yaxis-findings,2021-11-yaxis,56,yAxis contest,yAxis,audit,full,2021-11-16,2021-11-18,2,,,122,11,8,19,43,60,0,0,122,,122,18,18,2,1,0.1579,9.5,
+2021-11-unlock-findings,2021-11-unlock,54,Unlock Protocol contest,Unlock Protocol,audit,full,2021-11-18,2021-11-24,6,,,241,27,41,68,93,80,0,0,242,,241,26,27,4,13,0.25,11.3333,
+2021-11-malt-findings,2021-11-malt,59,Malt Finance contest,Malt Finance,audit,full,2021-11-25,2021-12-01,6,,,376,52,58,110,110,156,0,0,385,,376,35,35,5,30,0.3182,18.3333,
+2021-11-fei-findings,2021-11-fei,63,Fei Protocol contest,Fei Protocol,audit,full,2021-11-30,2021-12-02,2,,,160,9,12,21,41,98,0,0,160,,160,23,22,0,0,0.0,10.5,
+2021-11-streaming-findings,2021-11-streaming,62,Streaming Protocol contest,Streaming Protocol,audit,full,2021-11-30,2021-12-07,7,,,270,43,38,81,71,118,0,0,272,,270,38,38,10,5,0.1852,11.5714,
+2021-12-maple-findings,2021-12-maple,55,Maple Finance contest,Maple Finance,audit,full,2021-12-02,2021-12-08,6,,,78,13,7,20,25,33,0,0,78,,78,14,13,1,2,0.15,3.3333,
+2021-12-mellow-findings,2021-12-mellow,58,Mellow Protocol contest,Mellow Protocol,audit,full,2021-12-02,2021-12-08,6,,,134,20,12,32,33,69,0,0,134,,134,17,17,4,7,0.3438,5.3333,
+2021-12-defiprotocol-findings,2021-12-defiprotocol,65,Kuiper contest,Kuiper,audit,full,2021-12-08,2021-12-10,2,,,176,16,11,27,50,99,0,0,177,,176,28,27,1,11,0.4444,13.5,
+2021-12-perennial-findings,2021-12-perennial,60,Perennial contest,Perennial,audit,full,2021-12-09,2021-12-15,6,,,74,7,9,16,17,41,0,0,74,,74,13,13,2,3,0.3125,2.6667,
+2021-12-pooltogether-findings,2021-12-pooltogether,64,PoolTogether TwabRewards contest,PoolTogether,audit,full,2021-12-09,2021-12-12,3,,,145,41,14,55,34,56,0,0,149,,145,28,28,7,5,0.2182,18.3333,
+2021-12-sublime-findings,2021-12-sublime,61,Sublime contest,Sublime,audit,full,2021-12-09,2021-12-15,6,,,172,18,27,45,60,67,0,0,172,,172,23,21,11,8,0.4222,7.5,
+2021-12-amun-findings,2021-12-amun,68,Amun contest,Amun,audit,full,2021-12-13,2021-12-19,6,,,294,24,56,80,117,97,0,0,297,,294,35,30,2,10,0.15,13.3333,
+2021-12-nftx-findings,2021-12-nftx,69,NFTX contest,NFTX,audit,full,2021-12-16,2021-12-22,6,,,234,21,33,54,97,83,0,0,234,,234,26,27,3,17,0.3704,9.0,
+2021-12-yetifinance-findings,2021-12-yetifinance,66,Yeti Finance contest,Yeti Finance,audit,full,2021-12-16,2021-12-22,6,,,282,27,50,77,93,112,0,0,303,,282,27,27,8,13,0.2727,12.8333,
+2021-12-vader-findings,2021-12-vader,70,Vader Protocol contest,Vader Protocol,audit,full,2021-12-21,2021-12-25,4,,,189,45,26,71,58,60,0,0,189,,189,24,21,14,6,0.2817,17.75,
+2022-01-timeswap-findings,2022-01-timeswap,74,Timeswap contest,Timeswap,audit,full,2022-01-04,2022-01-10,6,,,188,17,28,45,54,89,0,0,188,,188,44,35,7,10,0.3778,7.5,
+2022-01-xdefi-findings,2022-01-xdefi,75,XDEFI contest,XDEFI,audit,full,2022-01-04,2022-01-06,2,,,199,24,23,47,49,103,0,0,200,,199,47,41,2,1,0.0638,23.5,
+2022-01-sandclock-findings,2022-01-sandclock,67,Sandclock contest,Sandclock,audit,full,2022-01-06,2022-01-12,6,,,194,40,46,86,98,10,0,0,194,,194,34,36,5,15,0.2326,14.3333,
+2023-01-reserve-findings,2023-01-reserve,203,Reserve contest,Reserve,audit,full,2022-01-06,2022-01-20,14,210500.0,,510,101,217,318,106,86,0,0,494,,510,153,76,2,25,0.0849,22.7143,1.5107
+2022-01-insure-findings,2022-01-insure,71,InsureDAO contest,InsureDAO,audit,full,2022-01-07,2022-01-13,6,,,361,33,29,62,86,213,0,0,362,,361,38,40,14,9,0.371,10.3333,
+2022-01-livepeer-findings,2022-01-livepeer,73,Livepeer contest,Livepeer,audit,full,2022-01-13,2022-01-19,6,,,244,22,32,54,65,125,0,0,245,,244,31,31,1,8,0.1667,9.0,
+2022-01-elasticswap-findings,2022-01-elasticswap,77,ElasticSwap contest,ElasticSwap,audit,full,2022-01-20,2022-01-26,6,,,180,15,18,33,37,110,0,0,180,,180,38,39,2,1,0.0909,5.5,
+2022-01-sherlock-findings,2022-01-sherlock,76,Sherlock contest,Sherlock,audit,full,2022-01-20,2022-01-26,6,,,280,16,30,46,95,139,0,0,282,,280,46,40,1,4,0.1087,7.6667,
+2022-01-trader-joe-findings,2022-01-trader-joe,79,Trader Joe contest,Trader Joe,audit,full,2022-01-25,2022-01-27,2,,,320,23,37,60,102,158,0,0,320,,320,43,43,2,15,0.2833,30.0,
+2022-01-behodler-findings,2022-01-behodler,78,Behodler contest,Behodler,audit,full,2022-01-27,2022-02-02,6,,,336,41,50,91,81,164,0,0,338,,336,36,39,7,14,0.2308,15.1667,
+2022-01-notional-findings,2022-01-notional,81,Notional contest,Notional,audit,full,2022-01-27,2022-02-02,6,,,230,14,40,54,77,99,0,0,231,,230,35,27,3,7,0.1852,9.0,
+2022-01-openleverage-findings,2022-01-openleverage,72,OpenLeverage contest,OpenLeverage,audit,full,2022-01-27,2022-02-02,6,,,267,12,24,36,80,151,0,0,271,,267,31,31,1,5,0.1667,6.0,
+2022-01-yield-findings,2022-01-yield,80,Yield-Convex contest,Yield,audit,full,2022-01-28,2022-01-30,2,,,139,13,20,33,29,77,0,0,139,,139,26,23,2,2,0.1212,16.5,
+2022-02-aave-lens-findings,2022-02-aave-lens,85,Aave Lens contest,Aave Lens,audit,full,2022-02-03,2022-02-09,6,,,86,16,37,53,18,15,0,0,87,,86,29,23,0,13,0.2453,8.8333,
+2022-02-concur-findings,2022-02-concur,83,Concur Finance contest,Concur Finance,audit,full,2022-02-03,2022-02-09,6,,,271,98,98,196,37,38,0,0,279,,271,53,58,11,31,0.2143,32.6667,
+2022-02-badger-citadel-findings,2022-02-badger-citadel,84,Badger Citadel contest,BadgerDAO,audit,full,2022-02-04,2022-02-06,2,,,113,23,38,61,24,28,0,0,114,,113,43,40,,,,30.5,
+2022-02-nested-findings,2022-02-nested,86,Nested Finance contest,Nested Finance,audit,full,2022-02-10,2022-02-12,2,,,78,14,21,35,20,23,0,0,79,,78,28,26,,,,17.5,
+2022-02-redacted-cartel-findings,2022-02-redacted-cartel,87,Redacted Cartel contest,Redacted Cartel,audit,full,2022-02-15,2022-02-17,2,,,120,22,59,81,20,19,0,0,124,,120,36,37,0,18,0.2222,40.5,
+2022-02-hubble-findings,2022-02-hubble,89,Hubble contest,Hubble,audit,full,2022-02-17,2022-02-23,6,,,133,33,56,89,24,20,0,0,145,,133,39,45,3,17,0.2247,14.8333,
+2022-02-skale-findings,2022-02-skale,88,SKALE contest,SKALE,audit,full,2022-02-17,2022-03-02,13,,,82,17,36,53,10,19,0,0,82,,82,25,29,2,11,0.2453,4.0769,
+2022-02-tribe-turbo-findings,2022-02-tribe-turbo,92,Tribe Turbo contest,Tribe,audit,full,2022-02-17,2022-02-23,6,,,78,18,25,43,17,18,0,0,78,,78,26,30,2,5,0.1628,7.1667,
+2022-02-pooltogether-findings,2022-02-pooltogether,93,PoolTogether TWAB Delegator contest,PoolTogether,audit,full,2022-02-22,2022-02-24,2,,,48,7,9,16,13,19,0,0,48,,48,26,29,,,,8.0,
+2022-02-anchor-findings,2022-02-anchor,82,Anchor contest,Anchor,audit,full,2022-02-24,2022-03-09,13,,,76,17,42,59,9,8,0,0,78,,76,17,20,3,12,0.2542,4.5385,
+2022-02-foundation-findings,2022-02-foundation,94,Foundation contest,Foundation,audit,full,2022-02-24,2022-03-02,6,,,89,20,37,57,20,12,0,0,89,,89,32,34,3,18,0.3684,9.5,
+2022-02-jpyc-findings,2022-02-jpyc,95,JPYC contest,JPYC,audit,full,2022-02-24,2022-02-26,2,,,62,5,21,26,18,18,0,0,62,,62,28,28,,,,13.0,
+2022-03-timeswap-findings,2022-03-timeswap,96,Timeswap contest,Timeswap,audit,full,2022-03-04,2022-03-06,2,,,38,6,11,17,9,12,0,0,38,,38,19,21,1,3,0.2353,8.5,
+2022-03-biconomy-findings,2022-03-biconomy,97,Biconomy Hyphen 2.0 contest,Biconomy,audit,full,2022-03-10,2022-03-16,6,,,211,44,74,118,44,49,0,0,214,,211,55,61,5,20,0.2119,19.6667,
+2022-03-maple-findings,2022-03-maple,99,Maple Finance contest,Maple Finance,audit,full,2022-03-17,2022-03-21,4,,,40,7,9,16,10,14,0,0,40,,40,18,20,,,,4.0,
+2022-03-prepo-findings,2022-03-prepo,100,prePO contest,prePO,audit,full,2022-03-17,2022-03-19,2,,,130,23,39,62,37,31,0,0,131,,130,44,49,3,5,0.129,31.0,
+2022-03-rolla-findings,2022-03-rolla,98,Rolla contest,Rolla,audit,full,2022-03-17,2022-03-24,7,,,64,13,27,40,17,7,0,0,66,,64,24,23,4,10,0.35,5.7143,
+2022-03-lifinance-findings,2022-03-lifinance,103,LI.FI contest,LI.FI,audit,full,2022-03-24,2022-03-30,6,,,212,52,79,131,40,41,0,0,217,,212,61,68,2,13,0.1145,21.8333,
+2022-03-paladin-findings,2022-03-paladin,105,Paladin contest,Paladin,audit,full,2022-03-29,2022-04-02,4,,,94,11,32,43,25,26,0,0,95,,94,44,44,2,14,0.3721,10.75,
+2022-03-sublime-findings,2022-03-sublime,101,Sublime contest,Sublime,audit,full,2022-03-29,2022-03-31,2,,,82,16,26,42,20,20,0,0,83,,82,28,25,2,4,0.1429,21.0,
+2022-03-joyn-findings,2022-03-joyn,104,Joyn contest,Joyn,audit,full,2022-03-30,2022-04-01,2,,,139,39,53,92,24,23,0,0,154,,139,38,45,9,12,0.2283,46.0,
+2022-03-volt-findings,2022-03-volt,102,Volt Protocol contest,Volt Protocol,audit,full,2022-03-31,2022-04-06,6,,,130,14,50,64,37,29,0,0,130,,130,42,44,1,6,0.1094,10.6667,
+2022-04-backed-findings,2022-04-backed,106,Backed Protocol contest,Backed Protocol,audit,full,2022-04-05,2022-04-07,2,,,134,19,46,65,39,30,0,0,135,,134,51,54,3,7,0.1538,32.5,
+2022-04-dualityfocus-findings,2022-04-dualityfocus,108,Duality Focus contest,Duality Focus,audit,full,2022-04-06,2022-04-08,2,,,46,5,23,28,14,4,0,0,46,,46,19,20,0,5,0.1786,14.0,
+2022-04-axelar-findings,2022-04-axelar,109,Axelar Network contest,Axelar Network,audit,full,2022-04-07,2022-04-11,4,,,40,6,11,17,9,14,0,0,40,,40,21,24,1,4,0.2941,4.25,
+2022-04-jpegd-findings,2022-04-jpegd,107,JPEG'd contest,JPEG'd,audit,full,2022-04-07,2022-04-13,6,,,234,55,100,155,39,40,0,0,235,,234,68,66,9,11,0.129,25.8333,
+2022-04-badger-citadel-findings,2022-04-badger-citadel,110,Badger Citadel contest,BadgerDAO,audit,full,2022-04-14,2022-04-20,6,,,230,64,60,124,56,50,0,0,237,,230,75,79,3,5,0.0645,20.6667,
+2022-04-phuture-findings,2022-04-phuture,90,Phuture Finance contest,Phuture Finance,audit,full,2022-04-19,2022-04-21,2,,,98,11,34,45,25,28,0,0,99,,98,46,45,2,8,0.2222,22.5,
+2022-04-backd-findings,2022-04-backd,112,Backd contest,Backd,audit,full,2022-04-21,2022-04-27,6,,,221,32,93,125,43,53,0,0,222,,221,67,62,3,15,0.144,20.8333,
+2022-04-xtribe-findings,2022-04-xtribe,111,xTRIBE contest,Tribe,audit,full,2022-04-21,2022-04-27,6,,,98,5,21,26,33,39,0,0,98,,98,48,47,0,7,0.2692,4.3333,
+2022-04-abranft-findings,2022-04-abranft,113,AbraNFT contest,Abracadabra Money,audit,full,2022-04-27,2022-05-01,4,,,198,86,41,127,35,36,0,0,201,,198,63,72,5,1,0.0472,31.75,
+2022-04-mimo-findings,2022-04-mimo,115,Mimo DeFi contest,Mimo DeFi,audit,full,2022-04-28,2022-05-02,4,,,172,29,73,102,32,38,0,0,173,,172,46,46,2,5,0.0686,25.5,
+2022-04-pooltogether-findings,2022-04-pooltogether,114,PoolTogether Aave v3 contest,PoolTogether,audit,full,2022-04-29,2022-05-01,2,,,100,16,20,36,27,37,0,0,100,,100,44,44,1,5,0.1667,18.0,
+2022-05-bunker-findings,2022-05-bunker,117,bunker.finance contest,bunker.finance,audit,full,2022-05-03,2022-05-07,4,,,129,21,46,67,25,37,0,0,130,,129,47,54,0,4,0.0597,16.75,
+2022-05-cudos-findings,2022-05-cudos,116,Cudos contest,Cudos,audit,full,2022-05-03,2022-05-09,6,,,170,39,56,95,32,43,0,0,175,,170,55,64,0,6,0.0632,15.8333,
+2022-05-runes-findings,2022-05-runes,118,Forgotten Runes Warrior Guild contest,Forgotten Runes,audit,full,2022-05-03,2022-05-05,2,,,300,23,121,144,78,78,0,0,304,,300,95,102,0,6,0.0417,72.0,
+2022-05-factorydao-findings,2022-05-factorydao,119,FactoryDAO contest,FactoryDAO,audit,full,2022-05-04,2022-05-08,4,,,287,82,115,197,43,47,0,0,291,,287,72,81,3,21,0.1218,49.25,
+2022-05-alchemix-findings,2022-05-alchemix,120,Alchemix contest,Alchemix,audit,full,2022-05-05,2022-05-18,13,,,203,27,78,105,45,53,0,0,229,,203,65,74,0,17,0.1619,8.0769,
+2022-05-cally-findings,2022-05-cally,122,Cally contest,Cally,audit,full,2022-05-10,2022-05-14,4,,,327,42,135,177,76,74,0,0,346,,327,101,115,3,10,0.0734,44.25,
+2022-05-aura-findings,2022-05-aura,123,Aura Finance contest,Aura Finance,audit,full,2022-05-11,2022-05-25,14,,,344,45,134,179,81,84,0,0,363,,344,100,109,1,22,0.1285,12.7857,
+2022-05-sturdy-findings,2022-05-sturdy,125,Sturdy contest,Sturdy,audit,full,2022-05-13,2022-05-15,2,,,173,34,50,84,46,43,0,0,174,,173,67,73,2,6,0.0952,42.0,
+2022-05-opensea-seaport-findings,2022-05-opensea-seaport,128,OpenSea Seaport contest,OpenSea,audit,full,2022-05-20,2022-06-03,14,,,207,23,58,81,66,60,0,0,216,,207,80,65,2,2,0.0494,5.7857,
+2022-05-rubicon-findings,2022-05-rubicon,129,Rubicon contest,Rubicon,audit,full,2022-05-23,2022-05-28,5,,,510,108,270,378,72,60,0,0,517,,510,101,110,10,34,0.1164,75.6,
+2022-05-velodrome-findings,2022-05-velodrome,130,Velodrome Finance contest,Velodrome Finance,audit,full,2022-05-23,2022-05-30,7,,,225,32,85,117,52,56,0,0,226,,225,80,82,6,17,0.1966,16.7143,
+2022-05-vetoken-findings,2022-05-vetoken,126,veToken Finance contest,veToken Finance,audit,full,2022-05-26,2022-06-02,7,,,277,38,118,156,57,64,0,0,277,,277,80,76,1,30,0.1987,22.2857,
+2022-05-backd-findings,2022-05-backd,131,Backd Tokenomics contest,Backd,audit,full,2022-05-27,2022-06-03,7,,,175,32,55,87,43,45,0,0,182,,175,60,66,2,18,0.2299,12.4286,
+2022-06-notional-coop-findings,2022-06-notional-coop,124,Notional x Index Coop,Notional,audit,full,2022-06-07,2022-06-14,7,,,234,30,69,99,67,68,0,0,240,,234,80,81,1,10,0.1111,14.1429,
+2022-06-connext-findings,2022-06-connext,132,Connext Amarok contest,Connext,audit,full,2022-06-08,2022-06-19,11,,,276,46,117,163,55,58,0,0,277,,276,78,81,6,20,0.1595,14.8182,
+2022-06-canto-findings,2022-06-canto,133,Canto contest,Canto,audit,full,2022-06-14,2022-06-21,7,,,320,86,95,181,57,82,0,0,321,,320,69,63,14,12,0.1436,25.8571,
+2022-06-infinity-findings,2022-06-infinity,136,Infinity NFT Marketplace contest,Infinity NFT Marketplace,audit,full,2022-06-14,2022-06-19,5,,,360,92,140,232,62,66,0,0,368,,360,100,113,11,9,0.0862,46.4,
+2022-06-badger-findings,2022-06-badger,138,Badger-Vested-Aura contest,BadgerDAO,audit,full,2022-06-15,2022-06-18,3,,,153,40,37,77,41,35,0,0,157,,153,59,56,2,3,0.0649,25.6667,
+2022-06-nested-findings,2022-06-nested,137,Nested Finance contest,Nested Finance,audit,full,2022-06-15,2022-06-18,3,,,98,7,29,36,28,34,0,0,100,,98,40,40,0,1,0.0278,12.0,
+2022-06-illuminate-findings,2022-06-illuminate,134,Illuminate contest,Illuminate,audit,full,2022-06-21,2022-06-26,5,,,411,169,114,283,66,62,0,0,415,,411,90,99,16,13,0.1025,56.6,
+2022-06-nibbl-findings,2022-06-nibbl,140,Nibbl contest,Nibbl,audit,full,2022-06-21,2022-06-24,3,,,323,49,113,162,78,83,0,0,324,,323,108,107,0,12,0.0741,54.0,
+2022-06-yieldy-findings,2022-06-yieldy,139,Yieldy contest,Yieldy,audit,full,2022-06-21,2022-06-26,5,,,305,47,123,170,61,74,0,0,306,,305,99,110,4,27,0.1824,34.0,
+2022-06-canto-v2-findings,2022-06-canto-v2,141,Canto v2 contest,Canto,audit,full,2022-06-28,2022-07-02,4,,,177,33,44,77,39,61,0,0,184,,177,59,51,8,6,0.1818,19.25,
+2022-06-putty-findings,2022-06-putty,142,Putty contest,Putty,audit,full,2022-06-29,2022-07-04,5,,,463,72,193,265,78,120,0,0,467,,463,139,144,4,16,0.0755,53.0,
+2022-07-juicebox-findings,2022-07-juicebox,143,Juicebox V2 contest,Juicebox,audit,full,2022-07-01,2022-07-08,7,,,361,34,174,208,64,89,0,0,371,,361,111,111,2,15,0.0817,29.7143,
+2022-07-fractional-findings,2022-07-fractional,144,Fractional v2 contest,Fractional,audit,full,2022-07-07,2022-07-14,7,,,640,214,221,435,99,106,0,0,653,,640,147,156,20,12,0.0736,62.1429,
+2022-07-canto-findings,2022-07-canto,146,Canto Solo Audit by Ghoul.sol,Canto,audit,full,2022-07-08,2022-07-10,2,,,0,0,0,0,0,0,0,0,,,0,0,,,,,0.0,
+2022-07-ens-findings,2022-07-ens,145,ENS contest,ENS,audit,full,2022-07-12,2022-07-19,7,,,317,37,113,150,69,98,0,0,326,,317,106,107,3,13,0.1067,21.4286,
+2022-07-swivel-findings,2022-07-swivel,135,Swivel v3 contest,Swivel,audit,full,2022-07-12,2022-07-15,3,,,195,33,54,87,50,58,0,0,200,,195,81,80,1,12,0.1494,29.0,
+2022-07-yield-findings,2022-07-yield,147,Yield Witch v2 contest,Yield,audit,full,2022-07-14,2022-07-17,3,,,175,21,39,60,51,64,0,0,177,,175,79,64,2,0,0.0333,20.0,
+2022-07-golom-findings,2022-07-golom,148,Golom contest,Golom,audit,full,2022-07-26,2022-08-01,6,,,997,205,479,684,151,162,0,0,1009,,997,195,188,11,18,0.0424,114.0,
+2022-07-axelar-findings,2022-07-axelar,149,Axelar Network v2 contest,Axelar Network,audit,full,2022-07-29,2022-08-03,5,,,231,22,80,102,52,77,0,0,234,,231,80,80,0,6,0.0588,20.4,
+2022-08-rigor-findings,2022-08-rigor,151,Rigor Protocol contest,Rigor Protocol,audit,full,2022-08-01,2022-08-06,5,,,410,61,150,211,94,105,0,0,413,,410,138,139,6,20,0.1232,42.2,
+2022-08-mimo-findings,2022-08-mimo,150,Mimo DeFi contest,Mimo DeFi,audit,full,2022-08-02,2022-08-07,5,,,174,24,39,63,54,57,0,0,176,,174,79,69,4,8,0.1905,12.6,
+2022-08-foundation-findings,2022-08-foundation,152,Foundation Drop contest,Foundation,audit,full,2022-08-11,2022-08-15,4,,,307,35,111,146,78,83,0,0,310,,307,125,114,0,8,0.0548,36.5,
+2022-08-fiatdao-findings,2022-08-fiatdao,154,FIAT DAO veFDT contest,FIAT DAO,audit,full,2022-08-12,2022-08-15,3,,,328,49,94,143,92,93,0,0,330,,328,135,135,2,8,0.0699,47.6667,
+2022-08-frax-findings,2022-08-frax,153,Fraxlend (Frax Finance) contest,Frax Finance,audit,full,2022-08-12,2022-08-17,5,,,366,55,131,186,82,98,0,0,369,,366,133,136,2,13,0.0806,37.2,
+2022-08-nounsdao-findings,2022-08-nounsdao,155,Nouns DAO contest,Nouns DAO,audit,full,2022-08-22,2022-08-27,5,,,411,42,126,168,116,127,0,0,413,,411,173,168,1,3,0.0238,33.6,
+2022-08-prepo-findings,2022-08-prepo,158,prePO Solo Audit by cccz,prePO,audit,full,2022-08-23,2022-08-31,8,,,0,0,0,0,0,0,0,0,,,0,0,,,,,0.0,
+2022-08-olympus-findings,2022-08-olympus,156,Olympus DAO contest,Olympus DAO,audit,full,2022-08-25,2022-09-01,7,,,504,61,220,281,118,105,0,0,506,,504,164,156,3,32,0.1246,40.1429,
+2022-09-nouns-builder-findings,2022-09-nouns-builder,157,Nouns Builder contest,Nouns Builder,audit,full,2022-09-06,2022-09-15,9,,,735,144,334,478,135,122,0,0,737,,735,203,176,5,28,0.069,53.1111,
+2022-09-canto-findings,2022-09-canto,159,Canto Dex Oracle contest,Canto,audit,full,2022-09-07,2022-09-08,1,,,186,51,72,123,61,2,0,0,187,,186,86,70,1,6,0.0569,123.0,
+2022-09-tribe-findings,2022-09-tribe,161,FEI and TRIBE Redemption contest,Tribe,audit,full,2022-09-09,2022-09-12,3,,,279,49,121,170,101,8,0,0,280,,279,115,107,0,2,0.0118,56.6667,
+2022-09-party-findings,2022-09-party,160,PartyDAO contest,PartyDAO,audit,full,2022-09-12,2022-09-19,7,,,361,58,119,177,87,97,0,0,362,,361,134,119,7,12,0.1073,25.2857,
+2022-09-y2k-finance-findings,2022-09-y2k-finance,162,Y2k Finance contest,Y2k Finance,audit,full,2022-09-14,2022-09-19,5,,,525,99,205,304,104,117,0,0,527,,525,162,114,9,16,0.0822,60.8,
+2022-09-artgobblers-findings,2022-09-artgobblers,163,Art Gobblers contest,Art Gobblers,audit,full,2022-09-20,2022-09-27,7,,,483,65,167,232,114,137,0,0,485,,483,183,117,1,3,0.0172,33.1429,
+2022-09-vtvl-findings,2022-09-vtvl,164,VTVL contest,VTVL,audit,full,2022-09-20,2022-09-23,3,,,496,73,160,233,122,141,0,0,498,,496,206,208,2,10,0.0515,77.6667,
+2022-09-frax-findings,2022-09-frax,165,Frax Ether Liquid Staking contest,Frax Finance,audit,full,2022-09-22,2022-09-25,3,,,400,40,155,195,94,111,0,0,401,,400,148,139,2,10,0.0615,65.0,
+2022-09-quickswap-findings,2022-09-quickswap,166,QuickSwap and StellaSwap contest,QuickSwap and StellaSwap,audit,full,2022-09-26,2022-10-01,5,,,329,37,94,131,89,109,0,0,330,,329,139,118,1,12,0.0992,26.2,
+2022-10-blur-findings,2022-10-blur,168,Blur Exchange contest,Blur Exchange,audit,full,2022-10-05,2022-10-10,5,,,863,136,405,541,151,171,0,0,865,,863,236,87,1,1,0.0037,108.2,
+2022-10-thegraph-findings,2022-10-thegraph,169,The Graph L2 bridge contest,The Graph,audit,full,2022-10-07,2022-10-12,5,,,314,24,116,140,82,92,0,0,315,,314,117,65,0,4,0.0286,28.0,
+2022-10-traderjoe-findings,2022-10-traderjoe,171,Trader Joe v2 contest,Trader Joe,audit,full,2022-10-14,2022-10-23,9,,,534,93,178,271,133,130,0,0,520,,534,197,83,5,7,0.0443,30.1111,
+2022-10-holograph-findings,2022-10-holograph,170,Holograph contest,Holograph,audit,full,2022-10-18,2022-10-25,7,,,504,95,211,306,97,101,0,0,507,,504,154,147,8,19,0.0882,43.7143,
+2022-10-juicebox-findings,2022-10-juicebox,172,Juicebox contest,Juicebox,audit,full,2022-10-18,2022-10-23,5,,,243,27,63,90,79,74,0,0,230,,243,111,70,5,8,0.1444,18.0,
+2022-10-inverse-findings,2022-10-inverse,175,Inverse Finance contest,Inverse Finance,audit,full,2022-10-25,2022-10-30,5,,,631,113,249,362,155,114,0,0,604,,631,198,140,0,18,0.0497,72.4,
+2022-10-paladin-findings,2022-10-paladin,176,Paladin - Warden Pledges contest,Paladin,audit,full,2022-10-27,2022-10-30,3,33500.0,,300,13,112,125,97,78,0,0,285,,300,132,97,0,8,0.064,41.6667,3.7313
+2022-10-zksync-findings,2022-10-zksync,177,zkSync v2 contest,zkSync,audit,full,2022-10-28,2022-11-09,12,165500.0,,380,41,124,165,113,102,0,0,366,,380,141,24,0,2,0.0121,13.75,0.997
+2022-11-debtdao-findings,2022-11-debtdao,174,Debt DAO contest,Debt DAO,audit,full,2022-11-03,2022-11-10,7,115500.0,,523,99,241,340,98,85,0,0,529,,523,144,123,6,11,0.05,48.5714,2.9437
+2022-11-size-findings,2022-11-size,180,SIZE contest,SIZE,audit,full,2022-11-04,2022-11-08,4,42500.0,,351,83,110,193,83,75,0,0,339,,351,132,99,2,7,0.0466,48.25,4.5412
+2022-11-looksrare-findings,2022-11-looksrare,178,LooksRare Aggregator contest,LooksRare,audit,full,2022-11-08,2022-11-13,5,60500.0,,300,48,102,150,98,52,0,0,280,,300,117,78,0,6,0.04,30.0,2.4793
+2022-11-non-fungible-findings,2022-11-non-fungible,181,Blur Exchange contest,Blur Exchange,audit,full,2022-11-11,2022-11-14,3,36500.0,,284,42,85,127,89,68,0,0,270,,284,106,63,1,4,0.0394,42.3333,3.4795
+2022-11-stakehouse-findings,2022-11-stakehouse,182,LSD Network - Stakehouse contest,Stakehouse Protocol,audit,full,2022-11-11,2022-11-18,7,90500.0,,451,128,151,279,89,83,0,0,450,,451,126,98,21,31,0.1864,39.8571,3.0829
+2022-11-foundation-findings,2022-11-foundation,197,"Foundation Exhibition, Scheduling & Early Access Solo Audit by Lambda",Foundation,audit,full,2022-11-21,2022-11-28,7,,,0,0,0,0,0,0,0,0,,,0,0,,,,,0.0,
+2022-11-redactedcartel-findings,2022-11-redactedcartel,183,Redacted Cartel contest,Redacted Cartel,audit,full,2022-11-21,2022-11-28,7,90500.0,,428,78,184,262,95,71,0,0,418,,428,141,106,6,12,0.0687,37.4286,2.895
+2022-11-ens-findings,2022-11-ens,184,ENS - Versus contest,ENS,audit,full,2022-11-22,2022-11-28,6,36500.0,,16,2,8,10,4,2,0,0,17,,16,5,3,2,3,0.5,1.6667,0.274
+2022-11-canto-findings,2022-11-canto,185,Canto contest,Canto,audit,full,2022-11-23,2022-11-28,5,24500.0,,163,17,52,69,52,42,0,0,153,,163,73,37,2,3,0.0725,13.8,2.8163
+2022-11-paraspace-findings,2022-11-paraspace,186,ParaSpace contest,ParaSpace,audit,full,2022-11-28,2022-12-09,11,192500.0,,524,121,232,353,94,77,0,0,521,,524,152,113,10,24,0.0963,32.0909,1.8338
+2022-12-Stealth-Project-findings,2022-12-stealth-project,187,Maverick contest,Maverick,audit,full,2022-12-01,2022-12-12,11,,,122,17,62,79,27,16,0,0,112,,122,34,27,0,8,0.1013,7.1818,
+2022-12-pooltogether-findings,2022-12-pooltogether,188,PoolTogether contest,PoolTogether,audit,full,2022-12-01,2022-12-05,4,26900.0,,238,20,96,116,69,53,0,0,223,,238,92,19,0,3,0.0259,29.0,4.3123
+2022-12-escher-findings,2022-12-escher,189,Escher contest,Escher,audit,full,2022-12-06,2022-12-09,3,36500.0,,578,147,262,409,112,57,0,0,558,,578,157,124,3,13,0.0391,136.3333,11.2055
+2022-12-prepo-findings,2022-12-prepo,190,prePO contest,prePO,audit,full,2022-12-09,2022-12-12,3,36500.0,,361,63,187,250,74,37,0,0,340,,361,103,71,2,7,0.036,83.3333,6.8493
+2022-12-tigris-findings,2022-12-tigris,192,Tigris Trade contest,Tigris Trade,audit,full,2022-12-09,2022-12-16,7,90500.0,,702,152,341,493,129,80,0,0,676,,702,171,89,11,24,0.071,70.4286,5.4475
+2022-12-caviar-findings,2022-12-caviar,193,Caviar contest,Caviar,audit,full,2022-12-12,2022-12-19,7,36500.0,,541,146,196,342,123,76,0,0,509,,541,189,130,3,5,0.0234,48.8571,9.3699
+2022-12-forgeries-findings,2022-12-forgeries,191,Forgeries contest,Forgeries,audit,full,2022-12-13,2022-12-16,3,36500.0,,378,48,162,210,102,66,0,0,358,,378,143,83,2,3,0.0238,70.0,5.7534
+2022-12-gogopool-findings,2022-12-gogopool,194,GoGoPool contest,GoGoPool,audit,full,2022-12-15,2023-01-03,19,128000.0,,934,204,446,650,160,124,0,0,906,,934,234,114,6,22,0.0431,34.2105,5.0781
+2022-12-backed-findings,2022-12-backed,196,Papr contest,Backed Protocol,audit,full,2022-12-16,2022-12-21,5,60500.0,,316,61,128,189,73,54,0,0,305,,316,114,64,4,8,0.0635,37.8,3.124
+2022-12-ens-mitigation-findings,2022-12-ens-mitigation,,,,mitigation,full,2022-12-16,2022-12-21,5,9000.0,,15,1,0,1,0,0,0,14,16,,15,3,,,,,0.2,0.1111
+2022-12-tessera-findings,2022-12-tessera,195,Tessera - Versus contest,Tessera,audit,full,2022-12-16,2022-12-19,3,32070.0,,58,22,28,50,5,3,0,0,58,,58,6,5,9,9,0.36,16.6667,1.5591
+2022-12-forgotten-runiverse-findings,2022-12-forgotten-runiverse,198,Forgotten Runiverse - Versus contest,Forgotten Runiverse,audit,full,2022-12-20,2022-12-22,2,,,26,0,19,19,5,2,0,0,26,,26,6,4,0,7,0.3684,9.5,
+2022-01-dev-test-repo-findings,2022-01-dev-test-repo,101,"Sample, eh? — finished copy",Purple Cow,audit,full,2023-01-01,2023-12-15,348,,,371,61,199,260,33,24,7,47,394,,371,18,5,0,2,0.0077,0.7471,
+2023-01-biconomy-findings,2023-01-biconomy,200,Biconomy - Smart Contract Wallet contest,Biconomy,audit,full,2023-01-04,2023-01-09,5,60500.0,,550,131,207,338,122,90,0,0,549,,550,194,115,7,8,0.0444,67.6,5.5868
+2023-01-astaria-findings,2023-01-astaria,202,Astaria contest,Astaria,audit,full,2023-01-05,2023-01-19,14,90500.0,,647,182,258,440,117,90,0,0,637,,647,188,109,21,34,0.125,31.4286,4.8619
+2023-01-ondo-findings,2023-01-ondo,204,Ondo Finance contest,Ondo Finance,audit,full,2023-01-11,2023-01-17,6,60500.0,,376,52,137,189,105,82,0,0,369,,376,146,74,1,5,0.0317,31.5,3.124
+2023-01-opensea-findings,2023-01-opensea,201,OpenSea Seaport 1.2 contest,OpenSea,audit,full,2023-01-13,2023-01-23,10,100500.0,,118,19,31,50,39,29,0,0,118,,118,60,23,0,1,0.02,5.0,0.4975
+2023-01-timeswap-findings,2023-01-timeswap,206,Timeswap contest,Timeswap,audit,full,2023-01-20,2023-01-27,7,90500.0,,296,54,102,156,82,58,0,0,301,,296,116,59,3,7,0.0641,22.2857,1.7238
+2023-01-drips-findings,2023-01-drips,209,Drips Protocol contest,Drips Protocol,audit,full,2023-01-25,2023-02-03,9,90500.0,,324,32,121,153,92,79,0,0,326,,324,148,26,1,2,0.0196,17.0,1.6906
+2023-01-rabbithole-findings,2023-01-rabbithole,208,RabbitHole Quest Protocol contest,RabbitHole,audit,full,2023-01-25,2023-01-30,5,36500.0,,704,176,286,462,134,108,0,0,706,,704,222,185,2,9,0.0238,92.4,12.6575
+2023-01-numoen-findings,2023-01-numoen,207,Numoen contest,Numoen,audit,full,2023-01-26,2023-02-01,6,60500.0,,290,58,108,166,63,61,0,0,292,,290,115,32,1,6,0.0422,27.6667,2.7438
+2023-01-tessera-mitigation-findings,2023-01-tessera-mitigation,,,,mitigation,full,2023-01-27,2023-02-01,5,8700.0,,55,6,18,24,0,0,0,31,57,,55,3,,,,,4.8,2.7586
+2023-01-canto-identity-findings,2023-01-canto-identity,212,Canto Identity Protocol contest,Canto Identity Protocol,audit,full,2023-01-31,2023-02-03,3,36500.0,,186,13,50,63,69,54,0,0,187,,186,102,39,1,4,0.0794,21.0,1.726
+2023-01-popcorn-findings,2023-01-popcorn,211,Popcorn contest,Popcorn,audit,full,2023-01-31,2023-02-07,7,90500.0,,850,231,377,608,134,108,0,0,854,,850,235,178,12,35,0.0773,86.8571,6.7182
+2023-02-gogopool-mitigation-contest-findings,2023-02-gogopool-mitigation-contest,,,,mitigation,full,2023-02-10,2023-02-15,5,32000.0,,65,1,12,13,0,0,0,52,66,,65,3,,,,,2.6,0.4062
+2023-02-reserve-mitigation-contest-findings,2023-02-reserve-mitigation-contest,,,,mitigation,full,2023-02-13,2023-02-17,4,45000.0,,78,2,13,15,0,0,0,63,79,,78,3,,,,,3.75,0.3333
+2023-02-malt-findings,2023-02-malt,213,Malt Protocol - Versus contest,Malt Protocol,audit,full,2023-02-14,2023-02-20,6,60500.0,,44,10,27,37,4,3,0,0,47,,44,4,4,6,16,0.5946,6.1667,0.6116
+2023-02-ethos-findings,2023-02-ethos,216,Ethos Reserve contest,Ethos Reserve,audit,full,2023-02-16,2023-03-07,19,144750.0,,851,199,369,568,159,124,0,0,861,,851,259,166,3,14,0.0299,29.8947,3.924
+2023-02-kuma-findings,2023-02-kuma,217,KUMA Protocol - Versus contest,KUMA Protocol,audit,full,2023-02-17,2023-02-22,5,38600.0,,36,6,24,30,4,2,0,0,38,,36,5,5,1,4,0.1667,6.0,0.7772
+2023-03-aragon-findings,2023-03-aragon,219,Aragon Protocol contest,Aragon Protocol,audit,full,2023-03-03,2023-03-10,7,90500.0,,188,16,72,88,53,47,0,0,193,,188,98,43,0,4,0.0455,12.5714,0.9724
+2023-03-wenwin-findings,2023-03-wenwin,218,Wenwin contest,Wenwin,audit,full,2023-03-06,2023-03-09,3,36500.0,,516,109,213,322,100,94,0,0,522,,516,187,98,1,7,0.0248,107.3333,8.8219
+2023-03-neotokyo-findings,2023-03-neotokyo,220,Neo Tokyo contest,Neo Tokyo,audit,full,2023-03-08,2023-03-15,7,,,459,109,173,282,112,65,0,0,463,,459,192,136,2,0,0.0071,40.2857,
+2023-03-zksync-findings,2023-03-zksync,221,zkSync Era System Contracts contest,zkSync,audit,full,2023-03-10,2023-03-19,9,180500.0,,213,53,84,137,68,8,0,0,216,,213,102,19,1,5,0.0438,15.2222,0.759
+2023-03-polynomial-findings,2023-03-polynomial,222,Polynomial Protocol contest,Polynomial Protocol,audit,full,2023-03-13,2023-03-20,7,,,264,83,142,225,36,3,0,0,267,,264,56,36,14,19,0.1467,32.1429,
+2023-03-kuma-mitigation-contest-findings,2023-03-kuma-mitigation-contest,,,,mitigation,full,2023-03-16,2023-03-21,5,11000.0,,25,0,4,4,0,0,0,21,26,,25,3,,,,,0.8,0.3636
+2023-03-canto-identity-findings,2023-03-canto-identity,223,Canto Identity Subprotocols contest,Canto Identity Subprotocols,audit,full,2023-03-17,2023-03-20,3,36500.0,,292,36,114,150,80,62,0,0,294,,292,139,101,1,9,0.0667,50.0,4.1096
+2023-03-asymmetry-findings,2023-03-asymmetry,226,Asymmetry contest,Asymmetry Finance,audit,full,2023-03-24,2023-03-30,6,49200.0,,1142,291,517,808,190,144,0,0,1153,,1142,344,271,8,12,0.0248,134.6667,16.4228
+2023-03-mute-findings,2023-03-mute,227,Mute Switch - Versus contest,Mute.io,audit,full,2023-03-28,2023-04-03,6,24000.0,,48,8,32,40,5,3,0,0,50,,48,6,5,3,9,0.3,6.6667,1.6667
+2023-04-party-findings,2023-04-party,228,Party Protocol - Versus contest,PartyDAO,audit,full,2023-04-03,2023-04-14,11,56500.0,,46,10,29,39,4,3,0,0,47,,46,6,4,8,12,0.5128,3.5455,0.6903
+2023-04-rubicon-findings,2023-04-rubicon,229,Rubicon v2,Rubicon,audit,full,2023-04-05,2023-04-13,8,60500.0,1577,1370,357,703,1060,182,128,0,0,1385,,1370,319,194,17,28,0.0425,132.5,17.5207
+2023-04-caviar-findings,2023-04-caviar,230,Caviar Private Pools,Caviar,audit,full,2023-04-07,2023-04-13,6,47000.0,,1001,257,518,775,132,94,0,0,1009,,1001,256,127,3,17,0.0258,129.1667,16.4894
+2023-04-frankencoin-findings,2023-04-frankencoin,231,Frankencoin,Frankencoin,audit,full,2023-04-12,2023-04-17,5,60500.0,,990,272,499,771,134,85,0,0,992,,990,300,219,6,15,0.0272,154.2,12.7438
+2023-04-ens-findings,2023-04-ens,232,ENS Contest,ENS,audit,full,2023-04-14,2023-04-28,14,90500.0,,331,73,127,200,66,65,0,0,333,,331,122,65,0,7,0.035,14.2857,2.2099
+2023-04-eigenlayer-findings,2023-04-eigenlayer,233,EigenLayer Contest,EigenLayer,audit,full,2023-04-27,2023-05-04,7,90500.0,,459,103,207,310,84,65,0,0,460,,459,154,48,2,2,0.0129,44.2857,3.4254
+2023-05-ajna-findings,2023-05-ajna,234,Ajna Protocol,Ajna Protocol,audit,full,2023-05-03,2023-05-11,8,60500.0,,501,135,220,355,80,66,0,0,508,,501,171,123,11,14,0.0704,44.375,5.8678
+2023-05-venus-findings,2023-05-venus,236,Venus Protocol Isolated Pools,Venus Protocol,audit,full,2023-05-08,2023-05-15,7,90500.0,,550,141,253,394,86,70,0,0,572,,550,179,113,1,16,0.0431,56.2857,4.3536
+2023-05-caviar-mitigation-contest-findings,2023-05-caviar-mitigation-contest,,,,mitigation,full,2023-05-09,2023-05-12,3,8100.0,,47,1,8,9,0,0,0,38,47,,47,6,,,,,3.0,1.1111
+2023-05-xeth-findings,2023-05-xeth,240,xETH - Versus Contest,xETH,audit,full,2023-05-12,2023-05-15,3,35000.0,,39,8,22,30,5,4,0,0,41,,39,5,5,0,10,0.3333,10.0,0.8571
+2023-05-juicebox-findings,2023-05-juicebox,237,Juicebox Buyback Delegate,Juicebox,audit,full,2023-05-18,2023-05-22,4,24500.0,,287,49,109,158,77,52,0,0,288,,287,139,85,0,3,0.019,39.5,6.449
+2023-05-ambire-findings,2023-05-ambire,243,Ambire Wallet - Invitational,Ambire,audit,full,2023-05-23,2023-05-26,3,32600.0,,36,2,25,27,6,3,0,0,37,,36,6,5,,5,,9.0,0.8282
+2023-05-base-findings,2023-05-base,241,BASE,BASE,audit,full,2023-05-26,2023-06-09,14,100000.0,,136,16,65,81,39,16,0,0,137,,136,63,32,,,,5.7857,0.81
+2023-05-party-findings,2023-05-party,245,Party DAO - Invitational,PartyDAO,audit,full,2023-05-26,2023-05-30,4,17050.0,,41,9,25,34,5,2,0,0,43,,41,5,5,1,7,0.2353,8.5,1.9941
+2023-05-maia-findings,2023-05-maia,242,Maia DAO Ecosystem,Maia DAO Ecosystem,audit,full,2023-05-30,2023-07-05,36,300500.0,,918,308,456,764,60,52,40,2,920,,918,168,85,35,44,0.1034,21.2222,2.5424
+2023-05-particle-findings,2023-05-particle,244,Particle Protocol - Invitational,Particle Protocol,audit,full,2023-05-30,2023-06-02,3,,,49,21,20,41,5,3,0,0,50,,49,5,5,6,4,0.2439,13.6667,
+2023-06-stader-findings,2023-06-stader,249,Stader Labs,Stader Labs,audit,full,2023-06-02,2023-06-09,7,100000.0,,425,92,228,320,55,50,0,0,427,,425,121,77,1,14,0.0469,45.7143,3.2
+2023-06-llama-findings,2023-06-llama,246,Llama,Llama,audit,full,2023-06-06,2023-06-14,8,60500.0,,304,57,123,180,49,41,34,0,305,,304,107,50,2,3,0.0278,22.5,2.9752
+2023-06-reserve-findings,2023-06-reserve,248,Reserve Protocol - Invitational,Reserve,audit,full,2023-06-15,2023-06-29,14,79800.0,,56,3,41,44,6,5,1,0,57,,56,6,6,2,12,0.3182,3.1429,0.5514
+2023-06-xeth-mitigation-findings,2023-06-xeth-mitigation,,,,mitigation,full,2023-06-15,2023-06-20,5,6500.0,,27,0,6,6,4,0,0,17,28,,27,3,,,,,1.2,0.9231
+2023-06-ambire-mitigation-findings,2023-06-ambire-mitigation,,,,mitigation,full,2023-06-16,2023-06-21,5,6500.0,,20,0,11,11,0,0,0,9,21,,20,5,,,,,2.2,1.6923
+2023-06-canto-findings,2023-06-canto,252,Canto,Canto,audit,full,2023-06-20,2023-06-23,3,36500.0,,105,22,49,71,17,0,17,0,106,,105,40,24,1,1,0.0282,23.6667,1.9452
+2023-06-lukso-findings,2023-06-lukso,253,LUKSO,LUKSO,audit,full,2023-06-20,2023-07-05,15,100000.0,,142,24,51,75,27,31,9,0,144,,142,59,22,0,8,0.1067,5.0,0.75
+2023-06-lybra-findings,2023-06-lybra,254,Lybra Finance,Lybra Finance,audit,full,2023-06-23,2023-07-03,10,60500.0,,989,274,530,804,89,60,36,0,993,,989,205,136,8,23,0.0386,80.4,13.2893
+2023-06-angle-findings,2023-06-angle,255,Angle Protocol - Invitational,Angle Protocol,audit,full,2023-06-28,2023-07-07,9,52500.0,,47,7,30,37,4,3,3,0,48,,47,6,5,3,7,0.2703,4.1111,0.7048
+2023-07-basin-findings,2023-07-basin,259,Basin,Basin,audit,full,2023-07-03,2023-07-10,7,40000.0,,297,74,106,180,49,47,21,0,298,,297,107,86,1,13,0.0778,25.7143,4.5
+2023-07-nounsdao-findings,2023-07-nounsdao,257,Nouns DAO,Nouns DAO,audit,full,2023-07-03,2023-07-13,10,100000.0,,267,60,116,176,35,34,22,0,268,,267,84,36,1,3,0.0227,17.6,1.76
+2023-07-pooltogether-findings,2023-07-pooltogether,258,PoolTogether,PoolTogether,audit,full,2023-07-07,2023-07-14,7,121650.0,,478,161,218,379,42,36,21,0,480,,478,149,117,9,27,0.095,54.1429,3.1155
+2023-07-axelar-findings,2023-07-axelar,260,Axelar Network,Axelar Network,audit,full,2023-07-12,2023-07-21,9,80000.0,,505,111,260,371,61,51,22,0,506,,505,146,48,2,9,0.0296,41.2222,4.6375
+2023-07-angle-mitigation-findings,2023-07-angle-mitigation,,,,mitigation,full,2023-07-17,2023-07-21,4,14000.0,,31,0,8,8,0,0,0,23,32,,31,3,,,,,2.0,0.5714
+2023-07-lens-findings,2023-07-lens,263,Lens Protocol V2,Lens Protocol,audit,full,2023-07-17,2023-07-31,14,85500.0,,190,40,95,135,43,7,5,0,192,,190,69,26,0,11,0.0815,9.6429,1.5789
+2023-07-amphora-findings,2023-07-amphora,266,Amphora Protocol,Amphora Protocol,audit,full,2023-07-21,2023-07-26,5,65500.0,,433,101,219,320,55,38,20,0,434,,433,123,73,3,3,0.0187,64.0,4.8855
+2023-07-arcade-findings,2023-07-arcade,264,Arcade.xyz,Arcade.xyz,audit,full,2023-07-21,2023-07-28,7,90500.0,,571,111,296,407,81,55,28,0,574,,571,166,64,0,8,0.0197,58.1429,4.4972
+2023-07-moonwell-findings,2023-07-moonwell,267,Moonwell,Moonwell,audit,full,2023-07-24,2023-07-31,7,100000.0,,405,69,219,288,94,2,21,0,408,,405,111,78,0,17,0.059,41.1429,2.88
+2023-07-reserve-findings,2023-07-reserve,268,Reserve Protocol - Invitational,Reserve,audit,full,2023-07-25,2023-08-04,10,80100.0,,43,13,19,32,6,3,2,0,45,,43,8,7,3,15,0.5625,3.2,0.3995
+2023-08-goodentry-findings,2023-08-goodentry,269,Good Entry,Good Entry,audit,full,2023-08-01,2023-08-08,7,91500.0,,579,212,251,463,59,35,22,0,580,,579,165,82,6,8,0.0302,66.1429,5.0601
+2023-08-pooltogether-findings,2023-08-pooltogether,271,PoolTogether V5: Part Deux,PoolTogether,audit,full,2023-08-02,2023-08-07,5,42000.0,,179,52,68,120,22,24,13,0,180,,179,74,45,2,11,0.1083,24.0,2.8571
+2023-08-arbitrum-findings,2023-08-arbitrum,273,Arbitrum Security Council Election System,Arbitrum Foundation,audit,full,2023-08-03,2023-08-10,7,90500.0,,277,41,133,174,47,36,20,0,278,,277,100,38,1,5,0.0345,24.8571,1.9227
+2023-08-verwa-findings,2023-08-verwa,274,veRWA,Canto,audit,full,2023-08-07,2023-08-10,3,36500.0,,475,166,194,360,75,8,32,0,476,,475,176,134,8,3,0.0306,120.0,9.863
+2023-08-reserve-mitigation-findings,2023-08-reserve-mitigation,,,,mitigation,full,2023-08-15,2023-08-22,7,17600.0,,41,0,8,8,1,0,1,31,42,,41,6,,,,,1.1429,0.4545
+2023-08-pooltogether-mitigation-findings,2023-08-pooltogether-mitigation,,,,mitigation,full,2023-08-21,2023-08-29,8,27150.0,,104,6,11,17,1,0,0,86,106,,104,4,,,,,2.125,0.6262
+2023-08-shell-findings,2023-08-shell,277,Shell Protocol,Shell Protocol,audit,full,2023-08-21,2023-08-28,7,36500.0,,274,49,81,130,59,57,28,0,275,,274,130,44,,,,18.5714,3.5616
+2023-08-livepeer-findings,2023-08-livepeer,282,Livepeer Onchain Treasury Upgrade,Livepeer,audit,full,2023-08-31,2023-09-06,6,55000.0,,256,67,100,167,34,37,18,0,257,,256,92,30,2,3,0.0299,27.8333,3.0364
+2023-09-ondo-findings,2023-09-ondo,281,Ondo Finance,Ondo Finance,audit,full,2023-09-01,2023-09-07,6,36500.0,,551,133,253,386,96,45,24,0,552,,551,174,71,,,,64.3333,10.5753
+2023-09-delegate-findings,2023-09-delegate,284,Delegate,Delegate,audit,full,2023-09-05,2023-09-11,6,50000.0,,386,123,163,286,42,40,18,0,387,,386,140,17,0,2,0.007,47.6667,5.72
+2023-09-goodentry-mitigation-findings,2023-09-goodentry-mitigation,,,,mitigation,full,2023-09-06,2023-09-11,5,26000.0,,59,8,14,22,1,0,1,35,60,,59,5,,,,,4.4,0.8462
+2023-09-centrifuge-findings,2023-09-centrifuge,285,Centrifuge,Centrifuge,audit,full,2023-09-08,2023-09-14,6,70000.0,,798,199,426,625,113,18,42,0,802,,798,238,85,0,8,0.0128,104.1667,8.9286
+2023-09-asymmetry-findings,2023-09-asymmetry,286,Asymmetry Finance afETH Invitational,Asymmetry Finance,audit,full,2023-09-20,2023-09-27,7,31310.0,,73,18,43,61,5,4,3,0,75,,73,5,5,5,10,0.2459,8.7143,1.9483
+2023-09-maia-findings,2023-09-maia,287,Maia DAO - Ulysses,Maia DAO,audit,full,2023-09-22,2023-10-06,14,100000.0,,903,344,371,715,91,54,43,0,905,,903,238,183,3,12,0.021,51.0714,7.15
+2023-09-reserve-mitigation-findings,2023-09-reserve-mitigation,,,,mitigation,full,2023-09-25,2023-09-29,4,17600.0,,40,1,3,4,2,0,0,34,41,,40,4,,,,,1.0,0.2273
+2023-09-venus-findings,2023-09-venus,290,Venus Prime,Venus Protocol,audit,full,2023-09-28,2023-10-04,6,36500.0,,683,154,342,496,88,64,35,0,685,,683,208,130,3,3,0.0121,82.6667,13.589
+2023-10-zksync-findings,2023-10-zksync,292,zkSync Era,zkSync,audit,full,2023-10-02,2023-10-23,21,,,1138,256,646,902,112,79,45,0,1147,,1138,242,72,6,23,0.0322,42.9524,
+2023-10-canto-findings,2023-10-canto,288,Canto Liquidity Mining Protocol,Canto,audit,full,2023-10-03,2023-10-06,3,24500.0,,305,95,95,190,42,41,32,0,307,,305,134,63,1,5,0.0316,63.3333,7.7551
+2023-10-ens-findings,2023-10-ens,294,ENS,ENS,audit,full,2023-10-05,2023-10-11,6,33050.0,,693,122,254,376,139,95,83,0,696,,693,275,57,0,1,0.0027,62.6667,11.3767
+2023-10-brahma-findings,2023-10-brahma,295,Brahma,Brahma,audit,full,2023-10-13,2023-10-20,7,31250.0,,482,128,204,332,65,42,43,0,484,,482,186,54,0,4,0.012,47.4286,10.624
+2023-10-wildcat-findings,2023-10-wildcat,296,The Wildcat Protocol,Wildcat Protocol,audit,full,2023-10-16,2023-10-26,10,,,731,223,352,575,73,48,35,0,733,,731,219,144,6,10,0.0278,57.5,
+2023-10-opendollar-findings,2023-10-opendollar,297,Open Dollar,Open Dollar,audit,full,2023-10-18,2023-10-25,7,36500.0,,449,106,248,354,47,26,22,0,451,,449,136,80,2,15,0.048,50.5714,9.6986
+2023-10-asymmetry-mitigation-findings,2023-10-asymmetry-mitigation,,,,mitigation,full,2023-10-20,2023-10-25,5,7150.0,,58,8,22,30,1,0,0,27,59,,58,4,,,,,6.0,4.1958
+2023-10-badger-findings,2023-10-badger,300,Badger eBTC Audit + Certora Formal Verification Competition,eBTC Protocol,audit,full,2023-10-24,2023-11-14,21,149725.0,,327,73,161,234,48,40,5,0,328,,327,111,95,1,6,0.0299,11.1429,1.5629
+2023-10-ethena-findings,2023-10-ethena,299,Ethena Labs,Ethena Labs,audit,full,2023-10-24,2023-10-30,6,36500.0,,736,137,369,506,114,72,44,0,738,,736,241,158,0,4,0.0079,84.3333,13.863
+2023-10-party-findings,2023-10-party,301,Party Protocol,PartyDAO,audit,full,2023-10-31,2023-11-10,10,60500.0,,586,139,325,464,56,41,25,0,590,,586,162,68,2,7,0.0194,46.4,7.6694
+2023-11-betafinance-findings,2023-11-betafinance,303,Beta Finance Invitational,Beta Finance,audit,full,2023-11-01,2023-11-06,5,,,35,5,26,31,4,0,0,0,37,,35,5,5,0,5,0.1613,6.2,
+2023-11-kelp-findings,2023-11-kelp,305,Kelp DAO | rsETH,Kelp DAO,audit,full,2023-11-10,2023-11-15,5,28000.0,,866,224,451,675,116,34,41,0,894,,866,258,194,3,2,0.0074,135.0,24.1071
+2023-11-canto-findings,2023-11-canto,306,Canto Application Specific Dollars and Bonding Curves for 1155s,Canto,audit,full,2023-11-13,2023-11-17,4,24500.0,,515,134,240,374,61,39,41,0,516,,515,194,125,1,2,0.008,93.5,15.2653
+2023-11-zetachain-findings,2023-11-zetachain,304,ZetaChain,ZetaChain,audit,full,2023-11-20,2023-12-18,28,153886.0,,583,138,360,498,62,16,7,0,585,,583,114,32,14,34,0.0964,17.7857,3.2362
+2023-11-panoptic-findings,2023-11-panoptic,309,Panoptic,Panoptic,audit,full,2023-11-27,2023-12-11,14,75500.0,,630,140,342,482,66,39,43,0,642,,630,191,74,2,5,0.0145,34.4286,6.3841
+2023-11-shellprotocol-findings,2023-11-shellprotocol,308,Shell Protocol,Shell Protocol,audit,full,2023-11-30,2023-12-08,8,36500.0,,340,54,184,238,37,33,32,0,341,,340,131,22,,,,29.75,6.5205
+2023-12-ethereumcreditguild-findings,2023-12-ethereumcreditguild,310,Ethereum Credit Guild,Ethereum Credit Guild,audit,full,2023-12-11,2023-12-28,17,90500.0,,1245,360,744,1104,94,15,32,0,1290,,1245,247,136,4,25,0.0263,64.9412,12.1989
+2023-12-particle-findings,2023-12-particle,312,Particle Leverage AMM Protocol Invitational,Particle Protocol,audit,full,2023-12-11,2023-12-21,10,24150.0,,64,14,44,58,4,1,1,0,66,,64,5,5,4,15,0.3276,5.8,2.4017
+2023-12-revolutionprotocol-findings,2023-12-revolutionprotocol,311,Revolution Protocol ,Collective,audit,full,2023-12-13,2023-12-21,8,36500.0,,747,163,417,580,82,56,29,0,749,,747,208,107,4,14,0.031,72.5,15.8904
+2023-12-initcapital-findings,2023-12-initcapital,313,INIT Capital Invitational,INIT Capital,audit,full,2023-12-15,2023-12-21,6,38500.0,,46,6,34,40,3,2,1,0,47,,46,5,5,3,12,0.375,6.6667,1.039
+2023-12-autonolas-findings,2023-12-autonolas,315,Olas,Olas,audit,full,2023-12-21,2024-01-08,18,90500.0,,459,89,267,356,43,37,23,0,461,,459,142,39,5,5,0.0281,19.7778,3.9337
+2024-01-curves-findings,2024-01-curves,316,Curves,Curves Protocol,audit,full,2024-01-08,2024-01-15,7,36500.0,,1557,675,684,1359,99,58,41,0,1562,,1557,354,303,5,10,0.011,194.1429,37.2329
+2024-01-renft-findings,2024-01-renft,317,reNFT,reNFT,audit,full,2024-01-08,2024-01-18,10,83600.0,,648,206,345,551,46,29,22,0,651,,648,175,126,7,16,0.0417,55.1,6.5909
+2024-01-opus-findings,2024-01-opus,319,Opus ,Opus,audit,full,2024-01-09,2024-02-06,28,100000.0,,241,71,117,188,24,1,28,0,242,,241,78,28,4,9,0.0691,6.7143,1.88
+2024-01-salty-findings,2024-01-salty,320,Salty.IO,Salty.IO,audit,full,2024-01-16,2024-01-30,14,80000.0,,1064,315,597,912,78,36,38,0,1067,,1064,240,180,6,31,0.0406,65.1429,11.4
+2024-01-decent-findings,2024-01-decent,322,Decent,Decent,audit,full,2024-01-19,2024-01-23,4,36500.0,,748,291,354,645,48,31,24,0,750,,748,185,120,4,5,0.014,161.25,17.6712
+2024-01-canto-findings,2024-01-canto,326,Canto Invitational,Canto,audit,full,2024-01-25,2024-01-29,4,16425.0,,17,6,6,12,3,1,1,0,17,,17,5,5,2,2,0.3333,3.0,0.7306
+2024-01-init-capital-invitational-findings,2024-01-init-capital-invitational,325,INIT Capital Invitational,INIT Capital,audit,full,2024-01-26,2024-02-02,7,25000.0,,39,17,15,32,3,2,2,0,41,,39,5,5,3,4,0.2188,4.5714,1.28
+2024-02-hydradx-findings,2024-02-hydradx,327,HydraDX,HydraDX,audit,full,2024-02-02,2024-03-01,28,100000.0,,204,43,119,162,18,0,24,0,205,,204,49,27,1,10,0.0679,5.7857,1.62
+2024-02-althea-liquid-infrastructure-findings,2024-02-althea-liquid-infrastructure,331,Althea Liquid Infrastructure,Althea Liquid Infrastructure,audit,full,2024-02-13,2024-02-19,6,24500.0,,763,265,341,606,76,40,41,0,766,,763,232,93,1,4,0.0083,101.0,24.7347
+2024-02-thruster-findings,2024-02-thruster,334,Thruster Invitational,Thruster,audit,full,2024-02-16,2024-02-23,7,25200.0,,31,7,16,23,4,2,2,0,33,,31,4,4,0,5,0.2174,3.2857,0.9127
+2024-02-wise-lending-findings,2024-02-wise-lending,330,Wise Lending,Wise Lending,audit,full,2024-02-21,2024-03-11,19,140000.0,,309,82,144,226,26,26,31,0,311,,309,94,37,5,17,0.0973,11.8947,1.6143
+2024-02-spectra-findings,2024-02-spectra,338,Spectra,Spectra,audit,full,2024-02-23,2024-03-01,7,36500.0,,307,66,163,229,33,19,26,0,308,,307,120,42,0,2,0.0087,32.7143,6.274
+2024-02-uniswap-foundation-findings,2024-02-uniswap-foundation,336,UniStaker Infrastructure,Uniswap Foundation,audit,full,2024-02-23,2024-03-05,11,,,419,74,248,322,57,1,39,0,421,,419,166,54,,,,29.2727,
+2024-02-tapioca-findings,2024-02-tapioca,333,Tapioca Invitational ,Tapioca DAO,audit,full,2024-02-26,2024-03-18,21,138000.0,4207,186,69,109,178,6,2,0,0,188,,186,10,11,12,32,0.2472,8.4762,1.2899
+2024-03-phala-network-findings,2024-03-phala-network,344,Phat Contract Runtime,Phala Network,audit,full,2024-03-01,2024-03-22,21,,,98,19,48,67,7,1,23,0,99,,98,44,19,0,4,0.0597,3.1905,
+2024-03-pooltogether-findings,2024-03-pooltogether,332,PoolTogether,PoolTogether,audit,full,2024-03-04,2024-03-11,7,37700.0,,358,73,202,275,39,20,24,0,360,,358,136,85,1,8,0.0327,39.2857,7.2944
+2024-03-revert-lend-findings,2024-03-revert-lend,342,Revert Lend,Revert Lend,audit,full,2024-03-04,2024-03-15,11,88500.0,,519,166,287,453,27,14,25,0,520,,519,144,105,6,27,0.0728,41.1818,5.1186
+2024-03-gitcoin-findings,2024-03-gitcoin,337,Gitcoin Passport - Identity Staking Invitational,Gitcoin Passport,audit,full,2024-03-06,2024-03-12,6,14000.0,,16,3,7,10,4,1,1,0,17,,16,5,4,1,0,0.1,1.6667,0.7143
+2024-03-taiko-findings,2024-03-taiko,343,Taiko,Taiko,audit,full,2024-03-06,2024-03-27,21,165000.0,,381,66,213,279,35,40,27,0,382,,381,120,74,5,14,0.0681,13.2857,1.6909
+2024-03-abracadabra-money-findings,2024-03-abracadabra-money,349,Abracadabra Mimswap,Abracadabra Money,audit,full,2024-03-07,2024-03-12,5,63000.0,,259,59,148,207,28,23,1,0,262,,259,79,36,4,16,0.0966,41.4,3.2857
+2024-03-zksync-findings,2024-03-zksync,347,zkSync Era,zkSync,audit,full,2024-03-07,2024-03-28,21,250000.0,,134,13,60,73,31,29,1,0,136,,134,56,26,1,4,0.0685,3.4762,0.292
+2024-03-coinbase-findings,2024-03-coinbase,350,Smart Wallet,Coinbase,audit,full,2024-03-14,2024-03-21,7,49000.0,,200,45,92,137,21,17,25,0,201,,200,88,53,1,2,0.0219,19.5714,2.7959
+2024-03-dittoeth-findings,2024-03-dittoeth,348,DittoETH,DittoETH,audit,full,2024-03-15,2024-04-05,21,60800.0,,304,74,168,242,28,4,30,0,306,,304,90,44,7,9,0.0661,11.5238,3.9803
+2024-03-acala-findings,2024-03-acala,323,Acala,Acala Network,audit,full,2024-03-22,2024-04-05,14,36500.0,,110,16,52,68,16,0,26,0,111,,110,47,19,3,4,0.1029,4.8571,1.863
+2024-03-gitcoin-mitigation-findings,2024-03-gitcoin-mitigation,,,,mitigation,full,2024-03-26,2024-03-29,3,4750.0,,16,0,0,0,1,0,0,15,19,,16,3,,,,,0.0,0.0
+2024-03-neobase-findings,2024-03-neobase,355,Neobase Invitational,Canto,audit,full,2024-03-29,2024-04-03,5,21600.0,,24,6,12,18,4,2,0,0,25,,24,5,5,1,7,0.4444,3.6,0.8333
+2024-03-ondo-finance-findings,2024-03-ondo-finance,357,Ondo Finance,Ondo Finance,audit,full,2024-03-29,2024-04-03,5,36500.0,,345,64,204,268,67,7,3,0,347,,345,120,74,1,4,0.0187,53.6,7.3425
+2024-04-panoptic-findings,2024-04-panoptic,354,Panoptic,Panoptic,audit,full,2024-04-01,2024-04-22,21,120000.0,,579,118,346,464,72,20,23,0,583,,579,182,60,2,9,0.0237,22.0952,3.8667
+2024-04-coinbase-mitigation-findings,2024-04-coinbase-mitigation,,,,mitigation,full,2024-04-05,2024-04-10,5,12500.0,,17,1,2,3,1,0,0,13,18,,17,3,,,,,0.6,0.24
+2024-04-ai-arena-mitigation-findings,2024-04-ai-arena-mitigation,,,,mitigation,full,2024-04-08,2024-04-15,7,21000.0,,69,9,17,26,2,0,0,41,71,,69,3,,,,,3.7143,1.2381
+2024-04-gondi-findings,2024-04-gondi,361,Gondi Invitational,Gondi,audit,full,2024-04-08,2024-04-16,8,74600.0,,83,37,39,76,4,1,2,0,87,,83,5,5,17,20,0.4868,9.5,1.0188
+2024-04-lavarage-findings,2024-04-lavarage,362,Lavarage Invitational,Lavarage,audit,full,2024-04-11,2024-04-29,18,,,33,12,17,29,4,0,0,0,34,,33,5,5,3,4,0.2414,1.6111,
+2024-04-dyad-findings,2024-04-dyad,367,DYAD,DYAD,audit,full,2024-04-18,2024-04-25,7,36500.0,,1323,555,622,1177,121,10,15,0,1326,,1323,306,196,10,9,0.0161,168.1429,32.2466
+2024-04-revert-mitigation-findings,2024-04-revert-mitigation,,,,mitigation,full,2024-04-19,2024-04-29,10,23500.0,,99,6,15,21,0,0,0,78,100,,99,3,,,,,2.1,0.8936
+2024-04-noya-findings,2024-04-noya,368,NOYA,NOYA,audit,full,2024-04-26,2024-05-17,21,65000.0,,1638,485,1041,1526,87,14,11,0,1648,,1638,242,173,23,63,0.0564,72.6667,23.4769
+2024-04-renzo-findings,2024-04-renzo,372,Renzo,Renzo,audit,validated,2024-04-30,2024-05-08,8,112500.0,,612,263,321,584,28,0,0,0,615,1055,1055,134,136,8,14,,,
+2024-05-loop-findings,2024-05-loop,371,LoopFi,LoopFi,audit,validated,2024-05-01,2024-05-08,7,12100.0,,132,43,65,108,22,2,0,0,137,404,404,83,49,,,,,
+2024-05-arbitrum-foundation-findings,2024-05-arbitrum-foundation,375,Arbitrum BoLD,Arbitrum Foundation,audit,validated,2024-05-10,2024-05-27,17,300500.0,,70,21,34,55,15,0,0,0,73,375,375,39,31,2,2,,,
+2024-05-gondi-mitigation-findings,2024-05-gondi-mitigation,,,,mitigation,full,2024-05-14,2024-05-24,10,16400.0,,119,3,17,20,3,0,0,96,121,,119,3,,,,,2.0,1.2195
+2024-05-bakerfi-findings,2024-05-bakerfi,378,BakerFi Invitational,BakerFi,audit,full,2024-05-20,2024-06-03,14,28500.0,,48,15,31,46,2,0,0,0,49,,48,5,5,4,8,0.2609,3.2857,1.614
+2024-05-munchables-findings,2024-05-munchables,379,Munchables,Munchables,audit,validated,2024-05-22,2024-05-27,5,20000.0,,564,199,343,542,22,0,0,0,566,623,623,181,131,2,4,,,
+2024-05-predy-findings,2024-05-predy,383,Predy,Predy,audit,validated,2024-05-24,2024-06-14,21,100000.0,,308,53,245,298,10,0,0,0,310,683,683,98,75,4,8,,,
+2024-05-olas-findings,2024-05-olas,369,Olas,Olas,audit,validated,2024-05-28,2024-06-18,21,90500.0,,121,27,82,109,11,1,0,0,125,288,288,41,32,2,20,,,
+2024-05-canto-findings,2024-05-canto,385,Canto,Canto,audit,validated,2024-05-30,2024-06-20,21,100000.0,,35,8,22,30,5,0,0,0,36,53,53,13,12,,4,,,
+2024-06-renzo-mitigation-findings,2024-06-renzo-mitigation,,,,mitigation,full,2024-06-03,2024-06-07,4,32500.0,,57,6,7,13,0,0,0,44,58,,57,6,,,,,3.25,0.4
+2024-06-panoptic-findings,2024-06-panoptic,387,Panoptic,Panoptic,audit,validated,2024-06-04,2024-06-10,6,25000.0,,49,12,37,49,0,0,0,0,51,55,55,17,,,,,,
+2024-06-thorchain-findings,2024-06-thorchain,386,Thorchain,Thorchain,audit,validated,2024-06-05,2024-06-12,7,36500.0,,103,51,43,94,9,0,0,0,106,246,246,45,42,2,2,,,
+2024-06-size-findings,2024-06-size,389,Size,Size,audit,validated,2024-06-10,2024-07-02,22,200000.0,,434,154,254,408,25,1,0,0,435,730,730,114,108,4,13,,,
+2024-06-vultisig-findings,2024-06-vultisig,393,Vultisig,Vultisig,audit,validated,2024-06-14,2024-06-21,7,41600.0,,228,77,138,215,13,0,0,0,230,685,685,107,70,3,3,,,
+2024-06-krystal-defi-findings,2024-06-krystal-defi,399,Krystal DeFi Invitational,Krystal DeFi,audit,full,2024-06-21,2024-07-01,10,20000.0,,33,6,19,25,8,0,0,0,35,,33,7,6,0,5,0.2,2.5,1.25
+2024-06-badger-findings,2024-06-badger,401,eBTC Zap Router,BadgerDAO,audit,validated,2024-06-24,2024-07-08,14,40000.0,,48,14,26,40,8,0,0,0,50,184,184,35,16,,,,,
+2024-07-dittoeth-findings,2024-07-dittoeth,403,DittoETH Invitational,DittoETH,audit,full,2024-07-02,2024-07-08,6,13600.0,,16,7,7,14,2,0,0,0,18,,16,4,4,4,1,0.3571,2.3333,1.0294
+2024-07-optimism-findings,2024-07-optimism,400,Optimism Superchain,Optimism,audit,validated,2024-07-15,2024-07-29,14,,,124,49,57,106,17,1,0,0,128,131,131,42,34,5,11,,,
+2024-07-karak-findings,2024-07-karak,404,Karak Restaking,Karak,audit,validated,2024-07-16,2024-07-30,14,55500.0,,102,43,52,95,6,1,0,0,105,353,353,40,26,4,5,,,
+2024-07-benddao-findings,2024-07-benddao,413,BendDAO Invitational,BendDAO,audit,full,2024-07-19,2024-08-16,28,64000.0,,67,21,42,63,4,0,0,0,69,,67,5,,8,20,0.4444,2.25,0.9844
+2024-07-munchables-findings,2024-07-munchables,414,Munchables,Munchables,audit,validated,2024-07-23,2024-07-29,6,20000.0,,325,163,148,311,14,0,0,0,328,394,394,112,97,5,1,,,
+2024-07-loopfi-findings,2024-07-loopfi,415,LoopFi,LoopFi,audit,validated,2024-07-25,2024-08-15,21,100000.0,,578,184,371,555,23,0,0,0,581,780,780,108,94,15,39,,,
+2024-07-basin-findings,2024-07-basin,417,Basin,Basin,audit,validated,2024-07-29,2024-08-08,10,37750.0,,90,40,35,75,15,0,0,0,92,124,124,47,39,2,2,,,
+2024-07-reserve-findings,2024-07-reserve,421,Reserve Core,Reserve,audit,validated,2024-07-29,2024-08-19,21,187500.0,,117,27,81,108,9,0,0,0,120,242,242,39,19,0,7,,,
+2024-07-traitforge-findings,2024-07-traitforge,420,TraitForge,TraitForge,audit,validated,2024-07-29,2024-08-06,8,28000.0,,1087,390,655,1045,42,0,0,0,1090,1484,1484,250,247,6,19,,,
+2024-08-axelar-network-findings,2024-08-axelar-network,424,Axelar Network,Axelar Network,audit,validated,2024-08-08,2024-08-26,18,85000.0,,148,29,102,131,17,0,0,0,149,298,298,55,29,2,2,,,
+2024-08-phi-findings,2024-08-phi,427,Phi,Phi,audit,validated,2024-08-22,2024-09-03,12,30000.0,,378,133,201,334,35,9,0,0,383,667,667,121,106,7,8,,,
+2024-08-basin-findings,2024-08-basin,430,Basin Invitational,Basin,audit,full,2024-08-23,2024-08-27,4,7750.0,,5,0,3,3,2,0,0,0,6,,5,2,,,,,0.75,0.3871
+2024-08-superposition-findings,2024-08-superposition,428,Superposition,Superposition,audit,validated,2024-08-23,2024-09-13,21,60750.0,,173,61,105,166,7,0,0,0,175,259,259,45,51,7,12,,,
+2024-08-chakra-findings,2024-08-chakra,432,Chakra,Chakra,audit,validated,2024-08-29,2024-09-12,14,60000.0,,628,310,272,582,46,0,0,0,630,731,731,122,109,14,12,,,
+2024-08-wildcat-findings,2024-08-wildcat,434,The Wildcat Protocol,The Wildcat Protocol,audit,validated,2024-08-31,2024-09-18,18,100000.0,,123,24,83,107,16,0,0,0,125,330,330,40,24,1,8,,,
+2024-09-karak-mitigation-findings,2024-09-karak-mitigation,,,,mitigation,full,2024-09-10,2024-09-16,6,7500.0,,32,4,3,7,0,0,0,25,33,,32,3,,,,,1.1667,0.9333
+2024-09-reserve-mitigation-findings,2024-09-reserve-mitigation,,,,mitigation,full,2024-09-12,2024-09-17,5,17500.0,,36,0,1,1,0,0,0,35,38,,36,3,,,,,0.2,0.0571
+2024-09-fenix-finance-findings,2024-09-fenix-finance,440,Fenix Finance Invitational,Fenix Finance,audit,full,2024-09-18,2024-09-25,7,16000.0,,20,12,5,17,3,0,0,0,21,,20,4,,1,6,0.4118,2.4286,1.0625
+2024-09-panoptic-findings,2024-09-panoptic,442,Panoptic Invitational,Panoptic,audit,full,2024-09-26,2024-10-03,7,20000.0,,7,1,3,4,3,0,0,0,8,,7,4,,,,,0.5714,0.2
+2024-09-kakarot-findings,2024-09-kakarot,438,Kakarot,Kakarot,audit,validated,2024-09-27,2024-10-25,28,170000.0,,131,60,65,125,6,0,0,0,133,275,275,28,23,6,11,,,
+2024-10-coded-estate-findings,2024-10-coded-estate,443,Coded Estate Invitational,Coded Estate,audit,full,2024-10-04,2024-10-11,7,29400.0,,46,19,24,43,3,0,0,0,48,,46,4,,9,9,0.4186,6.1429,1.4626
+2024-10-ramses-exchange-findings,2024-10-ramses-exchange,447,Ramses Exchange,Ramses Exchange,audit,validated,2024-10-08,2024-10-29,21,120000.0,,44,8,31,39,5,0,0,0,49,224,224,19,,0,2,,,
+2024-10-loopfi-findings,2024-10-loopfi,456,LoopFi,LoopFi,audit,validated,2024-10-10,2024-10-17,7,25000.0,,36,10,24,34,2,0,0,0,38,90,90,9,7,2,5,,,
+2024-10-kleidi-findings,2024-10-kleidi,455,Kleidi,Kleidi,audit,validated,2024-10-15,2024-10-25,10,40000.0,,62,16,36,52,10,0,0,0,63,284,284,27,27,0,3,,,
+2024-10-ronin-findings,2024-10-ronin,454,Ronin,Ronin,audit,validated,2024-10-16,2024-10-30,14,50000.0,,85,18,59,77,8,0,0,0,86,268,268,47,4,,,,,
+2024-10-superposition-findings,2024-10-superposition,449,Superposition,Superposition,audit,validated,2024-10-18,2024-11-01,14,21000.0,,17,5,11,16,1,0,0,0,19,49,49,6,4,3,3,,,
+2024-11-ethena-labs-findings,2024-11-ethena-labs,463,Ethena Labs Invitational,Ethena Labs,audit,full,2024-11-04,2024-11-11,7,20000.0,,15,2,8,10,5,0,0,0,16,,15,5,,0,2,0.2,1.4286,0.5
+2024-11-nibiru-findings,2024-11-nibiru,453,Nibiru,Nibiru,audit,validated,2024-11-11,2024-11-25,14,70000.0,,85,37,44,81,4,0,0,0,87,200,200,25,,6,10,,,
+2024-12-unruggable-findings,2024-12-unruggable,,,,audit,full,2024-12-06,2024-12-20,14,38000.0,,0,0,0,0,0,0,0,0,,,0,0,,,,,0.0,0.0
+2021-02-slingshot-findings,2021-02-slingshot,1,Slingshot Finance,Slingshot Finance,audit,full,,,,,,0,0,0,0,0,0,0,0,,,0,0,,,,,,
+2021-03-elasticdao-findings,2021-03-elasticdao,2,ElasticDAO,ElasticDAO,audit,full,,,,,,0,0,0,0,0,0,0,0,,,0,0,,,,,,
+2021-07-pooltogether-findings,2021-07-pooltogether,24,PoolTogether micro contest #1,PoolTogether,audit,full,,,,,,84,5,13,18,36,30,0,0,84,,84,12,12,4,4,0.4444,,
+2021-07-sherlock-findings,2021-07-sherlock,21,Sherlock,Sherlock,audit,full,,,,,,150,11,16,27,67,56,0,0,150,,150,14,14,2,4,0.2222,,
+2021-07-spartan-findings,2021-07-spartan,20,Spartan Protocol Contest,Spartan Protocol,audit,full,,,,,,238,58,57,115,99,24,0,0,239,,238,19,18,13,15,0.2435,,
+2021-08-floatcapital-findings,2021-08-floatcapital,22,Float Capital contest,Float Capital,audit,full,,,,,,141,17,26,43,56,42,0,0,142,,141,16,16,3,6,0.2093,,
+2023-05-asymmetry-mitigation-findings,2023-05-asymmetry-mitigation,,,,mitigation,full,,,,,,74,0,1,1,0,0,0,73,77,,74,4,,,,,,
+2024-02-renft-mitigation-findings,2024-02-renft-mitigation,,,,mitigation,full,,,,19800.0,,67,4,13,17,3,0,0,47,68,,67,3,,,,,,0.8586
+2024-03-saltyio-mitigation-findings,2024-03-saltyio-mitigation,,,,mitigation,full,,,,30000.0,,126,5,17,22,0,0,0,104,127,,126,3,,,,,,0.7333
