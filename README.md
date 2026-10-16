@@ -1,6 +1,6 @@
 # Audit contest platforms: AI rules, KYC, payouts and crowding (checked 2026-10-15)
 
-A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, the headline prize money each submission competes for, a record of what every HackenProof audit program promised and what it paid, and when HackenProof's programs began to carry rules on AI-generated reports. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
+A dated, sourced snapshot of where smart-contract audit contests stand for work made with AI agents, a few small tools, and open datasets on how crowded audit contests have become: a census of every public Sherlock contest, a census of every public Cantina competition, a combined series built from the two, the headline prize money each submission competes for, a record of what every HackenProof audit program promised and what it paid, when HackenProof's programs began to carry rules on AI-generated reports, and a census of every CodeHawks audit and First Flight. Compiled by MV2 of Munim, Inc. while choosing where to take part. The research, the writing and the code were done with AI agents. Rules change, so check each source before relying on it. Corrections welcome as issues.
 
 ## Summary
 
@@ -11,7 +11,7 @@ A dated, sourced snapshot of where smart-contract audit contests stand for work 
 | Cantina | 1 competition: Revert v4lend, $50k USDC, 6 Oct to 3 Nov (1,392 findings submitted by 15 Oct 00:35 UTC); plus ongoing bounties | Allowed if validated: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Required (Persona) | USDC to an Ethereum mainnet address, paid weekly |
 | HackenProof | 3 DualDefense audits ($2.5k–$3k, Criticals only): EverValue (2–16 Oct), Digital Oro (5–26 Oct), DreamX (12–26 Oct; its scope repo is invite-only and needs KYC to request access). See the payout record below: 67 of 78 settled DualDefense audits paid $0 | No platform-wide rule in the docs or Code of Conduct, but 62 of its 102 audit-program pages carry one, including every program that started in 2026 (43 of 43): "AI-generated reports without runable PoC are not accepted under this program" (DualDefense) or "Automated submissions or AI-generated reports must include human validation" (contests). See below | Only for EU tax residents, programs that require it, or after $5k in total earnings | USDC from your platform balance, 100 USDC minimum, 2FA required |
 | Immunefi | 0 audit competitions or boosts live (ENS ended 8 Oct; all 62 listed competitions are finished) | **Prohibited**: its terms ban "submitting AI-generated/automated scanner bug reports" | Per program | Per program |
-| CodeHawks (Cyfrin) | Nothing live. BattleChain Confidence Pools (9–16 Jul 2026) was its first audit in over a year | No rule found | Per contest ("KYC Rewards" tag) | USDC on ZKsync |
+| CodeHawks (Cyfrin) | Nothing live. BattleChain Confidence Pools (9–16 Jul 2026) was its first audit in 15 months (see the census below) | **Penalised**: "Participants suspected of relying excessively on AI for their submissions risk disqualification." In its public docs repo since 14 Sep 2023 | Per contest ("KYC Rewards" tag) | USDC on ZKsync |
 | Certora (formal verification) | Nothing live. All 15 listed contests have ended (pools $18k–$125.5k, "$800k+" paid in total); recent ones ran with Cantina | No rule found | Per hosting platform | Per hosting platform |
 | Code4rena | Closed: announced its wind-down on 13 May 2026; Immunefi took over its clients. K2 ($135k) is still in judging. No new audits | n/a | n/a | n/a |
 
@@ -127,6 +127,45 @@ Reproduce: `python hackenproof_payouts.py --table` (or without `--table` for JSO
 
 Reproduce: `python hackenproof_trends.py --table` (or without `--table` for JSON).
 
+## CodeHawks: contests stopped, they didn't get more crowded (new in v0.8.0)
+
+`data/codehawks_contests.csv` (CC BY 4.0) has one row per contest page on codehawks.cyfrin.io, written by a scripted census on 16 Oct 2026. `codehawks_series.py` groups the contests by the half-year they started.
+
+**It matches CodeHawks' own listings.** The census has the 45 competitive audits that the /contests page lists, and after one cleaning step it has First Flights #1 to #59, as listed on /first-flights. The cleaning step matters. The sitemap also lists 228 self-paced practice copies of two old First Flights (Thunder Loan and Beatland Festival). Their slugs end in a 25-character id. Counted as contests, they would turn 2026's 4 First Flights into 210. They are left out of every figure below.
+
+Public competitive audits by start half-year:
+
+| Started in | Audits (all access) | Public | Submissions | Median per audit | Signal rate | USDC audits | USDC $ per submission | Median audit $ per submission |
+|---|---|---|---|---|---|---|---|---|
+| 2023 H2 | 9 | 8 | 8,072 | 905.5 | 3.38% | 8 | $28.18 | $30.91 |
+| 2024 H1 | 9 | 9 | 2,260 | 184 | 5.84% | 9 | $231.83 | $155.84 |
+| 2024 H2 | 15 | 12 | 10,530 | 883 | 2.23% | 10 | $37.49 | $40.07 |
+| 2025 H1 | 11 | 5 | 9,895 | 998 | 3.61% | 4 | $22.43 | $33.86 |
+| 2025 H2 to 2026 H1 | 0 | 0 | | | | | | |
+| 2026 H2 | 1 | 1 | 971 | 971 | 0.93% | 0 | (7.25 ETH) | |
+
+- **No competitive audit started between 3 Apr 2025 and 9 Jul 2026.** That's 15 months. The one since then, BattleChain Confidence Pools, is Cyfrin's own and pays in ETH.
+- **The audits that did run were not more crowded over time.** The median public audit drew 905.5 submissions in 2023 H2 and 998 in 2025 H1, with 184 in between: 2024 H1 was mostly the Beanstalk series of small audits. Sherlock and Cantina contests went the other way (sections above). CodeHawks lost its contests instead.
+- Signal rate = unique valid High + Medium + Low findings / all submissions. It stays between 2% and 6% for every half-year with more than one audit.
+- USDC pots only: three OP pots (Alchemix, QuantAMM, Curve) and one ETH pot (BattleChain) are left out, never converted. 2024 H1's pooled figure is high because of Beanstalk: The Finale ($250,000 for 555 submissions).
+
+First Flights (they award experience points, not money), practice copies excluded:
+
+| Started in | First Flights | Submissions | Median per flight | Signal rate |
+|---|---|---|---|---|
+| 2023 H2 | 6 | 3,399 | 509 | 1.59% |
+| 2024 H1 | 12 | 3,138 | 216.5 | 3.95% |
+| 2024 H2 | 13 | 3,876 | 291 | 2.68% |
+| 2025 H1 | 11 | 5,447 | 525 | 1.82% |
+| 2025 H2 | 13 | 4,721 | 285 | 2.35% |
+| 2026 H1 | 4 | 1,114 | 265.5 | 4.67% |
+
+First Flights ran about every two weeks through 2025 (24 that year). Four followed between 29 Jan and 16 Apr 2026. The last, #59 SNARKeling Treasure Hunt, started 16 Apr 2026, and none has started since.
+
+**Limits.** Submission counts are CodeHawks' own and include invalid and duplicate reports, and lows count too, so don't compare them one-to-one with other platforms. Private and invite-only audits (10) have no public counts. Headline pots are not payouts. `test_codehawks_series.py` pins every number in this section to the data file and checks it against the two listing pages.
+
+Reproduce: `python codehawks_series.py --table` (or without `--table` for JSON).
+
 ## Every public Cantina competition (v0.5.0)
 
 Cantina's site reads its competition list from a public JSON endpoint (`cantina.xyz/api/v0/competitions`), which carries `totalFindings` for every competition. `fetch_cantina.py` reads it in one GET (fetched 2026-10-14 20:03 UTC) and keeps only contest-level facts. Private contests keep no name, URL or sponsor, and they show up only in aggregates. The API returned 145 competitions: 126 public and 19 private, with one live. `data/cantina_census.csv` has the 125 ended public competitions with a count, which together drew 58,193 findings (started 2023-11-13 to 2026-05-29). `data/cantina_census.jsonl` has every public record, the live one included, and `data/cantina_census_summary.json` is the output of `cantina_crowding.py`. **Cross-check:** for all 20 ended competitions that v0.3.0 read by hand off their pages, the API count matched exactly.
@@ -228,6 +267,7 @@ python prize_per_submission.py --table   # Sherlock + Cantina: prize money per s
 python cross_platform.py --table   # Sherlock + Cantina: contests and submissions per quarter, half-year, year
 python hackenproof_payouts.py --table   # HackenProof: promised vs paid, by kind and end year
 python hackenproof_trends.py --table   # HackenProof: AI-report rules, submissions and paid per submission, by start half-year
+python codehawks_series.py --table   # CodeHawks: audits and First Flights by start half-year, practice copies left out
 python cantina_crowding.py --in data/cantina_census.jsonl   # Cantina census summary (JSON)
 python sherlock_crowding.py --in data/sherlock_contests.jsonl   # Sherlock census summary (JSON)
 python crowding.py           # Cantina v0.3.0 sample: medians by year, payout concentration
@@ -263,6 +303,8 @@ Run all tests with `python -m pytest` (no network needed).
 - HackenProof Code of Conduct: https://docs.hackenproof.com/welcome/code-of-conduct.md
 - Immunefi audit competitions: https://immunefi.com/audit-competition/
 - Immunefi rules: https://immunefi.com/rules/
+- CodeHawks census sources: https://codehawks.cyfrin.io/contests (45 audits) and https://codehawks.cyfrin.io/first-flights (#1 to #59), both checked 16 Oct 2026, plus each contest's page
+- CodeHawks AI rule: https://github.com/Cyfrin/codehawks-docs/blob/main/judging/disqualification-criteria.md (added in commit 9fc66d1, 14 Sep 2023)
 - CodeHawks payouts: https://docs.codehawks.com/judging/payouts-and-rewards
 - Certora contests: https://www.certora.com/contests
 - Code4rena wind-down: https://coinalertnews.com/news/2026/05/13/code4rena-shutdown-immunefi-takeover

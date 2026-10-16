@@ -1,0 +1,333 @@
+slug,kind,access,title,start,end,days,year,half,prize_amount,prize_unit,nsloc,submissions,submissions_source,sitemap_submissions,high,medium,low,unique_valid,unique_hm,signal_rate,hm_signal_rate,submissions_per_day,submissions_per_ksloc
+2023-07-beedle,audit,Public,Cyfrin CodeHawks | Beedle - Oracle free perpetual lending,2023-07-24,2023-08-07,14,2023,2023H2,20000.0,USDC,706,2114,sitemap,2114,26,15,28,69,41,0.0326,0.0194,151.0,2994.3
+2023-07-escrow,audit,Public,Cyfrin CodeHawks | CodeHawks Escrow Contract - Competition Details,2023-07-24,2023-08-05,12,2023,2023H2,40000.0,USDC,186,873,sitemap,873,0,4,3,7,4,0.008,0.0046,72.75,4693.5
+2023-07-foundry-defi-stablecoin,audit,Public,Cyfrin CodeHawks | Foundry DeFi Stablecoin CodeHawks Audit Contest,2023-07-24,2023-08-05,12,2023,2023H2,15000.0,USDC,236,1132,sitemap,1132,4,12,7,23,16,0.0203,0.0141,94.33,4796.6
+2023-08-sparkn,audit,Public,Cyfrin CodeHawks | Sparkn,2023-08-21,2023-08-29,8,2023,2023H2,15000.0,USDC,194,938,sitemap,938,1,3,12,16,4,0.0171,0.0043,117.25,4835.1
+2023-09-ditto,audit,Public,Cyfrin CodeHawks | DittoETH,2023-09-08,2023-10-08,30,2023,2023H2,55000.0,USDC,3365,664,sitemap,664,8,14,29,51,22,0.0768,0.0331,22.13,197.3
+2023-09-vyper-compiler,audit,Private,Cyfrin CodeHawks | Vyper - Compiler,2023-09-14,2023-11-04,51,2023,2023H2,160000.0,USDC,14644,38,sitemap,38,2,7,22,31,9,0.8158,0.2368,0.75,2.6
+2023-10-PasswordStore,first_flight,,Cyfrin CodeHawks | First Flight #1: PasswordStore,2023-10-18,2023-10-25,7,2023,2023H2,,,20,819,sitemap,819,2,0,1,3,2,0.0037,0.0024,117.0,40950.0
+2023-10-Puppy-Raffle,first_flight,,Cyfrin CodeHawks | First Flight #2: Puppy Raffle,2023-10-25,2023-11-01,7,2023,2023H2,,,143,1043,sitemap,1043,7,3,6,16,10,0.0153,0.0096,149.0,7293.7
+2023-10-SteadeFi,audit,Public,Cyfrin CodeHawks | Steadefi,2023-10-26,2023-11-06,11,2023,2023H2,35000.0,USDC,2289,435,sitemap,435,10,33,19,62,43,0.1425,0.0989,39.55,190.0
+2023-11-Thunder-Loan,first_flight,,Cyfrin CodeHawks | First Flight #3: Thunder Loan,2023-11-01,2023-11-08,7,2023,2023H2,,,387,314,sitemap,314,4,3,3,10,7,0.0318,0.0223,44.86,811.4
+2023-11-Boss-Bridge,first_flight,,Cyfrin CodeHawks | First Flight #4: Boss Bridge,2023-11-09,2023-11-15,6,2023,2023H2,,,99,331,sitemap,331,7,0,3,10,7,0.0302,0.0211,55.17,3343.4
+2023-11-Santas-List,first_flight,,Cyfrin CodeHawks | First Flight #5: Santa's List,2023-11-30,2023-12-07,7,2023,2023H2,,,116,687,sitemap,687,6,1,5,12,7,0.0175,0.0102,98.14,5922.4
+2023-12-Voting-Booth,first_flight,,Cyfrin CodeHawks | First Flight #6: Voting Booth,2023-12-15,2023-12-22,7,2023,2023H2,,,,205,sitemap,205,1,1,1,3,2,0.0146,0.0098,29.29,
+2023-12-stake-link,audit,Public,Cyfrin CodeHawks | stake.link,2023-12-22,2024-01-12,21,2023,2023H2,27500.0,USDC,1414,415,sitemap,415,2,2,13,17,4,0.041,0.0096,19.76,293.5
+2023-12-the-standard,audit,Public,Cyfrin CodeHawks | The Standard,2023-12-27,2024-01-10,14,2023,2023H2,20000.0,USDC,609,1501,sitemap,1501,4,10,14,28,14,0.0187,0.0093,107.21,2464.7
+2024-01-horse-store,first_flight,,Cyfrin CodeHawks | First Flight #7: Horse Store,2024-01-11,2024-01-18,7,2024,2024H1,,,460,189,sitemap,189,5,3,3,11,8,0.0582,0.0423,27.0,410.9
+2024-01-math-master,first_flight,,Cyfrin CodeHawks | First Flight #8: Math Master,2024-01-25,2024-02-02,8,2024,2024H1,,,46,141,sitemap,141,3,0,3,6,3,0.0426,0.0213,17.62,3065.2
+2024-01-Morpheus,audit,Public,Cyfrin CodeHawks | MorpheusAI,2024-01-30,2024-02-03,4,2024,2024H1,22500.0,USDC,1054,495,sitemap,495,1,1,10,12,2,0.0242,0.004,123.75,469.6
+2024-02-soulmate,first_flight,,Cyfrin CodeHawks | First Flight #9: Soulmate,2024-02-08,2024-02-15,7,2024,2024H1,,,233,428,sitemap,428,4,2,5,11,6,0.0257,0.014,61.14,1836.9
+2024-02-one-shot,first_flight,,Cyfrin CodeHawks | First Flight #10: One Shot,2024-02-22,2024-02-29,7,2024,2024H1,,,201,400,sitemap,400,3,2,4,9,5,0.0225,0.0125,57.14,1990.0
+2024-02-Beanstalk-1,audit,Public,Cyfrin CodeHawks | Beanstalk Part 1,2024-02-26,2024-03-25,28,2024,2024H1,100000.0,USDC,5776,188,sitemap,188,0,6,2,8,6,0.0426,0.0319,6.71,32.5
+2024-03-Moonwell,audit,Public,Cyfrin CodeHawks | Moonwell,2024-03-04,2024-03-11,7,2024,2024H1,15000.0,USDC,394,106,sitemap,106,0,1,1,2,1,0.0189,0.0094,15.14,269.0
+2024-03-snek-raffle,first_flight,,Cyfrin CodeHawks | First Flight #11: Snek-Raffle,2024-03-07,2024-03-14,7,2024,2024H1,,,136,111,sitemap,111,4,2,2,8,6,0.0721,0.0541,15.86,816.2
+2024-03-kitty-connect,first_flight,,Cyfrin CodeHawks | First Flight #12: Kitty Connect,2024-03-28,2024-04-04,7,2024,2024H1,,,235,174,sitemap,174,6,2,3,11,8,0.0632,0.046,24.86,740.4
+2024-04-beanstalk-2,audit,Public,Cyfrin CodeHawks | Beanstalk Part 2,2024-04-01,2024-04-15,14,2024,2024H1,35000.0,USDC,1991,184,sitemap,184,0,3,5,8,3,0.0435,0.0163,13.14,92.4
+2024-04-Baba-Marta,first_flight,,Cyfrin CodeHawks | First Flight #13: Baba Marta,2024-04-11,2024-04-18,7,2024,2024H1,,,239,355,sitemap,355,5,7,4,16,12,0.0451,0.0338,50.71,1485.4
+2024-04-Beanstalk-DIB,audit,Public,Cyfrin CodeHawks | Beanstalk: Dive Into Basin,2024-04-22,2024-04-29,7,2024,2024H1,12000.0,USDC,479,77,sitemap,77,0,1,3,4,1,0.0519,0.013,11.0,160.8
+2024-04-airdropper,first_flight,,Cyfrin CodeHawks | First Flight #14: AirDropper,2024-04-25,2024-05-02,7,2024,2024H1,,,62,199,sitemap,199,4,0,1,5,4,0.0251,0.0201,28.43,3209.7
+2024-05-Beanstalk-3,audit,Public,Cyfrin CodeHawks | Beanstalk Part 3,2024-05-06,2024-05-20,14,2024,2024H1,21000.0,USDC,1104,119,sitemap,119,0,0,4,4,0,0.0336,0.0,8.5,107.8
+2024-05-Mondrian-Wallet,first_flight,,Cyfrin CodeHawks | First Flight #15: Mondrian Wallet,2024-05-09,2024-05-16,7,2024,2024H1,,,89,130,sitemap,130,3,7,1,11,10,0.0846,0.0769,18.57,1460.7
+2024-05-Sablier,audit,Public,Cyfrin CodeHawks | Sablier,2024-05-10,2024-05-31,21,2024,2024H1,53440.0,USDC,2655,426,sitemap,426,0,4,7,11,4,0.0258,0.0094,20.29,160.5
+2024-05-mafia-take-down,first_flight,,Cyfrin CodeHawks | First Flight #16: Mafia Takedown,2024-05-23,2024-05-30,7,2024,2024H1,,,205,234,sitemap,234,3,4,3,10,7,0.0427,0.0299,33.43,1141.5
+2024-05-TSender,audit,Public,Cyfrin CodeHawks | TSender,2024-05-24,2024-05-31,7,2024,2024H1,15000.0,USDC,256,110,sitemap,110,0,1,1,2,1,0.0182,0.0091,15.71,429.7
+2024-05-beanstalk-the-finale,audit,Public,Cyfrin CodeHawks | Beanstalk: The Finale,2024-05-30,2024-07-08,39,2024,2024H1,250000.0,USDC,12285,555,sitemap,555,22,31,28,81,53,0.1459,0.0955,14.23,45.2
+2024-06-Dussehra,first_flight,,Cyfrin CodeHawks | First Flight #17: Dussehra,2024-06-06,2024-06-13,7,2024,2024H1,,,218,474,sitemap,474,4,2,4,10,6,0.0211,0.0127,67.71,2174.3
+2024-06-t-swap,first_flight,,Cyfrin CodeHawks | First Flight #18: T-Swap,2024-06-20,2024-06-27,7,2024,2024H1,,,276,303,sitemap,303,5,5,6,16,10,0.0528,0.033,43.29,1097.8
+2024-07-CL-CCIP,audit,Private,Cyfrin CodeHawks | CCIP v1.5,2024-07-02,2024-07-17,15,2024,2024H2,200000.0,USDC,2114,,,,,,,,,,,,
+2024-07-Mondrian-Wallet_v2,first_flight,,Cyfrin CodeHawks | First Flight #19: Mondrian Wallet v2,2024-07-04,2024-07-11,7,2024,2024H2,,,105,98,sitemap,98,4,2,1,7,6,0.0714,0.0612,14.0,933.3
+2024-07-templegold,audit,Public,Cyfrin CodeHawks | TempleGold,2024-07-04,2024-07-11,7,2024,2024H2,25000.0,USDC,998,624,sitemap,624,2,2,6,10,4,0.016,0.0064,89.14,625.3
+2024-07-biconomy,audit,Public,Cyfrin CodeHawks | Biconomy: Nexus,2024-07-08,2024-07-15,7,2024,2024H2,30000.0,USDC,1433,232,sitemap,232,4,4,6,14,8,0.0603,0.0345,33.14,161.9
+2024-07-zaros,audit,Public,Cyfrin CodeHawks | Zaros Part 1,2024-07-17,2024-07-31,14,2024,2024H2,60000.0,USDC,2878,916,sitemap,916,8,9,24,41,17,0.0448,0.0186,65.43,318.3
+2024-07-the-predicter,first_flight,,Cyfrin CodeHawks | First Flight #20: The Predicter,2024-07-18,2024-07-25,7,2024,2024H2,,,191,453,sitemap,453,5,3,2,10,8,0.0221,0.0177,64.71,2371.7
+2024-07-ark-project,audit,Public,Cyfrin CodeHawks | ArkProject: NFT Bridge,2024-07-31,2024-08-28,28,2024,2024H2,60000.0,USDC,2301,955,sitemap,955,5,6,6,17,11,0.0178,0.0115,34.11,415.0
+2024-08-kitty-fi,first_flight,,Cyfrin CodeHawks | First Flight #21: KittyFi,2024-08-01,2024-08-08,7,2024,2024H2,,,224,187,sitemap,187,7,3,2,12,10,0.0642,0.0535,26.71,834.8
+2024-08-tadle,audit,Public,Cyfrin CodeHawks | Tadle,2024-08-05,2024-08-12,7,2024,2024H2,27750.0,USDC,1229,1790,sitemap,1790,14,3,21,38,17,0.0212,0.0095,255.71,1456.5
+2024-08-steaking,first_flight,,Cyfrin CodeHawks | First Flight #22: Steaking,2024-08-15,2024-08-22,7,2024,2024H2,,,,88,sitemap,88,3,1,3,7,4,0.0795,0.0455,12.57,
+2024-08-fjord,audit,Public,Cyfrin CodeHawks | Fjord Token Staking,2024-08-20,2024-08-27,7,2024,2024H2,20000.0,USDC,662,811,sitemap,811,1,4,1,6,5,0.0074,0.0062,115.86,1225.1
+2024-08-MyCut,first_flight,,Cyfrin CodeHawks | MyCut,2024-08-29,2024-09-05,7,2024,2024H2,,,106,444,sitemap,444,4,2,3,9,6,0.0203,0.0135,63.43,4188.7
+2024-09-president-elector,first_flight,,Cyfrin CodeHawks | President Elector,2024-09-12,2024-09-19,7,2024,2024H2,,,140,229,sitemap,229,1,6,0,7,7,0.0306,0.0306,32.71,1635.7
+2024-09-starknet-staking,audit,Private,Cyfrin CodeHawks | Staking,2024-09-16,2024-10-04,18,2024,2024H2,65000.0,USDC,2937,,,,,,,,,,,,
+2024-09-mystery-box,first_flight,,Cyfrin CodeHawks | Mystery Box,2024-09-26,2024-10-03,7,2024,2024H2,,,86,654,sitemap,654,3,4,2,9,7,0.0138,0.0107,93.43,7604.7
+2024-09-stakelink,audit,Public,Cyfrin CodeHawks | Liquid Staking,2024-09-30,2024-10-17,17,2024,2024H2,50000.0,USDC,2530,1158,sitemap,1158,1,7,17,25,8,0.0216,0.0069,68.12,457.7
+2024-10-starknet-auction,first_flight,,Cyfrin CodeHawks | Starknet Auction,2024-10-10,2024-10-17,7,2024,2024H2,,,132,96,sitemap,96,5,1,1,7,6,0.0729,0.0625,13.71,727.3
+2024-10-trick-or-treat,first_flight,,Cyfrin CodeHawks | Trick or Treat,2024-10-24,2024-10-31,7,2024,2024H2,,,109,291,sitemap,291,0,1,4,5,1,0.0172,0.0034,41.57,2669.7
+2024-10-sablier,audit,Public,Cyfrin CodeHawks | Flow,2024-10-25,2024-11-01,7,2024,2024H2,20000.0,USDC,699,499,sitemap,499,0,0,4,4,0,0.008,0.0,71.29,713.9
+2024-10-swan-dria,audit,Public,Cyfrin CodeHawks | Dria,2024-10-25,2024-11-01,7,2024,2024H2,21000.0,USDC,1034,850,sitemap,850,3,7,9,19,10,0.0224,0.0118,121.43,822.1
+2024-10-zksync,audit,Private,Cyfrin CodeHawks | Era,2024-10-28,2024-12-02,35,2024,2024H2,500000.0,USDC,15741,71,sitemap,71,1,10,18,29,11,0.4085,0.1549,2.03,4.5
+2024-11-one-world,audit,Public,Cyfrin CodeHawks | Project,2024-11-06,2024-11-13,7,2024,2024H2,15000.0,USDC,541,935,sitemap,935,2,2,6,10,4,0.0107,0.0043,133.57,1728.3
+2024-11-giving-thanks,first_flight,,Cyfrin CodeHawks | GivingThanks,2024-11-07,2024-11-14,7,2024,2024H2,,,67,485,sitemap,485,2,3,2,7,5,0.0144,0.0103,69.29,7238.8
+2024-11-twentyone,first_flight,,Cyfrin CodeHawks | TwentyOne,2024-11-21,2024-11-28,7,2024,2024H2,,,147,316,sitemap,316,3,5,3,11,8,0.0348,0.0253,45.14,2149.7
+algo-ssstablecoinsss,first_flight,,Cyfrin CodeHawks | Algo Ssstablecoinsss,2024-12-05,2024-12-12,7,2024,2024H2,,,,38,sitemap,38,1,1,0,2,2,0.0526,0.0526,5.43,
+2024-12-alchemix,audit,Public,Cyfrin CodeHawks | Alchemix Transmuter,2024-12-16,2024-12-23,7,2024,2024H2,16653.0,OP,253,733,sitemap,733,0,3,4,7,3,0.0095,0.0041,104.71,2897.2
+2024-12-christmas-dinner,first_flight,,Cyfrin CodeHawks | Christmas Dinner,2024-12-19,2024-12-26,7,2024,2024H2,,,129,497,sitemap,497,3,6,2,11,9,0.0221,0.0181,71.0,3852.7
+2024-12-quantamm,audit,Public,Cyfrin CodeHawks | QuantAMM,2024-12-20,2025-01-15,26,2024,2024H2,49600.0,OP,3000,1027,sitemap,1027,11,19,14,44,30,0.0428,0.0292,39.5,342.3
+2025-01-benqi,audit,Private,Cyfrin CodeHawks | Ignite,2025-01-13,2025-01-27,14,2025,2025H1,33750.0,USDC,1367,,,,,,,,,,,,
+2025-01-pieces-protocol,first_flight,,Cyfrin CodeHawks | Pieces Protocol,2025-01-16,2025-01-23,7,2025,2025H1,,,181,420,sitemap,420,5,1,2,8,6,0.019,0.0143,60.0,2320.4
+2025-01-zaros-part-2,audit,Public,Cyfrin CodeHawks | Part 2,2025-01-20,2025-02-06,17,2025,2025H1,70000.0,USDC,3258,998,sitemap,998,16,35,19,70,51,0.0701,0.0511,58.71,306.3
+2025-01-diva,audit,Public,Cyfrin CodeHawks | Aave DIVA Wrapper,2025-01-24,2025-01-31,7,2025,2025H1,15000.0,USDC,519,557,sitemap,557,0,1,5,6,1,0.0108,0.0018,79.57,1073.2
+2025-02-raac,audit,Public,Cyfrin CodeHawks | Core Contracts,2025-02-03,2025-02-24,21,2025,2025H1,77280.0,USDC,3864,6685,sitemap,6685,48,120,81,249,168,0.0372,0.0251,318.33,1730.1
+2025-02-datingdapp,first_flight,,Cyfrin CodeHawks | DatingDapp,2025-02-06,2025-02-13,7,2025,2025H1,,,197,660,sitemap,660,1,4,0,5,5,0.0076,0.0076,94.29,3350.3
+2025-02-gamma,audit,Public,Cyfrin CodeHawks | Liquidity Management,2025-02-11,2025-02-25,14,2025,2025H1,50000.0,USDC,1910,1226,sitemap,1226,5,9,13,27,14,0.022,0.0114,87.57,641.9
+2025-02-remora,audit,Invite-only,Cyfrin CodeHawks | RWA,2025-02-17,2025-02-20,3,2025,2025H1,6000.0,USDC,,,,,,,,,,,,,
+2025-02-vyper-vested-claims,first_flight,,Cyfrin CodeHawks | Vyper Vested Claims,2025-02-20,2025-02-27,7,2025,2025H1,,,127,102,sitemap,102,0,1,1,2,1,0.0196,0.0098,14.57,803.1
+2025-03-inheritable-smart-contract-wallet,first_flight,,Cyfrin CodeHawks | Inheritable Smart Contract Wallet,2025-03-06,2025-03-13,7,2025,2025H1,,,211,816,sitemap,816,7,1,4,12,8,0.0147,0.0098,116.57,3867.3
+2025-03-curve,audit,Public,Cyfrin CodeHawks | Storage Proofs,2025-03-10,2025-03-17,7,2025,2025H1,14723.0,OP,394,429,sitemap,429,0,0,5,5,0,0.0117,0.0,61.29,1088.8
+2025-03-cyfrin-attester,audit,Invite-only,Cyfrin CodeHawks | Cyfrin Attester,2025-03-11,2025-03-14,3,2025,2025H1,6000.0,USDC,,,,,,,,,,,,,
+openeden,audit,Invite-only,Cyfrin CodeHawks | USDO/CCIP,2025-03-14,2025-03-15,1,2025,2025H1,3200.0,USDC,,,,,,,,,,,,,
+2025-03-rustfund,first_flight,,Cyfrin CodeHawks | RustFund,2025-03-20,2025-03-27,7,2025,2025H1,,,170,447,sitemap,447,4,3,4,11,7,0.0246,0.0157,63.86,2629.4
+2025-03-remora-2,audit,Invite-only,Cyfrin CodeHawks | RWA Part 2,2025-03-25,2025-03-27,2,2025,2025H1,4000.0,USDC,,,,,,,,,,,,,
+2025-04-eggstravaganza,first_flight,,Cyfrin CodeHawks | Eggstravaganza,2025-04-03,2025-04-10,7,2025,2025H1,,,129,642,sitemap,642,2,4,4,10,6,0.0156,0.0093,91.71,4976.7
+2025-04-starknet-part-2,audit,Private,Cyfrin CodeHawks | Staking Part 2,2025-04-03,2025-04-24,21,2025,2025H1,80000.0,USDC,4307,,,,,,,,,,,,
+2025-04-rock-paper-scissors,first_flight,,Cyfrin CodeHawks | Rock Paper Scissors,2025-04-17,2025-04-24,7,2025,2025H1,,,349,537,sitemap,537,5,3,3,11,8,0.0205,0.0149,76.71,1538.7
+2025-05-hawk-high,first_flight,,Cyfrin CodeHawks | Hawk High,2025-05-01,2025-05-08,7,2025,2025H1,,,243,968,sitemap,968,5,2,10,17,7,0.0176,0.0072,138.29,3983.5
+2025-05-weather-witness,first_flight,,Cyfrin CodeHawks | Weather Witness,2025-05-15,2025-05-22,7,2025,2025H1,,,236,253,sitemap,253,5,1,2,8,6,0.0316,0.0237,36.14,1072.0
+2025-05-ssswap,first_flight,,Cyfrin CodeHawks | SSSwap,2025-05-29,2025-06-05,7,2025,2025H1,,,,77,sitemap,77,5,4,1,10,9,0.1299,0.1169,11.0,
+2025-06-snowman-merkle-airdrop,first_flight,,Cyfrin CodeHawks | Snowman Merkle Airdrop,2025-06-12,2025-06-19,7,2025,2025H1,,,215,525,sitemap,525,2,1,2,5,3,0.0095,0.0057,75.0,2441.9
+2025-07-orderbook,first_flight,,Cyfrin CodeHawks | OrderBook,2025-07-03,2025-07-10,7,2025,2025H2,,,217,466,sitemap,466,2,0,5,7,2,0.015,0.0043,66.57,2147.5
+2025-07-beatland-festival,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-07-17,2025-07-24,7,2025,2025H2,,,234,435,sitemap,435,1,3,2,6,4,0.0138,0.0092,62.14,1859.0
+2025-07-last-man-standing,first_flight,,Cyfrin CodeHawks | Last Man Standing,2025-07-31,2025-08-07,7,2025,2025H2,,,181,634,sitemap,634,3,3,7,13,6,0.0205,0.0095,90.57,3502.8
+2025-07-secret-vault,first_flight,,Cyfrin CodeHawks | Secret Vault on Aptos,2025-08-14,2025-08-21,7,2025,2025H2,,,30,181,sitemap,181,2,1,2,5,3,0.0276,0.0166,25.86,6033.3
+2025-08-aptos-pizza-drop,first_flight,,Cyfrin CodeHawks | Aptos Pizza Drop,2025-08-28,2025-09-04,7,2025,2025H2,,,125,122,sitemap,122,2,1,1,4,3,0.0328,0.0246,17.43,976.0
+2025-09-one-shot-reloaded,first_flight,,Cyfrin CodeHawks | One Shot: Reloaded,2025-09-11,2025-09-18,7,2025,2025H2,,,436,120,sitemap,120,5,1,3,9,6,0.075,0.05,17.14,275.2
+2025-09-bid-beasts,first_flight,,Cyfrin CodeHawks | Bid Beasts,2025-09-25,2025-10-02,7,2025,2025H2,,,170,584,sitemap,584,2,4,3,9,6,0.0154,0.0103,83.43,3435.3
+2025-10-raisebox-faucet,first_flight,,Cyfrin CodeHawks | Raisebox Faucet,2025-10-09,2025-10-16,7,2025,2025H2,,,157,570,sitemap,570,3,2,3,8,5,0.014,0.0088,81.43,3630.6
+2025-10-company-simulator,first_flight,,Cyfrin CodeHawks | Company Simulator,2025-10-23,2025-10-30,7,2025,2025H2,,,265,128,sitemap,128,4,3,2,9,7,0.0703,0.0547,18.29,483.0
+2025-11-brivault,first_flight,,Cyfrin CodeHawks | BriVault,2025-11-06,2025-11-13,7,2025,2025H2,,,193,677,sitemap,677,6,2,4,12,8,0.0177,0.0118,96.71,3507.8
+2025-11-rebatefi-hook,first_flight,,Cyfrin CodeHawks | RebateFi Hook,2025-11-20,2025-11-27,7,2025,2025H2,,,150,252,sitemap,252,3,1,3,7,4,0.0278,0.0159,36.0,1680.0
+2025-12-token0x,first_flight,,Cyfrin CodeHawks | Token-0x,2025-12-04,2025-12-11,7,2025,2025H2,,,222,285,sitemap,285,3,2,4,9,5,0.0316,0.0175,40.71,1283.8
+2025-12-multisig-timelock,first_flight,,Cyfrin CodeHawks | MultiSig Timelock,2025-12-18,2025-12-25,7,2025,2025H2,,,205,267,sitemap,267,2,6,5,13,8,0.0487,0.03,38.14,1302.4
+beatland-festival-cm2eshfgp0001w108hkfc6ina,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-18,2025-12-25,7,2025,2025H2,,,,,,,,,,,,,,,
+thunder-loan-cmirgfj8u0000l604chib30kg,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-18,2025-12-25,7,2025,2025H2,,,,,,,,,,,,,,,
+thunder-loan-cm9eas9do0000ji04v2aflk41,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-19,2025-12-21,2,2025,2025H2,,,,7,sitemap,7,,,,,,,,3.5,
+beatland-festival-clzphefzi0002rq0gvtb2iodw,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-20,2025-12-27,7,2025,2025H2,,,,,,,,,,,,,,,
+beatland-festival-cm8305hic0001o6eo9bd1k36f,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-20,2025-12-27,7,2025,2025H2,,,,,,,,,,,,,,,
+thunder-loan-cm8305hic0001o6eo9bd1k36f,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-20,2025-12-27,7,2025,2025H2,,,,,,,,,,,,,,,
+thunder-loan-cmidumh4x0000l704cw83nzby,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-22,2025-12-29,7,2025,2025H2,,,,,,,,,,,,,,,
+beatland-festival-clza0ttpq0000iitvq0q6uccd,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-25,2025-12-31,6,2025,2025H2,,,,6,sitemap,6,,,,,,,,1.0,
+beatland-festival-cm436yhpa0002g0i00audvitb,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-25,2025-12-30,5,2025,2025H2,,,,7,sitemap,7,,,,,,,,1.4,
+beatland-festival-cmgz9a7ig0000l204t237frub,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-25,2026-01-01,7,2025,2025H2,,,,1,sitemap,1,,,,,,,,0.14,
+thunder-loan-cm7owpv0f0000fv3uq12azah5,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-25,2026-01-01,7,2025,2025H2,,,,,,,,,,,,,,,
+thunder-loan-cmh95kae50005i604dz6wzdq1,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-25,2025-12-25,,2025,2025H2,,,,8,sitemap,8,,,,,,,,,
+beatland-festival-cm7owpv0f0000fv3uq12azah5,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-26,2025-12-27,1,2025,2025H2,,,,8,sitemap,8,,,,,,,,8.0,
+beatland-festival-cmbs21qzn0000l2042o7il14p,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-26,2025-12-28,2,2025,2025H2,,,,4,sitemap,4,,,,,,,,2.0,
+thunder-loan-cm2svhrgh0000r5fki1ve5em8,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-27,2026-01-03,7,2025,2025H2,,,,,,,,,,,,,,,
+thunder-loan-cm6xz1kfi0000pouonwzkdqy7,first_flight,,Cyfrin CodeHawks | Thunder Loan,2025-12-27,2026-01-03,7,2025,2025H2,,,,5,sitemap,5,,,,,,,,0.71,
+beatland-festival-cmgj1vntn0000jj0410fmlicq,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-28,2026-01-04,7,2025,2025H2,,,,,,,,,,,,,,,
+beatland-festival-cmgtintzn0003l904emgzki81,first_flight,,Cyfrin CodeHawks | Beatland Festival,2025-12-29,2026-01-05,7,2025,2025H2,,,,,,,,,,,,,,,
+beatland-festival-cm2vue9fk0000lc8j5xkvx7il,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-02,2026-01-09,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmh95kae50005i604dz6wzdq1,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-02,2026-01-02,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+thunder-loan-cmf0tu7ut0009l504zatfheg1,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-02,2026-01-09,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmgnhuzl10000i604s7dqmla7,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-03,2026-01-08,5,2026,2026H1,,,,4,sitemap,4,,,,,,,,0.8,
+beatland-festival-cmizpzbn20000jr04wnllkj5y,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-04,2026-01-06,2,2026,2026H1,,,,6,sitemap,6,,,,,,,,3.0,
+thunder-loan-cmjzi8vp40000ib0426o5hq7v,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-04,2026-01-04,,2026,2026H1,,,,5,sitemap,5,,,,,,,,,
+beatland-festival-cm7j5pog60000ryjpczfhwrh0,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-05,2026-01-07,2,2026,2026H1,,,,1,sitemap,1,,,,,,,,0.5,
+thunder-loan-cm73ozkh4000043l86vsomm09,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-05,2026-01-12,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmjv0ad230002lb04jutfn3hj,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-05,2026-01-05,,2026,2026H1,,,,1,sitemap,1,,,,,,,,,
+beatland-festival-cm400572d0000abcq88o4enkn,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-06,2026-01-11,5,2026,2026H1,,,,7,sitemap,7,,,,,,,,1.4,
+beatland-festival-cmeuyvnh70001jj04vwi39pzl,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-06,2026-01-08,2,2026,2026H1,,,,8,sitemap,8,,,,,,,,4.0,
+beatland-festival-cmk0jflmd0003l4040jheg3cw,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-07,2026-01-07,,2026,2026H1,,,,2,sitemap,2,,,,,,,,,
+beatland-festival-cmcmotzov0000l704fbse96lu,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-08,2026-01-14,6,2026,2026H1,,,,6,sitemap,6,,,,,,,,1.0,
+thunder-loan-cmk0e1ohi0000kv047jo4ov7p,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-08,2026-01-08,,2026,2026H1,,,,1,sitemap,1,,,,,,,,,
+thunder-loan-cmk0jflmd0003l4040jheg3cw,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-08,2026-01-08,,2026,2026H1,,,,2,sitemap,2,,,,,,,,,
+thunder-loan-cm2dj9c7h0006jkkz9fyoucvw,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-11,2026-01-18,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cm7j5pog60000ryjpczfhwrh0,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-15,2026-01-19,4,2026,2026H1,,,,1,sitemap,1,,,,,,,,0.25,
+thunder-loan-cmj9opq060000ky04tn9pqwse,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-15,2026-01-20,5,2026,2026H1,,,,1,sitemap,1,,,,,,,,0.2,
+thunder-loan-cmjpixk9m0000ib041l9rgiec,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-15,2026-01-18,3,2026,2026H1,,,,2,sitemap,2,,,,,,,,0.67,
+thunder-loan-cm6tg0lpp0000yucsvpjtcarz,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-16,2026-01-23,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmk61j2pv0002l704g02rr7bg,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-16,2026-01-23,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-clk83mi5b0004jp08axr82nq1,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-17,2026-01-17,,2026,2026H1,,,,1,sitemap,1,,,,,,,,,
+thunder-loan-cm66k3bnp0000qfxeiyi6wte1,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-21,2026-01-21,,2026,2026H1,,,,7,sitemap,7,,,,,,,,,
+beatland-festival-cm66k3bnp0000qfxeiyi6wte1,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-22,2026-01-22,,2026,2026H1,,,,10,sitemap,10,,,,,,,,,
+beatland-festival-cm2fvrnq20002xjiivh3122mn,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-23,2026-01-24,1,2026,2026H1,,,,6,sitemap,6,,,,,,,,6.0,
+beatland-festival-cmk61j2pv0002l704g02rr7bg,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-23,2026-01-30,7,2026,2026H1,,,,2,sitemap,2,,,,,,,,0.29,
+thunder-loan-cm8zol3350000lf03vk87ejnt,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-23,2026-01-30,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmcf6009p0000l704v3ihw9r6,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-24,2026-01-25,1,2026,2026H1,,,,3,sitemap,3,,,,,,,,3.0,
+beatland-festival-cmhd5d56i0001l204tz8tyn3o,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-24,2026-01-31,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmhd5d56i0001l204tz8tyn3o,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-24,2026-01-31,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-clk83mi5b0004jp08axr82nq1,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-26,2026-01-27,1,2026,2026H1,,,,2,sitemap,2,,,,,,,,2.0,
+thunder-loan-clnulwfk60000l708q0z497xy,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-26,2026-01-26,,2026,2026H1,,,,5,sitemap,5,,,,,,,,,
+thunder-loan-cm8g5hz3p0000ju03yenvzw4a,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-26,2026-02-02,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmkl6mqqe0000l4045izrxqly,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-28,2026-02-04,7,2026,2026H1,,,,,,,,,,,,,,,
+2026-01-vanguard,first_flight,,Cyfrin CodeHawks | Vanguard,2026-01-29,2026-02-05,7,2026,2026H1,,,273,184,sitemap,184,4,2,1,7,6,0.038,0.0326,26.29,674.0
+thunder-loan-cm4909n9q00025svmoflz1rg9,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-29,2026-02-05,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmf9w3f1b0000lb04l7xncu9l,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-01-29,2026-02-05,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmib1cjs90000l304hfh3e6gv,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-01-31,2026-02-07,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cm2f2bz7z0001yhs9s9g2ppd7,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-06,2026-02-06,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+beatland-festival-cmjx116oi0000l404b3vv1h6d,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-06,2026-02-11,5,2026,2026H1,,,,7,sitemap,7,,,,,,,,1.4,
+thunder-loan-cm7m38yle0001pvnt1wiq7gth,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-07,2026-02-11,4,2026,2026H1,,,,1,sitemap,1,,,,,,,,0.25,
+thunder-loan-cmke2bud00001l204kpgqvcls,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-08,2026-02-15,7,2026,2026H1,,,,5,sitemap,5,,,,,,,,0.71,
+beatland-festival-cm19angmc000421txvq8izlip,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-11,2026-02-12,1,2026,2026H1,,,,7,sitemap,7,,,,,,,,7.0,
+2026-02-stratax-contracts,first_flight,,Cyfrin CodeHawks | Stratax Contracts,2026-02-12,2026-02-19,7,2026,2026H1,,,356,283,sitemap,283,1,7,9,17,8,0.0601,0.0283,40.43,794.9
+thunder-loan-cm5fcfrcy00001ky1vwbqo683,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-12,2026-02-12,,2026,2026H1,,,,9,sitemap,9,,,,,,,,,
+thunder-loan-cmlqledph0001jr04aky6sszz,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-20,2026-02-25,5,2026,2026H1,,,,10,sitemap,10,,,,,,,,2.0,
+beatland-festival-cmgsesbqq0002jm048pra4id7,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-21,2026-02-28,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmlqledph0001jr04aky6sszz,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-21,2026-02-22,1,2026,2026H1,,,,9,sitemap,9,,,,,,,,9.0,
+thunder-loan-cm1ggf7k000005pmty7nc9kar,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-21,2026-02-28,7,2026,2026H1,,,,3,sitemap,3,,,,,,,,0.43,
+thunder-loan-cmlsvjgn40000jl042jwg2c8b,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-21,2026-02-21,,2026,2026H1,,,,10,sitemap,10,,,,,,,,,
+beatland-festival-cm4909n9q00025svmoflz1rg9,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-22,2026-02-28,6,2026,2026H1,,,,3,sitemap,3,,,,,,,,0.5,
+beatland-festival-cmhqsgnjb0006l204ufier9xu,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-23,2026-03-02,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmlsvjgn40000jl042jwg2c8b,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-23,2026-02-23,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+beatland-festival-cmdbnyatr0001kz04xoyfnuew,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-02-24,2026-03-03,7,2026,2026H1,,,,4,sitemap,4,,,,,,,,0.57,
+thunder-loan-cm2g8aww80006fc86k1hbhcph,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-24,2026-02-28,4,2026,2026H1,,,,10,sitemap,10,,,,,,,,2.5,
+thunder-loan-cm7jshxfx0000fwegk8ftdu77,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-02-26,2026-02-27,1,2026,2026H1,,,,7,sitemap,7,,,,,,,,7.0,
+beatland-festival-cmeqxtpqq0004js04a8ri8d0l,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-03-03,2026-03-05,2,2026,2026H1,,,,3,sitemap,3,,,,,,,,1.5,
+thunder-loan-cm2f713vb00036ya24tsgwkkk,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-06,2026-03-13,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cm5cjw9uq0002y1z1av55gn6r,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-10,2026-03-10,,2026,2026H1,,,,5,sitemap,5,,,,,,,,,
+beatland-festival-cm2ej1u1a000913ciexlh5suw,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-03-11,2026-03-11,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+2026-03-nft-dealers,first_flight,,Cyfrin CodeHawks | NFT Dealers,2026-03-12,2026-03-19,7,2026,2026H1,,,253,399,sitemap,399,6,6,3,15,12,0.0376,0.0301,57.0,1577.1
+beatland-festival-cmm8wapi20000ju04t0d7a9ca,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-03-12,2026-03-12,,2026,2026H1,,,,8,sitemap,8,,,,,,,,,
+beatland-festival-cmmk0x3t60001le04c6mq6c5p,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-03-12,2026-03-13,1,2026,2026H1,,,,5,sitemap,5,,,,,,,,5.0,
+thunder-loan-cmm8wapi20000ju04t0d7a9ca,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-12,2026-03-12,,2026,2026H1,,,,10,sitemap,10,,,,,,,,,
+thunder-loan-cm6p7a6gt0000v9waoxm5pqhs,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-17,2026-03-24,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmdh82lmm0001l804hrg1vyvg,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-23,2026-03-30,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmn6czgik0000l104b6lwrilv,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-26,2026-03-31,5,2026,2026H1,,,,4,sitemap,4,,,,,,,,0.8,
+beatland-festival-cm7jshxfx0000fwegk8ftdu77,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-03-27,2026-04-02,6,2026,2026H1,,,,7,sitemap,7,,,,,,,,1.17,
+beatland-festival-cmncwsbg30000k104szwbx0s3,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-03-30,2026-04-06,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmaoh2kqt0000ky04zzisdaq1,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-30,2026-03-30,,2026,2026H1,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cm8yd33j80000l50341rgrbwy,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-03-31,2026-04-07,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmn55nfb90001l504dvb2wfxc,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-03,2026-04-03,,2026,2026H1,,,,3,sitemap,3,,,,,,,,,
+thunder-loan-cmmwgdcmn0004jo045secp80i,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-04-04,2026-04-04,,2026,2026H1,,,,10,sitemap,10,,,,,,,,,
+beatland-festival-cmmwgdcmn0004jo045secp80i,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-06,2026-04-06,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+beatland-festival-cmazhmdw70000jx04vekzmj31,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-07,2026-04-13,6,2026,2026H1,,,,2,sitemap,2,,,,,,,,0.33,
+beatland-festival-cm5cjw9uq0002y1z1av55gn6r,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-09,2026-04-13,4,2026,2026H1,,,,6,sitemap,6,,,,,,,,1.5,
+thunder-loan-cm9y9eh9z0000js048jf5zykl,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-04-09,2026-04-16,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-clk3yh639002emf08ywok1hzf,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-12,2026-04-12,,2026,2026H1,,,,7,sitemap,7,,,,,,,,,
+2026-04-snarkeling,first_flight,,Cyfrin CodeHawks | SNARKeling Treasure Hunt,2026-04-16,2026-04-23,7,2026,2026H1,,,220,248,sitemap,248,5,2,6,13,7,0.0524,0.0282,35.43,1127.3
+beatland-festival-cmj9opq060000ky04tn9pqwse,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-16,2026-04-16,,2026,2026H1,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cmcf6009p0000l704v3ihw9r6,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-04-16,2026-04-23,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cm9eas9do0000ji04v2aflk41,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-18,2026-04-23,5,2026,2026H1,,,,5,sitemap,5,,,,,,,,1.0,
+beatland-festival-cmauj63v00000lc04fs9vhmv8,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-19,2026-04-26,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cm35actm80000fhct9klk2oak,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-20,2026-04-27,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cm2ej1u1a000913ciexlh5suw,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-04-20,2026-04-20,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+beatland-festival-cmn7ij8w60000ky04ira15x9k,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-04-21,2026-04-21,,2026,2026H1,,,,7,sitemap,7,,,,,,,,,
+thunder-loan-cmofk2rsx0000l5044ps30yze,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-04-26,2026-05-03,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cm55et1f6000011b8rjcasrrt,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-04-27,2026-04-29,2,2026,2026H1,,,,1,sitemap,1,,,,,,,,0.5,
+thunder-loan-cm7p2nt0l0003cv75b9164rob,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-01,2026-05-01,,2026,2026H1,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cmn7ij8w60000ky04ira15x9k,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-02,2026-05-02,,2026,2026H1,,,,7,sitemap,7,,,,,,,,,
+thunder-loan-cm2ckdda90008jcoywsgyqa5f,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-04,2026-05-11,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmjaukcg70000l10407x9qxci,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-05-05,2026-05-12,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmdt4ncvp0000ib04hqlhy2ss,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-05-06,2026-05-06,,2026,2026H1,,,,3,sitemap,3,,,,,,,,,
+thunder-loan-cmafq4lug0000la04togozf31,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-06,2026-05-13,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmjaukcg70000l10407x9qxci,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-06,2026-05-12,6,2026,2026H1,,,,2,sitemap,2,,,,,,,,0.33,
+thunder-loan-cmewid5bp0008l704vmivkezp,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-07,2026-05-14,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmhrq33820002ik04axmxgmq3,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-05-08,2026-05-14,6,2026,2026H1,,,,3,sitemap,3,,,,,,,,0.5,
+beatland-festival-cmnuknw480000l704t8h1w56p,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-05-11,2026-05-11,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+thunder-loan-cmak03ba70001kw04oj4zp3uo,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-13,2026-05-20,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmnuknw480000l704t8h1w56p,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-14,2026-05-14,,2026,2026H1,,,,8,sitemap,8,,,,,,,,,
+beatland-festival-cm2xwf3gl0000yi3jwh6svtv8,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-05-17,2026-05-24,7,2026,2026H1,,,,6,sitemap,6,,,,,,,,0.86,
+thunder-loan-cmjipblcz0002la04aih9ud7s,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-19,2026-05-19,,2026,2026H1,,,,10,sitemap,10,,,,,,,,,
+beatland-festival-cmpfcufwx0000jv04wivle6ko,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-05-22,2026-05-29,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmpfcufwx0000jv04wivle6ko,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-22,2026-05-29,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cmpl2r85n0003i804npqs5663,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-05-25,2026-05-25,,2026,2026H1,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cmpl2r85n0003i804npqs5663,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-26,2026-05-26,,2026,2026H1,,,,7,sitemap,7,,,,,,,,,
+thunder-loan-cmpmssfvu0000l104qp943csi,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-27,2026-05-27,,2026,2026H1,,,,6,sitemap,6,,,,,,,,,
+thunder-loan-clqim6y8j0006lgfv35y3lfup,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-28,2026-05-31,3,2026,2026H1,,,,3,sitemap,3,,,,,,,,1.0,
+thunder-loan-cmpsly5nu0002js04sua5cli2,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-05-31,2026-06-07,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cm2lmo34b0000745wmxwhzt74,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-06-01,2026-06-08,7,2026,2026H1,,,,,,,,,,,,,,,
+beatland-festival-cm76vsczl00001gbh8mr58gww,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-06-03,2026-06-09,6,2026,2026H1,,,,6,sitemap,6,,,,,,,,1.0,
+thunder-loan-cmq1h9h2n0001l1041890nsf9,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-05,2026-06-06,1,2026,2026H1,,,,4,sitemap,4,,,,,,,,4.0,
+beatland-festival-cmq1h9h2n0001l1041890nsf9,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-06-06,2026-06-06,,2026,2026H1,,,,2,sitemap,2,,,,,,,,,
+thunder-loan-cmmrn6wts0001jv04vmrimmfw,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-09,2026-06-09,,2026,2026H1,,,,5,sitemap,5,,,,,,,,,
+beatland-festival-cmmrn6wts0001jv04vmrimmfw,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-06-10,2026-06-13,3,2026,2026H1,,,,2,sitemap,2,,,,,,,,0.67,
+thunder-loan-cmq7joqjn0000l804h1rigsfp,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-10,2026-06-10,,2026,2026H1,,,,2,sitemap,2,,,,,,,,,
+thunder-loan-clymo4jw00000348qfz2ncao1,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-12,2026-06-19,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmq7ou6by0000l204c12qx3ob,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-12,2026-06-19,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cma81vkyy0000i90437p5nx7a,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-14,2026-06-21,7,2026,2026H1,,,,4,sitemap,4,,,,,,,,0.57,
+thunder-loan-cmp41egr70003l204su3k7ylj,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-14,2026-06-20,6,2026,2026H1,,,,1,sitemap,1,,,,,,,,0.17,
+thunder-loan-cmqdxgqa80000k00413657hef,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-14,2026-06-14,,2026,2026H1,,,,10,sitemap,10,,,,,,,,,
+beatland-festival-cmak03ba70001kw04oj4zp3uo,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-06-15,2026-06-22,7,2026,2026H1,,,,1,sitemap,1,,,,,,,,0.14,
+beatland-festival-cmqdxgqa80000k00413657hef,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-06-15,2026-06-15,,2026,2026H1,,,,10,sitemap,10,,,,,,,,,
+thunder-loan-cmqfk94gm0003kv04330mxy1a,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-15,2026-06-22,7,2026,2026H1,,,,3,sitemap,3,,,,,,,,0.43,
+beatland-festival-cmqbeigo10001l804jkjqgjlc,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-06-16,2026-06-17,1,2026,2026H1,,,,4,sitemap,4,,,,,,,,4.0,
+thunder-loan-cmqgwek3e0001jy041mpozgvq,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-16,2026-06-23,7,2026,2026H1,,,,4,sitemap,4,,,,,,,,0.57,
+thunder-loan-cmj41dihm0000l404tgmj3hwn,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-18,2026-06-19,1,2026,2026H1,,,,7,sitemap,7,,,,,,,,7.0,
+thunder-loan-cmqiblf2n0000id046dp4qjcj,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-18,2026-06-18,,2026,2026H1,,,,5,sitemap,5,,,,,,,,,
+thunder-loan-cmqm79hov0000l204qny16ei3,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-21,2026-06-28,7,2026,2026H1,,,,,,,,,,,,,,,
+thunder-loan-cmqt8ne0l0000js04ybaji32k,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-06-26,2026-07-03,7,2026,2026H1,,,,2,sitemap,2,,,,,,,,0.29,
+thunder-loan-cmr26k3hs0001lb04kdvazl42,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-01,2026-07-08,7,2026,2026H2,,,,4,sitemap,4,,,,,,,,0.57,
+beatland-festival-cm2dt8ghm0008jjrx2qhkvt4n,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-02,2026-07-09,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cm1npsbd00000108qdyrkhl7w,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-02,2026-07-09,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cm76vsczl00001gbh8mr58gww,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-02,2026-07-02,,2026,2026H2,,,,5,sitemap,5,,,,,,,,,
+beatland-festival-cmpcpno3e0001jp04zr5gxuxu,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-03,2026-07-10,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmr4q2yws0001jp04778zx4tk,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-04,2026-07-05,1,2026,2026H2,,,,8,sitemap,8,,,,,,,,8.0,
+beatland-festival-cmqoo1m6h0000lb04p4fof1g1,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-06,2026-07-13,7,2026,2026H2,,,,,,,,,,,,,,,
+2026-07-battlechain-confidence-pools,audit,Public,Cyfrin CodeHawks | BattleChain Confidence Pools,2026-07-09,2026-07-16,7,2026,2026H2,7.25,ETH,589,971,sitemap,971,0,3,6,9,3,0.0093,0.0031,138.71,1648.6
+beatland-festival-cmm4odm2w0002ky049jtz9jzl,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-10,2026-07-10,,2026,2026H2,,,,3,sitemap,3,,,,,,,,,
+thunder-loan-cmcqf4fsh0000l604fzaq4gi4,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-10,2026-07-10,,2026,2026H2,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cmr84yfuk0000l104lq4r7gep,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-11,2026-07-11,,2026,2026H2,,,,10,sitemap,10,,,,,,,,,
+beatland-festival-cmd1itlfu0000kz04ji2no2go,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-13,2026-07-15,2,2026,2026H2,,,,6,sitemap,6,,,,,,,,3.0,
+thunder-loan-cmhnfis0e0003la041uosdtsv,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-13,2026-07-15,2,2026,2026H2,,,,4,sitemap,4,,,,,,,,2.0,
+thunder-loan-cmr0y6s8n0000jy04dcqccq2r,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-13,2026-07-13,,2026,2026H2,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cmrko86k20000l205rymib85p,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-14,2026-07-14,,2026,2026H2,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cmdod3lyv0000l9040znzxp9z,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-15,2026-07-17,2,2026,2026H2,,,,4,sitemap,4,,,,,,,,2.0,
+thunder-loan-cmcnhmd060000jl043freo9mz,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-17,2026-07-24,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cm3q5nn0m000066b6tm8kqp3v,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-19,2026-07-20,1,2026,2026H2,,,,6,sitemap,6,,,,,,,,6.0,
+thunder-loan-cmrrp7u910000k004zxnxy822,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-19,2026-07-26,7,2026,2026H2,,,,,,,,,,,,,,,
+beatland-festival-cm3q5nn0m000066b6tm8kqp3v,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-21,2026-07-21,,2026,2026H2,,,,3,sitemap,3,,,,,,,,,
+beatland-festival-cmi4d2c5u0001l8043zi5i5ku,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-22,2026-07-29,7,2026,2026H2,,,,,,,,,,,,,,,
+beatland-festival-cmi56fb8o0000l804z824fm6r,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-24,2026-07-27,3,2026,2026H2,,,,1,sitemap,1,,,,,,,,0.33,
+thunder-loan-cmrkk9buk0000jj043u6bfbos,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-24,2026-07-24,,2026,2026H2,,,,7,sitemap,7,,,,,,,,,
+beatland-festival-cm9wwlnk10000lb04e7589qo8,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-25,2026-08-01,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmrzq33bs0000ju0426mndkui,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-25,2026-07-25,,2026,2026H2,,,,9,sitemap,9,,,,,,,,,
+thunder-loan-cmrqtbgca0005l404tyd2kgfo,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-26,2026-08-02,7,2026,2026H2,,,,1,sitemap,1,,,,,,,,0.14,
+beatland-festival-cmmuqmrl90001ib0413mgtqtz,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-07-31,2026-08-07,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmmuqmrl90001ib0413mgtqtz,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-07-31,2026-08-07,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmf2ueyg40003kz040tnyet1q,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-01,2026-08-05,4,2026,2026H2,,,,3,sitemap,3,,,,,,,,0.75,
+thunder-loan-cmm4odm2w0002ky049jtz9jzl,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-01,2026-08-07,6,2026,2026H2,,,,6,sitemap,6,,,,,,,,1.0,
+beatland-festival-cm2ddghs800019xdvterhnp8y,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-04,2026-08-08,4,2026,2026H2,,,,3,sitemap,3,,,,,,,,0.75,
+thunder-loan-cmenux78v0000jr04vnwusb3d,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-06,2026-08-13,7,2026,2026H2,,,,2,sitemap,2,,,,,,,,0.29,
+thunder-loan-cmsg797420000l704uwxkrpeh,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-07,2026-08-07,,2026,2026H2,,,,7,sitemap,7,,,,,,,,,
+beatland-festival-cmsg797420000l704uwxkrpeh,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-09,2026-08-09,,2026,2026H2,,,,4,sitemap,4,,,,,,,,,
+beatland-festival-cmenux78v0000jr04vnwusb3d,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-10,2026-08-17,7,2026,2026H2,,,,1,sitemap,1,,,,,,,,0.14,
+thunder-loan-cmqewq6060000l804mylevtak,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-10,2026-08-17,7,2026,2026H2,,,,,,,,,,,,,,,
+beatland-festival-cmseatyqp0000lg04kdy8e06y,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-11,2026-08-11,,2026,2026H2,,,,2,sitemap,2,,,,,,,,,
+thunder-loan-cmseatyqp0000lg04kdy8e06y,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-11,2026-08-11,,2026,2026H2,,,,1,sitemap,1,,,,,,,,,
+thunder-loan-cmn6edrzz0003jx04p8hzgwtb,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-12,2026-08-18,6,2026,2026H2,,,,5,sitemap,5,,,,,,,,0.83,
+thunder-loan-cmsqi15og0000l404ps19bkdw,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-12,2026-08-19,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmstgil780000l504m4htkwf4,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-15,2026-08-15,,2026,2026H2,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cm2depbg1000g874dlmb5ra7f,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-18,2026-08-21,3,2026,2026H2,,,,4,sitemap,4,,,,,,,,1.33,
+thunder-loan-cmslquoyw0000l904hgbq606p,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-19,2026-08-20,1,2026,2026H2,,,,4,sitemap,4,,,,,,,,4.0,
+beatland-festival-cmsn1t4pp0000js04vsow7yl1,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-21,2026-08-22,1,2026,2026H2,,,,5,sitemap,5,,,,,,,,5.0,
+thunder-loan-cm2f2bz7z0001yhs9s9g2ppd7,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-21,2026-08-28,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmt66i0ue0000gs04ta3ro0tl,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-23,2026-08-30,7,2026,2026H2,,,,9,sitemap,9,,,,,,,,1.29,
+beatland-festival-cmt66i0ue0000gs04ta3ro0tl,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-25,2026-09-01,7,2026,2026H2,,,,2,sitemap,2,,,,,,,,0.29,
+thunder-loan-cm2dsvvro000d12b3hi96e35b,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-26,2026-08-30,4,2026,2026H2,,,,6,sitemap,6,,,,,,,,1.5,
+beatland-festival-cmtbt269q0001l304ifb0dh8i,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-27,2026-09-03,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmhvrqpe4000dla04pv1wytf0,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-28,2026-08-29,1,2026,2026H2,,,,5,sitemap,5,,,,,,,,5.0,
+beatland-festival-cmsn54jrk0000l404egj8seig,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-08-31,2026-08-31,,2026,2026H2,,,,9,sitemap,9,,,,,,,,,
+thunder-loan-cmrq5154z0000l304vzabmbfd,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-08-31,2026-09-07,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmqguqluw0001l904ei7u2ss1,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-02,2026-09-04,2,2026,2026H2,,,,1,sitemap,1,,,,,,,,0.5,
+beatland-festival-cmhvrqpe4000dla04pv1wytf0,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-09-05,2026-09-10,5,2026,2026H2,,,,5,sitemap,5,,,,,,,,1.0,
+thunder-loan-cmpodbvtb0000lb040owktcg8,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-06,2026-09-06,,2026,2026H2,,,,1,sitemap,1,,,,,,,,,
+beatland-festival-cmpodbvtb0000lb040owktcg8,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-09-08,2026-09-09,1,2026,2026H2,,,,1,sitemap,1,,,,,,,,1.0,
+thunder-loan-cmtk60l0n0002lg04fsbpelo5,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-10,2026-09-17,7,2026,2026H2,,,,1,sitemap,1,,,,,,,,0.14,
+beatland-festival-cmtu0upnl0003l204t4ukbvpx,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-09-11,2026-09-13,2,2026,2026H2,,,,1,sitemap,1,,,,,,,,0.5,
+thunder-loan-cmtu0upnl0003l204t4ukbvpx,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-13,2026-09-20,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmqvu86q70000jw04cyi17naq,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-16,2026-09-16,,2026,2026H2,,,,10,sitemap,10,,,,,,,,,
+thunder-loan-cmtzsaypj0000jy04lb1nly7w,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-16,2026-09-23,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmu2s8yth0002il04c9mjkfn5,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-16,2026-09-16,,2026,2026H2,,,,10,sitemap,10,,,,,,,,,
+thunder-loan-cmu5h5b060002l304vlc2d35h,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-17,2026-09-24,7,2026,2026H2,,,,,,,,,,,,,,,
+beatland-festival-cmqxtatpq0000k004vowrtw91,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-09-19,2026-09-19,,2026,2026H2,,,,1,sitemap,1,,,,,,,,,
+thunder-loan-cm2e9zbsj0006qc5o1drmnzue,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-19,2026-09-26,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmrfjwv420001l704vw3osip9,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-20,2026-09-23,3,2026,2026H2,,,,5,sitemap,5,,,,,,,,1.67,
+thunder-loan-cmtobon3s0000la04uadpbeci,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-20,2026-09-27,7,2026,2026H2,,,,,,,,,,,,,,,
+beatland-festival-cmbqn30tb0000ib04lqcz2uw6,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-09-23,2026-09-30,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmuf982uv0000ij043zmsycod,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-09-24,2026-09-24,,2026,2026H2,,,,7,sitemap,7,,,,,,,,,
+beatland-festival-cmmil3cfq0001lb04ri78hzqv,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-09-25,2026-10-02,7,2026,2026H2,,,,,,,,,,,,,,,
+beatland-festival-cmrvvwm000001ju04jvlml3si,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-09-25,2026-10-02,7,2026,2026H2,,,,,,,,,,,,,,,
+thunder-loan-cmjps0xd40002kz04f881skrk,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-10-02,2026-10-02,,2026,2026H2,,,,1,sitemap,1,,,,,,,,,
+beatland-festival-cmspd44v30000jw04zl8l5lf8,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-10-05,2026-10-05,,2026,2026H2,,,,4,sitemap,4,,,,,,,,,
+thunder-loan-cmspd44v30000jw04zl8l5lf8,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-10-05,2026-10-05,,2026,2026H2,,,,7,sitemap,7,,,,,,,,,
+beatland-festival-cmux88cwq0002l604hbn0e2e6,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-10-07,2026-10-07,,2026,2026H2,,,,6,sitemap,6,,,,,,,,,
+thunder-loan-cmux88cwq0002l604hbn0e2e6,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-10-07,2026-10-07,,2026,2026H2,,,,10,sitemap,10,,,,,,,,,
+thunder-loan-cm2dt8ghm0008jjrx2qhkvt4n,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-10-08,2026-10-15,7,2026,2026H2,,,,,,,,,,,,,,,
+beatland-festival-cmkc00t720000if04pl5qz3y2,first_flight,,Cyfrin CodeHawks | Beatland Festival,2026-10-10,2026-10-12,2,2026,2026H2,,,,7,sitemap,7,,,,,,,,3.5,
+thunder-loan-cmkc00t720000if04pl5qz3y2,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-10-10,2026-10-12,2,2026,2026H2,,,,10,sitemap,10,,,,,,,,5.0,
+thunder-loan-cmv35rolq0000jp04azvjo4c7,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-10-12,2026-10-12,,2026,2026H2,,,,5,sitemap,5,,,,,,,,,
+thunder-loan-cmv52jgek0000js04mt4m8zov,first_flight,,Cyfrin CodeHawks | Thunder Loan,2026-10-12,2026-10-12,,2026,2026H2,,,,5,sitemap,5,,,,,,,,,
+beatland-festival-cmv1gecag0000kx04wwz4y5ci,first_flight,,Cyfrin CodeHawks | Beatland Festival,,,,,,,,,,,,,,,,,,,,
+beatland-festival-cmv4yihzg0000l204de71flpx,first_flight,,Cyfrin CodeHawks | Beatland Festival,,,,,,,,,,,,,,,,,,,,
+thunder-loan-cmv1gecag0000kx04wwz4y5ci,first_flight,,Cyfrin CodeHawks | Thunder Loan,,,,,,,,,,,,,,,,,,,,
+thunder-loan-cmv4yihzg0000l204de71flpx,first_flight,,Cyfrin CodeHawks | Thunder Loan,,,,,,,,,,,,,,,,,,,,
