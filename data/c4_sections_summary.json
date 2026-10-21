@@ -1,0 +1,423 @@
+{
+ "audits": 442,
+ "by_half": [
+  {
+   "analyzer_4naly3er": 0,
+   "audits": 15,
+   "auto_heading": 0,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2021H1",
+   "p1_marker": 0,
+   "readme": 15,
+   "solidity": 12,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 0,
+   "audits": 49,
+   "auto_heading": 0,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2021H2",
+   "p1_marker": 0,
+   "readme": 49,
+   "solidity": 43,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 1,
+   "audits": 73,
+   "auto_heading": 1,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2022H1",
+   "p1_marker": 1,
+   "readme": 73,
+   "solidity": 66,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 0,
+   "audits": 50,
+   "auto_heading": 0,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2022H2",
+   "p1_marker": 0,
+   "readme": 50,
+   "solidity": 48,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 0,
+   "audits": 43,
+   "auto_heading": 31,
+   "bot_race_post_hoc": 29,
+   "bot_words": 10,
+   "half": "2023H1",
+   "p1_marker": 31,
+   "readme": 43,
+   "solidity": 41,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 15,
+   "audits": 47,
+   "auto_heading": 45,
+   "bot_race_post_hoc": 42,
+   "bot_words": 41,
+   "half": "2023H2",
+   "p1_marker": 46,
+   "readme": 47,
+   "solidity": 47,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 39,
+   "audits": 58,
+   "auto_heading": 41,
+   "bot_race_post_hoc": 13,
+   "bot_words": 13,
+   "half": "2024H1",
+   "p1_marker": 41,
+   "readme": 58,
+   "solidity": 41,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 30,
+   "audits": 55,
+   "auto_heading": 34,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2024H2",
+   "p1_marker": 34,
+   "readme": 55,
+   "solidity": 32,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 16,
+   "audits": 23,
+   "auto_heading": 20,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2025H1",
+   "p1_marker": 20,
+   "readme": 23,
+   "solidity": 15,
+   "solidity_v12": 0,
+   "v12": 0
+  },
+  {
+   "analyzer_4naly3er": 5,
+   "audits": 22,
+   "auto_heading": 6,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2025H2",
+   "p1_marker": 6,
+   "readme": 22,
+   "solidity": 16,
+   "solidity_v12": 10,
+   "v12": 10
+  },
+  {
+   "analyzer_4naly3er": 0,
+   "audits": 7,
+   "auto_heading": 0,
+   "bot_race_post_hoc": 0,
+   "bot_words": 0,
+   "half": "2026H1",
+   "p1_marker": 0,
+   "readme": 7,
+   "solidity": 5,
+   "solidity_v12": 5,
+   "v12": 6
+  }
+ ],
+ "dated_from_readme": 384,
+ "errors": 0,
+ "fetched_on": [
+  "2026-10-19T18:40Z"
+ ],
+ "known_answer_checks": {
+  "2023-04-frankencoin": {
+   "mismatch": {},
+   "ok": true
+  },
+  "2024-12-secondswap": {
+   "mismatch": {},
+   "ok": true
+  },
+  "2025-10-hybra-finance": {
+   "mismatch": {},
+   "ok": true
+  },
+  "2026-03-chainlink": {
+   "mismatch": {},
+   "ok": true
+  }
+ },
+ "mitigations": 39,
+ "p1_as_written": {
+  "after_2024_06_30": [
+   "2024-07-dittoeth",
+   "2024-07-optimism",
+   "2024-07-karak",
+   "2024-07-benddao",
+   "2024-07-munchables",
+   "2024-07-loopfi",
+   "2024-07-basin",
+   "2024-07-reserve",
+   "2024-07-traitforge",
+   "2024-08-axelar-network",
+   "2024-08-phi",
+   "2024-08-basin",
+   "2024-08-superposition",
+   "2024-08-chakra",
+   "2024-08-wildcat",
+   "2024-09-fenix-finance",
+   "2024-09-panoptic",
+   "2024-09-kakarot",
+   "2024-10-ramses-exchange",
+   "2024-10-loopfi",
+   "2024-10-kleidi",
+   "2024-10-ronin",
+   "2024-10-superposition",
+   "2024-11-chainlink",
+   "2024-11-ethena-labs",
+   "2024-11-nibiru",
+   "2024-11-concrete",
+   "2024-11-mantra-dex",
+   "2024-12-lambowin",
+   "2024-12-chainlink",
+   "2024-12-unruggable",
+   "2024-12-secondswap",
+   "2024-12-bakerfi",
+   "2024-12-flex-perpetuals",
+   "2025-01-pump-science",
+   "2025-01-liquid-ron",
+   "2025-01-iq-ai",
+   "2025-01-next-generation",
+   "2025-02-initia-cosmos",
+   "2025-02-recall",
+   "2025-02-thorwallet",
+   "2025-02-blend",
+   "2025-03-nudgexyz",
+   "2025-03-starknet",
+   "2025-03-silo-finance",
+   "2025-04-forte",
+   "2025-04-bitvault",
+   "2025-04-kinetiq",
+   "2025-04-virtuals-protocol",
+   "2025-04-cabal",
+   "2025-05-upside",
+   "2025-05-blackhole",
+   "2025-06-chainlink",
+   "2025-06-panoptic",
+   "2025-07-lido-finance",
+   "2025-07-gte-clob",
+   "2025-08-morpheus",
+   "2025-08-flare",
+   "2025-08-gte-perps",
+   "2025-09-monad"
+  ],
+  "audits_marked": 179,
+  "before_2023_04_01": [
+   "2022-01-dev-test-repo",
+   "2023-01-canto-identity",
+   "2023-01-popcorn",
+   "2023-02-malt",
+   "2023-02-ethos",
+   "2023-03-aragon",
+   "2023-03-wenwin",
+   "2023-03-neotokyo",
+   "2023-03-zksync",
+   "2023-03-canto-identity",
+   "2023-03-asymmetry",
+   "2023-03-mute"
+  ],
+  "first": {
+   "month": "2022-01",
+   "repo": "2022-01-dev-test-repo",
+   "start": null
+  },
+  "first_is_frankencoin": false,
+  "last": {
+   "month": "2025-09",
+   "repo": "2025-09-monad",
+   "start": "2025-09-15"
+  },
+  "marker": "p1_marker",
+  "undetermined": [],
+  "verdict": "CONTRADICTED"
+ },
+ "p1_auto_heading_only": {
+  "after_2024_06_30": [
+   "2024-07-dittoeth",
+   "2024-07-optimism",
+   "2024-07-karak",
+   "2024-07-benddao",
+   "2024-07-munchables",
+   "2024-07-loopfi",
+   "2024-07-basin",
+   "2024-07-reserve",
+   "2024-07-traitforge",
+   "2024-08-axelar-network",
+   "2024-08-phi",
+   "2024-08-basin",
+   "2024-08-superposition",
+   "2024-08-chakra",
+   "2024-08-wildcat",
+   "2024-09-fenix-finance",
+   "2024-09-panoptic",
+   "2024-09-kakarot",
+   "2024-10-ramses-exchange",
+   "2024-10-loopfi",
+   "2024-10-kleidi",
+   "2024-10-ronin",
+   "2024-10-superposition",
+   "2024-11-chainlink",
+   "2024-11-ethena-labs",
+   "2024-11-nibiru",
+   "2024-11-concrete",
+   "2024-11-mantra-dex",
+   "2024-12-lambowin",
+   "2024-12-chainlink",
+   "2024-12-unruggable",
+   "2024-12-secondswap",
+   "2024-12-bakerfi",
+   "2024-12-flex-perpetuals",
+   "2025-01-pump-science",
+   "2025-01-liquid-ron",
+   "2025-01-iq-ai",
+   "2025-01-next-generation",
+   "2025-02-initia-cosmos",
+   "2025-02-recall",
+   "2025-02-thorwallet",
+   "2025-02-blend",
+   "2025-03-nudgexyz",
+   "2025-03-starknet",
+   "2025-03-silo-finance",
+   "2025-04-forte",
+   "2025-04-bitvault",
+   "2025-04-kinetiq",
+   "2025-04-virtuals-protocol",
+   "2025-04-cabal",
+   "2025-05-upside",
+   "2025-05-blackhole",
+   "2025-06-chainlink",
+   "2025-06-panoptic",
+   "2025-07-lido-finance",
+   "2025-07-gte-clob",
+   "2025-08-morpheus",
+   "2025-08-flare",
+   "2025-08-gte-perps",
+   "2025-09-monad"
+  ],
+  "audits_marked": 178,
+  "before_2023_04_01": [
+   "2022-01-dev-test-repo",
+   "2023-01-canto-identity",
+   "2023-01-popcorn",
+   "2023-02-malt",
+   "2023-02-ethos",
+   "2023-03-aragon",
+   "2023-03-wenwin",
+   "2023-03-neotokyo",
+   "2023-03-zksync",
+   "2023-03-canto-identity",
+   "2023-03-asymmetry",
+   "2023-03-mute"
+  ],
+  "first": {
+   "month": "2022-01",
+   "repo": "2022-01-dev-test-repo",
+   "start": null
+  },
+  "first_is_frankencoin": false,
+  "last": {
+   "month": "2025-09",
+   "repo": "2025-09-monad",
+   "start": "2025-09-15"
+  },
+  "marker": "auto_heading",
+  "undetermined": [],
+  "verdict": "CONTRADICTED"
+ },
+ "p1_post_hoc_bot_race": {
+  "after_2024_06_30": [],
+  "audits_marked": 84,
+  "before_2023_04_01": [
+   "2023-01-canto-identity",
+   "2023-01-popcorn",
+   "2023-02-malt",
+   "2023-02-ethos",
+   "2023-03-aragon",
+   "2023-03-wenwin",
+   "2023-03-neotokyo",
+   "2023-03-zksync",
+   "2023-03-canto-identity",
+   "2023-03-asymmetry",
+   "2023-03-mute"
+  ],
+  "first": {
+   "month": "2023-01",
+   "repo": "2023-01-canto-identity",
+   "start": "2023-01-31"
+  },
+  "first_is_frankencoin": false,
+  "last": {
+   "month": "2024-03",
+   "repo": "2024-03-coinbase",
+   "start": "2024-03-14"
+  },
+  "marker": "bot_race_post_hoc",
+  "undetermined": [],
+  "verdict": "CONTRADICTED"
+ },
+ "p2_v12": {
+  "non_solidity_from_2025_10_06": [
+   [
+    "2025-10-reflector",
+    false
+   ],
+   [
+    "2025-11-swafe",
+    false
+   ],
+   [
+    "2025-12-rujira",
+    false
+   ],
+   [
+    "2026-02-jupiter-lend",
+    false
+   ],
+   [
+    "2026-04-k2",
+    true
+   ]
+  ],
+  "solidity_audits_from_2025_10_06": 16,
+  "solidity_before_with_v12": [],
+  "undetermined": [],
+  "verdict": "CONTRADICTED",
+  "with_v12": 15,
+  "without_v12": [
+   "2025-11-brix-money"
+  ]
+ },
+ "readme_missing": 0,
+ "repositories": 481
+}

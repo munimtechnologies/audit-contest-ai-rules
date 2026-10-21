@@ -105,7 +105,8 @@ SNAPSHOT: List[Dict] = [
         "ai_findings": "prohibited",
         "kyc": "per program",
         "payout": "per program",
-        "fee": False,
+        # Per-report submission fee on every competition page since Aug 2026 (read 2026-10-21).
+        "fee": True,
     },
     {
         "platform": "CodeHawks",

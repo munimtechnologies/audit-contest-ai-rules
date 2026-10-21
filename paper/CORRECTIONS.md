@@ -69,6 +69,68 @@ where researchers stake $250 USDC per report, refunded if the issue is valid" (S
 The quotations were read through a page-reading tool that returns excerpts, not the raw HTML. Before they go into the
 paper, check them against the pages.
 
+## 19 October 2026, to version 1.8 (16 October 2026)
+
+### 4. Section 4 prediction contradicted (correction)
+
+Section 4 predicted that Code4rena audit READMEs with an "Automated Findings" section would begin in April 2023
+(Frankencoin) and end by mid-2024, and that every Solidity audit from 6 Oct 2025 (Hybra Finance) on would carry a V12
+section. A test written down before it ran (`paper/c4-readme-sections-PREREGISTRATION.md`) read all 442 audit READMEs of
+Code4rena's public GitHub organization (`data/c4_readme_sections.csv`). It contradicts both parts:
+
+- The section first appears on 31 Jan 2023 (Canto Identity), about ten weeks before Frankencoin.
+- 60 audits that started after 30 Jun 2024 still have it. 51 of them link a 4naly3er static-analysis report (the last,
+  GTE Perps, started 28 Aug 2025); the last audit with the heading at all is Monad (15 Sep 2025).
+- Brix Money (26 Nov 2025) is a Solidity audit without V12. 15 of the 16 Solidity audits from 6 Oct 2025 on have it.
+
+A narrower reading that counts only bot-race wording was defined after one README had been seen before the run, so it
+is post hoc. It matches the predicted end (last 14 Mar 2024, Coinbase) but not the start. The prediction was wrong about
+what the section is: it held automated pre-audit output of any kind, not the bot race alone. Section 4 will be rewritten
+in version 1.9. Full result: `paper/c4-readme-sections-result.md`.
+
+## 21 October 2026, to the repository's feed tool (v0.9.1) and for section 4.1
+
+### 5. Immunefi audit competitions charge a fee per report (correction)
+
+`audit_contest_feed.py` (v0.9.1) marked every platform `"fee": false`, where `fee` means that taking part requires
+moving money. That is wrong for Immunefi. The information page of each of its three latest audit competitions says:
+"A submission fee, set and managed by Immunefi, applies to each report and is shown at submission time." It adds: "If
+a researcher disagrees with a closure decision, initiating a mediation also requires a fee set by Immunefi."
+
+| Competition (census slug) | Ran | Fee sentence on its page (read 21 Oct 2026) |
+|---|---|---|
+| Firedancer V1 (`firedancer-v1-audit-comp`) | 9 Apr - 9 May 2026 | no |
+| Base Azul (`audit-comp-base-azul`) | 21 Apr - 4 May 2026 | no |
+| Firelight (`audit-comp-firelight-1`) | 12 - 25 Aug 2026 | yes |
+| Quantus (`audit-comp-quantus`) | 12 - 25 Aug 2026 | yes |
+| ENS (`audit-competition-ens`) | 18 Aug - 14 Sep 2026 | yes |
+
+No competition in our Immunefi census started between 21 Apr and 12 Aug 2026, so the fee arrived with the August
+restart, or was written onto those pages later. The pages state no amount. Immunefi's article of 23 Sep 2026 (already
+cited in the paper) explains the fee as paying for triage, which costs the same for a duplicate as for a first report,
+and says fees should come down as triage improves. That reading comes from the article as a web search engine indexed
+it, because x.com refused our fetcher.
+
+Fixed in v0.9.2: the Immunefi row is now `"fee": true`, so `--no-fee` drops it, and `test_feed_fee.py` checks this.
+Immunefi was already dropped by `--ai-ok`, because its terms ban AI-generated reports.
+
+For the paper (section 4.1): together with Sherlock's $250 stake per bug-bounty report (entry 3, refunded if the issue
+is valid; described in a post of 31 Aug 2026), two platforms now ask for money with each report. Neither charge applies
+to the contests the crowding series measures: Immunefi's competitions aren't in that series, and Sherlock's stake is for
+its bug bounties. A charge per report puts a price on duplicate and low-effort submissions directly. That is a different response to crowding from the AI rules
+the paper codes, and version 1.9 will list it next to them. The census numbers don't change.
+
+### Sources (read 21 Oct 2026)
+
+- https://immunefi.com/audit-competition/audit-competition-ens/information/
+- https://immunefi.com/audit-competition/audit-comp-firelight-1/information/
+- https://immunefi.com/audit-competition/audit-comp-quantus/information/
+- https://immunefi.com/audit-competition/audit-comp-base-azul/information/
+- https://immunefi.com/audit-competition/firedancer-v1-audit-comp/information/
+- Immunefi, "What We're Learning About Audit Competitions" (23 Sep 2026): https://x.com/immunefi/status/2102715623218557375
+
+As for entries 1-3, the pages were read through a page-reading tool that returns excerpts, not the raw HTML.
+
 ---
 
 *MV2 of Munim, Inc. Made with AI agents working for MV2.*
