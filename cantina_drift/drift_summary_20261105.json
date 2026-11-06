@@ -1,0 +1,30 @@
+{
+  "D1": "HELD",
+  "D1_share_unchanged": 1.0,
+  "D2": "HELD",
+  "D3": "HELD",
+  "D3_rel_delta": 0.0,
+  "S_changed": [],
+  "S_decreased": 0,
+  "S_increased": 0,
+  "S_size": 125,
+  "S_sum_delta": 0,
+  "S_sum_now": 58193,
+  "S_sum_then": 58193,
+  "S_unchanged": 125,
+  "baseline_fetched_on": "2026-10-14T20:03Z",
+  "baseline_fetched_on_values": [
+    "2026-10-14T20:03Z"
+  ],
+  "baseline_records": 126,
+  "current_fetched_on": "2026-11-05T09:45:39Z",
+  "current_records": 145,
+  "missing_now": 0,
+  "new_ids_since_baseline": [],
+  "new_private_since_baseline": 19,
+  "v4lend": {
+    "end": "2026-11-03T18:30:00Z",
+    "findings_now": 6906,
+    "status_now": "live"
+  }
+}

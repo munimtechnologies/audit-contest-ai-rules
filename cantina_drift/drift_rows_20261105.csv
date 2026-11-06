@@ -1,0 +1,127 @@
+id,name,kind,status_then,status_now,end,days_ended_at_baseline,findings_then,findings_now,delta,change
+e275368c-547d-4d91-a418-053ad31082a8,Revert v4lend Competition,public_contest,live,live,2026-11-03T18:30:00Z,-19.94,1369,6906,5537,increased
+e7af4986-183d-4764-8bd2-1d6b47f87d99,eigenlayer-contracts,public_contest,complete,complete,2025-03-28T20:00:00Z,565.0,790,790,0,unchanged
+e2cf6906-ec8b-4c78-a585-74ac90615659,uniswap-v4,public_contest,complete,complete,2024-10-01T12:00:00Z,743.34,451,451,0,unchanged
+1845d0b1-1d2b-42be-b347-a866d6549fca,lighthouse,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,33,33,0,unchanged
+38271533-dde5-4b48-95d5-58116fe8c62c,besu,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,25,25,0,unchanged
+52f3f9d9-7929-4bde-8d3a-2b5fc0863f35,teku,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,9,9,0,unchanged
+619e22ff-d9c9-47ab-be0b-b932a7df036e,grandine,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,20,20,0,unchanged
+642d8a2b-6a3b-4c54-9ff0-9b1fa3f3fbc7,reth,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,37,37,0,unchanged
+9ab19e33-b73c-4384-83a8-b905f508ce5e,Ethereum-Protocol,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,25,25,0,unchanged
+a294d1aa-2c08-409e-b73a-51cdc76b1757,nimbus-eth2,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,2,2,0,unchanged
+abdbb5f0-d157-4db4-ada6-59fe837f4583,prysm,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,20,20,0,unchanged
+acc729ac-07d4-4806-89be-4e6715b752c6,nethermind,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,26,26,0,unchanged
+b568afa3-63e8-447e-9d9f-9318943fbbf7,lodestar,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,5,5,0,unchanged
+f5182971-2ac4-42dc-89f1-d65d0d2425b8,erigon,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,23,23,0,unchanged
+f7255cf4-8c1a-4082-b262-3c0e21af8dae,go-ethereum,public_contest,complete,complete,2025-03-27T13:00:00Z,566.29,45,45,0,unchanged
+41306bb9-2bb8-4da6-95c3-66b85e11639f,Euler-v2,public_contest,complete,complete,2024-06-17T20:00:00Z,849.0,572,572,0,unchanged
+c90131b4-5c7c-4ebc-a1f3-8002d219bfe0,Blast,public_contest,complete,complete,2024-02-20T20:00:00Z,967.0,1127,1127,0,unchanged
+d139882b-2d3a-49ac-9849-9dccef584090,Omni Network,public_contest,complete,complete,2024-11-04T20:00:00Z,709.0,780,780,0,unchanged
+0561defa-eeb2-4a74-8884-5d7a873afa58,story-protocol,public_contest,complete,complete,2025-01-17T20:00:00Z,635.0,977,977,0,unchanged
+949ad7c5-ea14-427d-b10a-54e33cef921b,balancer-v3,public_contest,complete,complete,2024-11-05T20:00:00Z,708.0,275,275,0,unchanged
+a188a03f-4631-4b58-82ce-a5818a6df332,eulerswap-ctf,public_contest,complete,complete,2025-06-10T20:00:00Z,491.0,3,3,0,unchanged
+1ea959a6-7b85-4cda-98ed-32c88be2f3ff,lifi-contracts,public_contest,complete,complete,2025-02-24T20:00:00Z,597.0,364,364,0,unchanged
+4679e0fa-85f7-4ea5-8827-ee6c70bdee6b,Morpho Midnight,public_contest,complete,complete,2026-06-12T20:00:00Z,124.0,3890,3890,0,unchanged
+ac757733-81a4-43c7-8f49-17c5b135cdff,curvance,public_contest,complete,complete,2024-04-15T20:00:00Z,912.0,797,797,0,unchanged
+d86632df-ab33-4448-8198-64955eae6712,liquity-bold,public_contest,complete,complete,2025-04-27T20:00:00Z,535.0,700,700,0,unchanged
+3a42798b-b1aa-4b10-b5e4-a8bbc22a70bc,instadapp-fluid,public_contest,complete,complete,2024-10-02T20:00:00Z,742.0,209,209,0,unchanged
+18f1e37b-9ac2-4ba9-b32e-50344500c1a7,silo-contracts-v2,public_contest,complete,complete,2025-02-10T20:00:00Z,611.0,247,247,0,unchanged
+ac5f64e6-3bf2-4269-bbb0-4bcd70425a1d,infrared-contracts,public_contest,complete,complete,2025-01-28T20:00:00Z,624.0,680,680,0,unchanged
+44b385bf-e51a-4e6c-b3a8-adbbe24d16e1,interop-portal,public_contest,complete,complete,2025-04-07T20:00:00Z,555.0,202,202,0,unchanged
+44d68da7-3cf4-4cec-a3f8-f0917062dac6,bima-money,public_contest,complete,complete,2025-01-01T20:00:00Z,651.0,334,334,0,unchanged
+523e1540-f8c3-45ae-9c5d-b6d35d3a326c,morpho-vaults-v2,public_contest,complete,complete,2025-07-25T20:00:00Z,446.0,866,866,0,unchanged
+5ffcedec-7e2e-4717-a3e4-e9041ca541c2,Aave v3.1 Competition,public_contest,complete,complete,2024-05-20T12:00:00Z,877.34,131,131,0,unchanged
+b7c7def5-1033-4a4c-809d-08e507fb3583,Bitcoin Staking Scripts,public_contest,complete,complete,2024-06-24T20:00:00Z,842.0,144,144,0,unchanged
+5617fffa-4b67-42a7-a9f5-dad93627faa3,infinitypools,public_contest,complete,complete,2024-10-28T20:00:00Z,716.0,293,293,0,unchanged
+21787352-de2c-4a77-af09-cc0a250d1f04,tensor-monorepo,public_contest,complete,complete,2024-11-27T20:00:00Z,686.0,234,234,0,unchanged
+84df57a3-0526-49b8-a7c5-334888f43940,sorella-angstrom,public_contest,complete,complete,2024-11-25T20:00:00Z,688.0,181,181,0,unchanged
+ad445d42-9d39-4bcf-becb-0c6c8689b767,aave-aptos,public_contest,complete,complete,2025-06-09T20:00:00Z,492.0,412,412,0,unchanged
+2cd0b038-3e32-4db6-b488-0f85b6f0e49f,core-and-erc1155a,public_contest,complete,complete,2023-12-18T20:00:00Z,1031.0,452,452,0,unchanged
+a0a58a8b-247e-4203-b3cb-476ded9d5515,Centrifuge,public_contest,complete,complete,2024-09-16T20:00:00Z,758.0,315,315,0,unchanged
+80a33cf0-ad69-4163-a269-d27756aacb5e,zetachain-protocol,public_contest,complete,complete,2024-09-04T20:00:00Z,770.0,1058,1058,0,unchanged
+cb538ed2-6770-4646-a32b-610b62d9a34c,optimism-java,public_contest,complete,complete,2024-10-28T20:00:00Z,716.0,363,363,0,unchanged
+b92d2750-d5a3-4c53-9bca-2e70d5dfe0ac,SP1,public_contest,complete,complete,2024-06-23T20:00:00Z,843.0,65,65,0,unchanged
+990ce947-05da-443e-b397-be38a65f0bff,Aquarius,public_contest,complete,complete,2025-06-18T20:00:00Z,483.0,696,696,0,unchanged
+26d5255b-6f68-46cf-be55-81dd565d9d16,telcoin-network,public_contest,complete,complete,2025-07-15T20:00:00Z,456.0,1313,1313,0,unchanged
+d86b7f95-e574-4092-8ea2-78dcac2f54f1,morpho-blue,public_contest,complete,complete,2023-12-04T20:00:00Z,1045.0,766,766,0,unchanged
+8409a0ce-6c21-4cc9-8ef2-bd77ce7425af,metamorpho-and-periphery,public_contest,complete,complete,2023-12-07T20:00:00Z,1042.0,622,622,0,unchanged
+f0cfe0e9-290b-4967-94ac-504375329127,ctf,public_contest,complete,complete,2024-01-14T22:00:00Z,1003.92,1,1,0,unchanged
+4b6f08a7-e830-4499-9977-08e2c3b32068,eigenlayer-contracts,public_contest,complete,complete,2024-03-18T20:00:00Z,940.0,128,128,0,unchanged
+cd180bb3-5d7d-46ed-8b99-d905e54a9d0b,hyperlend,public_contest,complete,complete,2024-12-04T20:00:00Z,679.0,399,399,0,unchanged
+050711ca-a6d1-4fdd-9f94-3816233c1bd5,collar-core,public_contest,complete,complete,2024-12-16T20:00:00Z,667.0,578,578,0,unchanged
+781d30df-39a9-47e6-b290-e388c79e04ea,aligned-layer,public_contest,complete,complete,2025-01-07T20:00:00Z,645.0,99,99,0,unchanged
+c486d600-bed0-4fc6-aed1-de759fd29fa2,openvm,public_contest,complete,complete,2025-03-08T20:00:00Z,585.0,210,210,0,unchanged
+3cc30b66-1cba-4044-968f-a0817cd7bf83,SXT,public_contest,complete,complete,2025-05-22T20:00:00Z,510.0,524,524,0,unchanged
+7d650b99-8a40-49d1-9b65-2b060accfbb7,circuit-puzzles,public_contest,complete,complete,2025-06-16T20:00:00Z,485.0,774,774,0,unchanged
+ae57d1ed-c242-4eac-932a-ef596c9bcc67,aave-aptos-ctf,public_contest,complete,complete,2025-08-08T20:00:00Z,432.0,24,24,0,unchanged
+cdce21ba-b787-4df4-9c56-b31d085388e7,kuru-contracts,public_contest,complete,complete,2025-09-01T20:00:00Z,408.0,1147,1147,0,unchanged
+2adf7150-27ba-4cba-86a2-bd8ea175e7da,makina-contracts,public_contest,complete,complete,2025-10-15T22:00:00Z,363.92,161,161,0,unchanged
+a83eaf73-9cbc-495f-8607-e55d4fdaf407,incentive-contracts,public_contest,complete,complete,2024-01-25T20:00:00Z,993.0,609,609,0,unchanged
+f214cf86-cc80-40c0-a70b-e9bb25d7ac80,Smart-contracts,public_contest,complete,complete,2024-04-08T20:00:00Z,919.0,609,609,0,unchanged
+31a752e3-8ece-49b3-a9ee-d7294c659340,Pegasus,public_contest,complete,complete,2024-06-28T20:00:00Z,838.0,346,346,0,unchanged
+8773f033-afa5-4e7b-b0e8-8f989062ae8a,panoptic-core,public_contest,complete,complete,2024-10-25T20:00:00Z,719.0,55,55,0,unchanged
+49b9e08d-4f8f-4103-b6e5-f5f43cf9faa1,Citrea,public_contest,complete,complete,2025-08-15T19:00:00Z,425.04,871,871,0,unchanged
+ce181972-2b40-4047-8ee9-89ec43527686,Clementine,public_contest,complete,complete,2025-09-08T20:00:00Z,401.0,699,699,0,unchanged
+d47f8096-8858-437d-a9f5-2fe85ac9b95e,safe-extensions,public_contest,complete,complete,2024-05-10T20:00:00.195Z,887.0,373,373,0,unchanged
+6837e02a-0a87-4577-a047-4e1ea71cff01,spend-permissions,public_contest,complete,complete,2024-11-06T20:00:00Z,707.0,395,395,0,unchanged
+08c2b0b4-8449-4136-82a2-7074ccdfffac,Soon ,public_contest,complete,complete,2025-01-20T20:00:00Z,632.0,187,187,0,unchanged
+58cd719b-9004-4eca-a113-41d1691c0711,napier-v2,public_contest,complete,complete,2025-02-10T20:00:00Z,611.0,151,151,0,unchanged
+3765f098-ef5c-47be-beb9-3f4ce9dcb407,USDaf-v2,public_contest,complete,complete,2025-07-21T20:00:00Z,450.0,314,314,0,unchanged
+eb93d215-e328-4d19-99ab-6c510acbb5aa,VII-Finance-Contracts,public_contest,complete,complete,2026-01-26T14:30:00Z,261.23,1274,1274,0,unchanged
+4ee8716d-3e0e-4f59-b90d-aa56bf3b484c,mev-commit,public_contest,complete,complete,2024-10-22T20:00:00Z,722.0,796,796,0,unchanged
+57b00aab-8f8b-4d62-9378-41b6460ce6aa,doppler-contracts,public_contest,complete,complete,2025-01-22T20:00:00Z,630.0,101,101,0,unchanged
+f9326d2b-bb99-45a9-88c5-94c54aa1823a,farcasterattestation-monorepo,public_contest,complete,complete,2025-02-23T20:00:00Z,598.0,392,392,0,unchanged
+c2e31b04-fbb2-4355-80ef-141d58b6e0cc,arcadexyz/arcade-protocol,public_contest,complete,complete,2024-03-07T20:00:00Z,951.0,92,92,0,unchanged
+61087007-c7e9-4c4e-9d90-4e118933fecf,stakeup-bloomv2,public_contest,complete,complete,2024-10-21T20:00:00Z,723.0,899,899,0,unchanged
+9dfca0bc-a7bf-482e-a3df-4eb861f55c4f,reserve-index-dtf,public_contest,complete,complete,2025-01-20T20:00:00Z,632.0,229,229,0,unchanged
+691ce303-f137-437a-bf34-aef87dfe983b,dahlia-protocol,public_contest,complete,complete,2025-02-03T20:00:00Z,618.0,303,303,0,unchanged
+8cf9c7a0-a7a6-446a-8577-1e2c254eb5a8,velvet-v4,public_contest,complete,complete,2025-04-09T20:00:00Z,553.0,634,634,0,unchanged
+8b94becd-54e7-41cd-88e6-caae7becc76a,reserve-index-dtfs-solana,public_contest,complete,complete,2025-03-10T20:00:00Z,583.0,179,179,0,unchanged
+7a40c849-0b35-4128-b084-d9a83fd533ea,jigsaw-contracts,public_contest,complete,complete,2025-06-19T20:00:00Z,482.0,1642,1642,0,unchanged
+02c29467-cb27-4beb-b2ef-500ad95e1a51,ammalgam-contracts,public_contest,complete,complete,2025-07-29T20:00:00Z,442.0,476,476,0,unchanged
+917d796b-48d0-41d0-bb40-be137b7d3db5,octant-v2-core,public_contest,complete,complete,2025-09-29T20:00:00Z,380.0,664,664,0,unchanged
+fe8e03b1-f8db-4698-8a21-44b3a862e434,Mento-V3,public_contest,complete,complete,2025-12-17T20:00:00Z,301.0,726,726,0,unchanged
+ddf86a5c-6f63-430f-aadc-d8742b4b1bcf,VenusProtocol/governance-contracts,public_contest,complete,complete,2024-04-05T21:30:00Z,921.94,209,209,0,unchanged
+d4835c42-fc76-4fea-8e2c-70449237fc0e,beraborrow-blockend,public_contest,complete,complete,2025-03-07T20:00:00Z,586.0,103,103,0,unchanged
+829164bf-7fba-4b84-a6b8-76652205bd97,lockbox-solana,public_contest,complete,complete,2024-01-29T20:00:00Z,989.0,77,77,0,unchanged
+8bab566e-a6d4-4c1b-9f28-71a94bfd1da2,symbioticfi-core,public_contest,complete,complete,2024-10-02T20:00:00Z,742.0,619,619,0,unchanged
+e757364c-1f68-4ec5-94f6-c6b3c2e80c6d,mezo-monorepo,public_contest,complete,complete,2025-05-01T20:00:00Z,531.0,647,647,0,unchanged
+e68909e6-3491-4a94-a707-ecf0c89cf72a,alchemix-v3,public_contest,complete,complete,2025-05-15T20:00:00Z,517.0,1562,1562,0,unchanged
+ba62fa4e-f933-4eec-b9ac-868325f4a694,superform-core,public_contest,complete,complete,2025-06-02T20:00:00Z,499.0,610,610,0,unchanged
+9c6e38e2-535e-47b2-83ef-29df91fbb774,Royco Dawn,public_contest,complete,complete,2026-01-27T14:30:00Z,260.23,262,262,0,unchanged
+efb6f308-f13b-4110-aff8-0d67181608dd,Revert Finance,public_contest,complete,complete,2026-03-25T20:00:00Z,203.0,1248,1248,0,unchanged
+e55ee7b9-6c99-42f8-8338-39f3dd134ef3,Revert Finance - StableSwap Hooks,public_contest,complete,complete,2026-05-07T20:00:00Z,160.0,1412,1412,0,unchanged
+28425672-ce54-4c66-b188-c4d5650d6790,opal-contracts,public_contest,complete,complete,2024-02-20T20:00:00Z,967.0,425,425,0,unchanged
+8337db39-e04e-470d-8090-0cfb9a7ec2dd,redstone-oracle,public_contest,complete,complete,2024-10-04T20:00:00Z,740.0,265,265,0,unchanged
+8d7bdfb9-cf19-4294-95d0-763af5d425b4,juicebox-monorepo,public_contest,complete,complete,2025-01-02T20:00:00Z,650.0,161,161,0,unchanged
+2ac7f906-1661-47eb-bfd6-519f5db0d36b,infinifi-protocol,public_contest,complete,complete,2025-04-28T20:00:00Z,534.0,592,592,0,unchanged
+a0806644-7d91-457a-a08d-aee2db73f352,pike-tapio-monrepo,public_contest,complete,complete,2025-08-04T20:00:00Z,436.0,573,573,0,unchanged
+fadb5a8f-e39c-4a6b-89f6-a03858bb8602,Royco Protocol,public_contest,complete,complete,2024-09-24T20:00:00Z,750.0,706,706,0,unchanged
+205f8ca3-27fc-4da2-a2e6-0d43e1c60a41,TermMax,public_contest,complete,complete,2024-12-12T20:00:00Z,671.0,74,74,0,unchanged
+68d65682-ed04-48aa-969d-09a335de3748,desk-orderbook,public_contest,complete,complete,2025-01-20T20:00:00Z,632.0,527,527,0,unchanged
+bd882748-077e-4e55-853f-f8df70109dbb,succinct-network,public_contest,complete,complete,2025-07-15T08:30:00Z,456.48,461,461,0,unchanged
+980a5976-9a7d-4014-b2e1-c248b4c6fa44,Reserve Governor,public_contest,complete,complete,2026-05-10T18:30:00Z,157.06,1465,1465,0,unchanged
+a2c3cc6a-e384-495f-9751-5d7e657bc219,YOLO Games,public_contest,complete,complete,2024-06-08T12:20:00Z,858.32,199,199,0,unchanged
+55023131-27df-44e4-af46-bec298d0fa8e,InterPol,public_contest,complete,complete,2024-12-07T20:00:00Z,676.0,280,280,0,unchanged
+e9e9b3e0-f213-45e4-8d05-d72bf0c8787a,ton-pool-contracts,public_contest,complete,complete,2025-01-27T20:00:00Z,625.0,158,158,0,unchanged
+3eff5a8f-b73a-4cfe-8c54-546b475548f0,inclusive-monorepo,public_contest,complete,complete,2025-01-29T20:00:00Z,623.0,214,214,0,unchanged
+1b64737c-1373-4ecf-a179-4cd0d7b0b232,defi-app-contracts,public_contest,complete,complete,2025-02-24T20:00:00Z,597.0,276,276,0,unchanged
+7db75599-9dad-40aa-9fc7-e879803eea2b,colorpool-chromia,public_contest,complete,complete,2025-03-17T20:00:00Z,576.0,330,330,0,unchanged
+076935b1-2706-48c6-bf0a-b3656aa24194,liquidity-book-vaults,public_contest,complete,complete,2025-04-20T20:00:00Z,542.0,732,732,0,unchanged
+616d8bb4-16ce-4ca9-9ce9-5b99d6e146ef,mighty-contracts,public_contest,complete,complete,2025-05-06T20:00:00Z,526.0,1344,1344,0,unchanged
+50d38b86-80a0-49af-9df8-70d7d601b7d7,solaxy,public_contest,complete,complete,2025-06-30T20:00:00Z,471.0,443,443,0,unchanged
+12acc80c-4e4c-4081-a0a3-faa92150651a,genius-contracts,public_contest,complete,complete,2025-07-23T20:00:00Z,448.0,390,390,0,unchanged
+5c4a63a2-e744-43bd-b38b-d0063c117765,TermMax,public_contest,complete,complete,2025-02-23T20:00:00Z,598.0,150,150,0,unchanged
+f57ffb47-0ded-4f04-bcec-ecd7d47fad58,badger-ebtc-bsm,public_contest,complete,complete,2025-03-12T20:00:00Z,581.0,613,613,0,unchanged
+b0a948cd-c861-4807-b36e-d680d82598bf,EIP7702Proxy,public_contest,complete,complete,2025-03-25T20:00:00Z,568.0,120,120,0,unchanged
+aaf79192-6ea7-4b1e-aed7-3d23212dd0f1,gamma-univ4-limit-orders,public_contest,complete,complete,2025-05-05T20:00:00Z,527.0,136,136,0,unchanged
+e1c0be8d-0c3d-485a-a446-a582beb120b1,stability-contracts,public_contest,complete,complete,2025-05-29T20:00:00Z,503.0,253,253,0,unchanged
+3211ee0d-133f-43a0-837e-8dc1ecfaa424,grass,public_contest,complete,complete,2024-07-01T20:00:00Z,835.0,116,116,0,unchanged
+d88cb915-64c9-4488-8062-dd16ede7a4a0,size-solidity,public_contest,complete,complete,2025-03-12T20:00:00Z,581.0,113,113,0,unchanged
+8cb347d2-53b5-4fd0-bbbd-3f67537f2bb0,tally-stGOV,public_contest,complete,complete,2025-03-17T20:00:00Z,576.0,136,136,0,unchanged
+ffe90f03-ffd0-449b-a15f-6e7702323d16,aera-v3,public_contest,complete,complete,2025-06-25T20:00:00Z,476.0,397,397,0,unchanged
+c160af78-28f8-47f7-9926-889b3864c6d8,mystic-monorepo,public_contest,complete,complete,2025-05-18T20:00:00Z,514.0,754,754,0,unchanged
+bd43bdd1-bc7f-473b-96c0-d35d37f3db33,daao-contracts,public_contest,complete,complete,2025-01-31T20:00:00Z,621.0,924,924,0,unchanged
+e92be0b9-b4f2-4bf2-9544-ae285fcfc02d,primev-validator-registry,public_contest,complete,complete,2025-06-03T14:30:00Z,498.23,233,233,0,unchanged
+217af22c-957e-4c13-bc2a-1d5255e72309,mev-commit,public_contest,complete,complete,2025-09-21T20:00:00Z,388.0,240,240,0,unchanged
+ae21d78b-f752-4a9e-aad9-9d89f2b4b8b5,hackathon-contracts,public_contest,complete,complete,2025-05-08T23:59:00Z,523.84,4,4,0,unchanged
