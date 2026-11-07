@@ -1,0 +1,36 @@
+{
+ "api": {
+  "days_200": [],
+  "distinct_days_200": 0,
+  "first_200": null,
+  "last_200": null,
+  "rows": 0,
+  "status_200": 0
+ },
+ "errors": [],
+ "limit_hit": {
+  "api": false,
+  "pages": false
+ },
+ "note": "Counts of Wayback CDX capture rows only; no archived bodies read.",
+ "pages": {
+  "distinct_ids": 137,
+  "ids_with_200": 134,
+  "ids_with_2plus_days_200": 131,
+  "ids_with_5plus_days_200": 105,
+  "rows": 1689,
+  "rows_with_id": 1625,
+  "v4lend": {
+   "captures": 1,
+   "captures_200": 1,
+   "distinct_days_200": 1,
+   "first_200": "2026-10-07",
+   "id": "e275368c-547d-4d91-a418-053ad31082a8",
+   "last_200": "2026-10-07"
+  }
+ },
+ "queries": {
+  "api": "https://web.archive.org/cdx/search/cdx?url=cantina.xyz%2Fapi%2Fv0%2Fcompetitions&matchType=prefix&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Clength&limit=50000",
+  "pages": "https://web.archive.org/cdx/search/cdx?url=cantina.xyz%2Fcompetitions%2F&matchType=prefix&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Clength&limit=50000"
+ }
+}
