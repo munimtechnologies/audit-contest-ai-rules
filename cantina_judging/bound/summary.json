@@ -1,0 +1,37 @@
+{
+ "addendum": {
+  "polls": 1,
+  "public": true,
+  "sha": "9fef864c93cb50a95bf08514032756b6a59df400"
+ },
+ "api_read_at": "2026-11-07T12:14:30Z",
+ "cdx_query": "https://web.archive.org/cdx/search/cdx?url=cantina.xyz%2Fcompetitions%2F&matchType=prefix&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Clength&limit=50000",
+ "cdx_rows": 1689,
+ "counts": {
+  "api_competitions": 145,
+  "bound_eligible_any_subpath_descriptive": 107,
+  "bound_eligible_main": 68,
+  "bound_eligible_main_status_now_complete": 68,
+  "bound_start_bracket_le3d_main": 39,
+  "captured_ids_any": 134,
+  "captured_ids_main": 133,
+  "captured_ids_not_in_api": 1,
+  "end_in_future": 0,
+  "ended": 142,
+  "ended_with_main_capture_after_end": 131,
+  "gate": 20,
+  "gate_can_pass": true,
+  "no_end": 3
+ },
+ "kind_vocabulary": [
+  "private_contest",
+  "public_contest"
+ ],
+ "note": "Capture TIMES and current API end times only; no archived bodies or archived statuses read.",
+ "saved_to_data": "20261107T121430Z",
+ "started": "2026-11-07T12:13:49Z",
+ "status_now_vocabulary": [
+  "complete",
+  "judging"
+ ]
+}

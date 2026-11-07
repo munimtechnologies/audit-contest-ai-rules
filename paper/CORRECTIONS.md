@@ -131,6 +131,47 @@ the paper codes, and version 1.9 will list it next to them. The census numbers d
 
 As for entries 1-3, the pages were read through a page-reading tool that returns excerpts, not the raw HTML.
 
+## 7 November 2026, to version 1.9 (6 November 2026)
+
+### 6. Cantina judging-duration census: first source infeasible, second source passes its first gate (addition)
+
+Version 1.9 follows one competition, Revert v4lend, into judging but does not measure how long Cantina competitions
+stay in judging. A census of that question was pre-registered after v1.9 (`paper/cantina-judging-duration-PREREGISTRATION.md`, 6 Nov 2026,
+23:51 UTC), with five predictions (P1-P5) and a gate of at least 20 eligible competitions.
+
+- **Primary source infeasible (negative result).** The Internet Archive holds no capture of Cantina's competitions
+  API that our query found (0 rows, 7 Nov 2026, 03:05 UTC). 0 competitions are eligible, so P1-P5 are not testable
+  from it. Details: `paper/cantina-judging-duration-result.md`.
+- **Second source, stage 1 passed.** An addendum written before any archived page was read
+  (`paper/cantina-judging-duration-pages-ADDENDUM.md`) moves the census to archived competition pages, with P1-P5,
+  the 14-day rule and the gate unchanged. Its first stage uses capture times only, with no page content. On 7 Nov
+  2026, 12:14 UTC, 142 of the 145 competitions in Cantina's API had ended, 131 have a main-page capture after their
+  end, and **68** have at least one gap of 14 days or less between consecutive points (end, then captures), the
+  most that could ever be eligible. 68 is at least 20, so the census may go ahead; whether it does depends on what
+  the archived pages show, which has not been read yet. Code and table: `cantina_judging/bound/`.
+
+No number in version 1.9 changes.
+
+### 7. Revert v4lend: the findings count did not move in judging (pre-registered test held)
+
+Version 1.9 (section 3.5) stated a test before it was read: a reading at least 24 hours after 6 Nov 2026, 07:10 UTC,
+predicted to equal 7,079. On 7 Nov 2026 Cantina's public API showed status `judging` and 7079 findings at 12:14:30 UTC
+(read by the bound job), and a second API read and two reads of the competition page, at about 12:45-12:50 UTC,
+showed "Judging" and "7,079". **The prediction held.** The count has not moved since the switch to "Judging",
+about 29 hours after the test's reference time and about 90 hours after the 3 Nov 18:30 UTC end. The pot is still
+50,000 USDC, so section 3.5's figure of about $7.06 of pot per submitted finding stands. This says nothing about the
+switch to "complete", which had not happened at these readings. The 104-reading data set is unchanged
+(`v4lend/`); these four readings are recorded here only.
+
+### Sources (read 7 Nov 2026)
+
+- Cantina competitions API: https://cantina.xyz/api/v0/competitions
+- Revert v4lend competition page: https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8
+- Wayback CDX: https://web.archive.org/cdx/search/cdx (query in `cantina_judging/bound/summary.json`)
+
+The page and the second API read were taken through a page-reading tool that returns excerpts and no timestamp, so
+their times are approximate; the bound job's API read time is machine-recorded.
+
 ---
 
 *MV2 of Munim, Inc. Made with AI agents working for MV2.*

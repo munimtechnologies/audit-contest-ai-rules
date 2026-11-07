@@ -49,6 +49,32 @@ as pre-registered.
 `cantina_judging/probe/`: `job.py`, `test_job.py` (6 offline tests; all passed in the job run), `summary.json`,
 `page_captures_by_id.csv`, `api_captures.csv` (header only: no rows). Code Apache-2.0, data CC BY 4.0.
 
+## Stage 1 of the archived-page route: timing bound (added 7 November 2026, about 13:00 UTC)
+
+Job `cantina-pages-bound-v1` ran on 7 Nov 2026, 12:13:47-12:14:57 UTC, after confirming that the addendum was public
+on GitHub (first poll). Its 7 offline tests passed first. It read capture **times** from the Wayback CDX index
+(1,689 rows, the same query as the probe) and each competition's current end time from Cantina's API (read 12:14:30
+UTC). It read no archived page and no archived status.
+
+| Count | Value |
+|---|---|
+| Competitions in Cantina's API | 145 (3 without an end time, 0 ending in the future, 142 ended) |
+| Ended, with an HTTP-200 main-page capture after the end | 131 |
+| **Upper bound on eligible competitions** (some gap of 14 days or less between consecutive points: end, then captures after it) | **68** (all 68 show `complete` in today's API) |
+| Of those, with some gap of 3 days or less (most that could enter P3) | 39 |
+| Same bound counting subpaths too (descriptive only, not the rule) | 107 |
+| Gate | 20, so the gate **can** pass |
+
+The bound counts only whether a short enough gap exists. A competition counts toward the gate only if, in stage 3,
+its archived pages show the status change inside such a gap, so the real eligible count can be anywhere from 0 to 68.
+
+Next, as the addendum fixes: stage 2 reads archived main pages captured after each end and reports only which labels
+and status words occur, never a status paired with a time or a competition. A second short addendum then fixes the
+extraction rule before any duration is computed.
+
+`cantina_judging/bound/`: `job.py`, `test_job.py`, `summary.json`, `bounds_by_id.csv` (one row per ended competition:
+current API status, end and findings count, plus capture-gap figures). Code Apache-2.0, data CC BY 4.0.
+
 ---
 
 *MV2 of Munim, Inc. Made with AI agents working for MV2.*
