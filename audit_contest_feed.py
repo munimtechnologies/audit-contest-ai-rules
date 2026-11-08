@@ -8,6 +8,12 @@ Combines two sources:
     Immunefi, CodeHawks, Certora, Sherlock Audit Engine) whose live listings are
     behind JavaScript or logins and have no open JSON API.
 
+The snapshot is a claim about one day, not a live listing. Rules about AI-made
+findings change (the Sherlock Audit Engine row changed between the 2026-10-14
+and 2026-11-08 snapshots), so always read the contest's own rules page before
+taking part. When the snapshot is more than STALE_AFTER_DAYS old, main() prints
+a warning to stderr.
+
 No third-party dependencies; Python 3.8+. The network call is isolated in one
 function and injectable, so the tests run fully offline.
 
@@ -19,93 +25,110 @@ from __future__ import annotations
 import argparse
 import datetime as _dt
 import json
+import sys
 import urllib.request
 from typing import Callable, Dict, List, Optional
 
-SNAPSHOT_DATE = "2026-10-14"
+SNAPSHOT_DATE = "2026-11-08"
+STALE_AFTER_DAYS = 14
 SHERLOCK_API = "https://mainnet-contest.sherlock.xyz/contests?status=RUNNING"
 
-# Dated snapshot of platforms without an open live API. Keep in sync with README.
-# ai_findings: "welcome" | "if_validated" | "allowed" | "prohibited" | "unknown"
+# ai_findings labels:
+#   "welcome"       the platform or contest invites AI auditors / AI-made findings
+#   "if_validated"  allowed if a human validates them (PoC, review); unvalidated ones are penalised
+#   "allowed"       allowed, no extra condition found
+#   "varies"        set per program or engagement: read each one's own page
+#   "human_only"    only human researchers may take part
+#   "prohibited"    the platform's terms ban AI-generated or automated reports
+#   "unknown"       no rule found
+AI_LABELS = ("welcome", "if_validated", "allowed", "varies", "human_only", "prohibited", "unknown")
+# Labels that --ai-ok drops: work made with AI agents cannot honestly be entered there.
+AI_EXCLUDED = ("prohibited", "human_only")
+
+# status labels: "live" (open for submissions; needs an end date), "judging" (closed,
+# being judged), "invite_only", "none_live" (nothing open on the listing that day).
+STATUS_LABELS = ("live", "judging", "invite_only", "none_live")
+
+# Dated snapshot of platforms without an open live API. Each row was read at its
+# source on SNAPSHOT_DATE (or on the date given in its ai_note).
 # fee: True only if taking part requires moving money (an entry/submission fee).
 SNAPSHOT: List[Dict] = [
     {
         "platform": "Sherlock Audit Engine",
-        "name": "Engagements (invite-based)",
+        "name": "Engagements (application- and invite-based)",
         "status": "invite_only",
         "prize_usd": None,
         "starts": None,
         "ends": None,
         "url": "https://audit-engine.sherlock.xyz/",
-        "ai_findings": "welcome",
-        "kyc": "required before accepting an engagement invite",
+        "ai_findings": "varies",
+        "ai_note": "In Oct 2026 the platform listed 'AI auditors' as a participant type; the "
+                   "Uniswap engagement posted 2026-11-04 is for human researchers only (row below). "
+                   "Read each engagement's own rules.",
+        "kyc": "required before accepting an engagement",
+        "payout": "USDC on Polygon (or RLUSD on XRP Ledger)",
+        "fee": False,
+    },
+    {
+        "platform": "Sherlock Audit Engine",
+        "name": "Uniswap Audit Engine",
+        "status": "live",
+        "prize_usd": 20000,
+        "starts": "2026-11-06",
+        "ends": "2026-11-16",
+        "url": "https://audit-engine.sherlock.xyz/",
+        "ai_findings": "human_only",
+        "ai_note": "Engagement page (signed-in dashboard, read 2026-11-06): 'This application is only "
+                   "for human researchers, not purposefully built AI tools'. prize_usd is the stated "
+                   "guaranteed amount; applications, 40 spots.",
+        "kyc": "none shown on the engagement page (2026-11-06)",
         "payout": "USDC on Polygon (or RLUSD on XRP Ledger)",
         "fee": False,
     },
     {
         "platform": "Cantina",
         "name": "Revert v4lend",
-        "status": "live",
+        "status": "judging",
         "prize_usd": 50000,
         "starts": "2026-10-06",
         "ends": "2026-11-03",
         "url": "https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8",
         "ai_findings": "if_validated",
+        "ai_note": "Cantina: unvalidated AI findings 'can lead to disqualifications or worse, a permanent ban'. "
+                   "No other public competition listed on 2026-11-08.",
         "kyc": "required (Persona)",
         "payout": "USDC to an Ethereum mainnet address, weekly",
         "fee": False,
     },
     {
         "platform": "HackenProof",
-        "name": "EverValue SCA DualDefense Audit",
-        "status": "live",
-        "prize_usd": 2500,
-        "starts": "2026-10-02",
-        "ends": "2026-10-16",
+        "name": "Audit programs",
+        "status": "none_live",
+        "prize_usd": None,
+        "starts": None,
+        "ends": None,
         "url": "https://hackenproof.com/audit-programs",
-        "ai_findings": "unknown",
+        "ai_findings": "varies",
+        "ai_note": "AI rules are set per program (62 of 102 programs had one in Oct 2026). "
+                   "Newest listed programs all finished by 2026-10-26.",
         "kyc": "only EU residents / programs that require it / after $5k",
-        "payout": "USDC from platform balance, 100 USDC min, 2FA",
-        "fee": False,
-    },
-    {
-        "platform": "HackenProof",
-        "name": "Digital Oro International SCA DualDefense Audit",
-        "status": "live",
-        "prize_usd": 3000,
-        "starts": "2026-10-05",
-        "ends": "2026-10-26",
-        "url": "https://hackenproof.com/audit-programs",
-        "ai_findings": "unknown",
-        "kyc": "only EU residents / programs that require it / after $5k",
-        "payout": "USDC from platform balance, 100 USDC min, 2FA",
-        "fee": False,
-    },
-    {
-        "platform": "HackenProof",
-        "name": "DreamX Marketplace & DEX SCA DualDefense Audit",
-        "status": "live",
-        "prize_usd": 2500,
-        "starts": "2026-10-12",
-        "ends": "2026-10-26",
-        "url": "https://hackenproof.com/audit-programs/dreamx-marketplace-and-dex-sca-dualdefense-audit",
-        "ai_findings": "unknown",
-        "kyc": "required (scope repo is invite-only)",
         "payout": "USDC from platform balance, 100 USDC min, 2FA",
         "fee": False,
     },
     {
         "platform": "Immunefi",
-        "name": "Audit competitions",
-        "status": "none_live",
-        "prize_usd": None,
-        "starts": None,
-        "ends": None,
-        "url": "https://immunefi.com/audit-competition/",
+        "name": "Plether",
+        "status": "live",
+        "prize_usd": 80000,
+        "starts": "2026-11-02",
+        "ends": "2026-11-16",
+        "url": "https://immunefi.com/audit-competition/plether/information/",
         "ai_findings": "prohibited",
-        "kyc": "per program",
-        "payout": "per program",
-        # Per-report submission fee on every competition page since Aug 2026 (read 2026-10-21).
+        "ai_note": "Immunefi's terms ban 'submitting AI-generated/automated scanner bug reports'. "
+                   "Ends 2026-11-16 10:00 UTC.",
+        "kyc": "not required for payout (competition page)",
+        "payout": "USDC on Ethereum",
+        # Per-report submission fee, "shown at submission time" (competition page, 2026-11-08).
         "fee": True,
     },
     {
@@ -117,6 +140,7 @@ SNAPSHOT: List[Dict] = [
         "ends": None,
         "url": "https://codehawks.cyfrin.io/",
         "ai_findings": "unknown",
+        "ai_note": "Most recent listing: BattleChain Confidence Pools (July 2026).",
         "kyc": "per contest",
         "payout": "USDC on ZKsync",
         "fee": False,
@@ -130,6 +154,7 @@ SNAPSHOT: List[Dict] = [
         "ends": None,
         "url": "https://www.certora.com/contests",
         "ai_findings": "unknown",
+        "ai_note": "All listed contests completed; most recent: Aquarius.",
         "kyc": "per hosting platform",
         "payout": "per hosting platform",
         "fee": False,
@@ -138,7 +163,7 @@ SNAPSHOT: List[Dict] = [
 
 
 def _default_opener(url: str, timeout: float = 20.0) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": "audit-contest-feed/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "audit-contest-feed/1.1"})
     with urllib.request.urlopen(req, timeout=timeout) as resp:  # nosec - public read-only API
         return resp.read().decode("utf-8")
 
@@ -202,6 +227,11 @@ def days_left(record: Dict, today: _dt.date) -> Optional[int]:
     return (end_date - today).days
 
 
+def snapshot_age_days(today: _dt.date) -> int:
+    """Whole days between SNAPSHOT_DATE and today."""
+    return (today - _dt.date.fromisoformat(SNAPSHOT_DATE)).days
+
+
 def build_feed(
     include_live: bool = True,
     fetch: Callable[..., List[Dict]] = fetch_sherlock,
@@ -230,8 +260,9 @@ def filter_feed(
     ai_ok: bool = False,
     ends_within: Optional[int] = None,
 ) -> List[Dict]:
-    """Optionally drop fee-gated platforms, ones hostile to AI-made findings,
-    and (with ends_within) anything not ending in the next N days.
+    """Optionally drop fee-gated platforms, ones closed to AI-made findings
+    (prohibited or human-only), and (with ends_within) anything not ending in
+    the next N days.
 
     ends_within keeps only records with a known end date 0..N days away, so
     finished contests and open-ended listings are dropped.
@@ -240,7 +271,7 @@ def filter_feed(
     if no_fee:
         result = [r for r in result if not r.get("fee")]
     if ai_ok:
-        result = [r for r in result if r.get("ai_findings") != "prohibited"]
+        result = [r for r in result if r.get("ai_findings") not in AI_EXCLUDED]
     if ends_within is not None:
         result = [
             r for r in result
@@ -250,15 +281,24 @@ def filter_feed(
 
 
 def main(argv: Optional[List[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--offline", action="store_true", help="snapshot only, no network call")
     parser.add_argument("--no-fee", action="store_true", help="drop platforms that require a fee to enter")
-    parser.add_argument("--ai-ok", action="store_true", help="drop platforms that prohibit AI-made findings")
+    parser.add_argument("--ai-ok", action="store_true",
+                        help="drop contests that prohibit AI-made findings or admit human researchers only")
     parser.add_argument("--ends-within", type=int, metavar="DAYS",
                         help="keep only contests ending within DAYS days")
     args = parser.parse_args(argv)
 
-    feed = build_feed(include_live=not args.offline)
+    today = _dt.datetime.now(_dt.timezone.utc).date()
+    age = snapshot_age_days(today)
+    if age > STALE_AFTER_DAYS:
+        print(
+            f"warning: snapshot is {age} days old (from {SNAPSHOT_DATE}); "
+            "re-check each platform's own page before relying on it",
+            file=sys.stderr,
+        )
+    feed = build_feed(include_live=not args.offline, today=today)
     feed = filter_feed(feed, no_fee=args.no_fee, ai_ok=args.ai_ok, ends_within=args.ends_within)
     print(json.dumps(feed, indent=2))
     return 0

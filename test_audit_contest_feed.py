@@ -1,8 +1,11 @@
-"""Offline tests for audit_contest_feed. No network is used."""
+"""Offline tests for audit_contest_feed. No network is used. Apache-2.0.
+Made with AI agents working for MV2 of Munim, Inc."""
 import datetime as dt
 import json
 
 import audit_contest_feed as f
+
+SNAP_DAY = dt.date(2026, 11, 8)
 
 
 def test_snapshot_rows_are_well_formed():
@@ -11,8 +14,14 @@ def test_snapshot_rows_are_well_formed():
         assert required <= set(row), f"missing keys in {row.get('name')}"
         assert isinstance(row["fee"], bool)
         assert row["ai_findings"] in {
-            "welcome", "if_validated", "allowed", "prohibited", "unknown",
+            "welcome", "if_validated", "allowed", "varies", "human_only", "prohibited", "unknown",
         }
+        assert row["status"] in set(f.STATUS_LABELS), row["name"]
+
+
+def test_label_tuples_are_consistent():
+    assert set(f.AI_EXCLUDED) <= set(f.AI_LABELS)
+    assert set(f.AI_EXCLUDED) == {"prohibited", "human_only"}
 
 
 def test_snapshot_dates_parse_and_order():
@@ -20,8 +29,18 @@ def test_snapshot_dates_parse_and_order():
         starts, ends = row.get("starts"), row.get("ends")
         if starts and ends:
             assert dt.date.fromisoformat(starts) <= dt.date.fromisoformat(ends), row["name"]
-        if row["status"] == "live":
-            assert ends, f"live row without an end date: {row['name']}"
+        if row["status"] in ("live", "judging"):
+            assert ends, f"{row['status']} row without an end date: {row['name']}"
+
+
+def test_snapshot_date_is_iso():
+    assert dt.date.fromisoformat(f.SNAPSHOT_DATE) == SNAP_DAY
+
+
+def test_snapshot_age_days():
+    assert f.snapshot_age_days(SNAP_DAY) == 0
+    assert f.snapshot_age_days(dt.date(2026, 11, 23)) == 15
+    assert f.snapshot_age_days(dt.date(2026, 11, 23)) > f.STALE_AFTER_DAYS
 
 
 def test_normalize_sherlock_empty():
@@ -78,7 +97,7 @@ def test_build_feed_merges_live_rows():
 
 
 def test_build_feed_does_not_mutate_snapshot():
-    f.build_feed(include_live=False, today=dt.date(2026, 10, 14))
+    f.build_feed(include_live=False, today=SNAP_DAY)
     assert all("days_left" not in row for row in f.SNAPSHOT)
 
 
@@ -97,11 +116,13 @@ def test_filter_no_fee_and_ai_ok():
         {"platform": "A", "fee": True, "ai_findings": "welcome"},
         {"platform": "B", "fee": False, "ai_findings": "prohibited"},
         {"platform": "C", "fee": False, "ai_findings": "if_validated"},
+        {"platform": "D", "fee": False, "ai_findings": "human_only"},
+        {"platform": "E", "fee": False, "ai_findings": "varies"},
     ]
-    assert len(f.filter_feed(feed, no_fee=True)) == 2
-    assert len(f.filter_feed(feed, ai_ok=True)) == 2
+    assert len(f.filter_feed(feed, no_fee=True)) == 4
+    assert [r["platform"] for r in f.filter_feed(feed, ai_ok=True)] == ["A", "C", "E"]
     kept = f.filter_feed(feed, no_fee=True, ai_ok=True)
-    assert [r["platform"] for r in kept] == ["C"]
+    assert [r["platform"] for r in kept] == ["C", "E"]
 
 
 def test_filter_ends_within():
@@ -116,9 +137,31 @@ def test_filter_ends_within():
 
 
 def test_ends_within_on_snapshot():
-    feed = f.build_feed(include_live=False, today=dt.date(2026, 10, 14))
-    soon = f.filter_feed(feed, ends_within=3)
-    assert [r["name"] for r in soon] == ["EverValue SCA DualDefense Audit"]
+    feed = f.build_feed(include_live=False, today=SNAP_DAY)
+    assert f.filter_feed(feed, ends_within=7) == []
+    soon = f.filter_feed(feed, ends_within=8)
+    assert [r["name"] for r in soon] == ["Uniswap Audit Engine", "Plether"]
+
+
+def test_nothing_open_to_ai_made_work_on_snapshot_day():
+    # On 2026-11-08 both open contests were closed to AI-made work (human-only / banned).
+    feed = f.build_feed(include_live=False, today=SNAP_DAY)
+    open_now = f.filter_feed(feed, ends_within=8)
+    assert open_now
+    assert f.filter_feed(open_now, ai_ok=True) == []
+    assert [r["name"] for r in f.filter_feed(open_now, no_fee=True)] == ["Uniswap Audit Engine"]
+
+
+def test_v4lend_is_judging():
+    rows = [r for r in f.SNAPSHOT if r["name"] == "Revert v4lend"]
+    assert len(rows) == 1 and rows[0]["status"] == "judging"
+
+
+def test_audit_engine_uniswap_is_human_only():
+    rows = [r for r in f.SNAPSHOT if r["name"] == "Uniswap Audit Engine"]
+    assert len(rows) == 1
+    assert rows[0]["ai_findings"] == "human_only"
+    assert "human researchers" in rows[0]["ai_note"]
 
 
 def test_immunefi_marked_prohibited():
