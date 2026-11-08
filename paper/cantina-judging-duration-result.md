@@ -100,6 +100,20 @@ to run until that addendum is public, and grades P1-P5 exactly as pre-registered
 `cantina_judging/vocab/`: `job.py`, `test_job.py`, `summary-public.json` (counts only; the free-text label lists are
 left out because they quote page text with personal handles and links). Code Apache-2.0, data CC BY 4.0.
 
+## Stage 3, first attempt: stopped before computing anything (added 8 November 2026, about 15:40 UTC)
+
+Job `cantina-pages-census-v1` ran on 8 Nov 2026, 12:57-12:59 UTC. Its 13 offline tests passed, and it found the second
+addendum public on its first poll. It then stopped with exit 4 ("stage 1 or stage 2 inputs missing in /data"),
+before reading any page. It had been placed on a different machine from the one that ran stages 1 and 2, and that
+machine's copy of the data volume did not hold their inputs. **No status was paired with a time and no prediction
+was graded.**
+
+`paper/cantina-judging-duration-pages-ADDENDUM-3.md` fixes, before the next run, how job `cantina-pages-census-v2`
+handles this. Where the cache is present, it runs exactly as before. Elsewhere it rebuilds the inputs from the
+published stage-1 table, pinned by its git blob sha, and from the CDX index cut off at the stage-1 read. Its grades
+count as the pre-registered census only if the rebuild reproduces the published stage-1 and stage-2 counts;
+otherwise they are reported as descriptive only. The predictions and the extraction rule are unchanged.
+
 ---
 
 *MV2 of Munim, Inc. Made with AI agents working for MV2.*
