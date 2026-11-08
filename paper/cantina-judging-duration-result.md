@@ -75,6 +75,31 @@ extraction rule before any duration is computed.
 `cantina_judging/bound/`: `job.py`, `test_job.py`, `summary.json`, `bounds_by_id.csv` (one row per ended competition:
 current API status, end and findings count, plus capture-gap figures). Code Apache-2.0, data CC BY 4.0.
 
+## Stage 2: page format (added 8 November 2026, about 03:00 UTC)
+
+Job `cantina-pages-vocab-v1` ran on 7 Nov 2026, 21:39-23:02 UTC; its 9 offline tests passed first. It fetched all
+**882** HTTP-200 main-page captures taken after a competition's end (131 competitions), one at a time with a pause,
+and cached them for stage 3. It reported counts over captures only.
+
+| Readable in a capture | Captures (of 882) |
+|---|---|
+| Visible `Status` label with a value | 528 (60%) |
+| Embedded JSON competition status | the same 528 |
+| Neither | 354 (40%) |
+| Visible `Findings submitted` number | 431 |
+| Embedded JSON `totalFindings` number | 519 |
+
+Status values after the visible label: `completed` 461, `judging` 27, `reviewing escalations` 18,
+`escalations ended` 11, `escalations` 10, `live` 1. Only 67 of the 528 readable captures (13%) show a competition
+that is not yet complete, which fits the earlier caution that most captures come long after judging ended.
+
+The extraction rule is now fixed in `paper/cantina-judging-duration-pages-ADDENDUM-2.md`, written before any status
+was paired with a time or a competition. Stage 3 (`cantina-pages-census-v1`) applies it to the cached pages, refuses
+to run until that addendum is public, and grades P1-P5 exactly as pre-registered.
+
+`cantina_judging/vocab/`: `job.py`, `test_job.py`, `summary-public.json` (counts only; the free-text label lists are
+left out because they quote page text with personal handles and links). Code Apache-2.0, data CC BY 4.0.
+
 ---
 
 *MV2 of Munim, Inc. Made with AI agents working for MV2.*

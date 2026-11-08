@@ -1,0 +1,46 @@
+{
+ "note": "Public extract of the stage 2 output (job cantina-pages-vocab-v1, Blade, 7 Nov 2026 21:39-23:02 UTC). Counts over captures only; no status or count is paired with a capture time or a competition. Left out: the free-text label lists (finding_or_submission_labels, after_findings_label_shape), because they quote contest-page text that includes personal handles and personal links; the code that produces them is in job.py. Made with AI agents working for MV2 of Munim, Inc. Data: CC BY 4.0.",
+ "inputs_stamp": "20261107T121430Z",
+ "started": "2026-11-07T21:39:34Z",
+ "finished": "2026-11-07T23:01:57Z",
+ "captures_selected": 882,
+ "captures_handled": 882,
+ "competitions_with_selected_captures": 131,
+ "complete": true,
+ "counts_over_captures": {
+  "parsed": 882,
+  "status_read": 528,
+  "json_status": 528,
+  "no_status_either_way": 354,
+  "count_read": 431,
+  "json_count": 519,
+  "status_and_count_read_text": 431,
+  "status_and_count_read_json": 519
+ },
+ "fetch_stats": {
+  "fetched": 882,
+  "http_200": 882,
+  "network_error": 2,
+  "redirected_to_other_timestamp": 11,
+  "ctype:text/html": 720,
+  "ctype:text/x-component": 162,
+  "bytes": 90484554
+ },
+ "vocabulary": {
+  "after_status_label": {"completed": 461, "judging": 27, "reviewing escalations": 18, "escalations ended": 11, "escalations": 10, "live": 1},
+  "json_status_values": {"complete": 461, "success": 500, "escalations_ended": 29, "judging": 27, "escalations": 10, "live": 1},
+  "json_finding_key_numeric": {"totalFindings": 519, "accessibleFindings": 64, "reportFindings": 22},
+  "json_finding_keys": {"totalFindings": 519, "showAllFindings": 119, "accessibleFindings": 64, "reportFindings": 22, "commentOnFinding": 4, "findingCreated": 4, "findingUpdated": 4},
+  "findings_label_followed_by_number": {"findings submitted": 335, "findings submitted:": 96},
+  "status_words_in_text": {"completed": 463, "complete": 64, "final": 57, "live": 56, "escalation": 43, "escalations": 43, "results": 39, "judging": 38, "open": 32, "ended": 20, "finalized": 12, "upcoming": 12, "paused": 9, "closed": 1}
+ },
+ "vocabulary_distinct_sizes": {
+  "after_status_label": 6,
+  "json_status_values": 6,
+  "json_finding_key_numeric": 3,
+  "json_finding_keys": 7,
+  "status_words_in_text": 14,
+  "finding_or_submission_labels": 84,
+  "after_findings_label_shape": 58
+ }
+}
