@@ -114,6 +114,78 @@ published stage-1 table, pinned by its git blob sha, and from the CDX index cut 
 count as the pre-registered census only if the rebuild reproduces the published stage-1 and stage-2 counts;
 otherwise they are reported as descriptive only. The predictions and the extraction rule are unchanged.
 
+## Stage 3: census (added 8 November 2026, about 23:40 UTC)
+
+### Outcome: the gate failed, 0 of 142 competitions eligible (negative result)
+
+Job `cantina-pages-census-v2` ran on 8 Nov 2026, 19:52:20-19:53:43 UTC. Its offline tests passed first. It found the
+second and third addenda public on its first poll, and it ran on the machine that holds the stage-2 cache, so it read
+the cached pages directly (no rebuild). Its check against the published stage-2 counts matched exactly (882 captures
+selected, 882 cached, 528 with a status, 528 with a JSON status, 11 redirected), so its grades count as the
+pre-registered census.
+
+| Check | Value |
+|---|---|
+| Ended competitions | 142 |
+| With at least one readable capture after the end | 130 |
+| With a readable `complete` capture after the end (a completion bracket exists) | 125 |
+| **Eligible** (completion bracket at most 14 days wide, end inside the archive's coverage from 4 Mar 2024) | **0** |
+| Narrowest completion bracket | 18.07 days; 5 brackets are 30 days wide or less (18.1, 18.5, 19.5, 22.3, 22.3) |
+| Gate | 20: **failed** |
+| P1, P2, P3, P4, P5 | **not testable**, exactly as the pre-registration's gate requires |
+
+As the pre-registration says for this case: **the Internet Archive is too thin to answer the question.** Its copies
+of Cantina's pages cannot date when a competition's judging ended to within 14 days for any of the 142 competitions.
+Every bracket that exists is in `cantina_judging/census/brackets_by_id.csv`.
+
+Why far fewer than the stage-1 bound of 68: the bound counted any short gap between capture times, but a competition
+is eligible only if the short gap holds the change to `complete`, and only captures with a readable status count. 354
+of the 882 captures (40%) show no status. Readable captures of any Cantina competition fall on 1 to 5 distinct days a
+month (`capture_days_per_month` in `summary.json`), and none is dated after July 2026: all 52 captures served from
+August 2026 on show no status.
+
+### Reading checks
+
+- 521 of the 882 captures were read. Excluded: 354 with no status, 6 whose served time duplicates another capture of
+  the same competition, 1 served from a time not after the end.
+- In all 521, the visible status and the embedded JSON status agree. Where a capture shows both a visible and a JSON
+  findings count (427 captures), the two are equal in all 427.
+- No competition went back from `complete` to another status in a later capture (0 reversals).
+
+### Descriptive only (not tests of P1-P5)
+
+These figures come from the brackets that exist. The gate failed, so none of them grades a prediction.
+
+- **Non-complete captures.** 55 competitions have a readable capture after the end that is not `complete`. In 27 of
+  them the earliest such capture shows a findings count above 0, and in all 27 it equals today's count in Cantina's
+  API. In one competition the count already matched about 14 hours after the end. 20 show 0, and 8 show no count.
+- **Zero counts.** All 86 captures in the file with a count of 0 got it from embedded JSON, in captures dated 17 Apr
+  2024 to 26 Mar 2025, and 64 of the 86 are on pages already showing `completed`. We read a 0 there as an unfilled
+  field rather than a count. That is our interpretation, not part of the rule.
+- **Long post-live periods.** Four competitions that ended inside the coverage still showed a non-complete status 60
+  days or more after their end. The longest is 233.7 days: `reviewing escalations` on 19 Jun 2025, for a competition
+  that ended on 28 Oct 2024. This is the status the archived page displayed; we can't tell from it whether the page
+  was up to date.
+- **Start of judging.** 5 competitions have a judging-start bracket at most 3 days wide (the brackets P3 would have
+  used). In all 5, the first capture past `live` came within 2.6 days of the end.
+
+### Limits
+
+- One archive, one site. A Cantina page served without a status (40% of captures here) can't be read by this rule;
+  we did not try other ways of reading those pages, and the rule doesn't allow them.
+- Findings counts are compared with today's API, not with a count from the time of the capture.
+- This says nothing about how long Cantina's judging takes. It only says that this source can't measure it.
+
+### What happens next
+
+The census ends here. P1-P5 stay not testable, and they are not re-tested on another source without a new,
+separately published pre-registration. Revert v4lend is still followed directly: on 8 Nov 2026, about 23:25 UTC, its
+page still showed "Judging" and "7,079" findings.
+
+`cantina_judging/census/`: `job.py`, `test_job.py`, `summary.json`, `brackets_by_id.csv` (one row per ended
+competition), `captures.csv` (one row per selected capture: competition id, capture times, status, findings count and
+any exclusion reason; no page text). Code Apache-2.0, data CC BY 4.0.
+
 ---
 
 *MV2 of Munim, Inc. Made with AI agents working for MV2.*

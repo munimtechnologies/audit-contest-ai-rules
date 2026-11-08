@@ -1,0 +1,118 @@
+{
+ "addenda": {
+  "addendum_2_sha": "336d73a09685c4315ce2c9f3a1dfd13dd97ea22f",
+  "addendum_3_sha": "c16ac3822049fe1715b38af9c5740468748cd886",
+  "polls": 1,
+  "public": true
+ },
+ "capture_days_per_month": {
+  "2024-03": 1,
+  "2024-04": 1,
+  "2024-05": 3,
+  "2024-06": 1,
+  "2024-07": 1,
+  "2024-08": 1,
+  "2024-09": 1,
+  "2024-11": 3,
+  "2024-12": 2,
+  "2025-01": 1,
+  "2025-02": 1,
+  "2025-03": 4,
+  "2025-04": 3,
+  "2025-05": 4,
+  "2025-06": 2,
+  "2025-07": 3,
+  "2025-08": 1,
+  "2025-09": 4,
+  "2025-10": 3,
+  "2025-11": 4,
+  "2025-12": 2,
+  "2026-01": 5,
+  "2026-02": 2,
+  "2026-03": 2,
+  "2026-04": 2,
+  "2026-05": 3,
+  "2026-06": 2,
+  "2026-07": 1
+ },
+ "captures_readable": 521,
+ "captures_selected": 882,
+ "checks": {
+  "count_text_json_both": 427,
+  "count_text_json_equal": 427,
+  "json_check_agree": 521
+ },
+ "competitions_ended": 142,
+ "competitions_with_complete_capture": 125,
+ "competitions_with_readable_capture": 130,
+ "coverage_start": "2024-03-04T17:04:08Z",
+ "excluded": {
+  "duplicate served time": 6,
+  "no status": 354,
+  "served capture not after end": 1
+ },
+ "finished": "2026-11-08T19:52:32Z",
+ "grades": {
+  "P1": {
+   "grade": "not testable",
+   "why": "gate: 0 eligible < 20"
+  },
+  "P2": {
+   "grade": "not testable",
+   "why": "gate: 0 eligible < 20"
+  },
+  "P3": {
+   "grade": "not testable",
+   "why": "gate: 0 eligible < 20"
+  },
+  "P4": {
+   "grade": "not testable",
+   "why": "gate: 0 eligible < 20"
+  },
+  "P5": {
+   "grade": "not testable",
+   "why": "gate: 0 eligible < 20"
+  },
+  "eligible": 0,
+  "gate": 20,
+  "gate_passed": false
+ },
+ "grades_status": "pre-registered census (stage-2 cache)",
+ "inputs_match": null,
+ "inputs_route": "stage-2 cache",
+ "inputs_stamp": "20261107T121430Z",
+ "note": "Stage 3 (v2): the second addendum's rule; inputs from the stage-2 cache, or rebuilt as the third addendum says when this host lacks them.",
+ "reversals": 0,
+ "stage2_check": {
+  "expected": {
+   "cached": 882,
+   "captures_selected": 882,
+   "json_status": 528,
+   "redirected": 11,
+   "status_read": 528
+  },
+  "got": {
+   "cached": 882,
+   "captures_selected": 882,
+   "json_status": 528,
+   "redirected": 11,
+   "status_read": 528
+  },
+  "matched": true
+ },
+ "started": "2026-11-08T19:52:21Z",
+ "status_values_json": {
+  "complete": 461,
+  "escalations": 10,
+  "escalations_ended": 29,
+  "judging": 27,
+  "success": 499
+ },
+ "status_values_text": {
+  "completed": 461,
+  "escalations": 10,
+  "escalations ended": 11,
+  "judging": 27,
+  "reviewing escalations": 18
+ }
+}

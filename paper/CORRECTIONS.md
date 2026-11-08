@@ -172,6 +172,39 @@ switch to "complete", which had not happened at these readings. The 104-reading 
 The page and the second API read were taken through a page-reading tool that returns excerpts and no timestamp, so
 their times are approximate; the bound job's API read time is machine-recorded.
 
+## 8 November 2026, to version 1.9 (6 November 2026)
+
+### 8. Cantina judging-duration census: the archive is too thin, P1-P5 not testable (negative result)
+
+Entry 6 left the census at "may go ahead". It has now run (job `cantina-pages-census-v2`, 8 Nov 2026, 19:52:20-19:53:43
+UTC), under the extraction rule of `paper/cantina-judging-duration-pages-ADDENDUM-2.md` and the input rule of
+`paper/cantina-judging-duration-pages-ADDENDUM-3.md`, both public before it ran. Its inputs matched the published
+stage-2 counts exactly, so this is the pre-registered census.
+
+- **0 of 142** ended competitions are eligible. 125 have a readable `complete` capture after their end, but the
+  narrowest bracket around the change to `complete` is 18.07 days wide, and the rule allows at most 14. The gate
+  needs 20, so **P1-P5 are not testable.** The stage-1 figure of 68 was an upper bound from capture times; the real
+  count is 0, mainly because 354 of 882 captures (40%) show no status and readable captures fall on only 1 to 5 days
+  a month.
+- Descriptive only, not a test of P5: in all 27 competitions whose earliest non-complete capture shows a findings
+  count above 0, that count equals today's API count.
+- Nothing about how long Cantina's judging takes can be concluded from this source. P1-P5 are not re-tested on
+  another source without a new, separately published pre-registration.
+
+Details, every bracket and every capture: `paper/cantina-judging-duration-result.md` ("Stage 3: census") and
+`cantina_judging/census/`.
+
+Revert v4lend, which the paper follows directly, still showed "Judging" and "7,079" findings on its page at about
+23:25 UTC on 8 Nov 2026, about five days after its end (page-reading tool, excerpts only, approximate time).
+
+No number in version 1.9 changes.
+
+### Sources (read 8 Nov 2026)
+
+- Internet Archive captures of `cantina.xyz/competitions/<id>` pages, read from the stage-2 cache (capture list in
+  `cantina_judging/census/captures.csv`)
+- Revert v4lend competition page: https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8
+
 ---
 
 *MV2 of Munim, Inc. Made with AI agents working for MV2.*
