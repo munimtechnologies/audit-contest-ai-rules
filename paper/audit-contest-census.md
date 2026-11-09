@@ -1,10 +1,18 @@
 # Fewer contests, more submissions, less money each: a census of public smart-contract audit contests on six platforms, 2021-2026
 
-Preprint, version 1.9 (6 November 2026). Not peer reviewed.
+Preprint, version 2.0 (9 November 2026). Not peer reviewed.
 
 MV2 of Munim, Inc. (mv2@munimtech.com). The data collection, analysis, code and this text were made with AI agents working
 for MV2. Text: CC BY 4.0. Code: Apache-2.0. Data and code: https://github.com/munimtechnologies/audit-contest-ai-rules
-(release v0.9.3). Corrections are welcome as issues on that repository.
+(release v0.10.0). Corrections are welcome as issues on that repository.
+
+**Changes from version 1.9 (6 November 2026).** Entries 1-8 of `paper/CORRECTIONS.md` are folded in. Section 3.5 now
+reports the pre-registered test of whether Revert v4lend's findings count moved in judging (it did not; entry 7) and
+later readings. A new section 3.8 reports a pre-registered census of how long Cantina takes to judge a competition,
+which failed its gate: the Internet Archive is too thin to answer the question (entries 6 and 8). Section 2 now says
+that the census can miss public contests run outside the endpoint it was built from (entry 1). Section 4.1 adds
+Sherlock's payout criteria and its documentation's notice that Audit Engine is replacing audit contests (entries 2
+and 3). No census number from version 1.9 changes.
 
 ---
 
@@ -38,7 +46,11 @@ submission, signal-rate, money-per-submission and AI-rule series are new. All da
 
 One contest was also measured as it ran. Cantina's Revert v4lend competition ($50,000 USDC) showed 7,079 submitted
 findings when it moved to judging, about $7.06 of pot per submitted finding, and its public counter kept rising for at
-least 56 hours after the contest's end time while the page still said "Live".
+least 56 hours after the contest's end time while the page still said "Live". A test written down before it was read
+predicted that the count would not move in judging, and it held: the count still read 7,079 more than five days after
+the end. We also pre-registered a census of how long Cantina's judging takes, read from the Internet Archive's copies
+of its competition pages. It failed its gate (0 of 142 competitions eligible, at least 20 needed): the archive cannot
+date the end of judging to within 14 days for any competition, so that question stays open.
 
 ## 1. Why this matters
 
@@ -65,8 +77,11 @@ contest-level facts are kept: no researcher handles, per-person earnings or wall
 | Code4rena | every public `code-423n4/<audit>-findings` repository: one JSON record per submission, plus the published report | 2026-10-16 10:57-12:44Z | 376 repositories listed, 372 read (347 audits, 25 mitigation reviews; 9 undated) | 2024 H2 re-derived by hand row by row; Code4rena's own 2023 total lies between our two 2023 totals; submitter counts match a 2022 participant's figures (section 3.7) |
 
 Contests are placed in the half-year they **started**. Submission counts are the platforms' own and include invalid,
-duplicate and spam reports. Private contests and invite-only engagements (Sherlock Audit Engine, Cantina private
-contests, CodeHawks private and invite-only audits) are not in the public series.
+duplicate and spam reports. Private contests and invite-only engagements (Cantina private contests, CodeHawks private
+and invite-only audits, and most Sherlock Audit Engine engagements) are not in the public series. Not every Audit
+Engine engagement is private, though: at least one was a public $400k contest (Aerodrome, section 6), and Sherlock's
+contest API, which our Sherlock series is built from, does not list it. So the census can miss public contests that a
+platform runs outside the endpoint it was built from (correction 1).
 
 ## 3. Results
 
@@ -86,6 +101,10 @@ The 12 Ethereum client competitions of February 2025 (one shared $2M pot) count 
 crowding rose for both platforms separately: Sherlock's median issues per contest day went 25.6 (2024) -> 55.3 (2025) ->
 142.0 (2026); Cantina's median findings per contest day 17.0 -> 20.7 -> 158.2. On Sherlock the median 2026 contest ran
 longer (10 days vs 6) and had a larger pot ($60k vs $30k) than in 2024, so the rise isn't shorter or cheaper contests.
+
+Aerodrome's public Audit Engine contest (section 6) started in 2026 Q3, so it would add a third contest to the 2026 Q3
+row, but its submission count is not public and it cannot enter the submission or per-contest columns. It does not
+touch the 2024 H1 to 2026 H1 comparisons.
 
 ### 3.2 The same contest decline on Immunefi
 
@@ -124,7 +143,8 @@ it; we have not run it yet.
 
 Pooled: -81%. Without the nine $1M+ pots: $331.31 -> $85.25 (-74%), falling every half-year. Median contest: -84%. The
 median ignores pot size, so the fall cannot come from mega pots leaving. These are headline pots: Sherlock's `rewards`
-includes lead-auditor and judging pay, and some pots pay in full only if a High is found.
+includes lead-auditor and judging pay, and some pots pay in full only if a High is found. Aerodrome's $400k Audit
+Engine contest (section 6) is not in the 2026 H2 row, because its submission count is not public.
 
 ### 3.4 Money actually paid, and AI-report rules (HackenProof)
 
@@ -143,7 +163,7 @@ PoC are not accepted under this program", first appears on the Coindepo audit (s
 program that started in July 2025 carries it. From 14 Aug 2025, 61 of 62 programs carry one of the two. Rule text was
 read as it stood on 15 Oct 2026, so start dates date the programs, not the rules.
 
-### 3.5 A live contest, measured as it fills (Cantina, Revert v4lend)
+### 3.5 A live contest, measured as it fills and into judging (Cantina, Revert v4lend)
 
 Cantina's Revert v4lend competition (6 Oct-3 Nov 2026, $50,000 USDC, KYC to join) shows a public "Findings submitted"
 counter. We read it 104 times between 14 Oct and 6 Nov 2026 (`v4lend/v4lend_findings_count.csv`); each of the last 20
@@ -174,9 +194,16 @@ around it.
   end would fall below about 8.9 an hour (it was about 10 an hour over 17 hours). Between about 56 and 61 hours after
   the end, the page and the API switched to "Judging", at 7,079. So between 353 and 752 findings were added after the
   end. The counter cannot tell late submissions from judge-created duplicates or escalations, and Cantina's
-  documentation does not say what it includes. Whether the count still moves during judging was not yet tested in this
-  version. We wrote the test down before reading it: a reading at least 24 hours after 6 Nov 07:10 UTC, predicted to
-  equal 7,079.
+  documentation does not say what it includes.
+- **In judging (pre-registered test held).** Version 1.9 wrote down a test before it was read: a reading at least 24
+  hours after 6 Nov 2026, 07:10 UTC, predicted to equal 7,079. On 7 Nov 2026 Cantina's API showed status `judging` and
+  7079 findings at 12:14:30 UTC (machine-recorded by a job), and a second API read and two reads of the page, at about
+  12:45-12:50 UTC, showed "Judging" and "7,079". **The prediction held** (correction 7). Later page readings showed the
+  same, "Judging" and "7,079", at about 23:25 UTC on 8 Nov and about 01:15 UTC on 9 Nov 2026, about 5.3 days after the
+  end (page-reading tool, approximate times). So all of the 353 to 752 findings added after the end came in before
+  judging began, and none had been added in judging by these readings. These later readings are not in the 104-reading
+  data set (`v4lend/` is unchanged). The competition had not reached "complete" by 9 Nov 2026, so how long its judging
+  takes is not yet known; section 3.8 explains why the archive could not answer that for earlier competitions either.
 - **Money.** $50,000 over 7,079 is about $7.06 of pot per submitted finding (between $7.43 and $7.90 on the count at the
   end). A submitted finding is not a valid one: the page shows no judged count, so this is the pot averaged over every
   submission, not what a valid finding earns.
@@ -270,6 +297,60 @@ half-year; 5 in 2024 H2).
   Code4rena's figure lies between our two totals, but we could not read its post, so we don't know exactly what it counts.
   We treat this as a check that brackets our numbers, not one that matches them.
 
+### 3.8 How long does Cantina's judging take? A pre-registered census the archive could not answer
+
+Section 3.5 follows one competition into judging. Whether its pace is typical needs the judging time of many
+competitions, and Cantina's API gives only each competition's current status, not when it changed. After version 1.9
+we pre-registered a census of judging duration (`paper/cantina-judging-duration-PREREGISTRATION.md`, 6 Nov 2026,
+23:51 UTC): five predictions (P1-P5), a rule that a competition is eligible only if the change to `complete` can be
+placed inside a bracket of at most 14 days, and a gate of at least 20 eligible competitions, below which P1-P5 are
+reported as not testable. Three addenda, each public before the step it governs, moved the source and fixed the
+reading rules; none changed a prediction, the 14-day rule or the gate.
+
+| Stage | Source | Result |
+|---|---|---|
+| Primary | Internet Archive captures of Cantina's competitions API | **0** captures found (7 Nov 2026): 0 eligible, not testable from this source |
+| 1, timing bound (addendum 1) | capture times of archived competition pages, no content | 131 of 142 ended competitions have a capture after their end; at most **68** could be eligible |
+| 2, page format | all 882 main-page captures taken after an end, counts only | 528 show a readable status (461 `completed`, 67 not yet complete); **354 (40%) show none** |
+| 3, census (addenda 2 and 3) | the cached stage-2 pages, inputs matched to the published counts | **0 of 142 eligible**; narrowest completion bracket 18.07 days; gate failed |
+
+**Outcome: P1-P5 are not testable** (corrections 6 and 8). 125 competitions have a readable `complete` capture after
+their end, so a completion bracket exists for them, but none is 14 days wide or less: the five narrowest are 18.1,
+18.5, 19.5, 22.3 and 22.3 days. The stage-1 figure of 68 counted any short gap between capture times. A competition
+is eligible only if the short gap holds the change to `complete` and both sides of it show a readable status. 40% of
+the captures show none, readable captures of any Cantina competition fall on only 1 to 5 days a month, and none is
+dated after July 2026 (all 52 captures served from August 2026 on show no status). The census ran as job
+`cantina-pages-census-v2` on 8 Nov 2026, 19:52:20-19:53:43 UTC. Its offline tests passed first, and it checked that its
+inputs reproduced the published stage-2 counts exactly (882 selected, 882 cached, 528 with a status), so its grade is
+the pre-registered census.
+
+Reading checks: 521 captures were read (354 had no status, 6 duplicated another capture's served time, 1 was served
+from a time not after the end). In all 521 the visible status and the embedded JSON status agree, and in all 427
+captures that show both a visible and a JSON findings count, the two are equal. No competition went back from
+`complete` to another status in a later capture.
+
+Descriptive only, because the gate failed, so none of these grades a prediction:
+
+- In all 27 competitions whose earliest non-`complete` capture after the end shows a findings count above 0, that
+  count equals the count in Cantina's API today. This fits section 3.5's reading that v4lend's count stopped moving
+  once judging began, but it is not a test of it.
+- Four competitions that ended inside the archive's coverage still showed a non-complete status 60 days or more after
+  their end; the longest showed `reviewing escalations` 233.7 days after its end. That is what the archived page
+  displayed; we cannot tell from it whether the page was up to date.
+- Five competitions have a judging-start bracket of at most 3 days, and in all five the first capture past `live` came
+  within 2.6 days of the end. Section 3.5's v4lend switched between 56 and 61 hours (about 2.3-2.5 days) after its end.
+- All 86 captures with a findings count of 0 got it from embedded JSON, in captures dated 17 Apr 2024 to 26 Mar 2025,
+  and 64 of them are on pages already showing `completed`. We read those zeros as an unfilled field, not a count; that
+  is our interpretation, not part of the rule.
+
+So nothing about how long Cantina's judging takes can be concluded from the archive. P1-P5 are not re-tested on
+another source without a new, separately published pre-registration. The lesson for anyone attempting the same: a
+bound computed from capture times alone (68) badly overstated what the pages could support (0), because 40% of the
+pages carry no status and crawls cluster on a few days. A gate should count captures with a readable status, not
+capture times. The one source that can answer the question is direct reading of live competitions over time, as with
+v4lend in section 3.5. Full result, every bracket and every capture: `paper/cantina-judging-duration-result.md` and
+`cantina_judging/`.
+
 ## 4. Discussion
 
 Crowding in public audit contests is not new. Code4rena went through it in 2022-2023: more people sent more High/Medium
@@ -283,6 +364,15 @@ show the same fall in money that actually changed hands, not just in headline po
 collapse. CodeHawks shows the other end of it: a platform that stopped holding contests for 15 months, so no crowding
 could build there. Code4rena's wind-down in May 2026 is the extreme case of the same exit. So the platform-wide question
 is not only how crowded the remaining contests are, but how many platforms still hold them.
+
+Sherlock's own pages point the same way, though they disagree with each other. Its documentation page "Meeting the
+Payout Criteria" (undated, read 9 Nov 2026) says that the option to "unlock past unearned audit contest payouts will
+end after February 6th, 2027", "due to Audit Engine replacing audit contests". Its blog post "Why We Built Sherlock
+Audit Engine" (dated 19 Aug 2026 on the page as read 9 Nov 2026; correction 2 gave 20 Aug) says instead that Audit
+Engine "sits alongside Sherlock's Collaborative Audits, Audit Contests, and Blackthorn reviews". Sherlock's contest
+API has listed no running or scheduled contest in any of our readings from 14 Oct to 9 Nov 2026, and the newest
+contest in it started on 20 Jul 2026. We don't claim that Sherlock has ended contests: its blog says otherwise, and the
+notice concerns payouts (correction 2).
 
 ### 4.1 AI-report rules across six audit platforms, on a published rubric
 
@@ -302,7 +392,7 @@ same definitions to the platform-wide rule text of six audit-contest platforms, 
 | CodeHawks | Disqualification criteria: "Participants suspected of relying excessively on AI for their submissions risk disqualification." | Discouraged (penalty, no stated path) | No later than 14 Sep 2023 (the commit that added the page to Cyfrin's public docs repo) |
 | Cantina | Competition docs: "submitting AI generated findings without validating them can lead to disqualifications or worse, a permanent ban" | Conditional, human in the loop | Undated (no date, version or changelog on the page) |
 | HackenProof | Per program, not platform-wide: "AI-generated reports without runable PoC are not accepted" / "...must include human validation" | Conditional, human in the loop | Contests from 16 Jul 2025 (OpenEden), DualDefense audits from 14 Aug 2025 (Coindepo); 61 of 62 programs since 14 Aug 2025 |
-| Sherlock | Contest judging criteria: no AI wording. Audit Engine docs: "This page is for AI auditors and security researchers selected for Audit Engine engagements." | Contests: silent. Audit Engine: AI auditors admitted as participants (no category in the rubric) | Both pages undated |
+| Sherlock | Contest judging criteria: no AI wording. Audit Engine docs: "This page is for AI auditors and security researchers selected for Audit Engine engagements." | Contests: silent. Audit Engine: AI auditors admitted as participants (no category in the rubric), but set per engagement: the first open engagement we saw (Uniswap, Nov 2026) was "only for human researchers, not purposefully built AI tools" (section 6) | Both pages undated |
 
 For comparison, Stingrai coded the four general coordination platforms it covers (HackerOne, Bugcrowd, Intigriti,
 YesWeHack) as conditional: three human-in-the-loop, one disclosure. None of its 53 programs prohibits AI-written reports.
@@ -318,6 +408,15 @@ can't be dated. Two dated changes fall inside the collapse: HackenProof's per-pr
 V12 rule from 25 September 2025. So AI-report rules can't be read as a single response to the collapse. HackenProof is the
 only platform where they can be placed against the money series (section 3.4), and there they arrive as paid money per
 submission starts to fall.
+
+**A rule on invalid submissions that says nothing about AI.** Sherlock's "Meeting the Payout Criteria" page (read
+9 Nov 2026) sets two "Audit Contest Payout Criteria": "Until you've submitted 2 valid issues with your Watson account,
+you will not receive USDC payouts", and an account's "issues ratio" (valid issues over all issues submitted) "must be
+>=20%", counting only "contests that started on or after July 1st, 2023". Payouts withheld under them are paid "in
+full" once both criteria are met, and the page says they replaced an earlier "USDC penalty" for invalid issues. The
+rule names no AI, so on the rubric Sherlock's contest stance stays silent. It is the only platform-wide rule in our
+sources that ties pay to an account's share of valid submissions, and it dates from 2023, before the contest collapse
+(correction 3).
 
 **A charge per report: a different response to crowding.** Two platforms now ask for money with each report. Each
 Immunefi audit competition that started from 12 Aug 2026 (Firelight, Quantus, ENS) says on its information page: "A
@@ -478,9 +577,12 @@ publishes one in the same fields, or valid-only counts per contest. The HackenPr
   3,000 USDG split 1,500/1,000/500, published 9 February 2026, deadline 15 February 2026, winners announced 19 March 2026
   after a scheduled 9 March), drew 116 submissions, about $25.86 of prize per submission (USDG taken at $1), with the
   same proof-of-concept and fix-PR requirements that human contests impose. Of the 10 listings open on 6 Nov 2026
-  (public feed, no key), 9 were HUMAN_ONLY, 1 AGENT_ALLOWED and 0 AGENT_ONLY, and none of them was security work, so
-  agent-only audit work there is a one-off so far, not a lane. (Pre-build readings: 14 listings, all HUMAN_ONLY, 23 Oct
-  2026; the first AGENT_ALLOWED listing in our readings, a trading-research bounty, appeared on 28 Oct 2026.)
+  (public feed, no key), 9 were HUMAN_ONLY, 1 AGENT_ALLOWED and 0 AGENT_ONLY, and none of them was security work; on
+  9 Nov 2026 all 8 open listings were HUMAN_ONLY and none was security work. So agent-only audit work there is a one-off
+  so far, not a lane. (Pre-build readings: 14 listings, all HUMAN_ONLY, 23 Oct 2026; the first AGENT_ALLOWED listing in
+  our readings, a trading-research bounty, appeared on 28 Oct 2026.)
+- Judging duration (section 3.8): web searches on 6 Nov 2026 found no published measurement of how long audit-contest
+  judging takes on any platform. That was not a systematic survey.
 
 New here, as far as we can find: per-platform contest AND submission series from primary pages; headline prize money per
 submission, pooled and per contest; money actually paid per submission (HackenProof); a Code4rena series of submissions,
@@ -488,8 +590,10 @@ distinct submitters and signal rate across 2021-2024, with the April 2024 valida
 complete CodeHawks census checked against the platform's own listings, with the practice-copy pitfall documented; a dated
 per-program record of AI-report rules on an audit-contest platform; a rubric-coded, dated comparison of AI-report rules
 across six audit platforms, with the first contest under Code4rena's V12 rule pinned down; a pre-registered README-level
-test of Code4rena's automated-findings and V12 sections, which contradicted our own prediction; and a live contest's
-arrival curve, with a public counter that kept rising for days after the contest's end.
+test of Code4rena's automated-findings and V12 sections, which contradicted our own prediction; a live contest's
+arrival curve, with a public counter that kept rising for days after the contest's end and then held still in judging,
+as predicted in advance; and a pre-registered, negative feasibility result for measuring judging duration from the
+Internet Archive, with the capture-level data published.
 
 ## 6. Limits
 
@@ -507,7 +611,7 @@ These were single fetches of home pages and repository lists, not censuses, and 
 GitHub repository would not appear. Remedy also runs an open-ended $50,000 contest backed by the Ethereum Foundation
 (from 6 Nov 2025, no end date) that pays per detection query accepted into its Glider query database (tiers up to
 $2,000 per query on its triage page, read 4 Nov 2026). The public mirror of that database has had no new commit since
-10 Apr 2026 (checked 6 Nov 2026). It pays for reusable detection rules rather than for findings in a contest's scope,
+10 Apr 2026 (checked 9 Nov 2026). It pays for reusable detection rules rather than for findings in a contest's scope,
 so it is not counted. Its documentation stated a spam rule ("Spam submissions (low-effort or AI nonsense) may lead to
 suspension of your Remedy account", read October 2026) that no longer appears on its contest pages (4 Nov 2026).
 Two further venues were seen and excluded for the same reason: MixBytes Camp
@@ -517,19 +621,21 @@ reports with no prize pools and no entry process, last updated 14 July 2026 (bot
 
 Sherlock's public API listed 301 finished contests on 14 Oct 2026: 259 public contests with submission counts (the
 census rows) and 42 private contests without them. None ended after 29 Jul 2026 (Tare), and it has listed none as
-running or scheduled in any reading from 14 Oct 2026 (running) and 15 Oct 2026 (scheduled) to 6 Nov 2026. Sherlock
+running or scheduled in any reading from 14 Oct 2026 (running) and 15 Oct 2026 (scheduled) to 9 Nov 2026. Sherlock
 Audit Engine engagements are not
 served by that API. They are participant-selected and confidential by default (docs.sherlock.xyz/audit-engine/
 for-protocol-teams), and a participant's dashboard lists only its own engagements. At least one was a large public
 contest: Aerodrome's $400k, three-week, Sherlock-run audit contest for the Aero upgrade (aero.xyz, 16 Jul 2026; complete
-by 25 Sep 2026), reported to have run on Audit Engine from 24 or 31 Aug 2026 (secondary sources only). Its findings and
+by 25 Sep 2026), reported to have run on Audit Engine from 24 or 31 Aug 2026 (secondary sources only: a press report
+of 21 Aug 2026 calls it "the first open-participant engagement using Sherlock's Audit Engine"; Aero's own post names
+Sherlock but not Audit Engine). Its findings and
 payouts are not public, so the census undercounts Sherlock's 2026 H2 contest pool by at least $400k. An account that
 MV2 holds on Audit Engine, Sherlock's venue for AI auditors, had not been invited to or joined any engagement through
 6 Nov 2026 (dashboard readings on 15, 21, 24, 27 and 30 Oct and 2 and 6 Nov 2026; the 15 Oct reading covered only
 engagements taking applications). Until 2 Nov the dashboard listed no engagement at all. On 6 Nov it showed its first,
-open for applications (Uniswap, $20,000 guaranteed), with the rule "This application is only for human researchers,
-not purposefully built AI tools" (one logged-in read; we found no public page for it). So admission of AI auditors on
-Audit Engine is set per engagement, and the first one we saw excluded them.
+open for applications (Uniswap, $20,000 guaranteed, 6-16 Nov 2026), with the rule "This application is only for human
+researchers, not purposefully built AI tools" (one logged-in read; we found no public page for it). So admission of AI
+auditors on Audit Engine is set per engagement, and the first one we saw excluded them.
 
 Certora's formal-verification contests ran inside host contests (Aquarius on Cantina, May-June 2025; Blend v2 on
 Code4rena, Feb-Mar 2025), each with a $20,000 USDC FV pool paid by the host. In our census the FV pool is part of the
@@ -547,27 +653,33 @@ repositories could not be read. AI-report rules are dated only through start dat
 lists 228 self-paced practice copies of two First Flights, which a naive scrape would count as 210 First Flights in 2026
 instead of 4. We filter them by their slug form and check the result against the platform's listing pages. Compute hosts
 matter too: one parse-only re-run of the Immunefi census found none of the pages saved by the first run, because they
-were on another host's volume. It ended with 0 records instead of wrong ones, which is how a re-run should fail. Reposts
-can carry a different date from the original: the V12 post's repost is a day earlier than Zellic's own date. Several
+were on another host's volume. It ended with 0 records instead of wrong ones, which is how a re-run should fail. The
+first attempt at the section-3.8 census stopped the same way (exit 4, nothing computed), and a published addendum fixed
+how inputs are rebuilt before the rerun. Reposts
+can carry a different date from the original: the V12 post's repost is a day earlier than Zellic's own date, and
+Sherlock's Audit Engine post now shows 19 Aug 2026 where we first read 20 Aug. Several
 sources (the Immunefi article on X, the Code4rena Bot Races post, the Medium essay) were read only through search
-excerpts, because their sites refused our fetcher; we say so wherever we use them.
+excerpts, because their sites refused our fetcher; we say so wherever we use them. Quotations from Sherlock's
+documentation and blog were read through a page-reading tool that returns excerpts, not raw HTML.
 
 Cantina's `totalFindings` is not frozen at a contest's end time while the contest still shows "Live": Revert v4lend
 (end 2026-11-03 18:30 UTC, per Cantina's API) rose by at least 353 between about 19 and 56 hours after its end, in
 bursts (3 in one 4-hour stretch, 170 in the next 13 hours). A pre-registered prediction that the post-close rate would
 decay below about 8.9 per hour failed (about 10 per hour over 17 hours). Between about 56 and 61 hours after the end,
-the page and the API switched from "Live" to "Judging", at 7,079 findings. For the 125 public contests already
+the page and the API switched from "Live" to "Judging", at 7,079 findings, and the count did not move in judging
+through 9 Nov 2026 (pre-registered test held; section 3.5). For the 125 public contests already
 "complete" on 14 October 2026, a fresh read on 5 November 2026 found every count unchanged (sum 58,193 both times;
 pre-registered check, all three predictions held; `cantina_drift/`). The most recent of these had ended 124 days
-before the first read, so the census counts are stable for long-finished contests; whether a contest's count still
-moves after it leaves "Live" was not yet tested in this version (the pre-registered v4lend re-read in section 3.5 is
-the first test). Cantina's documentation does not say what
+before the first read, so the census counts are stable for long-finished contests. In the archive (section 3.8), the
+27 competitions with a non-zero count on a non-complete page all show today's count; that is descriptive, not a
+test. Cantina's documentation does not say what
 the counter includes after the end (late submissions, judge-created duplicates or escalations were not distinguishable
-here).
+here). Section 3.8's census rests on one archive of one site; a page served without a status cannot be read by its
+rule, and the rule allows no other way of reading it.
 
 ## 7. Reproduce
 
-Repository: https://github.com/munimtechnologies/audit-contest-ai-rules (v0.9.3).
+Repository: https://github.com/munimtechnologies/audit-contest-ai-rules (v0.10.0).
 
 | Section | Script (each has a `test_*.py` that pins the numbers) | Data (CC BY 4.0) |
 |---|---|---|
@@ -578,29 +690,39 @@ Repository: https://github.com/munimtechnologies/audit-contest-ai-rules (v0.9.3)
 | 3.5 | `v4lend/v4lend_rates.py` (tests: `v4lend/test_v4lend_rates.py`, `v4lend/test_v4lend_rates_late.py`) | `v4lend/v4lend_findings_count.csv` |
 | 3.6 | `codehawks_series.py` | `data/codehawks_contests.csv` |
 | 3.7 | `c4_series.py` (census: `fetch_c4.py`, `c4_crowding.py`) | `data/c4_contests.csv`, `data/c4_summary.json` |
+| 3.8 | `cantina_judging/{probe,bound,vocab,census}/job.py` (each with `test_job.py`) | `cantina_judging/bound/bounds_by_id.csv`, `cantina_judging/census/brackets_by_id.csv`, `cantina_judging/census/captures.csv`, each stage's summary file (`summary.json`; `summary-public.json` in `vocab/`) |
 | 4.1 | | `data/platform_ai_rules.csv` (one row per platform document: URL, verbatim clause, stance, date and date source) |
 | 4.1 README test | `c4_sections.py` (census: `fetch_c4_readmes.py`; tests: `test_c4_readme_sections.py`) | `data/c4_readme_sections.csv`, `data/c4_sections_summary.json`, `data/evmbench_c4_alias.csv` |
 | 6 (Cantina drift) | `cantina_drift/drift.py` (test: `cantina_drift/test_drift.py`) | `cantina_drift/drift_rows_20261105.csv`, `cantina_drift/drift_summary_20261105.json` |
 
-Each top-level script prints its table with `--table`. The `v4lend/` and `cantina_drift/` folders hold pre-registered
-checks exactly as they ran, with their data next to them; run their tests from inside the folder
-(`python -m unittest`). `v4lend_rates.py` recomputes section 3.5's windows and day table from the 104 readings.
+Each top-level script prints its table with `--table`. The `v4lend/`, `cantina_drift/` and `cantina_judging/` folders
+hold pre-registered checks exactly as they ran, with their data next to them; run their tests from inside the folder
+(`python -m unittest`). `v4lend_rates.py` recomputes section 3.5's windows and day table from the 104 readings. The
+section-3.8 jobs fetch from the Internet Archive and need network access; their tests run offline. The
+pre-registration and its three addenda are in `paper/` (`cantina-judging-duration-PREREGISTRATION.md` and
+`cantina-judging-duration-pages-ADDENDUM*.md`).
 
 ## Sources
 
 Read 14-16 Oct 2026 unless noted. "Search excerpt" means the page refused our fetcher and the text comes from a web
 search engine's copy.
 
-- Sherlock contest API: https://mainnet-contest.sherlock.xyz/contests (last read 6 Nov 2026) ; judging guidelines:
+- Sherlock contest API: https://mainnet-contest.sherlock.xyz/contests (last read 9 Nov 2026) ; judging guidelines:
   https://docs.sherlock.xyz/audits/judging/guidelines ; Audit Engine: https://docs.sherlock.xyz/audit-engine/for-participants
   and https://docs.sherlock.xyz/audit-engine/for-protocol-teams (21 Oct 2026) ; bug-bounty stake: "Best Web3 Bug
   Bounties in 2026" (31 Aug 2026):
-  https://sherlock.xyz/post/best-web3-bug-bounties-in-2026-the-highest-paying-programs-on-every-platform (18 Oct 2026)
+  https://sherlock.xyz/post/best-web3-bug-bounties-in-2026-the-highest-paying-programs-on-every-platform (18 Oct 2026) ;
+  payout criteria: https://docs.sherlock.xyz/audits/watsons/meeting-the-payout-criteria (18 Oct and 9 Nov 2026) ;
+  "Why We Built Sherlock Audit Engine": https://sherlock.xyz/post/why-we-built-sherlock-audit-engine (18 Oct and
+  9 Nov 2026)
 - Aerodrome: https://aero.xyz/articles/aero-is-on-the-horizon/ (16 Jul 2026) and
-  https://aero.xyz/articles/aero-launch-update-all-systems-go/ (25 Sep 2026), both read 21 Oct 2026
-- Cantina competitions API: https://cantina.xyz/api/v0/competitions (v4lend end time and status, 5-6 Nov 2026) ;
+  https://aero.xyz/articles/aero-launch-update-all-systems-go/ (25 Sep 2026), both read 21 Oct 2026 ; Crypto Briefing,
+  21 Aug 2026: https://cryptobriefing.com/aerodrome-finance-400k-audit-contest-sherlock/ (18 Oct 2026)
+- Cantina competitions API: https://cantina.xyz/api/v0/competitions (v4lend end time and status, 5-7 Nov 2026) ;
   competition rules: https://docs.cantina.security/standards/severity/competition ; Revert v4lend:
-  https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8 (14 Oct-6 Nov 2026)
+  https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8 (14 Oct-9 Nov 2026)
+- Internet Archive: Wayback CDX index https://web.archive.org/cdx/search/cdx and archived copies of
+  `cantina.xyz/competitions/<id>` pages (7-8 Nov 2026; queries and capture list in `cantina_judging/`)
 - Immunefi competitions: https://immunefi.com/audit-competition/ ; Rules: https://immunefi.com/rules/ ; researcher terms
   as served on a program's safe-harbor page ("Last Updated 07 September 2026"):
   https://immunefi.com/bug-bounty/originprotocol/safe-harbor/ ; CoinDesk, 17 Jan 2023:
@@ -638,13 +760,13 @@ search engine's copy.
   still at v1, PoCo at v3)
 - Superteam Earn: https://superteam.fun/earn/listing/fix-open-source-solana-repos-agents and
   https://superteam.fun/api/listings/details/fix-open-source-solana-repos-agents (20 Oct 2026); feed
-  https://superteam.fun/api/listings?take=100 (6 Nov 2026)
+  https://superteam.fun/api/listings?take=100 (6 and 9 Nov 2026)
 - Certora: https://github.com/Certora/aquarius-cantina-fv ,
   https://raw.githubusercontent.com/code-423n4/2025-02-blend/main/README.md ,
   https://www.certora.com/blog/bringing-formal-verification-to-rust (17 Oct 2026)
 - Remedy Glider contest: https://docs.r.xyz/glider-ide/glider-contest.md and
   https://docs.r.xyz/glider-ide/glider-contest/triage-guidelines.md (4 Nov 2026); database mirror commits:
-  https://api.github.com/repos/Hexens/glider-query-db/commits?path=queries (6 Nov 2026)
+  https://api.github.com/repos/Hexens/glider-query-db/commits?path=queries (9 Nov 2026)
 - Hats Finance repositories: https://api.github.com/orgs/hats-finance/repos?sort=created&direction=desc (21 Oct and
   4 Nov 2026)
 

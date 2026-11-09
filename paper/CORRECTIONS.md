@@ -3,6 +3,12 @@
 For `paper/audit-contest-census.md`, "Fewer contests, more submissions, less money each". Each entry is dated and names
 the version it corrects. Entries are folded into the next full version of the paper. Text: CC BY 4.0.
 
+**Status (9 November 2026): entries 1-8 are folded into version 2.0 of the paper.** They stay here unchanged as the
+record of what was corrected and when. Two details differ in v2.0 because the sources were re-read on 9 Nov 2026 before
+folding: Sherlock's blog post "Why We Built Sherlock Audit Engine" now shows the date 19 Aug 2026 (entry 2 gives
+20 Aug), and Revert v4lend's later readings (8 and 9 Nov, still "Judging" and "7,079") are added to entry 7's result.
+New corrections to version 2.0 will start at entry 9.
+
 ## 18 October 2026, to version 1.8 (16 October 2026)
 
 ### 1. Not every Sherlock Audit Engine engagement is private (correction)
