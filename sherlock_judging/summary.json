@@ -1,0 +1,144 @@
+{
+ "api_total_finished": 301,
+ "descriptive": {
+  "J_le_0": 0,
+  "S_lt_J": 0,
+  "by_year": {
+   "2023": {
+    "median_J_days": 14.077210648148148,
+    "median_N": 189,
+    "median_S_days": null,
+    "n": 75,
+    "n_v3": 0,
+    "n_with_S": 0
+   },
+   "2024": {
+    "median_J_days": 9.043269675925927,
+    "median_N": 163.5,
+    "median_S_days": 17.786556712962962,
+    "n": 102,
+    "n_v3": 30,
+    "n_with_S": 30
+   },
+   "2025": {
+    "median_J_days": 11.618582175925926,
+    "median_N": 551.0,
+    "median_S_days": 27.86175925925926,
+    "n": 46,
+    "n_v3": 46,
+    "n_with_S": 45
+   },
+   "2026": {
+    "median_J_days": 12.125121527777779,
+    "median_N": 1212.5,
+    "median_S_days": 47.63262731481481,
+    "n": 10,
+    "n_v3": 10,
+    "n_with_S": 10
+   }
+  },
+  "escalations_closed_within_21d_of_end": 204,
+  "n_eligible_all": 233,
+  "reasons": {
+   "eligible": 233,
+   "missing_escalation_started_at": 26,
+   "private_or_unknown": 42
+  },
+  "v3_median_J_minus_doc_days": 0.8779340277777776,
+  "window_seconds_top": [
+   [
+    86400,
+    228
+   ],
+   [
+    172800,
+    4
+   ],
+   [
+    201600,
+    1
+   ]
+  ]
+ },
+ "details_fetched": 301,
+ "details_missing": [],
+ "fetch_finished_utc": "2026-11-10T13:20:16Z",
+ "fetch_started_utc": "2026-11-10T13:15:02Z",
+ "grade_confirmatory": {
+  "P1": {
+   "held": true,
+   "n": 81,
+   "share": 0.5185185185185185,
+   "within_doc_plus_1d": 42
+  },
+  "P2": {
+   "held": false,
+   "n": 81,
+   "share": 0.9629629629629629,
+   "window_24h": 78
+  },
+  "P3": {
+   "held": true,
+   "median_S_minus_J_days": 11.296076388888888,
+   "n": 80
+  },
+  "P4": {
+   "held": true,
+   "n": 223,
+   "spearman_N_J": 0.4586608938831345
+  },
+  "P5": {
+   "held": null,
+   "n_2024": 30,
+   "n_2026": 8,
+   "note": "not testable: fewer than 10 in a year"
+  },
+  "n_eligible": 223,
+  "n_v3": 81,
+  "n_with_S": 80
+ },
+ "grade_including_seen": {
+  "P1": {
+   "held": true,
+   "n": 86,
+   "share": 0.5116279069767442,
+   "within_doc_plus_1d": 44
+  },
+  "P2": {
+   "held": false,
+   "n": 86,
+   "share": 0.9418604651162791,
+   "window_24h": 81
+  },
+  "P3": {
+   "held": true,
+   "median_S_minus_J_days": 11.942071759259257,
+   "n": 85
+  },
+  "P4": {
+   "held": true,
+   "n": 233,
+   "spearman_N_J": 0.46939466224995624
+  },
+  "P5": {
+   "held": true,
+   "median_S_2024": 17.786556712962962,
+   "median_S_2026": 47.63262731481481,
+   "n_2024": 30,
+   "n_2026": 10
+  },
+  "n_eligible": 233,
+  "n_v3": 86,
+  "n_with_S": 85
+ },
+ "ids_listed": 301,
+ "job": "sherlock-judging-duration",
+ "outcome": "graded",
+ "prereg": {
+  "date": "2026-11-10T08:49:27Z",
+  "polls": 1,
+  "public": true,
+  "sha": "ab0186ebb8ce023c962a647d034a6304b5cb0018"
+ },
+ "prereg_path": "paper/sherlock-judging-duration-PREREGISTRATION.md"
+}
