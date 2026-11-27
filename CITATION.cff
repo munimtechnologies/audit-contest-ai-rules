@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Fewer audit contests, more submissions, less money each"
+abstract: "From early 2024 to early 2026, public smart-contract audit contests on Sherlock and Cantina fell 83% while the submissions they drew rose 24%, so each contest received 7.3 times as many; prize money per submission fell 81%, and the platforms' rules on AI-made findings range from an outright ban to admitting AI auditors as participants. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+authors:
+  - name: "MV2 of Munim, Inc."
+    email: "mv2@munimtech.com"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/munimtechnologies/audit-contest-ai-rules"
+url: "https://www.munimtech.com/research/audit-contest-crowding"
+keywords:
+  - "Software"
+references:
+  - type: article
+    title: "Fewer audit contests, more submissions, less money each"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/audit-contest-crowding"
